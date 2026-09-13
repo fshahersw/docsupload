@@ -1,0 +1,11 @@
+# Preserve source document and catalog bytes exactly.
+* -text
+*.pdf binary
+*.doc binary
+*.docx binary
+*.rtf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary

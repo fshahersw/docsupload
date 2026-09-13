@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:seeger-weiss:agent-input:settlement-valuation-analyst:1",
+  "title": "Settlement and verdict comparable review intake contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "comparison_question",
+    "comparable_sources",
+    "selection_protocol"
+  ],
+  "properties": {
+    "comparison_question": {
+      "type": "object",
+      "description": "Claim/product/injury context and the purpose of comparison.",
+      "additionalProperties": true
+    },
+    "comparable_sources": {
+      "type": "array",
+      "description": "Lawfully supplied or publicly available underlying judgments, orders, settlement records or clearly labeled reports.",
+      "items": {
+        "type": "object",
+        "description": "Source/record descriptor; resolve its identity, access and content via a host-validated adapter."
+      }
+    },
+    "selection_protocol": {
+      "type": "object",
+      "description": "Inclusion/exclusion criteria and whether the set is selected, censored or incomplete.",
+      "additionalProperties": true
+    },
+    "scenario_assumptions": {
+      "type": "object",
+      "description": "Express assumptions approved for a worksheet; do not infer fees, inflation, allocation or legal deductions.",
+      "additionalProperties": true
+    }
+  },
+  "$comment": "The host must validate nested source descriptors against its actual DTOs. This specification deliberately does not fabricate production API shapes."
+}

@@ -1,0 +1,112 @@
+{
+  "id": "settlement-valuation-analyst-review",
+  "title": "Settlement and verdict comparable review",
+  "readiness": "Mini-app interface specification",
+  "implemented": false,
+  "route": null,
+  "launch_mode": "Explicit user run; no scheduler or upload listener installed",
+  "input_form_schema_ref": "10-Agent-Skills-Library/Seeger-Weiss-Agents/contracts/settlement-valuation-analyst.input.schema.json",
+  "result_schema_ref": "10-Agent-Skills-Library/Seeger-Weiss-Agents/contracts/settlement-valuation-analyst.output.schema.json",
+  "views": [
+    {
+      "id": "comparable-table",
+      "label": "Comparable table"
+    },
+    {
+      "id": "amount-components",
+      "label": "Amount components"
+    },
+    {
+      "id": "procedural-history",
+      "label": "Procedural history"
+    },
+    {
+      "id": "assumptions-worksheet",
+      "label": "Assumptions worksheet"
+    }
+  ],
+  "table_columns": [
+    {
+      "key": "case_id",
+      "label": "Case id",
+      "description": "Resolved matter/case identity.",
+      "type": "string"
+    },
+    {
+      "key": "amount_type",
+      "label": "Amount type",
+      "description": "Verdict, judgment, settlement, demand, fund or reported figure.",
+      "type": "string"
+    },
+    {
+      "key": "amount_raw",
+      "label": "Amount raw",
+      "description": "Exact source amount or confidential/unknown statement.",
+      "type": "string"
+    },
+    {
+      "key": "currency",
+      "label": "Currency",
+      "description": "Explicit currency, null if not established.",
+      "type": "nullable_string"
+    },
+    {
+      "key": "amount_components",
+      "label": "Amount components",
+      "description": "Sourced component values and descriptions.",
+      "type": "array"
+    },
+    {
+      "key": "case_stage",
+      "label": "Case stage",
+      "description": "Verified post-trial/appeal/approval stage.",
+      "type": "string"
+    },
+    {
+      "key": "comparability_basis",
+      "label": "Comparability basis",
+      "description": "Reason for inclusion and important differences.",
+      "type": "string"
+    },
+    {
+      "key": "selection_limit",
+      "label": "Selection limit",
+      "description": "Known selection/censoring or unavailable history.",
+      "type": "string"
+    }
+  ],
+  "shared_views": [
+    "Coverage and failures",
+    "Source requests",
+    "Draft export"
+  ],
+  "actions": [
+    {
+      "id": "run",
+      "label": "Run scoped analysis",
+      "handler": null,
+      "enabled": false,
+      "requires": "Verified host agent and source adapters"
+    },
+    {
+      "id": "open_source",
+      "label": "Open source",
+      "handler": null,
+      "enabled": false,
+      "requires": "Authorized source resolver and safe viewer"
+    },
+    {
+      "id": "export",
+      "label": "Export draft table",
+      "handler": null,
+      "enabled": false,
+      "requires": "Bound artifact writer with source rights and spreadsheet-cell sanitization"
+    }
+  ],
+  "accessibility": [
+    "Semantic table with keyboard-accessible source links",
+    "Status labels in text, not color alone",
+    "Announce progress and errors; preserve focus when results refresh"
+  ],
+  "host_integration_note": "UI contract only. Reuse the platform shell and tested components; paths, handlers, server DTOs and persistence require verified host integration."
+}

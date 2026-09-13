@@ -1,0 +1,108 @@
+{
+  "id": "venue-strategist-review",
+  "title": "Federal and state proceeding comparison",
+  "readiness": "Mini-app interface specification",
+  "implemented": false,
+  "route": null,
+  "launch_mode": "Explicit user run; no scheduler or upload listener installed",
+  "input_form_schema_ref": "10-Agent-Skills-Library/Seeger-Weiss-Agents/contracts/venue-strategist.input.schema.json",
+  "result_schema_ref": "10-Agent-Skills-Library/Seeger-Weiss-Agents/contracts/venue-strategist.output.schema.json",
+  "views": [
+    {
+      "id": "forum-comparison",
+      "label": "Forum comparison"
+    },
+    {
+      "id": "proceeding-relationships",
+      "label": "Proceeding relationships"
+    },
+    {
+      "id": "coverage-gaps",
+      "label": "Coverage gaps"
+    }
+  ],
+  "table_columns": [
+    {
+      "key": "proceeding_id",
+      "label": "Proceeding id",
+      "description": "Exact official proceeding identity.",
+      "type": "string"
+    },
+    {
+      "key": "court_and_location",
+      "label": "Court and location",
+      "description": "Court, district/county and state where appropriate.",
+      "type": "string"
+    },
+    {
+      "key": "proceeding_type",
+      "label": "Proceeding type",
+      "description": "MDL, state coordination, master, member or other sourced type.",
+      "type": "string"
+    },
+    {
+      "key": "product_scope",
+      "label": "Product scope",
+      "description": "Scope supported by designation/order, including exclusions.",
+      "type": "string"
+    },
+    {
+      "key": "captured_posture",
+      "label": "Captured posture",
+      "description": "Procedural state shown by the read sources.",
+      "type": "string"
+    },
+    {
+      "key": "case_count_and_unit",
+      "label": "Case count and unit",
+      "description": "Dated count and exact unit, if supported.",
+      "type": "nullable_string"
+    },
+    {
+      "key": "comparison_date",
+      "label": "Comparison date",
+      "description": "Source capture/currency date.",
+      "type": "string"
+    },
+    {
+      "key": "unresolved_constraints",
+      "label": "Unresolved constraints",
+      "description": "Questions requiring additional facts, sources or counsel decision.",
+      "type": "array"
+    }
+  ],
+  "shared_views": [
+    "Coverage and failures",
+    "Source requests",
+    "Draft export"
+  ],
+  "actions": [
+    {
+      "id": "run",
+      "label": "Run scoped analysis",
+      "handler": null,
+      "enabled": false,
+      "requires": "Verified host agent and source adapters"
+    },
+    {
+      "id": "open_source",
+      "label": "Open source",
+      "handler": null,
+      "enabled": false,
+      "requires": "Authorized source resolver and safe viewer"
+    },
+    {
+      "id": "export",
+      "label": "Export draft table",
+      "handler": null,
+      "enabled": false,
+      "requires": "Bound artifact writer with source rights and spreadsheet-cell sanitization"
+    }
+  ],
+  "accessibility": [
+    "Semantic table with keyboard-accessible source links",
+    "Status labels in text, not color alone",
+    "Announce progress and errors; preserve focus when results refresh"
+  ],
+  "host_integration_note": "UI contract only. Reuse the platform shell and tested components; paths, handlers, server DTOs and persistence require verified host integration."
+}

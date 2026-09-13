@@ -1,0 +1,31 @@
+{
+  "records": 72,
+  "profile_kinds": {
+    "specialist": 59,
+    "orchestrator": 9,
+    "profile_only": 4
+  },
+  "categories": {
+    "Contracts & transactions": 12,
+    "Coordination": 15,
+    "Court practice": 3,
+    "Design & communication": 7,
+    "Discovery & evidence": 3,
+    "Drafting & documents": 4,
+    "Operations & quality": 9,
+    "Privacy & privilege": 2,
+    "Regulatory & compliance": 11,
+    "Research & authority": 6
+  },
+  "source_prompt_files": 67,
+  "inline_workflow_prompts": 1,
+  "source_profile_keys": 63,
+  "runtime_specialist_definitions": 59,
+  "selected_source_files": 100,
+  "upstream_source_executed": false,
+  "all_relationships_resolve": true,
+  "all_source_file_links_staged": true,
+  "scores_or_model_names_in_curated_overview": false,
+  "source_permissions_grant_access": false,
+  "records_sha256": "07908a7873ec65088cefe59e96fd252d0836b52d6586f0eea7d18963354c0bba"
+}

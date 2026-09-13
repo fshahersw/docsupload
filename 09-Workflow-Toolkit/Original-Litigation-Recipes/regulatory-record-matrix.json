@@ -1,0 +1,45 @@
+{
+  "id": "regulatory-record-matrix",
+  "title": "Drug and device regulatory evidence matrix",
+  "roles": [
+    "Mass-tort attorney",
+    "Expert support team",
+    "Document review team"
+  ],
+  "purpose": "Connect product, safety and quality records to a specifically selected regulatory reference without making automatic violation findings.",
+  "inputs": [
+    "product/device and relevant time period",
+    "document corpus",
+    "selected regulatory provisions",
+    "issues selected by counsel"
+  ],
+  "steps": [
+    "Identify the product category and relevant factual dates; show uncertainty rather than assume a regulatory pathway.",
+    "Select applicable candidate provisions by counsel-approved issue. Preserve the exact regulatory snapshot and parent scope/exceptions.",
+    "Extract statements about reports, events, investigations, controls and responsibilities with actor/date/source distinctions.",
+    "Construct requirement × evidence × gap rows. Treat missing records, contrary statements and potential noncompliance as separate findings.",
+    "Flag incorporated external standards as unavailable unless a lawfully provided copy is supplied; do not fill them in from memory.",
+    "Create source-linked expert/document-request questions and a review packet. Do not infer a private right of action, causation, or a violation from a text match."
+  ],
+  "outputs": [
+    "regulatory issue matrix",
+    "chronology of source events",
+    "incorporated-material gaps",
+    "expert questions and document-request leads"
+  ],
+  "references": [
+    "08-Extended-Primary-Law/Federal-Regulations/MANIFEST.json",
+    "EXTENDED-LAW.html"
+  ],
+  "tests": [
+    "current part 820 applied to earlier events",
+    "ISO text not supplied",
+    "reporting date versus event date",
+    "two formulations with similar product names",
+    "reserved regulation range",
+    "manufacturer knowledge not established"
+  ],
+  "status": "Implementation recipe; requires a host runtime, source adapters and legal evaluation.",
+  "authorship": "Original specification prepared for this library; not an upstream LegalQuants file.",
+  "evidence_contract": "evidence-contract.json"
+}

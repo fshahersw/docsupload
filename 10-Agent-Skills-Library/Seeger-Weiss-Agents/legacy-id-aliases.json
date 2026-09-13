@@ -1,0 +1,16 @@
+{
+  "lavern-orchestrator-full-bench": "sw-agent-matter-research-workstream-coordinator",
+  "lavern-red-team": "sw-agent-adversarial-evidence-and-draft-review",
+  "sw-docket-analyst": "sw-docket-analyst",
+  "sw-citation-verifier": "sw-citation-verifier",
+  "sw-treatment-analyst": "sw-treatment-analyst",
+  "sw-chronology-builder": "sw-chronology-builder",
+  "sw-regulatory-timeline-analyst": "sw-regulatory-timeline-analyst",
+  "sw-science-evidence-analyst": "sw-science-evidence-analyst",
+  "sw-judge-intel-analyst": "sw-judge-intel-analyst",
+  "sw-adverse-event-analyst": "sw-adverse-event-analyst",
+  "sw-venue-strategist": "sw-venue-strategist",
+  "sw-defendant-profiler": "sw-defendant-profiler",
+  "sw-settlement-valuation-analyst": "sw-settlement-valuation-analyst",
+  "sw-source-registrar": "sw-source-registrar"
+}

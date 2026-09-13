@@ -1,0 +1,108 @@
+{
+  "id": "defendant-profiler-review",
+  "title": "Corporate entity and disclosure record",
+  "readiness": "Mini-app interface specification",
+  "implemented": false,
+  "route": null,
+  "launch_mode": "Explicit user run; no scheduler or upload listener installed",
+  "input_form_schema_ref": "10-Agent-Skills-Library/Seeger-Weiss-Agents/contracts/defendant-profiler.input.schema.json",
+  "result_schema_ref": "10-Agent-Skills-Library/Seeger-Weiss-Agents/contracts/defendant-profiler.output.schema.json",
+  "views": [
+    {
+      "id": "entity-relationships",
+      "label": "Entity relationships"
+    },
+    {
+      "id": "disclosures-over-time",
+      "label": "Disclosures over time"
+    },
+    {
+      "id": "identity-resolution",
+      "label": "Identity resolution"
+    }
+  ],
+  "table_columns": [
+    {
+      "key": "entity_id",
+      "label": "Entity id",
+      "description": "Resolved or provisional legal-entity ID.",
+      "type": "string"
+    },
+    {
+      "key": "legal_name",
+      "label": "Legal name",
+      "description": "Name as stated in the source.",
+      "type": "string"
+    },
+    {
+      "key": "identity_basis",
+      "label": "Identity basis",
+      "description": "Identifiers and evidence supporting or limiting the match.",
+      "type": "string"
+    },
+    {
+      "key": "relationship_type",
+      "label": "Relationship type",
+      "description": "Parent, subsidiary, predecessor, brand or transaction relationship.",
+      "type": "nullable_string"
+    },
+    {
+      "key": "related_entity_id",
+      "label": "Related entity id",
+      "description": "Separate entity identity.",
+      "type": "nullable_string"
+    },
+    {
+      "key": "valid_from_to",
+      "label": "Valid from to",
+      "description": "Supported relationship interval, including uncertainty.",
+      "type": "nullable_string"
+    },
+    {
+      "key": "disclosure_type_and_date",
+      "label": "Disclosure type and date",
+      "description": "Filing/action type and date.",
+      "type": "nullable_string"
+    },
+    {
+      "key": "statement_attribution",
+      "label": "Statement attribution",
+      "description": "Who made the statement; not an automatic finding of truth.",
+      "type": "string"
+    }
+  ],
+  "shared_views": [
+    "Coverage and failures",
+    "Source requests",
+    "Draft export"
+  ],
+  "actions": [
+    {
+      "id": "run",
+      "label": "Run scoped analysis",
+      "handler": null,
+      "enabled": false,
+      "requires": "Verified host agent and source adapters"
+    },
+    {
+      "id": "open_source",
+      "label": "Open source",
+      "handler": null,
+      "enabled": false,
+      "requires": "Authorized source resolver and safe viewer"
+    },
+    {
+      "id": "export",
+      "label": "Export draft table",
+      "handler": null,
+      "enabled": false,
+      "requires": "Bound artifact writer with source rights and spreadsheet-cell sanitization"
+    }
+  ],
+  "accessibility": [
+    "Semantic table with keyboard-accessible source links",
+    "Status labels in text, not color alone",
+    "Announce progress and errors; preserve focus when results refresh"
+  ],
+  "host_integration_note": "UI contract only. Reuse the platform shell and tested components; paths, handlers, server DTOs and persistence require verified host integration."
+}

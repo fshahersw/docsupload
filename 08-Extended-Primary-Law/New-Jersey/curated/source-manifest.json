@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0",
+  "id": "nj-legislature-statutes-2026-09-12",
+  "title": "New Jersey General and Permanent Statutes - Publisher Bulk Snapshot",
+  "jurisdiction": "New Jersey",
+  "publisher": "New Jersey Legislature",
+  "source_kind": "Official legislature unannotated statute bulk publication",
+  "landing_url": "https://www.njleg.state.nj.us/legislative-downloads?downloadType=Statutes",
+  "directory_url": "https://pub.njleg.state.nj.us/Statutes/",
+  "source_url": "https://pub.njleg.state.nj.us/Statutes/STATUTES-TEXT.zip",
+  "readme_url": "https://pub.njleg.state.nj.us/Statutes/_READ_ME.txt",
+  "online_lookup_url": "https://lis.njleg.state.nj.us/nxt/gateway.dll?f=templates&fn=default.htm&vid=Publish:10.1048/Enu",
+  "retrieved_at": "2026-09-13T03:20:26.8057490Z",
+  "assessment_local_date": "2026-09-12",
+  "assessment_timezone": "America/Chicago",
+  "archive_sha256": "4adcb8de85fb4707cb53d1605881e701a0681200f277dd331f6a15ffff9c5dc8",
+  "archive_bytes": 41284087,
+  "archive_audit_path": "STATUTES-TEXT.original.zip",
+  "archive_audit_location_note": "Retained outside the clean library in the acquisition review directory.",
+  "http_last_modified": [
+    "Sat, 12 Sep 2026 10:00:46 GMT"
+  ],
+  "http_last_modified_meaning": "Transport metadata only, not an effective date or legal currency certification.",
+  "source_version_statement": "UPDATED THROUGH P.L.2025, c.405, and J.R.22",
+  "date_kind": "Publisher-stated amendment cutoff; no collection-wide effective date asserted.",
+  "review_required": true,
+  "currentness_assessment": "Publisher cutoff discrepancy unresolved. Use this as a dated reference snapshot and consult current official law for operative use.",
+  "version_discrepancy": {
+    "compilation_statement": "UPDATED THROUGH P.L.2025, c.405, and J.R.22",
+    "toc_statement": "Legislative Counsel's Table Of Contents UPDATED to P.L.2026, c.30 and JR 1.",
+    "toc_url": "https://pub.njleg.state.nj.us/Statutes/LCTOC-TEXT.zip",
+    "toc_archive_sha256": "f76b02faac56defbf8bc89243050cc75b73d8688d7f0383314e583dfb5ce22cc",
+    "resolution": "Not resolved by this bounded review. Never transfer the TOC cutoff to the full-text statutes."
+  },
+  "update_cadence_evidence": {
+    "readme_claim": "Updated every week day at 2AM",
+    "directory_observation": "The observed September 12 archive rows show 6:00 AM. The directory does not state a timezone.",
+    "limit": "A stated or observed file-generation cadence does not guarantee amendment currency."
+  },
+  "access": {
+    "method": "Ordinary unauthenticated PowerShell Invoke-WebRequest for originals and three comparison pages.",
+    "robots_url": "https://pub.njleg.state.nj.us/robots.txt",
+    "robots_observed": "User-agent: *; Allow: /; no crawl delay observed.",
+    "rights_note": "Official public bulk statutes in TXT/RTF, expressly described by the publisher README. No separate reuse license was observed in the inspected directory/README. No Folio software, website branding, private records, or third-party annotations are included.",
+    "access_control_bypass": false,
+    "accounts_or_payments": false
+  },
+  "original_files": [
+    {
+      "archive_entry": "STATUTES.RTF",
+      "path": "originals/New Jersey - General and Permanent Statutes - Through PL 2025 Chapter 405 and JR 22.rtf",
+      "bytes": 94415499,
+      "sha256": "5fbc18d5b9e41b5144bd4aebf023abd4c472c638d6a950af362d8450103c9ccf",
+      "crc32": "40a40ef0",
+      "zip_timestamp_no_timezone": [
+        2026,
+        9,
+        12,
+        6,
+        0,
+        18
+      ],
+      "original_bytes_preserved": true
+    },
+    {
+      "archive_entry": "STATUTES.TXT",
+      "path": "source-text/New Jersey - General and Permanent Statutes - Through PL 2025 Chapter 405 and JR 22.txt",
+      "bytes": 83882972,
+      "sha256": "f08f83cba812ee3389faada1649e4204f88c91242a141dd14e1e79ad6d4a1e6c",
+      "crc32": "9e140fb5",
+      "zip_timestamp_no_timezone": [
+        2026,
+        9,
+        12,
+        6,
+        0,
+        12
+      ],
+      "original_bytes_preserved": true
+    }
+  ],
+  "coverage": {
+    "whole_source_title_headings": 69,
+    "whole_source_appendices": 1,
+    "source_title_heading_only": [
+      "8A"
+    ],
+    "selected_title_codes": [
+      "2A",
+      "2B",
+      "10",
+      "22A",
+      "34",
+      "56",
+      "59"
+    ],
+    "selected_title_count": 7,
+    "selected_headnote_record_count": 5856,
+    "selected_unique_citation_count": 5854,
+    "selected_bytes": 8588867,
+    "selected_counts_by_title": {
+      "2A": 2416,
+      "2B": 254,
+      "10": 122,
+      "22A": 75,
+      "34": 2105,
+      "56": 764,
+      "59": 120
+    },
+    "completeness_definition": "All original bytes between each selected source title heading and the next title/appendix heading; section records plus title prefix reconstruct those exact spans. This is source-snapshot coverage, not a claim that every operative law is included or current.",
+    "scope_limits": "Title 2A also includes criminal/family provisions. Title 34 includes the complete labor/workers-compensation title. Statutes are not court rules or blank court forms. Appendix A is not included in the selected-title index."
+  },
+  "source_anomalies": [
+    "34:15C-10 appears twice with different headnotes; both preserved with citation_occurrence metadata.",
+    "34:16-43 appears twice with different versions/headnotes; both preserved without choosing the operative version.",
+    "Two real headings were styled as normal/s4 rather than s3 in RTF; their source-verified boundaries are explicitly recorded.",
+    "Three citation-looking fee-statute body lines were kept inside their enclosing records, not counted as new sections.",
+    "Three malformed or empty RTF headnote-style blocks outside selected titles remain intact in whole originals and are not treated as parsed sections."
+  ],
+  "transformation": {
+    "originals": "Byte-for-byte ZIP entries, CRC and SHA256 verified.",
+    "title_extracts": "Exact byte slices from STATUTES.TXT, original CRLF and Windows-1252 bytes retained; explicitly derived, not standalone publisher originals.",
+    "jsonl": "UTF-8 JSON, exact source text decoded as Windows-1252 and verified to re-encode to the exact byte slice. No paraphrase, summarization, statute rewriting, pinpoints, or inferred effective dates.",
+    "headnote_boundaries": "RTF styles cross-matched to TXT in source order; two inspected exceptions added and documented.",
+    "legal_status": "No automatic active/repealed/applicability determination. History and source cues retained."
+  },
+  "files": {
+    "title_index": "curated/title-index.json",
+    "selected_sections": "curated/selected-sections.jsonl",
+    "citation_csv": "curated/selected-citations.csv",
+    "schema": "curated/schema.json",
+    "validation": "curated/validation.json",
+    "source_quality": "curated/source-quality.json",
+    "readme": "curated/README.md",
+    "next_source_plan": "curated/next-sources.json"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "privilege-review-candidates",
+  "title": "Privilege and confidentiality review candidates",
+  "roles": [
+    "Review attorney",
+    "Discovery counsel",
+    "Litigation support"
+  ],
+  "purpose": "Prioritize documents for privilege/confidentiality review and prepare a source-linked candidate log.",
+  "inputs": [
+    "matter-approved review protocol",
+    "authorized documents and families",
+    "participant roles if verified",
+    "governing jurisdiction and date"
+  ],
+  "steps": [
+    "Preserve document family relationships and identify missing attachments, incomplete email threads and inaccessible content.",
+    "Extract verified participants, roles, dates and source metadata; leave unknown values unresolved.",
+    "Identify passages that may warrant review under the provided protocol. Separate legal-advice content from business discussion and from mere attorney presence.",
+    "Record countervailing facts and sharing/waiver questions without deciding legal privilege automatically.",
+    "Produce a candidate log with non-substantive descriptions for counsel review; do not expose potentially privileged content in a public export.",
+    "Require an authorized reviewer to finalize dispositions and descriptions before production or withholding."
+  ],
+  "outputs": [
+    "review priority queue",
+    "candidate log",
+    "family-level exceptions",
+    "reviewer disposition history"
+  ],
+  "references": [
+    "Original-Litigation-Recipes/evidence-contract.json"
+  ],
+  "tests": [
+    "attorney copied only for business purpose",
+    "privilege banner without legal advice",
+    "missing attachment",
+    "mixed personal/business/legal discussion",
+    "unverified participant role"
+  ],
+  "status": "Implementation recipe; requires a host runtime, source adapters and legal evaluation.",
+  "authorship": "Original specification prepared for this library; not an upstream LegalQuants file.",
+  "evidence_contract": "evidence-contract.json"
+}

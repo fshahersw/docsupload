@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:seeger-weiss:agent-input:docket-analyst:1",
+  "title": "Docket coverage and case posture intake contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "matter_id",
+    "docket_manifests",
+    "issue_and_as_of"
+  ],
+  "properties": {
+    "matter_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The authorized matter and its exact court/docket identifiers; captions alone do not establish identity."
+    },
+    "docket_manifests": {
+      "type": "array",
+      "description": "Captured entry lists, retrieval times, pagination/limits and document availability status for each docket.",
+      "items": {
+        "type": "object",
+        "description": "Source/record descriptor; resolve its identity, access and content via a host-validated adapter."
+      }
+    },
+    "issue_and_as_of": {
+      "type": "object",
+      "description": "Question, requested date and included proceedings; specify whether historical or current verification is requested.",
+      "additionalProperties": true
+    },
+    "prior_snapshot": {
+      "type": "object",
+      "description": "Earlier immutable capture for a change report; absence means no change-since claim.",
+      "additionalProperties": true
+    }
+  },
+  "$comment": "The host must validate nested source descriptors against its actual DTOs. This specification deliberately does not fabricate production API shapes."
+}

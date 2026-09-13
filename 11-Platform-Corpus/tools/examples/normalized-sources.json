@@ -1,0 +1,27 @@
+{
+  "input_count": 2,
+  "unique_count": 1,
+  "duplicate_count": 1,
+  "records": [
+    {
+      "source_id": "src-a4aa32442d57e3bff909",
+      "canonical_url": "https://example.org/rule#section-1",
+      "input_rows": [
+        1,
+        2
+      ],
+      "variants": [
+        {
+          "url": "https://example.org/rule#section-1",
+          "purpose": "Synthetic normalization fixture"
+        },
+        {
+          "url": "https://example.org/rule?utm_source=test#section-1",
+          "purpose": "Same synthetic source with a tracking parameter"
+        }
+      ],
+      "content_downloaded_by_this_tool": false,
+      "legal_authority_verified": false
+    }
+  ]
+}

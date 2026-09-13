@@ -1,0 +1,108 @@
+{
+  "id": "judge-intel-analyst-review",
+  "title": "Judge practice and decision record",
+  "readiness": "Mini-app interface specification",
+  "implemented": false,
+  "route": null,
+  "launch_mode": "Explicit user run; no scheduler or upload listener installed",
+  "input_form_schema_ref": "10-Agent-Skills-Library/Seeger-Weiss-Agents/contracts/judge-intel-analyst.input.schema.json",
+  "result_schema_ref": "10-Agent-Skills-Library/Seeger-Weiss-Agents/contracts/judge-intel-analyst.output.schema.json",
+  "views": [
+    {
+      "id": "practice-packet",
+      "label": "Practice packet"
+    },
+    {
+      "id": "cohort-and-exclusions",
+      "label": "Cohort and exclusions"
+    },
+    {
+      "id": "source-versions",
+      "label": "Source versions"
+    }
+  ],
+  "table_columns": [
+    {
+      "key": "judge_id",
+      "label": "Judge id",
+      "description": "Verified official identity.",
+      "type": "string"
+    },
+    {
+      "key": "court_id",
+      "label": "Court id",
+      "description": "Court for the relevant record.",
+      "type": "string"
+    },
+    {
+      "key": "record_type",
+      "label": "Record type",
+      "description": "Practice document, decision cohort row or requested disclosure lead.",
+      "type": "string"
+    },
+    {
+      "key": "record_date",
+      "label": "Record date",
+      "description": "Sourced issue/decision/report date.",
+      "type": "nullable_string"
+    },
+    {
+      "key": "motion_unit_id",
+      "label": "Motion unit id",
+      "description": "Distinct motion or ruling used for cohort coding.",
+      "type": "nullable_string"
+    },
+    {
+      "key": "coded_outcome",
+      "label": "Coded outcome",
+      "description": "Outcome category supported by the ruling.",
+      "type": "nullable_string"
+    },
+    {
+      "key": "included_in_denominator",
+      "label": "Included in denominator",
+      "description": "Whether this row meets the predeclared cohort protocol.",
+      "type": "boolean"
+    },
+    {
+      "key": "exclusion_or_limit",
+      "label": "Exclusion or limit",
+      "description": "Coding reason, coverage limitation or unresolved identity.",
+      "type": "string"
+    }
+  ],
+  "shared_views": [
+    "Coverage and failures",
+    "Source requests",
+    "Draft export"
+  ],
+  "actions": [
+    {
+      "id": "run",
+      "label": "Run scoped analysis",
+      "handler": null,
+      "enabled": false,
+      "requires": "Verified host agent and source adapters"
+    },
+    {
+      "id": "open_source",
+      "label": "Open source",
+      "handler": null,
+      "enabled": false,
+      "requires": "Authorized source resolver and safe viewer"
+    },
+    {
+      "id": "export",
+      "label": "Export draft table",
+      "handler": null,
+      "enabled": false,
+      "requires": "Bound artifact writer with source rights and spreadsheet-cell sanitization"
+    }
+  ],
+  "accessibility": [
+    "Semantic table with keyboard-accessible source links",
+    "Status labels in text, not color alone",
+    "Announce progress and errors; preserve focus when results refresh"
+  ],
+  "host_integration_note": "UI contract only. Reuse the platform shell and tested components; paths, handlers, server DTOs and persistence require verified host integration."
+}

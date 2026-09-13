@@ -1,0 +1,13 @@
+# Local runtime, credentials and development artifacts
+.env
+.env.*
+!.env.example
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+Thumbs.db
+*.log
+.firecrawl/
+.playwright/

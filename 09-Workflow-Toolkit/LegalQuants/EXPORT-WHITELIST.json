@@ -1,0 +1,1094 @@
+{
+  "status": "frozen",
+  "relative_to": "lq-skills-review",
+  "files": [
+    {
+      "path": "FINDINGS.md",
+      "sha256": "37897823ebecc13f31f40e0dd876bceb4a287ab446d62fc3af8b92e636da2b9c",
+      "bytes": 10506
+    },
+    {
+      "path": "HELPER-CHECKS.json",
+      "sha256": "f8ebebbddd416b5b1b6f9adfca97842e486f35ee43abfd634e82bab2a48f8835",
+      "bytes": 7250
+    },
+    {
+      "path": "HELPERS.md",
+      "sha256": "02299b8b43b878e046fd6172df6c2fa267c2e13207d66dc383c29a1bf702faf8",
+      "bytes": 5173
+    },
+    {
+      "path": "LICENSE-AND-PROVENANCE.md",
+      "sha256": "32d9362bc0e79b50e0ae56cc401be6b3ec8f19bbb8fbbed3c3cf6c0a06c19bab",
+      "bytes": 4839
+    },
+    {
+      "path": "PACKET-SUMMARY.json",
+      "sha256": "a4bfdb073cc1267e76870650626fc4350c4ab61c373808f49e319bedaeda9204",
+      "bytes": 812
+    },
+    {
+      "path": "PACKET-VALIDATION.json",
+      "sha256": "b23d45f15c7f078ad4f30a9ab6eae6d6bf77269c9f25aec6fbea50ad78d0249f",
+      "bytes": 1926
+    },
+    {
+      "path": "PLAYBOOKS.json",
+      "sha256": "74dfc93f8c58b634ab72d89805e609c45760acca78e4c20e3c70feb6b42ea1f0",
+      "bytes": 11403
+    },
+    {
+      "path": "README.md",
+      "sha256": "f3c6376f73bba496e8fd16d744493f7225835743c00869db4130dd14a52f1bef",
+      "bytes": 4679
+    },
+    {
+      "path": "REUSE-MANIFEST.json",
+      "sha256": "fc986f13817add020bf063c60a506f091aa572e332bb43641edf664da071bb1c",
+      "bytes": 155392
+    },
+    {
+      "path": "SKILLS.csv",
+      "sha256": "02b7001aabd5011f1c3f44adaaf0c7fceeb36b8ec185bcd30695f6188368c814",
+      "bytes": 40508
+    },
+    {
+      "path": "SKILLS.json",
+      "sha256": "e971d1d04dae0e7d60520a71649d6e4ad52243f8aed041b598e0740159d37829",
+      "bytes": 285425
+    },
+    {
+      "path": "WORKFLOW-MATRIX.md",
+      "sha256": "c0cb7743b350dccee43d99e4b5c289f72375942d54eda5ac36f28b14bc4038b0",
+      "bytes": 11097
+    },
+    {
+      "path": "reuse-packet/lq-ai/LICENSE",
+      "sha256": "26bad6f65b8731c4e0f76fe7dedf835abe9ccb8948724f24c7e0943e3c9fbcbc",
+      "bytes": 11328
+    },
+    {
+      "path": "reuse-packet/lq-ai/NOTICES.md",
+      "sha256": "7ca7592747f061c81f650aff3fd9c268635fc7ae39a807d506b6d56c00fb279a",
+      "bytes": 2565
+    },
+    {
+      "path": "reuse-packet/lq-ai/api/app/__init__.py",
+      "sha256": "f9140f8ad7bc3cfc125fe1198abb2c7f010b21ffab4847f0c5c7ab02b03dbd3d",
+      "bytes": 56
+    },
+    {
+      "path": "reuse-packet/lq-ai/api/app/citation/normalization.py",
+      "sha256": "725a82fb758adc295d1f799bfa8b9b29e91b565eaaf9762508be7fd4ea1c66dd",
+      "bytes": 5807
+    },
+    {
+      "path": "reuse-packet/lq-ai/api/app/pipeline/__init__.py",
+      "sha256": "089048c6dec83b05ce9504c469c4772de2aeaf83d1ee13e3aa219785dbcc0187",
+      "bytes": 1264
+    },
+    {
+      "path": "reuse-packet/lq-ai/api/app/pipeline/chunker.py",
+      "sha256": "9f6fe903a50401cb4ab1454090a186e89813597f334a5cd74944a34e3beb74ee",
+      "bytes": 11324
+    },
+    {
+      "path": "reuse-packet/lq-ai/api/app/pipeline/parsers.py",
+      "sha256": "0eaa38f30b6ea0f5b3fe67b777baf4db7edbf74fe394438eb032e3f711109758",
+      "bytes": 18953
+    },
+    {
+      "path": "reuse-packet/lq-ai/api/app/research/__init__.py",
+      "sha256": "be74ae498946311c19b8359c0c77fa61d9d8c7be3e8e2bb5ce46457b5f395d71",
+      "bytes": 121
+    },
+    {
+      "path": "reuse-packet/lq-ai/api/app/research/html.py",
+      "sha256": "ddb456ad4b4a2d7e282d7816aeed8194289e47ab1536e8f0764b8345815da510",
+      "bytes": 1819
+    },
+    {
+      "path": "reuse-packet/lq-ai/api/tests/citation/test_normalization.py",
+      "sha256": "036b5ba165f6dd5e50cfa215ae0fa5ce5a1d8cd5395082f225660569fa751b27",
+      "bytes": 5690
+    },
+    {
+      "path": "reuse-packet/lq-ai/api/tests/test_chunker.py",
+      "sha256": "20f0f674674836b3e32f7890b3fb77a93f7682200bbb962c1a4c14297bfdccd2",
+      "bytes": 11325
+    },
+    {
+      "path": "reuse-packet/lq-ai/api/tests/test_pipeline_parsers_text.py",
+      "sha256": "d83b6207d7245004be44044d316605d3df0e65a785c4544f7d2662b998c0af77",
+      "bytes": 9577
+    },
+    {
+      "path": "reuse-packet/lq-ai/api/tests/test_research_html.py",
+      "sha256": "e9dec93c103d212daf2d6fca043ac71cad28dcb7ab432f1b11002d7ae9a89eeb",
+      "bytes": 1203
+    },
+    {
+      "path": "reuse-packet/lq-ai/docs/acceptance-testing-framework.md",
+      "sha256": "484d2278cac5acaf75f21950292506c84d6ece52c237ba374612ab0feb707451",
+      "bytes": 19063
+    },
+    {
+      "path": "reuse-packet/lq-ai/docs/adr/0006-document-pipeline-architecture.md",
+      "sha256": "7da65fea909a108acfc62c73739ccf9c192fcc09c346b0f2c1516cc34ced8e55",
+      "bytes": 13790
+    },
+    {
+      "path": "reuse-packet/lq-ai/docs/contribute/mini-prds/skill-acceptance-tests.md",
+      "sha256": "97efcada11069d2a72ddd2b0327a0aed72782fc4d6b40f899d830be324fa30e1",
+      "bytes": 15430
+    },
+    {
+      "path": "reuse-packet/lq-ai/docs/playbooks.md",
+      "sha256": "a6528d713d470f45fe160bb3d058e8222c55024a71e39c83a2484ef0ed5b9c6f",
+      "bytes": 28895
+    },
+    {
+      "path": "reuse-packet/lq-ai/docs/skill-authoring-guide.md",
+      "sha256": "e785a5911ae4aaf81f78d2ce1d706f3b73c71406616883943b184735b5730dcd",
+      "bytes": 37526
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/CONTRIBUTING.md",
+      "sha256": "6ade38fd248d4f5a0c9fc7cbb692778dc787d5e0efbfb291cd486bcd16c4d7d1",
+      "bytes": 19438
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/action-items-from-client-alert/SKILL.md",
+      "sha256": "3a253ec7cb2d7bb3c66e58a140aac4f63422f2d4d5d1d9be48dc695a47e61735",
+      "bytes": 16124
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/action-items-from-client-alert/examples/example_clear_alert.md",
+      "sha256": "289aadfe1f78adbb55d645717d10c3c5dafa1bf1c1afb30c3a013811873e51d4",
+      "bytes": 13289
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/action-items-from-client-alert/examples/example_multi_jurisdiction.md",
+      "sha256": "7c718d56677237da822d0572844ab64207dc198259b81972b7f5ad1a5fd8d0d9",
+      "bytes": 16879
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/action-items-from-client-alert/examples/example_vague_alert.md",
+      "sha256": "a90627a3d6c46f31496fd3d37c1ad816a803aa2a675a43f27ee81ee25cb75572",
+      "bytes": 12226
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/action-items-from-client-alert/reference/deadline_calibration.md",
+      "sha256": "49acc52d8a46c643118f1b58576b9d8d79b026b0fb942da1f757091255930b8b",
+      "bytes": 7540
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/action-items-from-client-alert/reference/extraction_patterns.md",
+      "sha256": "66410e0e9f05e5e67bb377df19b66446750314b9226a6e5f5134f05629719d6f",
+      "bytes": 9227
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/action-items-from-client-alert/test-plan.md",
+      "sha256": "b97f9d852988a4549e1d849f9da173cbb9afa603552c91df73ec8a1aa439dcbe",
+      "bytes": 10799
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/case-law-research/SKILL.md",
+      "sha256": "e8b9e171a21e6396e3fe8f82365451ce33d9114076a8a5b807b49f12eb5cd6b5",
+      "bytes": 9461
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/case-law-research/examples/research-trail.md",
+      "sha256": "ee609ea9542247771e67466f9e4b2f90a33076b83b12685c74f72c5c5b9e52ad",
+      "bytes": 7375
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/comms-improver/SKILL.md",
+      "sha256": "9614f50b69eb4220a61c807d6cae2848f008208517082ebbca11764b70a42b50",
+      "bytes": 15136
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/comms-improver/examples/example_customer_disclaimer.md",
+      "sha256": "1c4ffec6caaf9b32251ada93f642862f87b596565340de3f15981382a8d73ce2",
+      "bytes": 11204
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/comms-improver/examples/example_executive_briefing.md",
+      "sha256": "c76f2e1cd37f748a9f336f3f4ff2119bbac6c896a7f3debc7fa9cc031a72f3af",
+      "bytes": 8721
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/comms-improver/examples/example_sales_team.md",
+      "sha256": "8d9607e629206df14162377bb7b5c57938f29916b09650a98d0094c0a16fb4e4",
+      "bytes": 9958
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/comms-improver/reference/audience_calibration.md",
+      "sha256": "c24c0701a1868e0a74a25076a63d422223d7c26d15c010f5aed0449323ab2206",
+      "bytes": 11095
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/comms-improver/reference/legal_to_plain_patterns.md",
+      "sha256": "0708f260b97c2a24c26e13fb647c75f5063c85ac905c801789411ef6f62d34c2",
+      "bytes": 11026
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/comms-improver/test-plan.md",
+      "sha256": "0e365a2fddfc92e2bf9cf7d6e7735967d5111b3747c0038bbc8609b22b0f6361",
+      "bytes": 10074
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/contract-qa/SKILL.md",
+      "sha256": "9a7fa2522bfb83eedc45e5c464ed835b1a375c8efa32e4f836f60a0fdbadcbbc",
+      "bytes": 15944
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/contract-qa/examples/example_type_a_lookup.md",
+      "sha256": "c6b9c084bbf1a2822f25eae22c31de6e6c27f656b2ee6d96874f02303e37dca7",
+      "bytes": 4117
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/contract-qa/examples/example_type_c_unusualness.md",
+      "sha256": "1b0041238ab6b2fdd0e4c949e4b194da11cd87909165429538bf5979e7fc4a3a",
+      "bytes": 6466
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/contract-qa/examples/example_type_d_scenario.md",
+      "sha256": "15ec2ff8410896a63bbf5cefa1c2fff2f825d2a695c274ff71cba2bc85fc3c79",
+      "bytes": 8253
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/contract-qa/examples/example_type_e_multi_issue.md",
+      "sha256": "ee4653c31e095058bfb9219d340049c681ee88cf95a8627d2a80a0bc1469fee2",
+      "bytes": 11840
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/contract-qa/reference/citation_format.md",
+      "sha256": "278f7f0ec89f75f51eb2466a377b9c07f8c7928ecc04bd6f687c8155a9a7be44",
+      "bytes": 7243
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/contract-qa/reference/question_classification.md",
+      "sha256": "4318209d67d51de38683dc5cbabb4a68f6ffaefb32fbb18da0a951b3aa52e90e",
+      "bytes": 9781
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/contract-qa/test-plan.md",
+      "sha256": "174badf52e0fb112a6b792a7bbb97a596546b95dc1937420820723e1132dd091",
+      "bytes": 13024
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/contract-snapshot/SKILL.md",
+      "sha256": "8dc4ddce064b80c557917baae2da29ca2bfd614c0fb219136336663b146bb0c1",
+      "bytes": 7033
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/dpa-checklist-review/SKILL.md",
+      "sha256": "a650e901b216be048cf247c4487772574db6a5a2f486d1c11ff284a40bb61aa9",
+      "bytes": 14899
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/dpa-checklist-review/examples/example_gdpr.md",
+      "sha256": "bd576a8705d22ba14cfb0a462e3b6463d4b064d860da553d08be4ebed5b2241f",
+      "bytes": 20284
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/dpa-checklist-review/examples/example_us_state.md",
+      "sha256": "f6e7f5bdb778688494e7fffdf12a03f9b710ced08952535751e07cf2c5642492",
+      "bytes": 16742
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/dpa-checklist-review/reference/gdpr_requirements.md",
+      "sha256": "6fd8058a1ffbca0fe59f4a449f06dd6da89e8d297f0ab6b1c74b188e7e7e287e",
+      "bytes": 20375
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/dpa-checklist-review/reference/general_commercial_requirements.md",
+      "sha256": "1f577c29fe6ea9a134c6df8454607d2254a236c6b945da4dc5689b88d1135953",
+      "bytes": 8244
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/dpa-checklist-review/reference/hipaa_baa_requirements.md",
+      "sha256": "71ad47b8fe33e3f2b8fb21ee2d2eccd9ba97dd65440231fdf5324d4818cab048",
+      "bytes": 14878
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/dpa-checklist-review/reference/us_state_privacy_requirements.md",
+      "sha256": "a6862593351934628cafc623c13c23f7eed16e8304bcc087a685160bfc34d78a",
+      "bytes": 15826
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/dpa-checklist-review/test-plan.md",
+      "sha256": "6d696723b7306d51eb9c3d8fca18bfd75edb6be3dfaccd9570fd09ddb479889f",
+      "bytes": 12071
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/enhance-prompt/SKILL.md",
+      "sha256": "e35f77e9ac90eeb3c5639ade915a9beaf2843a6248884d6a5eab91b18e3c14c1",
+      "bytes": 13250
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/enhance-prompt/examples/example_short_prompt.md",
+      "sha256": "2b0addc5afb9a89cdda034a86c69f28556a87041c5e2b6d140217b06d4263dcf",
+      "bytes": 6145
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/enhance-prompt/examples/example_skipped.md",
+      "sha256": "e1203fbf31d07292d0065d1223131f6c9ec33f1dc22d884767e542b7d7513a1f",
+      "bytes": 4051
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/enhance-prompt/examples/example_with_skill.md",
+      "sha256": "ce99f33c0feae84498674593a3767ac9b7a3f870d12115269841ced747885c0a",
+      "bytes": 6309
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/enhance-prompt/reference/expansion_patterns.md",
+      "sha256": "175a60d67527175be8b9d06e49082ba42241da16bbdfd949cc7566226eefcd9c",
+      "bytes": 6252
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/enhance-prompt/reference/preserve_user_voice.md",
+      "sha256": "24758976d1032e96577b89d2910d516e40e2f6b5f496c7361274e3d50c5f8901",
+      "bytes": 5690
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/enhance-prompt/test-plan.md",
+      "sha256": "d72fee8b8003aebdca47787c579622129ce9a3f7a225609d94d795edb6f5b913",
+      "bytes": 9164
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/msa-review-commercial-purchase/SKILL.md",
+      "sha256": "50d12045b7ac165fcb93b07b1a0d986a7d593a79cb2b4834633ad5a762f4bd88",
+      "bytes": 22775
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/msa-review-commercial-purchase/examples/example_buyer_review.md",
+      "sha256": "dd70ed5d1dd7d1bd5dcc01377f173e94e57f451ad5d9d0c3e3b10bd7d811e10a",
+      "bytes": 22720
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/msa-review-commercial-purchase/examples/example_supplier_review.md",
+      "sha256": "b0af570db89511b0467320ae1adae68dcf1a2a5d94187787a2f391a6599674bc",
+      "bytes": 31065
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/msa-review-commercial-purchase/reference/issue_checklist.md",
+      "sha256": "2dd71c1f288f4f782e99efb50ceb2113b042588a62108e587d4862e9165e4393",
+      "bytes": 27558
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/msa-review-commercial-purchase/reference/perspective_lens.md",
+      "sha256": "8f46842fd9e05570580abe4d4c75c42fc64759f8456672777a45c114af5ebdf8",
+      "bytes": 13982
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/msa-review-commercial-purchase/reference/red_flags.md",
+      "sha256": "6bb32a91191ac51a801ab26aa14bcd8fbda9245f2c03cbe3a04492edb397d9e6",
+      "bytes": 13338
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/msa-review-commercial-purchase/reference/severity_rubric.md",
+      "sha256": "282a1ed800ac66450f017210b28d35203c00d3038644cc6873dba5a6eeb7f43e",
+      "bytes": 7892
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/msa-review-commercial-purchase/test-plan.md",
+      "sha256": "066e884019c989cd32d5cfd203886e4e6196998395a5425d51397692b84930d0",
+      "bytes": 8338
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/msa-review-saas/SKILL.md",
+      "sha256": "58ef58570b6a7fb12783084cc631b529677916f55de206ef4e080baff4fcb241",
+      "bytes": 21124
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/msa-review-saas/examples/example_customer_review.md",
+      "sha256": "f184aecb4de294eec93203c13c547064e2f3934fd0a4d74335b7c18effa378fb",
+      "bytes": 25050
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/msa-review-saas/examples/example_vendor_review.md",
+      "sha256": "01e0694d088940e8299597c818e6ce7bd7674980797f1587d1398bcaa53af9db",
+      "bytes": 17591
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/msa-review-saas/reference/issue_checklist.md",
+      "sha256": "11f49e408a45abd910e83d9f5a649c2208b7155131ee656cfda819b962d173b5",
+      "bytes": 23850
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/msa-review-saas/reference/perspective_lens.md",
+      "sha256": "58420c465418cd681fc73293fdeb669c961d4abaa7ae8baca3429070df9da871",
+      "bytes": 13002
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/msa-review-saas/reference/red_flags.md",
+      "sha256": "a23d8da80b45315f7bf7a3152eecc352a31cef8d19769f284eaa7d9cdd88a485",
+      "bytes": 12938
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/msa-review-saas/reference/severity_rubric.md",
+      "sha256": "bfb42d6b172ec1ab2dcddefd20c152cd7c68661c5b20061f2deb5460ada3c51f",
+      "bytes": 7030
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/msa-review-saas/test-plan.md",
+      "sha256": "cc06b54cddbb6e26ad18b21570dc1e5dd8d7c096dfecb278d39cd0f851c4c5db",
+      "bytes": 12699
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/msa-snapshot/SKILL.md",
+      "sha256": "d7da8c52a0f3cbbbfe5fffc73ad9fc334459af7e83e84405f1b2be1c1c749ee0",
+      "bytes": 6782
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/nda-review/SKILL.md",
+      "sha256": "32bdabc4a8ec52509598018e1ff3cc8d7b8209d4b7cae91c20793b703ed24523",
+      "bytes": 17254
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/nda-review/examples/example_mutual.md",
+      "sha256": "9fa2214d9d5611e5aade9a5b8e0a710aa56d24cface74ef4f7e7316776b014e2",
+      "bytes": 14776
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/nda-review/examples/example_unilateral_recipient.md",
+      "sha256": "15ab3a32687532540a48f456dbdce58c77736d1b40e9dbc0195e62bcbbb18f22",
+      "bytes": 18868
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/nda-review/reference/issue_checklist.md",
+      "sha256": "eff452ef69a3095cc25855cc046fa0429dc3b7172605547a7b76c6ba8251606f",
+      "bytes": 11620
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/nda-review/reference/perspective_lens.md",
+      "sha256": "046a9c9bbb82f655aa2bd6f5158edfd4e4cbcec29ae9dce0f692573ba487f7c1",
+      "bytes": 10379
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/nda-review/reference/red_flags.md",
+      "sha256": "616cf6cc56b032ae08fc89997a4322aff2dfc77fb0934e081e1618c31e5fb204",
+      "bytes": 11231
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/nda-review/reference/severity_rubric.md",
+      "sha256": "1b3088a70a31364a1e657c2b839e59c57d3494a521882a266624eaa4a635fe29",
+      "bytes": 6013
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/nda-review/test-plan.md",
+      "sha256": "4f86d131f688d79b1c1b3519efc2c8e8750ae4a1df3f4daa8000029dc4cdd99b",
+      "bytes": 13686
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/nda-snapshot/SKILL.md",
+      "sha256": "c9844001c86972fcb9360a9a220012451f12604db9d38dbf0a6f96a174d3731f",
+      "bytes": 6104
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/playbook-easy-extract/SKILL.md",
+      "sha256": "2f5d1949f2d653ac1baee0a5b708be645ccee8fa825af5ef0a72af323c1cb7b3",
+      "bytes": 7594
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/playbook-easy-extract/examples/example_nda_mutual.md",
+      "sha256": "463378d2750c48199dcdc802b31a4c89392332fabe1f59d57fe8ab3b9c7f6192",
+      "bytes": 5731
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/playbooks/nda-unilateral/playbook.yaml",
+      "sha256": "c2af09cd8ca826a7b5c547bdaf2cb51e2d57aec6604d78297696b92669527aa8",
+      "bytes": 26378
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/playbooks/nda/playbook.yaml",
+      "sha256": "dcd932154136d31b69099c62c7c38c2400b3a622d6422cad79f40b885e945da0",
+      "bytes": 26549
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/skill-creator/SKILL.md",
+      "sha256": "744a9c9414d50656b9e2a00d983c9cfbb150d77e7b5667bb0a64e4ec45473039",
+      "bytes": 11860
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/skill-creator/examples/example_session.md",
+      "sha256": "349798b7bdf74d7608f12a156568d5db5cff1a9749bcc698d6dd4c8a6087c091",
+      "bytes": 16646
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/skill-creator/reference/description_field.md",
+      "sha256": "e91e0089af75ec2b41f01bffa4a2197b2706a07003a9cfd220b798fbcf270a55",
+      "bytes": 4651
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/skill-creator/reference/self_improvement.md",
+      "sha256": "ee1307259339cb185bda79202b5ae983ea42539866226496a8d63c841db45436",
+      "bytes": 3741
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/skill-creator/reference/wizard_mode.md",
+      "sha256": "4b8acfb59969bcc3f9d8fd7e80f5ca4021b05df15c9c69a1bcc70d5f2817beac",
+      "bytes": 4871
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/skill-creator/test-plan.md",
+      "sha256": "190361c0fffaa6547186e586c0be37cb78a5b038dec819008591ed64e9a4ac5d",
+      "bytes": 10462
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/vendor-privacy-policy-first-pass/SKILL.md",
+      "sha256": "f0c1d380fd602aab9e679129ba77a4f97c7240f83584e7528266305f6a1baa8a",
+      "bytes": 17124
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/vendor-privacy-policy-first-pass/examples/example_clean_policy.md",
+      "sha256": "2fb88594010b8a20db80b2bb08a6e596331233ac1f7f9c7717eaf02d2a78d934",
+      "bytes": 13824
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/vendor-privacy-policy-first-pass/examples/example_red_flags.md",
+      "sha256": "2c87a95f0f289427503c55249f2b3b350d5932741aa18983f44c1ca5ec6a7e2f",
+      "bytes": 18847
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/vendor-privacy-policy-first-pass/reference/policy_topics.md",
+      "sha256": "7cba4aa03775cd982c87c451b06c2afb3658cfd0fcf9475109b035120b0a758f",
+      "bytes": 14534
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/vendor-privacy-policy-first-pass/reference/red_flags.md",
+      "sha256": "c637c534ff2c26e8a1af65e31f753ee978f79cbdca2db8662a54cf38d3c07709",
+      "bytes": 16983
+    },
+    {
+      "path": "reuse-packet/lq-ai/skills/vendor-privacy-policy-first-pass/test-plan.md",
+      "sha256": "ab3843803d9580332385c4574043127559da67f4bdd645e02ad37ce21209d98e",
+      "bytes": 9036
+    },
+    {
+      "path": "reuse-packet/lq-skills/ACCESS-MODES.md",
+      "sha256": "d8222690a48cfd57746287243e7af172e0ba7d505ca9db31d89cf8e493ee7bac",
+      "bytes": 3470
+    },
+    {
+      "path": "reuse-packet/lq-skills/CONTRIBUTING.md",
+      "sha256": "3c56a033c24f61e8db207953a68460dacc765c74469f37159c8dfc7a071361b7",
+      "bytes": 1451
+    },
+    {
+      "path": "reuse-packet/lq-skills/LICENSE",
+      "sha256": "056b688be7767113b964971dd5e189b94884a99e7c10c237ee7e745e38c2fda3",
+      "bytes": 11387
+    },
+    {
+      "path": "reuse-packet/lq-skills/PR-READINESS.md",
+      "sha256": "779d3bbba2a6d15fc6181a77f559d2045970d3ff4eed6f35452787804d68851a",
+      "bytes": 2773
+    },
+    {
+      "path": "reuse-packet/lq-skills/README.md",
+      "sha256": "8dee00068109fa8fb17ae46e270d2b2479570067d77e5aece8f04c2ec2eff88f",
+      "bytes": 9989
+    },
+    {
+      "path": "reuse-packet/lq-skills/evals/README.md",
+      "sha256": "cced7de16e2e66d1a5d1a92949e4ed5d9faf5d855625ee3f7cf74f46a2c8bbd5",
+      "bytes": 1613
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/CONTRIBUTING.md",
+      "sha256": "6ade38fd248d4f5a0c9fc7cbb692778dc787d5e0efbfb291cd486bcd16c4d7d1",
+      "bytes": 19438
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/adversarial-qc/LICENSE",
+      "sha256": "8f8175ef116b82fbd057625d0751517802643de57254e4fb737b4f1e91e06521",
+      "bytes": 1088
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/adversarial-qc/README.md",
+      "sha256": "444121e46977a74ff0f3f37afc8e5d1c694d747362ad1d78c0686126259b20be",
+      "bytes": 3784
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/adversarial-qc/SKILL.md",
+      "sha256": "4f94fb901dc664c6b7e43ed7eee95b5236fcecc11a0480204ab2abbbde8849b0",
+      "bytes": 12937
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/adversarial-qc/references/certificate-template.md",
+      "sha256": "959475c1cf251e4c2ea258f1c7368d9ae0487090d76cb371b2d835b58bc9a4e1",
+      "bytes": 4470
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/adversarial-qc/references/checklist.md",
+      "sha256": "72ae2c1eda8c96e3c7621c11305cfbb66be973328ee62b431ec61c403ac9afae",
+      "bytes": 2936
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/adversarial-qc/references/config.md",
+      "sha256": "e7cb387d69a4b30845d292fa59759bb4d3446a24198d799a5911ca180db379aa",
+      "bytes": 2149
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/adversarial-qc/references/custom-checklists.md",
+      "sha256": "b13a9f4bd162040b8c5b948dc196da9ea5526e0ad116e466bcb216d595612b16",
+      "bytes": 2955
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/building-chronologies/LICENSE",
+      "sha256": "1808d18fd1cdbac4d3184e1f2376cf7712bc5308009934f676bdaa6cc37c5f7e",
+      "bytes": 11381
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/building-chronologies/README.md",
+      "sha256": "bd2ffcfc229a59c6eb449da36d069b1a32175a0cb2a960e02a5f93f4bed97fa1",
+      "bytes": 1393
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/building-chronologies/SKILL.md",
+      "sha256": "ebf1aea132ed3250134e44ac5be8f9e04aa40284eaf2d316c0871245b843072b",
+      "bytes": 7362
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/building-chronologies/evals.yaml",
+      "sha256": "b926c5f8689ff125991f564f80ad97bad161212d1e4a184644a85fceb64f2f1b",
+      "bytes": 794
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/building-chronologies/examples/output.md",
+      "sha256": "7b8d0c37b18017bc9b3a679cefb2b6a14cf935a20a02952f91de520887a1aff2",
+      "bytes": 2302
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/building-chronologies/references/chronology-model.md",
+      "sha256": "690ddb9ba0f456507fb725bf12a675db8d70f2dc55b3e1810787d06847690ca0",
+      "bytes": 2764
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/collating-reviewer-feedback/LICENSE",
+      "sha256": "1808d18fd1cdbac4d3184e1f2376cf7712bc5308009934f676bdaa6cc37c5f7e",
+      "bytes": 11381
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/collating-reviewer-feedback/README.md",
+      "sha256": "d86dc14fdf86914334a9b7ab717af61ecc1519c5dfb79961ce1ae3323abec772",
+      "bytes": 1605
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/collating-reviewer-feedback/SKILL.md",
+      "sha256": "ff3949ca0a9d7560c5db1729437f18ac0e219d18883559263d47dbb00fca9238",
+      "bytes": 7164
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/collating-reviewer-feedback/evals.yaml",
+      "sha256": "4895914f4abb6e6f1f2bb7a5864d5706cf3778ffb38e0185026b746dc2eaa89b",
+      "bytes": 920
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/collating-reviewer-feedback/examples/output.md",
+      "sha256": "b9c049f007daf18110aa64180c5882d048bd20248fd8eef6d150a41d48114a3e",
+      "bytes": 2239
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/collating-reviewer-feedback/references/reviewer-markup-model.md",
+      "sha256": "e0cd3d7a01f500280d62a75385dce38c56891b75aa56d88afa5410f15dbbd540",
+      "bytes": 4062
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/coquill/CHANGELOG.md",
+      "sha256": "9776493efeae74587fcae4a1bb4e7137c4ef35e4ddbfbadb2897d8b16b1c00de",
+      "bytes": 5209
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/coquill/LICENSE",
+      "sha256": "ac770aeb303512056d5119eebde3fc1ff01fb0a41d47add91fae7f827b2ade3e",
+      "bytes": 1067
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/coquill/README.md",
+      "sha256": "e0f7ef1a01964089462c0f89e4ed0263228eb24487d4b0fa89ab5d36d09a6b5b",
+      "bytes": 3227
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/coquill/SKILL.md",
+      "sha256": "220f0e74ea36368404e41a3da9bde5571ceadcc1ecf961c4cf5c8fe480010da9",
+      "bytes": 20663
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/coquill/advanced_interview.md",
+      "sha256": "95d1b4fed458ae8c6a3c81ce78edd375703b586d38e32366c89465f5bb594199",
+      "bytes": 4799
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/coquill/analyzer/LICENSE",
+      "sha256": "ac770aeb303512056d5119eebde3fc1ff01fb0a41d47add91fae7f827b2ade3e",
+      "bytes": 1067
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/coquill/analyzer/SKILL.md",
+      "sha256": "8d9cfc96637c777dd04e0d907943a30ddadf6a8b5ace3120aef32655c77865b0",
+      "bytes": 5919
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/coquill/analyzer/analyze.py",
+      "sha256": "b7f43c5d51c6af6cb7371940ddd2e957b7e5d49854d994f284b5ef2cf5a83cf5",
+      "bytes": 16167
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/coquill/renderer/LICENSE",
+      "sha256": "ac770aeb303512056d5119eebde3fc1ff01fb0a41d47add91fae7f827b2ade3e",
+      "bytes": 1067
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/coquill/renderer/SKILL.md",
+      "sha256": "58eb866141af01a9f43663b54bf0c7b1fce44ade6d008a7eaa9c80f432dc520f",
+      "bytes": 6642
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/coquill/renderer/render.py",
+      "sha256": "a1800c1c81e7a80ff10c6711f5d66935dfb6bcbda919391b25d6bd471e99f854",
+      "bytes": 11295
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/coquill/transcriber/LICENSE",
+      "sha256": "ac770aeb303512056d5119eebde3fc1ff01fb0a41d47add91fae7f827b2ade3e",
+      "bytes": 1067
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/coquill/transcriber/SKILL.md",
+      "sha256": "af549c62a332d528353aa1f5ac270d58ee01065835a38a4d1744dfd944bad4fd",
+      "bytes": 3373
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/coquill/transcriber/transcribe.py",
+      "sha256": "2b666102d68002a972c0ff2cc16b1da63e46a54a371f8cb3fe8ee1b3bd102a33",
+      "bytes": 15665
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/legal-claim-economics/LICENSE",
+      "sha256": "1808d18fd1cdbac4d3184e1f2376cf7712bc5308009934f676bdaa6cc37c5f7e",
+      "bytes": 11381
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/legal-claim-economics/README.md",
+      "sha256": "650710d247de54b9d6d9e03b3ad9ad42b454e42d09021b7e7a26c4eb6727d0b1",
+      "bytes": 1470
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/legal-claim-economics/SKILL.md",
+      "sha256": "44d84c0bd6bf256d16794a2b69c36d772fb6dceeed6b3f8bc1af00941af95cbf",
+      "bytes": 7559
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/legal-claim-economics/evals.yaml",
+      "sha256": "0821e3ccbfcaf740db65cc1af2273b11bf698685081f69abf2481d14812e8696",
+      "bytes": 871
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/legal-claim-economics/examples/output.md",
+      "sha256": "50a24b46a5e810b4775e105998086d3d2a47776720f75c8f15d90907ba5051b4",
+      "bytes": 2121
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/legal-claim-economics/references/engine-model.md",
+      "sha256": "a726d60d94fbc8140d006c83a07b9cf4194f046ebab9187b1c0079afac6b6824",
+      "bytes": 4959
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/legal-translation/LICENSE",
+      "sha256": "e447a46ceb725c30d71780e18ced4846b646f31d710c27a52f81342915589174",
+      "bytes": 1049
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/legal-translation/README.md",
+      "sha256": "e94c714dc58bff95935cb78046bd230bd7170e889c0d9f53bba5050bdc2c3388",
+      "bytes": 3359
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/legal-translation/SKILL.md",
+      "sha256": "f2b7deaa1c5ca0318be286e8b2a4c9ad9a3c3d20bd64a034aa0e3371cbc5b2d5",
+      "bytes": 20184
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/legal-translation/references/document-type-library.md",
+      "sha256": "bedbe28ffb99918a8cb41636eb7843b11d7c18a06c89e826da8b52a56ae60a3c",
+      "bytes": 11337
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/legal-translation/references/legal-glossary.md",
+      "sha256": "8b9f9339752da074d76e59ab9c27fd617ac8d13f28527252d49bbd368b69cc2c",
+      "bytes": 14431
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/legal-translation/references/legal-language-conventions.md",
+      "sha256": "ceab2bfa06ac4116af0ad11e56215101956f3f4fa8c24247403cea5c9311770e",
+      "bytes": 13172
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/local-first-legal-workspace/LICENSE",
+      "sha256": "1808d18fd1cdbac4d3184e1f2376cf7712bc5308009934f676bdaa6cc37c5f7e",
+      "bytes": 11381
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/local-first-legal-workspace/README.md",
+      "sha256": "e9017039a9916e1e0fc643f3871c300385245a2d2a35d6a4ca6f6830485845ce",
+      "bytes": 1399
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/local-first-legal-workspace/SKILL.md",
+      "sha256": "dad3cc5f96dd33bd193a76b74f6fec0e3db20480ffea70a5a55de808ca5c1d54",
+      "bytes": 6645
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/local-first-legal-workspace/evals.yaml",
+      "sha256": "1678c5ed99a4045ad02d8a33792f46d72ae0e544e2a339ae64f155c4dde31582",
+      "bytes": 726
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/local-first-legal-workspace/examples/output.md",
+      "sha256": "83ce720ea220f0cc6b65696f30cf7a97ecc36c8521dd332f7064a973964d1e13",
+      "bytes": 2271
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/local-first-legal-workspace/references/local-first-model.md",
+      "sha256": "d2e9600674cb2549091a31464e49ad6ad19320d032aef5b2eca4363dfd8a25e7",
+      "bytes": 2539
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/lq-board-document-review/SKILL.md",
+      "sha256": "1b88b292b7cbdb704ed52e3240086a4308fd4f90f9c92386a0e42803b51bf534",
+      "bytes": 9551
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/lq-governance-playbook-benchmark/SKILL.md",
+      "sha256": "9aa0405c04d43e9a3fae14bb1b7b0fa5819d354702aad7721e60120e0e6da13a",
+      "bytes": 7435
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/proposition-checking/LICENSE",
+      "sha256": "1808d18fd1cdbac4d3184e1f2376cf7712bc5308009934f676bdaa6cc37c5f7e",
+      "bytes": 11381
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/proposition-checking/README.md",
+      "sha256": "152c2d9af4095d007eb555a0b56239d3e56bbd41607a10dfaa0c29d6243a33e5",
+      "bytes": 1578
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/proposition-checking/SKILL.md",
+      "sha256": "b50864876673481e34faa0571aa79028a8d4d0c5d00afeed9c4a3a1c88a43daa",
+      "bytes": 6577
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/proposition-checking/evals.yaml",
+      "sha256": "00132881f1de2761a033d71f580e0170d5b8aeec05c0736ab0fa4f6a81556588",
+      "bytes": 820
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/proposition-checking/examples/output.md",
+      "sha256": "d03c9a0053d40f140c20b14ab33673e0ebacb1efe35091ab11588b61615f9014",
+      "bytes": 2517
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/proposition-checking/references/proposition-checking-model.md",
+      "sha256": "e42b8145e727028275579bb2be597dd006389505227378bfe827695dcd986b4a",
+      "bytes": 2699
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/statutory-analysis/CHANGELOG.md",
+      "sha256": "e03bef67f1b9c5140ebc05ced9054e4d2346197f72b8256b3110f815655eecdc",
+      "bytes": 3114
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/statutory-analysis/SKILL.md",
+      "sha256": "94f17e5e64997e25761cf352eb8bc8db60af12c7d1d221bc9cee802079beca5d",
+      "bytes": 26242
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/statutory-analysis/references/canons_of_construction.md",
+      "sha256": "7754343f663bc28652697a1e9366d1ecdeb9804ce9f28d708d449e0097e9ea90",
+      "bytes": 8634
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/statutory-analysis/references/index.md",
+      "sha256": "a6d942072e8185bf433e583736c38d7f0f8494f996e48244fc3a16284a3312d6",
+      "bytes": 1425
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/statutory-analysis/references/practical_lessons.md",
+      "sha256": "d1e804101f24248608481c26c843713d21f240da39ebfb38f0e9017b94982708",
+      "bytes": 9637
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/statutory-analysis/references/statutory_structure.md",
+      "sha256": "30ca69b535f347e1accbecec02394661866a0801df191907acfda271724d62c2",
+      "bytes": 8054
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/uk-citation-verification/LICENSE",
+      "sha256": "1808d18fd1cdbac4d3184e1f2376cf7712bc5308009934f676bdaa6cc37c5f7e",
+      "bytes": 11381
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/uk-citation-verification/README.md",
+      "sha256": "ab4dfe4b9c1b03b27968aa771a1d54ca58fdced0a9c94565308cd5fa984919e0",
+      "bytes": 1322
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/uk-citation-verification/SKILL.md",
+      "sha256": "8565a84c614ef5ed3d38435a81ca520c2fc4c5c73cc6bfd472f49eb883bc392a",
+      "bytes": 6867
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/uk-citation-verification/evals.yaml",
+      "sha256": "1d31e6769da9a7690c476c3d847364d7ea37b47ebd0cc71320673aa74d1226a7",
+      "bytes": 904
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/uk-citation-verification/examples/output.md",
+      "sha256": "660ee54e2979a9ebdb1f8da1070e77365a639f4b5e1671239d58846ffd515631",
+      "bytes": 2557
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/uk-citation-verification/references/citation-resolution-model.md",
+      "sha256": "518e8249d91cc9fe52267ea9cde3df2d3835310a1127a38afe61adeb52ee0265",
+      "bytes": 3245
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/uk-court-of-appeal-judicial-preference-check/LICENSE",
+      "sha256": "1808d18fd1cdbac4d3184e1f2376cf7712bc5308009934f676bdaa6cc37c5f7e",
+      "bytes": 11381
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/uk-court-of-appeal-judicial-preference-check/README.md",
+      "sha256": "2769c295ad1bf0fc59c4595896bf01b32f5dd8300421d3ac597e565a603f39c8",
+      "bytes": 2273
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/uk-court-of-appeal-judicial-preference-check/SKILL.md",
+      "sha256": "d9297bc9bc6d984fd756c0ca735050b87e1200bb541c2f90cf29c8999f12f0fd",
+      "bytes": 11017
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/uk-court-of-appeal-judicial-preference-check/evals.yaml",
+      "sha256": "61e9d616ed8e9b4e7816bab24370c2e1f5934cb4fad91c97c6c89cf61af60126",
+      "bytes": 906
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/uk-court-of-appeal-judicial-preference-check/examples/output.md",
+      "sha256": "6c1353fe307f1dcc112615e259306fd444490ec846db1888d5e061f60d221f8a",
+      "bytes": 5545
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/uk-court-of-appeal-judicial-preference-check/references/appellate-preference-model.md",
+      "sha256": "13d15beb839c66d7ee15f7f9b2d4cf819418f830d8a872d2333d027990dce0b2",
+      "bytes": 2529
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/uk-disclosure-list-review/LICENSE",
+      "sha256": "1808d18fd1cdbac4d3184e1f2376cf7712bc5308009934f676bdaa6cc37c5f7e",
+      "bytes": 11381
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/uk-disclosure-list-review/README.md",
+      "sha256": "b176f4392ba258d0d0861e72c17e592811c768c1b363e368b3345846541e012f",
+      "bytes": 1663
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/uk-disclosure-list-review/SKILL.md",
+      "sha256": "883244657300dd59f0d004404a770eb5c4cb434e986bfc5f0f9f817df96f94bd",
+      "bytes": 7044
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/uk-disclosure-list-review/evals.yaml",
+      "sha256": "eaa5f6302dd5e645647ad3cd6382f1c8defd5e71c2e2031d3224658295f14112",
+      "bytes": 825
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/uk-disclosure-list-review/examples/output.md",
+      "sha256": "b0a0697a5803e2411eae03dab6dd12fcf86b9baf4c041e9cd1b61e0b2f2d7d45",
+      "bytes": 1873
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/uk-disclosure-list-review/references/disclosure-review-playbook.md",
+      "sha256": "5b2c2f37b174d06068517fc73faa8b35c2e100ad663a6cd5b0ecaade2fb167c2",
+      "bytes": 2213
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/uk-particulars-of-claim-review/LICENSE",
+      "sha256": "1808d18fd1cdbac4d3184e1f2376cf7712bc5308009934f676bdaa6cc37c5f7e",
+      "bytes": 11381
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/uk-particulars-of-claim-review/README.md",
+      "sha256": "98e5d32288e31f82d2de7790c59d3602f1b6ca977c5a94b51da6acf2d5f13e49",
+      "bytes": 1455
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/uk-particulars-of-claim-review/SKILL.md",
+      "sha256": "120fdc0be9bf0c19e24f81781e062cdd14ae3807677136cd3fdc8b2c537f50f3",
+      "bytes": 6655
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/uk-particulars-of-claim-review/evals.yaml",
+      "sha256": "4bd51a8ed067160da533001b7595a1ce6a569f97b3f9a466d308f330b309ab33",
+      "bytes": 769
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/uk-particulars-of-claim-review/examples/output.md",
+      "sha256": "0a58caa5f53ed0998e6ec40981e347ff31eab98f1d4f6697f3e2da9dfb91dec4",
+      "bytes": 2199
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/uk-particulars-of-claim-review/references/pleading-review-playbook.md",
+      "sha256": "a14c59d1974ad28908b2f19cf785b73ad0a280e6140ba405e28b986d556c0132",
+      "bytes": 2252
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/uk-witness-statement-review/LICENSE",
+      "sha256": "1808d18fd1cdbac4d3184e1f2376cf7712bc5308009934f676bdaa6cc37c5f7e",
+      "bytes": 11381
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/uk-witness-statement-review/README.md",
+      "sha256": "e75c693abca09f54615a0062a7517157f15b86da47ffd7ea760c87c85fd0289f",
+      "bytes": 1490
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/uk-witness-statement-review/SKILL.md",
+      "sha256": "6797c07e59c93047dcd8c72d18f0f09124735018e5b74bedac293e2ca6660579",
+      "bytes": 7182
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/uk-witness-statement-review/evals.yaml",
+      "sha256": "63262a2766320ced5157400a5d5f34df72635d86c19ace285fadcba0f62e13a4",
+      "bytes": 764
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/uk-witness-statement-review/examples/output.md",
+      "sha256": "ce238edbf187522b6ade546743ca9cf32263ee627dc9775ab6f61c99e105df32",
+      "bytes": 2645
+    },
+    {
+      "path": "reuse-packet/lq-skills/skills/uk-witness-statement-review/references/witness-review-playbook.md",
+      "sha256": "68f9c53ba659b52b63336d65076e5ad56e6b5139cfb99cd113a2ab6797e5eb12",
+      "bytes": 2630
+    }
+  ],
+  "whitelist_file": "EXPORT-WHITELIST.json",
+  "whitelist_file_hash": "Self-reference intentionally omitted; copy this file alongside the listed files.",
+  "excluded": [
+    "community-source/**",
+    "SOURCE-INVENTORY.json",
+    "inspect_sources.py",
+    "read_skill_overview.py",
+    "build_packet.py",
+    "run_helper_checks.py",
+    "finalize_packet.py",
+    "__pycache__/**"
+  ],
+  "scope": "Portable review/reference toolkit only. Do not install skills or expose copied scripts automatically."
+}

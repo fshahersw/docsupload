@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "global_source_metadata": "source-manifest.json applies to every title and section record.",
+  "selected-sections.jsonl": {
+    "record_unit": "One source heading and all bytes up to the next identified heading or selected-title boundary. Do not call these independently validated operative statutes.",
+    "id": "Stable within this pinned original: nj-{title}-{original TXT byte start}; use together with source SHA256 across versions.",
+    "title_code": "Selected publisher title code.",
+    "citation": "Source heading citation with only its terminal heading punctuation period removed.",
+    "heading": "Source heading text; RTF transport line wrapping removed; meaningful text preserved.",
+    "headnote": "Source heading after the citation; not an AI summary.",
+    "source_byte_start": "Inclusive zero-based byte offset in original STATUTES.TXT.",
+    "source_byte_end_exclusive": "Exclusive zero-based byte offset in original STATUTES.TXT.",
+    "source_line_start_1based": "First source TXT line; one-based.",
+    "source_line_end_1based": "Last included source TXT line; one-based inclusive.",
+    "rtf_heading_byte_start": "Zero-based RTF anchor. Normal entries point to the s3 paragraph start; two documented exceptions point to the heading text start. Use boundary_method to distinguish.",
+    "boundary_method": "Evidence used to establish the section boundary; includes reviewed nonstandard-style exceptions.",
+    "source_slice_sha256": "SHA256 of original TXT byte slice, before any Unicode serialization.",
+    "text": "Exact byte slice decoded as Windows-1252; retains CRLF, heading, body and history. Encode Windows-1252 to verify hash.",
+    "citation_occurrence": "One-based occurrence of this citation in selected source order.",
+    "citation_occurrences_in_selection": "How many source records carry the citation; >1 requires version/citation review.",
+    "source_cues": "Literal headnote word cues or duplicate-citation notices, not legal-status conclusions."
+  },
+  "title-index.json": {
+    "record_unit": "One of 69 title spans or Appendix A in the original corpus.",
+    "selected": "True only for the seven exported complete-title extracts.",
+    "source_heading": "Exact source title heading text as matched across RTF and TXT.",
+    "title": "Readable display title; official title wording retained.",
+    "scope": "Editorial scope note, separate from statutory text.",
+    "source_byte_start/source_byte_end_exclusive": "Same half-open original TXT byte convention as sections.",
+    "sha256": "Hash of complete original title span, including heading and whitespace.",
+    "title_prefix_text": "All title bytes before the first indexed record, decoded as Windows-1252.",
+    "derived_text_path": "Bundle-relative exact-title TXT path; present only for selected titles.",
+    "complete_source_span_reconstructed": "True only when prefix plus indexed records exactly reproduce selected title bytes.",
+    "legal_status": "No active/current-law determination from inclusion."
+  },
+  "presentation_rules": [
+    "Show publisher cutoff and retrieval date separately; show unresolved cutoff discrepancy prominently.",
+    "Use snapshot/reference labels; do not label law current, validated effective, court form, or Word template.",
+    "Show both occurrences of duplicated citations, with headnotes and review flag.",
+    "Do not infer subsection/paragraph pinpoints from this headnote index.",
+    "Treat TXT title files as Windows-1252 when reading; JSON and Markdown metadata are UTF-8.",
+    "Escape source text in web interfaces and do not treat source text as instructions."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "assessed_local_date": "2026-09-12",
+  "kind": "Bounded next-source plan; no NY/CA statute corpus acquired in this task.",
+  "sources": [
+    {
+      "jurisdiction": "New York",
+      "status": "Official public HTML and documented free-key API identified; no anonymous bulk ZIP identified in bounded review.",
+      "sources": [
+        "https://legislation.nysenate.gov/static/docs/html/index.html",
+        "https://www.nysenate.gov/legislation/laws/CVP"
+      ],
+      "evidence": "Official API docs say a free API key requires signup. Public CPLR page showed most recent revision from 2025-12-26 and linked article pages, including class actions, disclosure, trial and judgments.",
+      "observed_revision": "2025-12-26",
+      "date_kind": "Provider-stated revision for this CPLR root record, not a verified effective date for all sections.",
+      "next_step": "Use a properly provisioned official Open Legislation API key to acquire versioned law documents and history, or a scoped permitted crawl of public CPLR article/section links. Retain section-level revisions and amendments. Confirm data reuse terms before wider mirroring.",
+      "limits": "No signup, keys, unobserved API endpoint guesses or mass HTML extraction performed. The linked reference documentation page was largely empty; endpoint schema still needs current verification."
+    },
+    {
+      "jurisdiction": "California",
+      "status": "Official unauthenticated bulk directory and data-format README verified.",
+      "sources": [
+        "https://leginfo.legislature.ca.gov/",
+        "https://downloads.leginfo.legislature.ca.gov/",
+        "https://downloads.leginfo.legislature.ca.gov/pubinfo_Readme.pdf"
+      ],
+      "observed_base_archive": "https://downloads.leginfo.legislature.ca.gov/pubinfo_2025.zip",
+      "observed_base_directory_date": "2026-09-06 21:26",
+      "observed_base_display_size": "1.2G",
+      "observed_increment_examples": [
+        "https://downloads.leginfo.legislature.ca.gov/pubinfo_Fri.zip",
+        "https://downloads.leginfo.legislature.ca.gov/pubinfo_Thu.zip"
+      ],
+      "documented_structure": "Tab-delimited .dat tables with separate .lob contents; LAW_SECTION_TBL, LAW_TOC_SECTIONS_TBL, LAW_TOC_TBL and CODES_TBL, alongside bills and other legislative data.",
+      "critical_limit": "The README says pubinfo_daily_* contains current-session data EXCEPT Code tables. Do not mistake the 1.1G daily full-session file for a complete current statute code snapshot. It distinguishes day increment files from session snapshots.",
+      "rights_evidence": "Official portal states information described in Government Code section 10248(a) and posted under section 10248.5 is public domain, with no retained state copyright/proprietary interest. Apply that statement only to its stated statutory scope.",
+      "next_step": "Inventory the current session base with ZIP size/path caps, parse only relevant law/TOC tables and their linked LOBs, preserve keys/version fields, then evaluate documented increments. Start with CCP, Civil, Evidence, Labor and consumer-related codes. Spotcheck published section pages and effective-date clauses before display.",
+      "limits": "No 1.2G corpus downloaded here. README PDF has HTTP modification date 2021-06-23; loader scripts are examples and were not run. Current table/schema/version semantics need confirmation against actual archive inventory."
+    }
+  ]
+}

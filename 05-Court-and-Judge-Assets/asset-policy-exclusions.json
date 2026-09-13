@@ -1,0 +1,29 @@
+[
+  {
+    "court_id": "FS:cavc",
+    "sha256": "8bad19ca0b3002a053f5a234ddf75611d45fbd6fb33250a1b96e4ddbf6e8e489",
+    "local_path": "images/8b/8bad19ca0b3002a053f5a234ddf75611d45fbd6fb33250a1b96e4ddbf6e8e489.ico",
+    "blocked_url": "https://www.uscourts.cavc.gov/",
+    "policy_source": "https://www.uscourts.cavc.gov/robots.txt",
+    "exclusion_reason": "Published robots policy disallows image retrieval or its official source for the research agent or ChatGPT-User. Excluded from curated UI promotion; use text fallback.",
+    "decision": "exclude_from_curated_pack"
+  },
+  {
+    "court_id": "LC:mo_st_louis",
+    "sha256": "6c337984a5652813d472b82111af12e77b6f585c85deff900ad409e6a950bc73",
+    "local_path": "images/6c/6c337984a5652813d472b82111af12e77b6f585c85deff900ad409e6a950bc73.png",
+    "blocked_url": "https://cms3.revize.com/revize/louis22ndcircuitcourt/_assets_/images/logo.png",
+    "policy_source": "https://cms3.revize.com/robots.txt",
+    "exclusion_reason": "Published robots policy disallows image retrieval or its official source for the research agent or ChatGPT-User. Excluded from curated UI promotion; use text fallback.",
+    "decision": "exclude_from_curated_pack"
+  },
+  {
+    "court_id": "LC:mo_st_louis",
+    "sha256": "7f81407d93b83aecc591b5d60eea4c868f59e1b685b286c9aecc033b385d9dac",
+    "local_path": "images/7f/7f81407d93b83aecc591b5d60eea4c868f59e1b685b286c9aecc033b385d9dac.png",
+    "blocked_url": "https://cms3.revize.com/revize/louis22ndcircuitcourt/_assets_/images/touch-icon-iphone.png",
+    "policy_source": "https://cms3.revize.com/robots.txt",
+    "exclusion_reason": "Published robots policy disallows image retrieval or its official source for the research agent or ChatGPT-User. Excluded from curated UI promotion; use text fallback.",
+    "decision": "exclude_from_curated_pack"
+  }
+]

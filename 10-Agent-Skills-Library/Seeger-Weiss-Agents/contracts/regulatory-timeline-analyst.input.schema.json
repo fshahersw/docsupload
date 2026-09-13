@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:seeger-weiss:agent-input:regulatory-timeline-analyst:1",
+  "title": "Historical regulatory and labeling record intake contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "product_identity",
+    "relevant_period",
+    "regulatory_sources"
+  ],
+  "properties": {
+    "product_identity": {
+      "type": "object",
+      "description": "Product, manufacturer, formulation/model and authoritative application or product identifiers where available.",
+      "additionalProperties": true
+    },
+    "relevant_period": {
+      "type": "object",
+      "description": "Conduct/exposure dates and distinct legal question; missing dates are an intake gap.",
+      "additionalProperties": true
+    },
+    "regulatory_sources": {
+      "type": "array",
+      "description": "Readable dated code snapshots, rulemaking notices, orders, labeling and agency records with source identity.",
+      "items": {
+        "type": "object",
+        "description": "Source/record descriptor; resolve its identity, access and content via a host-validated adapter."
+      }
+    },
+    "candidate_provisions": {
+      "type": "array",
+      "description": "Provisions/issues selected by counsel, with any incorporated standards available under appropriate access.",
+      "items": {
+        "type": "object",
+        "description": "Source/record descriptor; resolve its identity, access and content via a host-validated adapter."
+      }
+    }
+  },
+  "$comment": "The host must validate nested source descriptors against its actual DTOs. This specification deliberately does not fabricate production API shapes."
+}

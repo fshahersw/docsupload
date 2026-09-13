@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:seeger-weiss:agent-input:defendant-profiler:1",
+  "title": "Corporate entity and disclosure record intake contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "entity_candidates",
+    "corporate_sources",
+    "relevant_period"
+  ],
+  "properties": {
+    "entity_candidates": {
+      "type": "array",
+      "description": "Known legal names, product/manufacturer context and available authoritative identifiers.",
+      "items": {
+        "type": "object",
+        "description": "Source/record descriptor; resolve its identity, access and content via a host-validated adapter."
+      }
+    },
+    "corporate_sources": {
+      "type": "array",
+      "description": "Authorized registry, filing, contract, agency or docket source records with dates.",
+      "items": {
+        "type": "object",
+        "description": "Source/record descriptor; resolve its identity, access and content via a host-validated adapter."
+      }
+    },
+    "relevant_period": {
+      "type": "object",
+      "description": "Date range and purpose, such as product ownership or disclosure history.",
+      "additionalProperties": true
+    },
+    "provider_rights": {
+      "type": "object",
+      "description": "Permitted lookup, display, export and retention for any licensed provider; unverified rights do not authorize ingestion.",
+      "additionalProperties": true
+    }
+  },
+  "$comment": "The host must validate nested source descriptors against its actual DTOs. This specification deliberately does not fabricate production API shapes."
+}

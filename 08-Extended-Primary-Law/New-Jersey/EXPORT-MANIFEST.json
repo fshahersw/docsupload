@@ -1,0 +1,126 @@
+{
+  "id": "nj-legislature-statutes-2026-09-12",
+  "generated_at": "2026-09-13T03:33:28.154194+00:00",
+  "review_root": "nj-law-review",
+  "approved_file_count": 18,
+  "approved_bytes": 200569524,
+  "files": [
+    {
+      "path": "originals/New Jersey - General and Permanent Statutes - Through PL 2025 Chapter 405 and JR 22.rtf",
+      "bytes": 94415499,
+      "sha256": "5fbc18d5b9e41b5144bd4aebf023abd4c472c638d6a950af362d8450103c9ccf",
+      "role": "original_word_readable_statutory_reference"
+    },
+    {
+      "path": "source-text/New Jersey - General and Permanent Statutes - Through PL 2025 Chapter 405 and JR 22.txt",
+      "bytes": 83882972,
+      "sha256": "f08f83cba812ee3389faada1649e4204f88c91242a141dd14e1e79ad6d4a1e6c",
+      "role": "original_machine_readable_statutory_reference"
+    },
+    {
+      "path": "curated/next-sources.json",
+      "bytes": 3465,
+      "sha256": "06407025eda57552dbbed36a37a78b5d9d551cd9057cf0fa78cd6ebe4e3d84b9",
+      "role": "source_metadata_index_or_documentation"
+    },
+    {
+      "path": "curated/README.md",
+      "bytes": 4516,
+      "sha256": "4a7517f47a87cc3d94d8f31f7c1d73b9516cfdb507c1a3bf887110de21a64726",
+      "role": "source_metadata_index_or_documentation"
+    },
+    {
+      "path": "curated/schema.json",
+      "bytes": 3691,
+      "sha256": "d4b6d7f18c44bb442c330e88452f12c1e1032acf8a3c117918d02d1afc911961",
+      "role": "source_metadata_index_or_documentation"
+    },
+    {
+      "path": "curated/selected-citations.csv",
+      "bytes": 1014129,
+      "sha256": "eaf8a0aeb484c0dd8c48aebd1095b2957644fbf020e9567139ddf73fcba472ca",
+      "role": "source_metadata_index_or_documentation"
+    },
+    {
+      "path": "curated/selected-sections.jsonl",
+      "bytes": 12578742,
+      "sha256": "1db31446ef92fe45cc9ed8bb5c5752124c254178b25c7428a88c76d95559cc6c",
+      "role": "source_metadata_index_or_documentation"
+    },
+    {
+      "path": "curated/source-manifest.json",
+      "bytes": 7091,
+      "sha256": "af92d915e6b34d655c58e5ffcaa63fec5d7f4c9d2daf952b10123ca94dcdd220",
+      "role": "source_metadata_index_or_documentation"
+    },
+    {
+      "path": "curated/source-quality.json",
+      "bytes": 7525,
+      "sha256": "91e17ba7d2c145c1c61ebe51efcad00438bbf16d74de1c37f2a6a7361f1e918a",
+      "role": "source_metadata_index_or_documentation"
+    },
+    {
+      "path": "curated/title-extracts/New Jersey - Title 10 - Civil Rights.txt",
+      "bytes": 217051,
+      "sha256": "739ac005dda9f320078b38eeed4260cf6cb90567c83dca5f7022bf32bcb1c4fd",
+      "role": "derived_complete_title_text"
+    },
+    {
+      "path": "curated/title-extracts/New Jersey - Title 22A - Fees and Costs.txt",
+      "bytes": 112888,
+      "sha256": "25e85114593e71cb671063514a0d4485c64b09bdab5380f03e128e055fcf8694",
+      "role": "derived_complete_title_text"
+    },
+    {
+      "path": "curated/title-extracts/New Jersey - Title 2A - Administration of Civil and Criminal Justice.txt",
+      "bytes": 2792298,
+      "sha256": "53e2d53950f17b91fd1177bedd53712d879742f7e872193419d643bba86fa1a8",
+      "role": "derived_complete_title_text"
+    },
+    {
+      "path": "curated/title-extracts/New Jersey - Title 2B - Court Organization and Civil Code.txt",
+      "bytes": 243154,
+      "sha256": "6c7a9d9936c7499e6af85e03d4aacc806b4e9976b724301c0484a95186bf3f7d",
+      "role": "derived_complete_title_text"
+    },
+    {
+      "path": "curated/title-extracts/New Jersey - Title 34 - Labor and Workmen's Compensation.txt",
+      "bytes": 4049168,
+      "sha256": "638f0493f2060fa5fced627732a91ca1fcb268dde7c66ac08e45fb5bb309477f",
+      "role": "derived_complete_title_text"
+    },
+    {
+      "path": "curated/title-extracts/New Jersey - Title 56 - Trade Names, Trade-Marks and Unfair Trade Practices.txt",
+      "bytes": 1098309,
+      "sha256": "a0e385b5e7fc2dfc22e54322d4a8192cc3dc510876cbc20fbdcf165460df48bd",
+      "role": "derived_complete_title_text"
+    },
+    {
+      "path": "curated/title-extracts/New Jersey - Title 59 - Claims Against Public Entities.txt",
+      "bytes": 75999,
+      "sha256": "e3cf5a81efbc9347fecaa740c50623b8f0ce9082d83dc9252f69c70c59dfffef",
+      "role": "derived_complete_title_text"
+    },
+    {
+      "path": "curated/title-index.json",
+      "bytes": 55136,
+      "sha256": "446bbf6a000ac11a1d02c6f3ba82d68b983e09685b43cf51000536ec1c1bc71c",
+      "role": "source_metadata_index_or_documentation"
+    },
+    {
+      "path": "curated/validation.json",
+      "bytes": 7891,
+      "sha256": "952112d14822b114ee0034971aac41f10c6e2e22d5ea358e902c8d931371d379",
+      "role": "source_metadata_index_or_documentation"
+    }
+  ],
+  "excluded": [
+    "STATUTES-TEXT.original.zip",
+    "LCTOC-TEXT.original.zip",
+    "California - PUBINFO Downloadable Database Readme.original.pdf",
+    ".firecrawl/",
+    "native-spotchecks/",
+    "processing scripts and intermediate profiles"
+  ],
+  "promotion_rule": "Exact whitelist only. Keep byte-for-byte originals. Preserve relative paths within the NJ bundle or explicitly remap metadata references. No UI or canonical writes performed by this task."
+}

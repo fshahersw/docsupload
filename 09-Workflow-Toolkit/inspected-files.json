@@ -1,0 +1,588 @@
+{
+  "api/app/citation/gate.py": {
+    "sha256": "0920bb268ec8d50f1f3ecaf2cf3eff1056a06fac12efdd4b0d052f3bcdbd6ee3",
+    "lines": 132,
+    "inspected_ranges": [
+      [
+        1,
+        132
+      ],
+      [
+        1,
+        132
+      ]
+    ]
+  },
+  "api/app/citation/ledger.py": {
+    "sha256": "8918fa31930dc86a7db9a5985112ea1c398a7985de01e287901326e636cc191b",
+    "lines": 444,
+    "inspected_ranges": [
+      [
+        1,
+        230
+      ]
+    ]
+  },
+  "api/app/citation/verification.py": {
+    "sha256": "bc88b8fca4246ac8a74639a1c82d65e32c48c59e0591f858acb2bc9328c7b9cd",
+    "lines": 658,
+    "inspected_ranges": [
+      [
+        1,
+        248
+      ],
+      [
+        265,
+        658
+      ]
+    ]
+  },
+  "api/app/citation/extraction.py": {
+    "sha256": "c38437084ce179beb39312b749111b3a76df0e4e9b6ee475d6d86c7ef3d3326c",
+    "lines": 249,
+    "inspected_ranges": [
+      [
+        1,
+        220
+      ],
+      [
+        221,
+        249
+      ],
+      [
+        60,
+        110
+      ],
+      [
+        111,
+        147
+      ],
+      [
+        150,
+        157
+      ]
+    ]
+  },
+  "api/app/citation/treatment_rollup.py": {
+    "sha256": "97f9bacffb1c6e9e80c2e3f9091bf2023a530f7350137503921828f00bc66e99",
+    "lines": 48,
+    "inspected_ranges": [
+      [
+        1,
+        48
+      ]
+    ]
+  },
+  "api/app/citation/treatment.py": {
+    "sha256": "1ee332792cd0021345bf80ecdc00d010269e2bbd7e34d897616a79789ad60541",
+    "lines": 368,
+    "inspected_ranges": [
+      [
+        1,
+        155
+      ],
+      [
+        242,
+        368
+      ]
+    ]
+  },
+  "api/app/pipeline/parsers.py": {
+    "sha256": "6172e2aa9129f42c8519e08e0226614efc1f11c52ce0538c143cc9e2a9221dbf",
+    "lines": 494,
+    "inspected_ranges": [
+      [
+        83,
+        200
+      ],
+      [
+        256,
+        494
+      ]
+    ]
+  },
+  "api/app/pipeline/ingest.py": {
+    "sha256": "cb8627d8c4230b5d861e55666de3524f88f31faff21ae2e7fb8a57fda74d2270",
+    "lines": 467,
+    "inspected_ranges": [
+      [
+        97,
+        324
+      ],
+      [
+        160,
+        325
+      ],
+      [
+        335,
+        427
+      ]
+    ]
+  },
+  "api/app/pipeline/chunker.py": {
+    "sha256": "4ac8f6e77ea6388d46192e1f9c3d750fb8db315fc885d6763cb21f4a7b9dcf8e",
+    "lines": 300,
+    "inspected_ranges": [
+      [
+        106,
+        222
+      ],
+      [
+        106,
+        222
+      ]
+    ]
+  },
+  "gateway/app/providers/tool/egress.py": {
+    "sha256": "fdb3fe87264987e726fcc6ceb2f7ca51a06e199d25a7397321a0f925ebf054bf",
+    "lines": 64,
+    "inspected_ranges": [
+      [
+        1,
+        64
+      ],
+      [
+        1,
+        64
+      ]
+    ]
+  },
+  "gateway/app/providers/tool/mcp.py": {
+    "sha256": "57e7f03fc5f94045fa6574ff56b55ae34f62f0974f47d67c0b67569a2f49aa35",
+    "lines": 197,
+    "inspected_ranges": [
+      [
+        1,
+        197
+      ],
+      [
+        1,
+        64
+      ]
+    ]
+  },
+  "api/app/tools/governance.py": {
+    "sha256": "ec798360fb74b42dedab56ac1c7554a9ec9ecb68d92d62016722a0f4e44f73a2",
+    "lines": 398,
+    "inspected_ranges": [
+      [
+        219,
+        370
+      ]
+    ]
+  },
+  "api/app/chat/tool_loop.py": {
+    "sha256": "6506e11d7fa01e5db81f210dc5c50a8d47972fda6e1a62bd95197886e482a642",
+    "lines": 1016,
+    "inspected_ranges": [
+      [
+        595,
+        704
+      ],
+      [
+        776,
+        886
+      ],
+      [
+        887,
+        945
+      ]
+    ]
+  },
+  "gateway/app/router.py": {
+    "sha256": "36a7659a5c52e7eb46756b7ba160171556fd19ebc63e29dbef02d28304e10e54",
+    "lines": 1023,
+    "inspected_ranges": [
+      [
+        745,
+        842
+      ]
+    ]
+  },
+  "api/app/playbooks/nodes.py": {
+    "sha256": "06ec92a3b860f906f689d140c929fd5ae0f8e7934d3d33b1e3f7cbb8e41e599e",
+    "lines": 667,
+    "inspected_ranges": [
+      [
+        88,
+        214
+      ],
+      [
+        269,
+        339
+      ],
+      [
+        405,
+        488
+      ]
+    ]
+  },
+  "api/app/tabular/executor.py": {
+    "sha256": "ed363da08624a82d7969f29295cf79143b72d0513d6897cae1bafeb81411d599",
+    "lines": 205,
+    "inspected_ranges": [
+      [
+        64,
+        195
+      ]
+    ]
+  },
+  "api/app/tabular/nodes.py": {
+    "sha256": "89fc614e1328ac3d285b29bd2cb786a7c09ba5cace76838ebdd73fd8f75841f8",
+    "lines": 754,
+    "inspected_ranges": [
+      [
+        570,
+        703
+      ],
+      [
+        58,
+        79
+      ],
+      [
+        202,
+        280
+      ],
+      [
+        365,
+        443
+      ]
+    ]
+  },
+  "gateway/app/main.py": {
+    "sha256": "86a6145c83ac0590cd2fce075383c743801a2d61d5a937789419e7702f2c5dba",
+    "lines": 599,
+    "inspected_ranges": [
+      [
+        135,
+        190
+      ]
+    ]
+  },
+  "web/LICENSE": {
+    "sha256": "9ffc98c7be329932e0660fa3bfa0fbce679498e575fe9f21b7786b09edc4f36b",
+    "lines": 51,
+    "inspected_ranges": [
+      [
+        1,
+        51
+      ]
+    ]
+  },
+  "web/LICENSE_NOTICE": {
+    "sha256": "3ccfbd02375b05a423e74c19eadca9c64c09e04215c8e0e64249364705b4bbfd",
+    "lines": 11,
+    "inspected_ranges": [
+      [
+        1,
+        11
+      ]
+    ]
+  },
+  "api/pyproject.toml": {
+    "sha256": "b0ba07489b42fccc9e5e4dc336d0d70522df921ee6f9e08f7d3ae103029a8d23",
+    "lines": 262,
+    "inspected_ranges": [
+      [
+        1,
+        125
+      ]
+    ]
+  },
+  "gateway/pyproject.toml": {
+    "sha256": "1fd520b4e682f16c460f54eb4bd04b45bd92e78f36b2ef3507759a3e9ea107ef",
+    "lines": 116,
+    "inspected_ranges": [
+      [
+        1,
+        95
+      ]
+    ]
+  },
+  "docs/HONEST-STATE.md": {
+    "sha256": "efa8362b7143aec304b3ff2c3d302a3e82a6ac84996958600336c40d50880a9f",
+    "lines": 328,
+    "inspected_ranges": [
+      [
+        1,
+        125
+      ],
+      [
+        123,
+        154
+      ]
+    ]
+  },
+  "api/app/api/tabular.py": {
+    "sha256": "714b972a348bbb53522a495b9de4fab0b81f10a94d5016041ead24bad68c6261",
+    "lines": 859,
+    "inspected_ranges": [
+      [
+        177,
+        215
+      ],
+      [
+        275,
+        368
+      ],
+      [
+        585,
+        701
+      ]
+    ]
+  },
+  "api/app/schemas/tabular.py": {
+    "sha256": "185bc65018de180556fee131535ad6f8af7802e1df5f22a28310fda4a614a553",
+    "lines": 392,
+    "inspected_ranges": [
+      [
+        1,
+        175
+      ]
+    ]
+  },
+  "api/tests/citation/conftest.py": {
+    "sha256": "12a2684ec9ef1b7822466d71a02819745c7586edae24149af78b6c67017182f5",
+    "lines": 50,
+    "inspected_ranges": [
+      [
+        1,
+        50
+      ]
+    ]
+  },
+  "gateway/tests/conftest.py": {
+    "sha256": "e50e99ae690b810dbc7a14e845505c0b22874a8769399224d7eaab1642251ba7",
+    "lines": 95,
+    "inspected_ranges": [
+      [
+        1,
+        95
+      ]
+    ]
+  },
+  "api/tests/conftest.py": {
+    "sha256": "69f90bd7a83525e0936dad47d7e690e7cb0110cb7819307424539788eb7cee79",
+    "lines": 169,
+    "inspected_ranges": [
+      [
+        1,
+        145
+      ]
+    ]
+  },
+  "api/app/citation/normalization.py": {
+    "sha256": "cf652f27ff104e97572099fd7849cc8af4d7b400c8c504066152422da342b106",
+    "lines": 141,
+    "inspected_ranges": [
+      [
+        1,
+        141
+      ]
+    ]
+  },
+  "api/tests/citation/test_edge_cases.py": {
+    "sha256": "9cffcae9e73a19d31d4e5624676f28446d3ba8cd390b3e86bd3dbaa903657307",
+    "lines": 627,
+    "inspected_ranges": [
+      [
+        1,
+        195
+      ]
+    ]
+  },
+  "gateway/tests/test_guarded_egress.py": {
+    "sha256": "5c56b6be3380b105fe8b63e2089541e1e5e9acb5da95dfd23a9ead2382e53b83",
+    "lines": 74,
+    "inspected_ranges": [
+      [
+        1,
+        74
+      ]
+    ]
+  },
+  "api/tests/integration/test_fiduciary_gate.py": {
+    "sha256": "6dea26e7c66578b55489ec318ce26016a42182ab541a747a0c6885bf8df3cacb",
+    "lines": 340,
+    "inspected_ranges": [
+      [
+        1,
+        170
+      ],
+      [
+        172,
+        222
+      ]
+    ]
+  },
+  "gateway/tests/test_mcp_adapter.py": {
+    "sha256": "449a6a6dad773ea2b930770fa913eeca4d4622124f7c7d8dd00818418e47e605",
+    "lines": 209,
+    "inspected_ranges": [
+      [
+        1,
+        190
+      ]
+    ]
+  },
+  "api/app/workers/tabular_worker.py": {
+    "sha256": "0c7a773f32cd7dd5d65ea25b61d440d2d1e108fbcf87b544825ffccd6d4b44d6",
+    "lines": 165,
+    "inspected_ranges": [
+      [
+        1,
+        165
+      ]
+    ]
+  },
+  "api/app/autonomous/guard.py": {
+    "sha256": "d5708523193eb56095011af3c52c90d2a4b293af95afd2279001076ff09c00b1",
+    "lines": 1680,
+    "inspected_ranges": [
+      [
+        1,
+        230
+      ],
+      [
+        238,
+        309
+      ]
+    ]
+  },
+  "api/app/research/registry.py": {
+    "sha256": "007aed54811b64a925f27bff7408a99ec25c6931ef46f9d4463651185ac79c9a",
+    "lines": 206,
+    "inspected_ranges": [
+      [
+        1,
+        155
+      ]
+    ]
+  },
+  "api/app/research/adapters.py": {
+    "sha256": "633d15c003432145fdf90df7373b3aa36f0eaa6de030fd34f948f822d997428e",
+    "lines": 241,
+    "inspected_ranges": [
+      [
+        1,
+        140
+      ]
+    ]
+  },
+  "gateway/app/providers/tool/courtlistener.py": {
+    "sha256": "6aa3b03985910b7bf7d71d5655e0fba394199b0669770d95f1e01a63d98a4702",
+    "lines": 355,
+    "inspected_ranges": [
+      [
+        283,
+        336
+      ]
+    ]
+  },
+  "api/app/research/service.py": {
+    "sha256": "b8fdf7d03ab20e69c53a5bb2ed2d4608f22eee0d5e2754545c70e06a37b43996",
+    "lines": 238,
+    "inspected_ranges": [
+      [
+        1,
+        115
+      ],
+      [
+        128,
+        208
+      ]
+    ]
+  },
+  "api/app/citation/caselaw.py": {
+    "sha256": "fd2161c4486945206d43919b89b7cd98cb45b8b18c9ec931df5c9977648b8912",
+    "lines": 511,
+    "inspected_ranges": [
+      [
+        239,
+        312
+      ]
+    ]
+  },
+  "api/app/citation/authority.py": {
+    "sha256": "9cc9c0af2a7f8440f0c87e6dbb98cee2201f0fe8b157adb66092ab347cf0d9a6",
+    "lines": 449,
+    "inspected_ranges": [
+      [
+        127,
+        198
+      ],
+      [
+        326,
+        385
+      ]
+    ]
+  },
+  "api/app/mcp/oauth.py": {
+    "sha256": "c44ed787f33a681d469f3f1abc23e83053a7687f99af930dfdf84ba785e802dd",
+    "lines": 540,
+    "inspected_ranges": [
+      [
+        231,
+        311
+      ]
+    ]
+  },
+  "api/app/autonomous/executor.py": {
+    "sha256": "fea027c71458d4cee261cafd8d5383ce69989067bc6ea4336bb7f026bdab9945",
+    "lines": 232,
+    "inspected_ranges": [
+      [
+        1,
+        38
+      ],
+      [
+        210,
+        232
+      ]
+    ]
+  },
+  "LICENSE": {
+    "sha256": "8af546d706005175431637caf5def44c39d3f805f740f578f4b8ad851aec7027",
+    "lines": 201,
+    "inspected_ranges": [
+      [
+        65,
+        115
+      ]
+    ]
+  },
+  "api/app/knowledge/retrieval.py": {
+    "sha256": "9c6ed9e226716d9684fc80c896950c5833e0926241d9774f8f2a3439efd5d2fc",
+    "lines": 356,
+    "inspected_ranges": [
+      [
+        71,
+        177
+      ],
+      [
+        180,
+        243
+      ]
+    ]
+  },
+  "api/app/api/chats.py": {
+    "sha256": "821fd556b0032af6b8bfe4282788bdc3209cdbdacc1eaffeb5725617bfd32ee7",
+    "lines": 3949,
+    "inspected_ranges": [
+      [
+        2737,
+        2818
+      ]
+    ]
+  },
+  "api/tests/tabular/test_nodes.py": {
+    "sha256": "30f6695ec80c827c5fe02a97edc714ae202ce4e733475d02146a1528e713babf",
+    "lines": 666,
+    "inspected_ranges": [
+      [
+        411,
+        496
+      ]
+    ]
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "scope": "Reviewer-authored pure-function checks only; no upstream pytest suite, model evaluation, legal validation, rendering or external services executed.",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "checks": [
+    {
+      "name": "strict UTF-8 retains non-ASCII characters and CRLF",
+      "status": "pass",
+      "detail": {
+        "actual": "§ 28 — witness 🧑\r\nLine two.",
+        "expected": "§ 28 — witness 🧑\r\nLine two."
+      }
+    },
+    {
+      "name": "BOM normalization is explicit",
+      "status": "pass",
+      "detail": {
+        "actual": "Text",
+        "expected": "Text"
+      }
+    },
+    {
+      "name": "invalid UTF-8 fails rather than being guessed",
+      "status": "pass",
+      "detail": {
+        "raised": "ParserDecodeError"
+      }
+    },
+    {
+      "name": "NUL text fails before persistence",
+      "status": "pass",
+      "detail": {
+        "raised": "ParserDecodeError"
+      }
+    },
+    {
+      "name": "chunk offset fidelity and complete character coverage",
+      "status": "pass",
+      "detail": {
+        "characters": 10880,
+        "chunks": 41,
+        "all_slices_exact": true,
+        "all_characters_covered": true,
+        "unit": "Python Unicode character indices, not byte offsets or browser UTF-16 offsets"
+      }
+    },
+    {
+      "name": "chunk page ranges span physical source pages",
+      "status": "pass",
+      "detail": {
+        "actual": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "expected": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "name": "empty text creates no chunks",
+      "status": "pass",
+      "detail": {
+        "actual": [],
+        "expected": []
+      }
+    },
+    {
+      "name": "non-progressing overlap is rejected",
+      "status": "pass",
+      "detail": {
+        "raised": "ValueError"
+      }
+    },
+    {
+      "name": "HTML text removes script/style and decodes entities",
+      "status": "pass",
+      "detail": {
+        "actual": "A & B\n\nC",
+        "expected": "A & B\n\nC"
+      }
+    },
+    {
+      "name": "default citation normalization changes typography only",
+      "status": "pass",
+      "detail": {
+        "actual": "\"Party\" shall pay.",
+        "expected": "\"Party\" shall pay."
+      }
+    },
+    {
+      "name": "default citation normalization is idempotent",
+      "status": "pass",
+      "detail": {
+        "actual": "A \"B\"",
+        "expected": "A \"B\""
+      }
+    },
+    {
+      "name": "CoQuill recognizes its simple variable/boolean/loop grammar",
+      "status": "pass",
+      "detail": {
+        "simple_variables": [
+          "client_name",
+          "include_notice"
+        ],
+        "conditionals": 1,
+        "loops": 1
+      }
+    },
+    {
+      "name": "leftover-placeholder scan detects literal unresolved token",
+      "status": "pass",
+      "detail": {
+        "actual": false,
+        "expected": false
+      }
+    }
+  ],
+  "passes": 13,
+  "failures": 0,
+  "observed_limitations": [
+    {
+      "id": "OCR_NORMALIZATION_COLLISION",
+      "scope": "normalization.py",
+      "input": [
+        "modern",
+        "modem"
+      ],
+      "observed": [
+        "modem",
+        "modem"
+      ],
+      "meaning": "OCR mode can collapse distinct words. It must not be used to assert exact quotation or identity."
+    },
+    {
+      "id": "HTML_TABLE_CELL_JOIN",
+      "scope": "html.py",
+      "input": "<table><tr><td>Amount</td><td>500</td></tr></table>",
+      "observed": "Amount500",
+      "meaning": "Table-cell boundaries are lost. Use a structural parser for tabular legal content."
+    },
+    {
+      "id": "COQUILL_TEXT_BOOLEAN_COERCION",
+      "scope": "render.py",
+      "input": {
+        "verbatim_answer": "No",
+        "nested": {
+          "include": "false"
+        }
+      },
+      "observed": {
+        "verbatim_answer": false,
+        "nested": {
+          "include": "false"
+        }
+      },
+      "meaning": "Blind coercion changes literal text answers and does not recurse through nested dictionaries; use manifest-declared types."
+    },
+    {
+      "id": "COQUILL_FILTERED_VARIABLE_MISSED",
+      "scope": "analyze.py",
+      "input": "{{ client_name | upper }}",
+      "observed_unconditional_variables": [],
+      "meaning": "Regex variable grammar misses filtered Jinja expressions; validate with an AST/explicit template schema."
+    },
+    {
+      "id": "COQUILL_WINDOWS_TIME_LOSS",
+      "scope": "transcribe.py",
+      "input": "2026-09-12T12:03:00Z",
+      "observed": null,
+      "platform": "Windows",
+      "meaning": "%-I formatting is not supported on this Windows runtime and drops the displayed timestamp."
+    },
+    {
+      "id": "COQUILL_PREFILL_CONFIRMED_VALUES_OMITTED",
+      "scope": "transcribe.py",
+      "observed": "## Confirmed Values\n",
+      "meaning": "A prefill-only interview produces an empty confirmed-values section; collected prefill_values are not written there."
+    },
+    {
+      "id": "PRIVACY_AUDIT_MARKDOWN_COVERAGE",
+      "input": "The controller must disclose the policy.",
+      "observed_findings": [
+        {
+          "severity": "ERROR",
+          "message": "Substantive claim lacks inline citation."
+        }
+      ],
+      "meaning": "The regex auditor skips bullets, numbered items and table rows. Passing output does not establish citation coverage."
+    },
+    {
+      "id": "PRIVACY_AUDIT_MARKDOWN_COVERAGE",
+      "input": "- The controller must disclose the policy.",
+      "observed_findings": [],
+      "meaning": "The regex auditor skips bullets, numbered items and table rows. Passing output does not establish citation coverage."
+    },
+    {
+      "id": "PRIVACY_AUDIT_MARKDOWN_COVERAGE",
+      "input": "1. The controller must disclose the policy.",
+      "observed_findings": [],
+      "meaning": "The regex auditor skips bullets, numbered items and table rows. Passing output does not establish citation coverage."
+    },
+    {
+      "id": "PRIVACY_AUDIT_MARKDOWN_COVERAGE",
+      "input": "| The controller must disclose the policy. |",
+      "observed_findings": [],
+      "meaning": "The regex auditor skips bullets, numbered items and table rows. Passing output does not establish citation coverage."
+    },
+    {
+      "id": "PRIVACY_AUDIT_GENERIC_SECTION_NOT_VERIFIED",
+      "input": "The controller must disclose the policy (§ 999999).",
+      "observed_findings": [],
+      "meaning": "A generic section-shaped string can satisfy citation presence without a source lookup."
+    },
+    {
+      "id": "COQUILL_UNDEFINED_VARIABLE_FALSE_PASS",
+      "status": "not_executed_dependency_unavailable",
+      "source_analysis": "Default jinja2.Template is used without StrictUndefined; rendering behavior needs integration validation."
+    }
+  ],
+  "manifest_hashes_verified": 203
+}

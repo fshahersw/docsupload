@@ -1,0 +1,82 @@
+{
+  "input_files": [
+    {
+      "name": "sw_agents.json",
+      "source_path": "[local source path omitted]",
+      "bytes": 94536,
+      "sha256": "4dfe176876a4b7d42334f7192e8512da8991d850f6f0ded4b129506f1588531a",
+      "line_count": 1859,
+      "handling": "Read as reference data only; supplied scripts not executed."
+    },
+    {
+      "name": "sw_agents_catalog.md",
+      "source_path": "[local source path omitted]",
+      "bytes": 54754,
+      "sha256": "4c4afc11b5b9bf8f5f050fe3d716545155d790a8cdf3d9fdfddb55d274031e00",
+      "line_count": 980,
+      "handling": "Read as reference data only; supplied scripts not executed."
+    },
+    {
+      "name": "sw_agents.schema.json",
+      "source_path": "[local source path omitted]",
+      "bytes": 7246,
+      "sha256": "b05bbdf98965629a0803c39375d40e37cd11f9a75ba6ac879a8a5d91894cbd5e",
+      "line_count": 284,
+      "handling": "Read as reference data only; supplied scripts not executed."
+    },
+    {
+      "name": "build_agents.py",
+      "source_path": "[local source path omitted]",
+      "bytes": 81387,
+      "sha256": "388376475a8686de42e1a797970773df8bbe980b98808c8300fa326e4f0cfa32",
+      "line_count": 1383,
+      "handling": "Read as reference data only; supplied scripts not executed."
+    },
+    {
+      "name": "validate_agents.py",
+      "source_path": "[local source path omitted]",
+      "bytes": 5215,
+      "sha256": "ecb2f0819ff14eca07647fa6d294cbcc7f98d0241bf0f14ddee8e1eb04cecf7b",
+      "line_count": 140,
+      "handling": "Read as reference data only; supplied scripts not executed."
+    }
+  ],
+  "canonical_baseline": {
+    "path": "[local source path omitted]",
+    "sha256": "5b5e0ada68233e71398b8a204337164c09902b629c8ee9ff5b0e3149bb28ef91",
+    "record_count": 139,
+    "counts": {
+      "by_kind": {
+        "workflow": 8,
+        "skill": 59,
+        "agent": 72
+      },
+      "by_origin": {
+        "Firm litigation recipes": 8,
+        "LegalQuants community": 44,
+        "Lavern": 72,
+        "LegalQuants built-in": 15
+      },
+      "by_category": {
+        "Discovery & evidence": 10,
+        "Court practice": 6,
+        "Research & authority": 16,
+        "Contracts & transactions": 26,
+        "Coordination": 19,
+        "Design & communication": 9,
+        "Drafting & documents": 14,
+        "Operations & quality": 13,
+        "Privacy & privilege": 9,
+        "Regulatory & compliance": 17
+      },
+      "by_readiness": {
+        "Workflow specification": 8,
+        "Prompt specification": 59,
+        "Agent prompt specification": 68,
+        "Profile only": 4
+      },
+      "full_instruction_text_included": 110
+    }
+  },
+  "supplied_scripts_executed": false
+}

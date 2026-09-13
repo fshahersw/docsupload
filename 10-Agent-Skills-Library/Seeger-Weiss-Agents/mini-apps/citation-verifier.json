@@ -1,0 +1,118 @@
+{
+  "id": "citation-verifier-review",
+  "title": "Proposition and quotation verifier",
+  "readiness": "Mini-app interface specification",
+  "implemented": false,
+  "route": null,
+  "launch_mode": "Explicit user run; no scheduler or upload listener installed",
+  "input_form_schema_ref": "10-Agent-Skills-Library/Seeger-Weiss-Agents/contracts/citation-verifier.input.schema.json",
+  "result_schema_ref": "10-Agent-Skills-Library/Seeger-Weiss-Agents/contracts/citation-verifier.output.schema.json",
+  "views": [
+    {
+      "id": "claims-and-support",
+      "label": "Claims and support"
+    },
+    {
+      "id": "quotation-differences",
+      "label": "Quotation differences"
+    },
+    {
+      "id": "unread-sources",
+      "label": "Unread sources"
+    },
+    {
+      "id": "side-by-side-source",
+      "label": "Side-by-side source"
+    }
+  ],
+  "table_columns": [
+    {
+      "key": "claim_id",
+      "label": "Claim id",
+      "description": "Stable draft paragraph/claim identifier.",
+      "type": "string"
+    },
+    {
+      "key": "claim_text",
+      "label": "Claim text",
+      "description": "Exact proposition under review.",
+      "type": "string"
+    },
+    {
+      "key": "citation_raw",
+      "label": "Citation raw",
+      "description": "Citation as written.",
+      "type": "string"
+    },
+    {
+      "key": "canonical_authority_id",
+      "label": "Canonical authority id",
+      "description": "Resolved source identity, null if unresolved.",
+      "type": "nullable_string"
+    },
+    {
+      "key": "support_result",
+      "label": "Support result",
+      "description": "Supports, qualified, does not support, conflicts, or source unavailable.",
+      "type": "string"
+    },
+    {
+      "key": "quotation_result",
+      "label": "Quotation result",
+      "description": "Exact, disclosed normalization, altered, not a quotation or unverified.",
+      "type": "string"
+    },
+    {
+      "key": "source_character",
+      "label": "Source character",
+      "description": "Holding, dictum, party argument, dissent, quotation or unclear.",
+      "type": "nullable_string"
+    },
+    {
+      "key": "recommended_revision",
+      "label": "Recommended revision",
+      "description": "Specific corrected wording or a source request; not an unverified substitute citation.",
+      "type": "nullable_string"
+    },
+    {
+      "key": "treatment_scope",
+      "label": "Treatment scope",
+      "description": "Not checked or separately linked treatment review.",
+      "type": "string"
+    }
+  ],
+  "shared_views": [
+    "Coverage and failures",
+    "Source requests",
+    "Draft export"
+  ],
+  "actions": [
+    {
+      "id": "run",
+      "label": "Run scoped analysis",
+      "handler": null,
+      "enabled": false,
+      "requires": "Verified host agent and source adapters"
+    },
+    {
+      "id": "open_source",
+      "label": "Open source",
+      "handler": null,
+      "enabled": false,
+      "requires": "Authorized source resolver and safe viewer"
+    },
+    {
+      "id": "export",
+      "label": "Export draft table",
+      "handler": null,
+      "enabled": false,
+      "requires": "Bound artifact writer with source rights and spreadsheet-cell sanitization"
+    }
+  ],
+  "accessibility": [
+    "Semantic table with keyboard-accessible source links",
+    "Status labels in text, not color alone",
+    "Announce progress and errors; preserve focus when results refresh"
+  ],
+  "host_integration_note": "UI contract only. Reuse the platform shell and tested components; paths, handlers, server DTOs and persistence require verified host integration."
+}

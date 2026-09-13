@@ -1,0 +1,811 @@
+{
+  "repo": "https://github.com/AnttiHero/lavern",
+  "commit": "526a3b833705153a056770e3acb4c7e3c1e1c210",
+  "method": "git show COMMIT:path; TypeScript AST only; no upstream source execution",
+  "typescript_version": "5.9.3",
+  "included_file_count": 100,
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358,
+      "git_blob": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/LICENSE"
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "3295547005bc6d8346ae138f2f5dcdefd8ec85da0c8f12eea4aa13bf11c7c339",
+      "bytes": 5808,
+      "git_blob": "3e00737f2a5524059603aba7df008b4f6a78ec71",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/NOTICE"
+    },
+    {
+      "path": "src/agents/definitions.ts",
+      "sha256": "25835dfd36bb93a9c16f65bb1bfaa018aa832e2416296fcfbf15f6000b1ec4a1",
+      "bytes": 38354,
+      "git_blob": "1f29366a731c3917b485fb5948bafe1ce7213876",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/definitions.ts"
+    },
+    {
+      "path": "src/agents/profiles.ts",
+      "sha256": "479b77801097676b9f49d442599898e91739cdd845135873f08c915e14d363e2",
+      "bytes": 144895,
+      "git_blob": "297dcebaa8b9d1c1f7f54e060934f20c1a25536e",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/profiles.ts"
+    },
+    {
+      "path": "src/agents/prompts/accessibility-specialist.ts",
+      "sha256": "e6db6ef383018a3d143066234d577618f59d1c9b64c19b84f7c9a19ab9d6e139",
+      "bytes": 5581,
+      "git_blob": "113a3d9b0bff11fa5feabe48e461e7a47d7ad4df",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/accessibility-specialist.ts"
+    },
+    {
+      "path": "src/agents/prompts/ai-ethics-specialist.ts",
+      "sha256": "9c1d8a872e1c37ab011bc9e636c376cda139483f141235ef743071c22f958149",
+      "bytes": 6956,
+      "git_blob": "1a89acc948a9cb61b0bf490475718174c81c2531",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/ai-ethics-specialist.ts"
+    },
+    {
+      "path": "src/agents/prompts/antitrust-specialist.ts",
+      "sha256": "11251f24404db749d83828687d0596abe334e504ffd631a5f089b027bcc003be",
+      "bytes": 6341,
+      "git_blob": "01c06d518e5ccae75af710e6072b9de44576db37",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/antitrust-specialist.ts"
+    },
+    {
+      "path": "src/agents/prompts/arbitration-specialist.ts",
+      "sha256": "5fa42f71b84fd9cfdbc6a519093fa9798946e419bad3ab8d071b3aa32b320be8",
+      "bytes": 7028,
+      "git_blob": "018951ffbaf0268abab901010b853c4fc105a8a3",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/arbitration-specialist.ts"
+    },
+    {
+      "path": "src/agents/prompts/banking-finance.ts",
+      "sha256": "eb94dd479a03632a7223d73e011fcac88455c359ec490c4c763f0c897cb08ef8",
+      "bytes": 7186,
+      "git_blob": "628d1c960b9b5566164115827d6a5c85fe8c0012",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/banking-finance.ts"
+    },
+    {
+      "path": "src/agents/prompts/behavioral-scientist.ts",
+      "sha256": "935718d28298f2979dd289ae408f3b507474fb0668a912492c0d1722ccee0521",
+      "bytes": 5743,
+      "git_blob": "9ff1c30c1ef7fa3b68f65a816316082335109f0b",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/behavioral-scientist.ts"
+    },
+    {
+      "path": "src/agents/prompts/capital-markets.ts",
+      "sha256": "463941b4672e9cb3fa94343b15ab67a4c505d02910d133d7308aaed36e4212f0",
+      "bytes": 6764,
+      "git_blob": "22cb6bc2b091189a06f8abe3c07cbe981e3fa0f8",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/capital-markets.ts"
+    },
+    {
+      "path": "src/agents/prompts/client-proxy.ts",
+      "sha256": "3ea42dfea5ef269b940eca3562762143176e069985fab38c1109aab8519e3637",
+      "bytes": 4400,
+      "git_blob": "e8397e9941c27d73dbbdb6c6b645d53340949918",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/client-proxy.ts"
+    },
+    {
+      "path": "src/agents/prompts/client-relations-partner.ts",
+      "sha256": "79c1b4fb031e982ed033633309ff62dd9b9d2a44ca95ee16678a6a4c2d3c3341",
+      "bytes": 6715,
+      "git_blob": "82c6241c09b5d92c25868e8d3f981ef5dbd753ae",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/client-relations-partner.ts"
+    },
+    {
+      "path": "src/agents/prompts/compliance-officer.ts",
+      "sha256": "66a3b57ebe3680998030b2cffdeac31b752514f7f80870cb91612eb9ad96b5c3",
+      "bytes": 6448,
+      "git_blob": "2069ca2fc039eef57ddc339296676d7664b9c4f4",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/compliance-officer.ts"
+    },
+    {
+      "path": "src/agents/prompts/contract-reviewer.ts",
+      "sha256": "b98f6e6b7910de97b74d39cc5bb1e20560e9503f629bc4d7468d56f9e34b533a",
+      "bytes": 17416,
+      "git_blob": "d72bceb1c7c7043ff0ebfb77dcac373146821a90",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/contract-reviewer.ts"
+    },
+    {
+      "path": "src/agents/prompts/contract-specialist.ts",
+      "sha256": "040b876cc218dac50049617ad2c71c8647260d7a293bf8fd8026d547bf67c3aa",
+      "bytes": 6629,
+      "git_blob": "84fbdfd3df437e3860f795d51361b41bd73a31cd",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/contract-specialist.ts"
+    },
+    {
+      "path": "src/agents/prompts/corporate-generalist.ts",
+      "sha256": "63bd40ffeb77ad00f14ed524fe747be36040f02a8c9279b5d5889b5a5dee94f8",
+      "bytes": 5667,
+      "git_blob": "7936239f12976a3820ebb7a3b46c02a51b533cfc",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/corporate-generalist.ts"
+    },
+    {
+      "path": "src/agents/prompts/cybersecurity-advisor.ts",
+      "sha256": "19e51175c693edb335f666339940e2ab7b18b35ed6caf957df7021aaffc1ae76",
+      "bytes": 6775,
+      "git_blob": "f19a2bc20a237145ab075a164def66838d7ccac6",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/cybersecurity-advisor.ts"
+    },
+    {
+      "path": "src/agents/prompts/design-reviewer.ts",
+      "sha256": "af786a146640cca08634ae9cf4d9704400e47bf17acdbc4588a5c1508cd243ef",
+      "bytes": 10411,
+      "git_blob": "5445b1e50dccc36f70a9f5aeb548ff06db3c25ca",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/design-reviewer.ts"
+    },
+    {
+      "path": "src/agents/prompts/dispute-resolution.ts",
+      "sha256": "898d46c5425a227e488d45a10531f4aed18b75f4ee4452ed7a6d84e22ca6cfde",
+      "bytes": 7452,
+      "git_blob": "4b94e0f4f825f4d461418314a53f4b5edfe08eac",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/dispute-resolution.ts"
+    },
+    {
+      "path": "src/agents/prompts/employment-counsel.ts",
+      "sha256": "fdb7c52f2c35f6613ca765d653fff7440a7cbba5177ec98100432840834aee7b",
+      "bytes": 7513,
+      "git_blob": "e65c5a492a6061f27588d74e574c0f4cd4d5b44d",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/employment-counsel.ts"
+    },
+    {
+      "path": "src/agents/prompts/energy-specialist.ts",
+      "sha256": "1270a05dfc320bfbe1861c77f36ae5d37ab50b296870c9612778588647a2bbd0",
+      "bytes": 7199,
+      "git_blob": "a09487b7ffb60785216b1c952c1119a083b92fbc",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/energy-specialist.ts"
+    },
+    {
+      "path": "src/agents/prompts/environmental-counsel.ts",
+      "sha256": "61dec0817aafdec639b4785cb1500b91659741274876515cf1a77bf09b45ba22",
+      "bytes": 7392,
+      "git_blob": "d3e52957c4041989d33a9a5fb620b806afd922d2",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/environmental-counsel.ts"
+    },
+    {
+      "path": "src/agents/prompts/ethics-auditor.ts",
+      "sha256": "e2f7593db3c8d66ebacdc93bf9d9b971c63ced74e9d36b0eaafebd49b7dbe016",
+      "bytes": 12503,
+      "git_blob": "9662785e964429319bc329f2d611981aeb79ad6b",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/ethics-auditor.ts"
+    },
+    {
+      "path": "src/agents/prompts/ethics-reviewer.ts",
+      "sha256": "7ed681c2a45061433b5468ff2b2ff761c23029d5012f7ad8a5c0554cbfa77f4e",
+      "bytes": 7031,
+      "git_blob": "424db881658257255722aeef0f212c738cd5ad6f",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/ethics-reviewer.ts"
+    },
+    {
+      "path": "src/agents/prompts/evaluator.ts",
+      "sha256": "23d92f20147440e8858ea78550588d7cd1b438ff438ad4f054878cef98be8246",
+      "bytes": 18195,
+      "git_blob": "5be69be8a7b1e0d7945cc562228db3e71a3de22a",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/evaluator.ts"
+    },
+    {
+      "path": "src/agents/prompts/fintech-specialist.ts",
+      "sha256": "bbcb00c649bdc8d127928b55d243148e1e7d5d91c087989129013bf5342d716d",
+      "bytes": 6662,
+      "git_blob": "4bd03af0b0180767886f24aacde739c1d59b4b69",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/fintech-specialist.ts"
+    },
+    {
+      "path": "src/agents/prompts/healthcare-specialist.ts",
+      "sha256": "c0a1f9e2a02ac2bbdeb393b3bac50e51166c4e03bfee5863434adbd36f0f9079",
+      "bytes": 7222,
+      "git_blob": "e1d4e0ba4901bcc098e1292cc437641d546f21cb",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/healthcare-specialist.ts"
+    },
+    {
+      "path": "src/agents/prompts/innovation-partner.ts",
+      "sha256": "96bbe28dff408e9ea572bb8985f77fd7f02eea5058f692c1f4b62bfd4ffecadf",
+      "bytes": 6088,
+      "git_blob": "04506dd16f282fa6f833bcfb64c6c29b45934116",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/innovation-partner.ts"
+    },
+    {
+      "path": "src/agents/prompts/international-counsel.ts",
+      "sha256": "e56d38e9359712fb6bd8e2b4d831baf5d579efcc8116aeeda401c1e7cf458121",
+      "bytes": 6814,
+      "git_blob": "75b0431b58175cb080478e67557ecb242b190c91",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/international-counsel.ts"
+    },
+    {
+      "path": "src/agents/prompts/ip-specialist.ts",
+      "sha256": "1a7cd8879e50547b3cd6761c6a7c38b3716d9fdc43f7f63dc0932b2f51fc5a27",
+      "bytes": 6980,
+      "git_blob": "dafed1fffb320e817c37c5dd49ff0a258dd13b74",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/ip-specialist.ts"
+    },
+    {
+      "path": "src/agents/prompts/junior-associate.ts",
+      "sha256": "95a1aae17726af100af4af735591d7c145fd68caa83fcfca3a3e419abce15e5e",
+      "bytes": 6225,
+      "git_blob": "c18ad0e3356a5c592685c5163b5ab237ed5e5af1",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/junior-associate.ts"
+    },
+    {
+      "path": "src/agents/prompts/legal-engineer.ts",
+      "sha256": "a1de9d3390eb8d518c395a613216b4fc0601f45e0c3857a587489aca18e3ecb3",
+      "bytes": 6143,
+      "git_blob": "d7c67449bb0c7a7c6d1cb69ee12c757302dff21f",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/legal-engineer.ts"
+    },
+    {
+      "path": "src/agents/prompts/legal-intern.ts",
+      "sha256": "41a3b7b588649e4052f92f73c811a76af676e34cbf4568692cb9a1638de5f789",
+      "bytes": 6292,
+      "git_blob": "f9a279e16ac4f7c70ab287bc0b417a88383192d4",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/legal-intern.ts"
+    },
+    {
+      "path": "src/agents/prompts/legal-researcher.ts",
+      "sha256": "03de5b36df256694735b40e72d6b0f469e18cd05d71cd0cf200002d5ce8c5a6d",
+      "bytes": 5651,
+      "git_blob": "6bf59f497593ea5ec5b6fde9c7a19d7884b2ed83",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/legal-researcher.ts"
+    },
+    {
+      "path": "src/agents/prompts/litigation-associate.ts",
+      "sha256": "80b7805f06213da18c8e9cb128da8861152e700d3b23e49b40e2eeb49633ffba",
+      "bytes": 7069,
+      "git_blob": "2d3bf32ca69ab7ad0b3420d4cbe90d2a031c7445",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/litigation-associate.ts"
+    },
+    {
+      "path": "src/agents/prompts/litigation-partner.ts",
+      "sha256": "4311bf69ac3e5614ef0a979ad9519c285b2af348bce8bfa41d7ccf37dde9f112",
+      "bytes": 7065,
+      "git_blob": "3550e8b6fc3de0bcdd31573a1372e0db03b7d532",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/litigation-partner.ts"
+    },
+    {
+      "path": "src/agents/prompts/ma-specialist.ts",
+      "sha256": "9dc74152221db4a886478cff7724cd9112c78ae6a351ebc217292488f943d099",
+      "bytes": 6383,
+      "git_blob": "8b9fe8cad023c31811fca46f22d4b527755f1fec",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/ma-specialist.ts"
+    },
+    {
+      "path": "src/agents/prompts/managing-partner.ts",
+      "sha256": "59e9d012045f2055b6cbeff88df3d56ae4ad818ed8a3e6ee42fbf08f6291ed4a",
+      "bytes": 5315,
+      "git_blob": "ea0db1d120514ae979d387037835cf1c74f949ff",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/managing-partner.ts"
+    },
+    {
+      "path": "src/agents/prompts/meaning-guardian.ts",
+      "sha256": "3ecbf0e29b3ba6d34d448e276c9551842344e7b942b8f29ff5512ecd8fdaf6c3",
+      "bytes": 12752,
+      "git_blob": "44ccd98d61774e5d93094605a21434e19b218537",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/meaning-guardian.ts"
+    },
+    {
+      "path": "src/agents/prompts/media-specialist.ts",
+      "sha256": "a16aa7eb0335bf16347b6d4ca3dd1d96ab618c013fa85fec2f7221536dfa55a1",
+      "bytes": 6895,
+      "git_blob": "dcb1cefc22da96822da63a97bc02451305cab34d",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/media-specialist.ts"
+    },
+    {
+      "path": "src/agents/prompts/of-counsel.ts",
+      "sha256": "e1a2e2c1e584f3d27d19b75490132daf1d89d3d23b17b98144ea96f83679d4cc",
+      "bytes": 6262,
+      "git_blob": "11dd966cb0c04d769f5fb10ad47647b8e0a7bcd6",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/of-counsel.ts"
+    },
+    {
+      "path": "src/agents/prompts/orchestrator-adversarial.ts",
+      "sha256": "9e3f16250b377b5ff5833896550b1f57a7777f2c4fedf5317f2a85d6d6e6f19a",
+      "bytes": 9801,
+      "git_blob": "d9200713aba17790fa92b2dbfcc856016ae5e52d",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/orchestrator-adversarial.ts"
+    },
+    {
+      "path": "src/agents/prompts/orchestrator-counsel.ts",
+      "sha256": "552cfb7dda87f893e2d7ed9f3c72981d79159343177fc2f90a601d9b089946d9",
+      "bytes": 6383,
+      "git_blob": "868987c5ac00402c914e40ec682ccbfa77070dec",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/orchestrator-counsel.ts"
+    },
+    {
+      "path": "src/agents/prompts/orchestrator-full-bench.ts",
+      "sha256": "f2e5a2831d4cee969315a56e97d0d6add907cfee8fd7c39332121a7540e8d5c2",
+      "bytes": 15073,
+      "git_blob": "686d1cb0984ad52d989adaa7a0f3af55fad8ea0c",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/orchestrator-full-bench.ts"
+    },
+    {
+      "path": "src/agents/prompts/orchestrator-review.ts",
+      "sha256": "0ec05eaf170af6196960dfa0d22e0744cc3d02b412a681ffc8150fb53f49c7a7",
+      "bytes": 12728,
+      "git_blob": "3bec7724c17d3cd8e67a519d4983e91727e6d3bb",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/orchestrator-review.ts"
+    },
+    {
+      "path": "src/agents/prompts/orchestrator-roundtable.ts",
+      "sha256": "641c21ebed48309c1ec2a472dead43ff39bcde2576b9c68979e28d6950edcf12",
+      "bytes": 10508,
+      "git_blob": "19b48edd23568055bcd5c23bb26b910974b2fe7b",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/orchestrator-roundtable.ts"
+    },
+    {
+      "path": "src/agents/prompts/orchestrator-tabulate.ts",
+      "sha256": "bf9e48df2550a342d959552b8beca6872d22d501a4b93bc3073bfbc226216c19",
+      "bytes": 7668,
+      "git_blob": "abeb791192c0528f254f5230f2967395644594f9",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/orchestrator-tabulate.ts"
+    },
+    {
+      "path": "src/agents/prompts/orchestrator-verification.ts",
+      "sha256": "61edcddfb0bc4de2e1d98c247c79690f3bea2d529f13246edd75cc5b24e42d60",
+      "bytes": 8927,
+      "git_blob": "751d43f228fa929830c74771cd85125fd8d50eb2",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/orchestrator-verification.ts"
+    },
+    {
+      "path": "src/agents/prompts/orchestrator.ts",
+      "sha256": "d842faf1aa776f74ea806953e4be41e9bb3509245cf16e8e2fede231724d0199",
+      "bytes": 13476,
+      "git_blob": "c7e7a00923210891e2391f2666a6b4c6a9040bd1",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/orchestrator.ts"
+    },
+    {
+      "path": "src/agents/prompts/paralegal.ts",
+      "sha256": "473a3918dab3d8b13379093513b5ccc75826e5c24785c5db1c450f33a35781c6",
+      "bytes": 6368,
+      "git_blob": "a8e9c2816101a6c53dbdacebb9a11e6b5b2fab9d",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/paralegal.ts"
+    },
+    {
+      "path": "src/agents/prompts/plain-language-specialist.ts",
+      "sha256": "9ccd24adf9d62820fc2bdc038fa39b92d770118178f10149eccf6209937a4e9d",
+      "bytes": 12382,
+      "git_blob": "5c57505db4cd51f62b3aec2bcf288f190a46ee0c",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/plain-language-specialist.ts"
+    },
+    {
+      "path": "src/agents/prompts/privacy-counsel.ts",
+      "sha256": "1d3aac9f8a184d06df3e6c7bc4a52f63a95fbbb9f0209e330e028b27ecff7e1f",
+      "bytes": 7280,
+      "git_blob": "8eb3f17dd34120fc8b27c9761de33714c759fc3f",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/privacy-counsel.ts"
+    },
+    {
+      "path": "src/agents/prompts/project-manager.ts",
+      "sha256": "0953671e410d172fa31163f423801e2a9a783ae84f20ce0fc2fa13e56e96ccb6",
+      "bytes": 6437,
+      "git_blob": "6f8799713fa6d799cced6971dbf8714a27897dd1",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/project-manager.ts"
+    },
+    {
+      "path": "src/agents/prompts/public-law-counsel.ts",
+      "sha256": "d5bb902c6b484e952a2f59055c587a57b09d4acd6136952f231398e18b018921",
+      "bytes": 7779,
+      "git_blob": "d319c7ed90faafb8c79b48f1149e303b4f3b96a4",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/public-law-counsel.ts"
+    },
+    {
+      "path": "src/agents/prompts/real-estate-counsel.ts",
+      "sha256": "9df8ca1996f5720a445acc5ecc20180dd45e5829ae342682ad7362e82150046d",
+      "bytes": 7845,
+      "git_blob": "669ceeb26249fce28e466cdde5259d10a6f14e51",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/real-estate-counsel.ts"
+    },
+    {
+      "path": "src/agents/prompts/red-team.ts",
+      "sha256": "f77d941c7acc4bbc945927182eb8a1133b2cde1a7bec51e230fd9a9312ffe3b8",
+      "bytes": 8050,
+      "git_blob": "53ae3e10c4ab6980b3c23ebb5daefc3d24b0eda1",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/red-team.ts"
+    },
+    {
+      "path": "src/agents/prompts/regulatory-counsel.ts",
+      "sha256": "83c7c7ff8fb40b4d17d8adba303f04e0d32554956d0555d87423eafa5cdabe47",
+      "bytes": 6337,
+      "git_blob": "48d4284b83443927fd8c25668f7b9c18c2d7bca6",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/regulatory-counsel.ts"
+    },
+    {
+      "path": "src/agents/prompts/restructuring-specialist.ts",
+      "sha256": "116f558e45126d36d82c2e87b8c67f8aff09390517add27c432ec79d758ae18a",
+      "bytes": 9254,
+      "git_blob": "7179e7deaea55ddccd901352ec75c10393394647",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/restructuring-specialist.ts"
+    },
+    {
+      "path": "src/agents/prompts/risk-partner.ts",
+      "sha256": "105227eb120cbac179a9b8cd5b0f59dc8a9a49ec42698c1f9452668a1e9b3250",
+      "bytes": 7589,
+      "git_blob": "18e6d1a7766f1d431c3ec667a31783208ba2499a",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/risk-partner.ts"
+    },
+    {
+      "path": "src/agents/prompts/risk-pricer.ts",
+      "sha256": "f6e47d63aa1a88fbe3e559105829a3d491f36ca3cb854565a85c8fd656740ec6",
+      "bytes": 5253,
+      "git_blob": "59de1c920f7b4e1a6c9bae1bd3bfd831acfb791e",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/risk-pricer.ts"
+    },
+    {
+      "path": "src/agents/prompts/sanctions-specialist.ts",
+      "sha256": "c39d463d57f95fae57202e76408f0aebb925e316f2499795b2b46e4af7c708bc",
+      "bytes": 6848,
+      "git_blob": "6a2521cc062e6a80f053bc39b1996a141189fcc3",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/sanctions-specialist.ts"
+    },
+    {
+      "path": "src/agents/prompts/service-designer.ts",
+      "sha256": "933883ab812c593c167a56e25b816af77052946d94882787e8c1361e724145fe",
+      "bytes": 4115,
+      "git_blob": "11599c5d6b9ec089e4058df02597fc7ffb341795",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/service-designer.ts"
+    },
+    {
+      "path": "src/agents/prompts/startup-counsel.ts",
+      "sha256": "01387afdb5fceec548fc1796fa98861761a8a32f91ca1e6f379e1a3395f50596",
+      "bytes": 8032,
+      "git_blob": "8367f3c09769e6e7ad99fe51db1ad2f751ba336f",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/startup-counsel.ts"
+    },
+    {
+      "path": "src/agents/prompts/supervising-partner.ts",
+      "sha256": "d4e7238e98feb00aeb837c1861f475c801e224105046c04fc6179442ba13112e",
+      "bytes": 5874,
+      "git_blob": "4f3bf4250262c1dabc68bf778805c6dacbe73af0",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/supervising-partner.ts"
+    },
+    {
+      "path": "src/agents/prompts/synthesis-editor.ts",
+      "sha256": "cb5f3cbcd6c1a8ef6b7a437af171a3b936e5c202b01c23f5bf06c08ad166e24f",
+      "bytes": 11136,
+      "git_blob": "a729938a48ff2b5461648db1bf18f89396762c07",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/synthesis-editor.ts"
+    },
+    {
+      "path": "src/agents/prompts/tax-counsel.ts",
+      "sha256": "84e10433e1cb9a90bd282316d4a2abb22709764f5a0bde8f8080d39f90b47244",
+      "bytes": 6749,
+      "git_blob": "c9ca41caf8b1e7c49fcbe2b6914d945e27e23fdc",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/tax-counsel.ts"
+    },
+    {
+      "path": "src/agents/prompts/tech-transactions.ts",
+      "sha256": "ea4a70687522e4819a3816484a8720c8748d0f152edab3c1635420e7b5e76b3d",
+      "bytes": 9350,
+      "git_blob": "163b9e4212c46e01a2d4ead63adf5eac224f0825",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/tech-transactions.ts"
+    },
+    {
+      "path": "src/agents/prompts/transaction-partner.ts",
+      "sha256": "6442bcb5a307e8e5491813c0f2e9dcdd4d93443d8575b927fc109d61fa498e52",
+      "bytes": 8672,
+      "git_blob": "1dbb45cd677b28732b50947c3de7157e1d39d15c",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/transaction-partner.ts"
+    },
+    {
+      "path": "src/agents/prompts/transformation.ts",
+      "sha256": "680f54e2b1e3856a167cd01b3a996ec3556ed43855bdeae153146bf78e1073a8",
+      "bytes": 12717,
+      "git_blob": "a942ab9d22d69d11b42b2b940b3d92c9c7463277",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/transformation.ts"
+    },
+    {
+      "path": "src/agents/prompts/user-researcher.ts",
+      "sha256": "7c18c5f1540493cadcc7b2821c77f482a205e2b3215a98bf7c8453f5653c514f",
+      "bytes": 5421,
+      "git_blob": "d76c2e7d7ee8a946b62aa0546be4e1556ab2ab22",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/agents/prompts/user-researcher.ts"
+    },
+    {
+      "path": "src/knowledge/ethics-audit.ts",
+      "sha256": "6fe79e6ee3b7f7bf45c6def2c2b488692537adf089d4bc425f48ba98a3111805",
+      "bytes": 4629,
+      "git_blob": "4ba4e2d5c9e32cf86b37710866fb2cb546a8966d",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/knowledge/ethics-audit.ts"
+    },
+    {
+      "path": "src/knowledge/legal-sanity-check.ts",
+      "sha256": "5a5601145c5ce931bcc7a0b525e7b89ec2701d72e86eb0c972d5fb3de3845555",
+      "bytes": 2397,
+      "git_blob": "328fad9a875cb8ce125586377a9629bd6cf88b2b",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/knowledge/legal-sanity-check.ts"
+    },
+    {
+      "path": "src/knowledge/meaning-preservation.ts",
+      "sha256": "a8477000ad291f73968d548bdf8c3a1ae4eb1faca9fb570ce7d442d39b8d193c",
+      "bytes": 3079,
+      "git_blob": "49773d340f78049ac710aab25fe63deb760a36f7",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/knowledge/meaning-preservation.ts"
+    },
+    {
+      "path": "src/knowledge/pattern-library.ts",
+      "sha256": "d10b23bf6ed5c269345f45bf64f043995767c5feacb9b89b7fac2d9196152df4",
+      "bytes": 3538,
+      "git_blob": "d707bdffdf193de9535f8c9f1d0d09ce7deeb031",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/knowledge/pattern-library.ts"
+    },
+    {
+      "path": "src/knowledge/persona.ts",
+      "sha256": "9dbcd437bb448ffa3ec116fbf22cf4b7161ebfb7292ed4649efbcc0ebb7453ee",
+      "bytes": 3029,
+      "git_blob": "5dd181e348258a0c5cfd136b183c7c30e7e844d4",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/knowledge/persona.ts"
+    },
+    {
+      "path": "src/knowledge/plain-language.ts",
+      "sha256": "a4a827973dc8561e049fbccda61a146096c6b3afba994ce9b611003d40ed4063",
+      "bytes": 2557,
+      "git_blob": "f5a8a71ac0d20fcd5598c4102a3cce55155c5633",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/knowledge/plain-language.ts"
+    },
+    {
+      "path": "src/knowledge/scoring-rubric.ts",
+      "sha256": "111a94308cc1888664111027f5e5f6c78ed300314f6c1aa91dc3cfbedf2e0f19",
+      "bytes": 3560,
+      "git_blob": "3531d23cc6196df577d9b4ad97ad00780c725730",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/knowledge/scoring-rubric.ts"
+    },
+    {
+      "path": "src/types/agent-profile.ts",
+      "sha256": "c8b7b819ec627db95ca5656d11bd5600a90d08737ff48941b2bd0313246d958d",
+      "bytes": 5113,
+      "git_blob": "dd47fa5847360c250c7216d32557b6017ce25ef2",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/types/agent-profile.ts"
+    },
+    {
+      "path": "src/types/audit.ts",
+      "sha256": "bd11b37d0006d66811adb09d680e4563cf14880792d4bacc1a5865eedfce9306",
+      "bytes": 1906,
+      "git_blob": "8aaa2ad65f73f0e9f1c2246d77d97283ceacf045",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/types/audit.ts"
+    },
+    {
+      "path": "src/types/baselines.ts",
+      "sha256": "551f85f0d51e104c317c67cf7dc4bc46dc6502ec6336fab5e4d44d0aa0375cb7",
+      "bytes": 2270,
+      "git_blob": "08bedea9db137107ccf10e7b1362af351ecc57cb",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/types/baselines.ts"
+    },
+    {
+      "path": "src/types/client.ts",
+      "sha256": "41e03fce54a01c22c42a423e6fe6d58fa70ec513fcfc0e69582f529d23cba296",
+      "bytes": 2064,
+      "git_blob": "aec993ff0ad5b0a8a6ebf087e09621ec16a67957",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/types/client.ts"
+    },
+    {
+      "path": "src/types/debate.ts",
+      "sha256": "79a2d2814d5f4d23aff52f2a36f021a9075d407d2dc5d27422ef6d4810a0d72b",
+      "bytes": 2715,
+      "git_blob": "9ef417566a48aa1c62cef0c3a4e7b3af86551c77",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/types/debate.ts"
+    },
+    {
+      "path": "src/types/engagement.ts",
+      "sha256": "eeb1a6e9ec8d7224a21bcba30504f948034f7f41ed4bc60938b78db78f073946",
+      "bytes": 4450,
+      "git_blob": "09be873d42417abd9e3a20bbcd51c46ae5afdd06",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/types/engagement.ts"
+    },
+    {
+      "path": "src/types/index.ts",
+      "sha256": "d664bb92f181a93d4a12bc6513f49fa282d4741c2cd8c2a52a3adcb05e676444",
+      "bytes": 6921,
+      "git_blob": "55599c017ddb843a4191aae6e67bca663507ae30",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/types/index.ts"
+    },
+    {
+      "path": "src/types/matter.ts",
+      "sha256": "0577a8c8235b869b64a6ad765c76deb29a58af0ef19381797059587f7f0070b9",
+      "bytes": 5764,
+      "git_blob": "45f95e3ea92709df3e1fff6ac4a1034aa3811f7b",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/types/matter.ts"
+    },
+    {
+      "path": "src/types/output-schemas.ts",
+      "sha256": "43b7e597e3a13fe8bf53a8449ec979c91a54d0ed41c519ec3bb4cd11514a2a90",
+      "bytes": 31749,
+      "git_blob": "dea061a8db22c94a1f826b5934340a56323ec476",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/types/output-schemas.ts"
+    },
+    {
+      "path": "src/types/report-card.ts",
+      "sha256": "77611021d0bcdb3bb93c2efbe0962e882e9937c473021ffd7c9841704a74b0a8",
+      "bytes": 3777,
+      "git_blob": "a59c50f6fe45f7fd6e988e4a32cb653c6758d8c7",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/types/report-card.ts"
+    },
+    {
+      "path": "src/types/verification.ts",
+      "sha256": "1f723ab491e2828560b5bba774278b9a130fa1208b7314152d0a527ce6ccb88a",
+      "bytes": 6389,
+      "git_blob": "280249d045dc0def6b30ede3b7156e6e7ebdcbce",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/types/verification.ts"
+    },
+    {
+      "path": "src/types/workflow.ts",
+      "sha256": "ffc456581f199d37c672f1a020ec89ad604636406ae061e0a4bcffd1eca1ab62",
+      "bytes": 9137,
+      "git_blob": "6853d3e7e9e7f330d3aa1329dc009d4724ff85dc",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/types/workflow.ts"
+    },
+    {
+      "path": "src/workflows/orchestrator-mapping.ts",
+      "sha256": "37d7c4945fd40f1a7a3329d59cea23f6143ee250861d58805524fbcdd0f0c6ba",
+      "bytes": 2869,
+      "git_blob": "1c2dfe38ff2046db36ddbc9d0d9a89f49c305c8f",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/workflows/orchestrator-mapping.ts"
+    },
+    {
+      "path": "src/workflows/templates/adversarial.ts",
+      "sha256": "5828c0b2da2c6af1e5a00bdc60ae659a17aca6282b37563f61fc61c69b77d5f9",
+      "bytes": 5910,
+      "git_blob": "d655bcae4e5ed1110aed13be6d6554fed318bf0c",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/workflows/templates/adversarial.ts"
+    },
+    {
+      "path": "src/workflows/templates/counsel.ts",
+      "sha256": "680945d572bf2324d272102837d7fa11dd3861f3ac44fa1f25d31bc845e3b184",
+      "bytes": 3450,
+      "git_blob": "eee1acf223298684cdc82f696311ba2f83350371",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/workflows/templates/counsel.ts"
+    },
+    {
+      "path": "src/workflows/templates/full-bench.ts",
+      "sha256": "bc86607d24d3a37f7623cdbad6777e5a23c0324c12c439ce6df64df6e7720c66",
+      "bytes": 10000,
+      "git_blob": "8fc0f1010757cc202862d08dcb99fcbc1d7896c6",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/workflows/templates/full-bench.ts"
+    },
+    {
+      "path": "src/workflows/templates/legal-design.ts",
+      "sha256": "10812c4a8a2e1dbe130bc55ae09166666e5f0f8359eb40339dc1a19594f52fc8",
+      "bytes": 8127,
+      "git_blob": "9a2b68071d797b6499c9ce11700ca6388f6df872",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/workflows/templates/legal-design.ts"
+    },
+    {
+      "path": "src/workflows/templates/pre-engagement.ts",
+      "sha256": "34b4c565add6733dddd7da18890c1671d23a098794576d102353ed2722c03863",
+      "bytes": 8246,
+      "git_blob": "c79f4b5cba48e4786fef7c23f35cc514dd9316b4",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/workflows/templates/pre-engagement.ts"
+    },
+    {
+      "path": "src/workflows/templates/review.ts",
+      "sha256": "e035f87453434ef3851ec0dab7ce26a752e634654abcc118c3f1954aec9bc983",
+      "bytes": 7285,
+      "git_blob": "ebff3a6da0087f624b8bb8adad7384b4af014f72",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/workflows/templates/review.ts"
+    },
+    {
+      "path": "src/workflows/templates/roundtable.ts",
+      "sha256": "f857b10501fd201dfcbe1e4d54b582fc21ee343eb3afb84edebbf4febcd9f9c1",
+      "bytes": 8669,
+      "git_blob": "ecfb1287ce470d7e5688d54d9015a9afff0964de",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/workflows/templates/roundtable.ts"
+    },
+    {
+      "path": "src/workflows/templates/tabulate.ts",
+      "sha256": "52c39100f7ecea78b942370e3614f3bba7e39b882c8e90eeadded87fd946efe3",
+      "bytes": 3607,
+      "git_blob": "f2d26fee89b31f1aee058ced60fedeeef769e79e",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/workflows/templates/tabulate.ts"
+    },
+    {
+      "path": "src/workflows/templates/verification.ts",
+      "sha256": "bdad0e256155c4c8d39158f98e12d2c33436fd95d10cbb3767bb2f1776d8ca73",
+      "bytes": 5557,
+      "git_blob": "9f351b7835f8c8ea8689b1f045836e601a89e5a1",
+      "included": true,
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/workflows/templates/verification.ts"
+    }
+  ],
+  "scope": "Selected unchanged prompt, literal knowledge, profile, type/schema and workflow definition sources only. Runtime dependencies, installers, services, data and media are not included.",
+  "license": "Apache-2.0; unchanged source/LICENSE and source/NOTICE included."
+}

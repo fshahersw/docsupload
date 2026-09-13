@@ -1,0 +1,46 @@
+{
+  "id": "deposition-evidence-map",
+  "title": "Deposition evidence map and chronology",
+  "roles": [
+    "Trial attorney",
+    "Litigation paralegal",
+    "Case team"
+  ],
+  "purpose": "Turn transcripts into a reviewable chronology, witness/entity map and potential admission list without losing testimony context.",
+  "inputs": [
+    "transcript originals with page/line mapping",
+    "witness and proceeding metadata",
+    "exhibits if available",
+    "case issue list"
+  ],
+  "steps": [
+    "Validate witness, date, volume and page-line coverage. Keep printed transcript page numbers distinct from PDF page indices.",
+    "Extract Q/A exchanges with the adjoining question, answer, objections, corrections and qualifications needed to understand each passage.",
+    "Identify actors with aliases but preserve separate identities until supporting evidence permits a merge. Do not infer plaintiff status merely because a name appears.",
+    "Separate event dates from testimony dates; preserve approximate dates, intervals, uncertainty and conflicting accounts.",
+    "Map assertions, exhibits and people using evidence-backed edges. A contradiction candidate must show the two passages and why they concern the same fact.",
+    "Label potential admissions and impeachment leads as review candidates; export by selected analysis type with precise page-line citations and a coverage receipt."
+  ],
+  "outputs": [
+    "chronology",
+    "witness/entity register",
+    "issue-to-testimony matrix",
+    "potential admissions with qualifications",
+    "graph edge evidence records"
+  ],
+  "references": [
+    "Original-Litigation-Recipes/evidence-contract.json"
+  ],
+  "tests": [
+    "same surname different people",
+    "question restates an unaccepted premise",
+    "objection followed by changed answer",
+    "errata modifying original testimony",
+    "ambiguous year",
+    "missing exhibits",
+    "two volumes both starting at page 1"
+  ],
+  "status": "Implementation recipe; requires a host runtime, source adapters and legal evaluation.",
+  "authorship": "Original specification prepared for this library; not an upstream LegalQuants file.",
+  "evidence_contract": "evidence-contract.json"
+}

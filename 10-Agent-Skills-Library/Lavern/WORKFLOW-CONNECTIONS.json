@@ -1,0 +1,1621 @@
+[
+  {
+    "id": "adversarial",
+    "name": "Adversarial",
+    "path": "src/workflows/templates/adversarial.ts",
+    "variable": "adversarialTemplate",
+    "line": 17,
+    "prompt_role": "orchestrator-adversarial",
+    "archetype": "orchestrator-professor",
+    "steps": [
+      "intake",
+      "build",
+      "attack",
+      "synthesize",
+      "delivered"
+    ],
+    "step_definitions": {
+      "intake": {
+        "name": "intake",
+        "description": "Accept the analysis request. Identify the core question, jurisdictions, and legal domains. Query memory for existing research and precedents.",
+        "preconditions": []
+      },
+      "build": {
+        "name": "build",
+        "description": "Dispatch the builder (legal-researcher or selected specialist) to produce the strongest possible analysis with thesis, citations, and confidence levels.",
+        "preconditions": [
+          "intake"
+        ],
+        "maxIterations": 2,
+        "qualityCheckType": "self"
+      },
+      "attack": {
+        "name": "attack",
+        "description": "Dispatch the red-team attacker to stress-test the builder's analysis. Find counter-authorities, logical gaps, untested assumptions, edge cases. Max 3 challenge-response exchanges per topic.",
+        "preconditions": [
+          "build"
+        ]
+      },
+      "synthesize": {
+        "name": "synthesize",
+        "description": "Resolve the adversarial tension. Produce final output that distinguishes between defended positions, accepted vulnerabilities, and open questions.",
+        "preconditions": [
+          "attack"
+        ],
+        "maxIterations": 2,
+        "qualityCheckType": "self"
+      },
+      "delivered": {
+        "name": "delivered",
+        "description": "Stress-tested analysis delivered with confidence levels informed by adversarial review.",
+        "preconditions": [
+          "synthesize"
+        ]
+      }
+    },
+    "required_agents": [
+      "legal-researcher",
+      "red-team",
+      "synthesis-editor",
+      "ethics-reviewer"
+    ],
+    "declared_tools": [
+      "Read",
+      "Grep",
+      "Glob",
+      "Task",
+      "TodoWrite",
+      "mcp__shem__run_dissent_panel",
+      "mcp__shem__get_current_step",
+      "mcp__shem__advance_step",
+      "mcp__shem__get_workflow_history",
+      "mcp__shem__submit_handoff",
+      "mcp__shem__get_handoffs",
+      "mcp__shem__post_finding",
+      "mcp__shem__post_challenge",
+      "mcp__shem__post_response",
+      "mcp__shem__resolve_debate",
+      "mcp__shem__get_findings",
+      "mcp__shem__get_challenges",
+      "mcp__shem__get_unresolved_debates",
+      "mcp__shem__get_debate_summary",
+      "mcp__shem__query_institutional_memory",
+      "mcp__shem__add_institutional_memory",
+      "mcp__shem__load_matter_memory",
+      "mcp__shem__save_matter_memory",
+      "mcp__shem__query_precedents",
+      "mcp__shem__save_precedent",
+      "mcp__shem__search_knowledge_base",
+      "mcp__shem__list_knowledge_base_collections",
+      "mcp__shem__get_knowledge_base_entry",
+      "mcp__shem__query_anti_patterns",
+      "mcp__shem__list_documents",
+      "mcp__shem__read_document_section",
+      "mcp__shem__search_document",
+      "mcp__shem__request_risk_assessment",
+      "mcp__shem__record_risk_assessment",
+      "mcp__shem__run_quality_check",
+      "mcp__shem__record_quality_result"
+    ],
+    "phase_permissions": {
+      "intake": {
+        "denyTools": [
+          "mcp__shem__post_finding",
+          "mcp__shem__post_challenge",
+          "mcp__shem__post_response",
+          "mcp__shem__resolve_debate",
+          "mcp__shem__request_risk_assessment",
+          "mcp__shem__record_risk_assessment"
+        ],
+        "reason": "Intake phase: gather context and query memory before research."
+      },
+      "build": {
+        "denyTools": [
+          "mcp__shem__post_challenge",
+          "mcp__shem__post_response",
+          "mcp__shem__resolve_debate",
+          "mcp__shem__request_risk_assessment",
+          "mcp__shem__record_risk_assessment"
+        ],
+        "reason": "Build phase: builder produces findings. No challenges yet."
+      },
+      "attack": {
+        "denyTools": [
+          "mcp__shem__request_risk_assessment",
+          "mcp__shem__record_risk_assessment"
+        ],
+        "reason": "Attack phase: full debate tools for adversarial exchanges."
+      },
+      "synthesize": {
+        "denyTools": [
+          "mcp__shem__post_finding",
+          "mcp__shem__post_challenge",
+          "mcp__shem__post_response"
+        ],
+        "reason": "Synthesis phase: resolve debates and produce final output."
+      },
+      "delivered": {
+        "denyTools": [
+          "mcp__shem__post_finding",
+          "mcp__shem__post_challenge",
+          "mcp__shem__post_response",
+          "mcp__shem__resolve_debate"
+        ],
+        "reason": "Delivered: save precedents and memory only."
+      }
+    },
+    "source": {
+      "repo": "https://github.com/AnttiHero/lavern",
+      "url": "https://github.com/AnttiHero/lavern/blob/526a3b833705153a056770e3acb4c7e3c1e1c210/src/workflows/templates/adversarial.ts#L17",
+      "commit": "526a3b833705153a056770e3acb4c7e3c1e1c210",
+      "path": "src/workflows/templates/adversarial.ts",
+      "line": 17,
+      "license": "Apache-2.0",
+      "sha256": "5828c0b2da2c6af1e5a00bdc60ae659a17aca6282b37563f61fc61c69b77d5f9",
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/workflows/templates/adversarial.ts"
+    }
+  },
+  {
+    "id": "counsel",
+    "name": "Counsel",
+    "path": "src/workflows/templates/counsel.ts",
+    "variable": "counselTemplate",
+    "line": 17,
+    "prompt_role": "orchestrator-counsel",
+    "archetype": "orchestrator-fixer",
+    "steps": [
+      "intake",
+      "specialist_execution",
+      "delivered"
+    ],
+    "step_definitions": {
+      "intake": {
+        "name": "intake",
+        "description": "Accept request, identify the right specialist.",
+        "preconditions": []
+      },
+      "specialist_execution": {
+        "name": "specialist_execution",
+        "description": "Dispatch one specialist to produce a direct answer.",
+        "preconditions": [
+          "intake"
+        ]
+      },
+      "delivered": {
+        "name": "delivered",
+        "description": "Expert answer delivered to user.",
+        "preconditions": [
+          "specialist_execution"
+        ]
+      }
+    },
+    "required_agents": [],
+    "declared_tools": [
+      "Read",
+      "Grep",
+      "Glob",
+      "TodoWrite",
+      "mcp__shem__get_current_step",
+      "mcp__shem__advance_step",
+      "mcp__shem__get_workflow_history",
+      "mcp__shem__submit_handoff",
+      "mcp__shem__get_handoffs",
+      "mcp__shem__query_institutional_memory",
+      "mcp__shem__load_matter_memory",
+      "mcp__shem__query_precedents",
+      "mcp__shem__run_dissent_panel",
+      "mcp__shem__search_knowledge_base",
+      "mcp__shem__list_knowledge_base_collections",
+      "mcp__shem__get_knowledge_base_entry",
+      "mcp__shem__query_anti_patterns",
+      "mcp__shem__list_documents",
+      "mcp__shem__read_document_section",
+      "mcp__shem__search_document"
+    ],
+    "phase_permissions": {
+      "intake": {
+        "denyTools": [],
+        "reason": "Intake: all read tools available."
+      },
+      "specialist_execution": {
+        "denyTools": [],
+        "reason": "Execution: specialist produces the answer."
+      },
+      "delivered": {
+        "denyTools": [],
+        "reason": "Delivered: output complete."
+      }
+    },
+    "source": {
+      "repo": "https://github.com/AnttiHero/lavern",
+      "url": "https://github.com/AnttiHero/lavern/blob/526a3b833705153a056770e3acb4c7e3c1e1c210/src/workflows/templates/counsel.ts#L17",
+      "commit": "526a3b833705153a056770e3acb4c7e3c1e1c210",
+      "path": "src/workflows/templates/counsel.ts",
+      "line": 17,
+      "license": "Apache-2.0",
+      "sha256": "680945d572bf2324d272102837d7fa11dd3861f3ac44fa1f25d31bc845e3b184",
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/workflows/templates/counsel.ts"
+    }
+  },
+  {
+    "id": "full-bench",
+    "name": "Full Bench",
+    "path": "src/workflows/templates/full-bench.ts",
+    "variable": "fullBenchTemplate",
+    "line": 21,
+    "prompt_role": "orchestrator-full-bench",
+    "archetype": "orchestrator-conductor",
+    "steps": [
+      "intake",
+      "decomposition",
+      "workstream_execution",
+      "senior_review",
+      "synthesis",
+      "verification_pass",
+      "final_gate",
+      "delivered"
+    ],
+    "step_definitions": {
+      "intake": {
+        "name": "intake",
+        "description": "Accept matter brief, gather comprehensive context. Multi-jurisdictional context, stakeholders, timeline, budget. Extensive memory queries.",
+        "preconditions": []
+      },
+      "decomposition": {
+        "name": "decomposition",
+        "description": "Senior partner analyzes the matter and decomposes it into 2-5 workstreams. Each workstream specifies scope, appropriate pattern, team, dependencies, and priority.",
+        "preconditions": [
+          "intake"
+        ],
+        "maxIterations": 2,
+        "qualityCheckType": "peer",
+        "qualityCheckerRole": "supervising-partner"
+      },
+      "workstream_execution": {
+        "name": "workstream_execution",
+        "description": "Execute each workstream by dispatching appropriate specialist teams. Independent workstreams run in parallel. Dependent workstreams run sequentially.",
+        "preconditions": [
+          "decomposition"
+        ]
+      },
+      "senior_review": {
+        "name": "senior_review",
+        "description": "Senior partner reviews all workstream outputs holistically. Identifies integration gaps, contradictions, and synthesis opportunities. Evaluator quality-checks overall consistency.",
+        "preconditions": [
+          "workstream_execution"
+        ],
+        "requiresEvaluatorGate": true,
+        "maxRevisionLoops": 1
+      },
+      "synthesis": {
+        "name": "synthesis",
+        "description": "Assemble all workstream outputs into a unified deliverable. Coherent narrative, cross-cutting themes, comprehensive risk map. Dual artifacts: client-facing + review package.",
+        "preconditions": [
+          "senior_review"
+        ],
+        "maxIterations": 2,
+        "qualityCheckType": "self"
+      },
+      "verification_pass": {
+        "name": "verification_pass",
+        "description": "10-pass verification pipeline on the synthesized deliverable. Context, UX, clarity, structure, accuracy, completeness, risk, formatting, legal design, delivery readiness. Produces Verification Report with severity-categorized findings and verdict.",
+        "preconditions": [
+          "synthesis"
+        ]
+      },
+      "final_gate": {
+        "name": "final_gate",
+        "description": "Human approval before delivering the full bench analysis.",
+        "preconditions": [
+          "verification_pass"
+        ],
+        "requiresGateApproval": true,
+        "gateType": "final_delivery"
+      },
+      "delivered": {
+        "name": "delivered",
+        "description": "Comprehensive deliverable delivered. Run learning cycle.",
+        "preconditions": [
+          "final_gate"
+        ]
+      }
+    },
+    "required_agents": [
+      "managing-partner",
+      "supervising-partner",
+      "synthesis-editor",
+      "evaluator",
+      "risk-pricer",
+      "ethics-reviewer"
+    ],
+    "declared_tools": [
+      "Read",
+      "Grep",
+      "Glob",
+      "Task",
+      "TodoWrite",
+      "mcp__shem__run_dissent_panel",
+      "mcp__shem__get_current_step",
+      "mcp__shem__advance_step",
+      "mcp__shem__get_workflow_history",
+      "mcp__shem__submit_handoff",
+      "mcp__shem__get_handoffs",
+      "mcp__shem__post_finding",
+      "mcp__shem__post_challenge",
+      "mcp__shem__post_response",
+      "mcp__shem__resolve_debate",
+      "mcp__shem__get_findings",
+      "mcp__shem__get_challenges",
+      "mcp__shem__get_unresolved_debates",
+      "mcp__shem__get_debate_summary",
+      "mcp__shem__calculate_complexity_tax",
+      "mcp__shem__calculate_readability_score",
+      "mcp__shem__calculate_findability_score",
+      "mcp__shem__compare_before_after",
+      "mcp__shem__run_self_verification",
+      "mcp__shem__run_cross_verification",
+      "mcp__shem__run_score_verification",
+      "mcp__shem__get_verification_summary",
+      "mcp__shem__add_institutional_memory",
+      "mcp__shem__query_institutional_memory",
+      "mcp__shem__save_matter_memory",
+      "mcp__shem__load_matter_memory",
+      "mcp__shem__save_precedent",
+      "mcp__shem__query_precedents",
+      "mcp__shem__search_knowledge_base",
+      "mcp__shem__list_knowledge_base_collections",
+      "mcp__shem__get_knowledge_base_entry",
+      "mcp__shem__query_anti_patterns",
+      "mcp__shem__list_documents",
+      "mcp__shem__read_document_section",
+      "mcp__shem__search_document",
+      "mcp__shem__request_approval",
+      "mcp__shem__run_evaluator_gate",
+      "mcp__shem__record_evaluation_result",
+      "mcp__shem__request_risk_assessment",
+      "mcp__shem__record_risk_assessment",
+      "mcp__shem__compile_report_card",
+      "mcp__shem__get_report_card",
+      "mcp__shem__run_feedback_loop",
+      "mcp__shem__update_precedent_effectiveness",
+      "mcp__shem__record_anti_pattern",
+      "mcp__shem__update_baselines",
+      "mcp__shem__check_against_baseline",
+      "mcp__shem__get_baseline",
+      "mcp__shem__get_quality_trend",
+      "mcp__shem__compile_legal_md",
+      "mcp__shem__get_legal_md",
+      "mcp__shem__run_quality_check",
+      "mcp__shem__record_quality_result"
+    ],
+    "phase_permissions": {
+      "intake": {
+        "denyTools": [
+          "mcp__shem__post_finding",
+          "mcp__shem__post_challenge",
+          "mcp__shem__post_response",
+          "mcp__shem__resolve_debate",
+          "mcp__shem__run_self_verification",
+          "mcp__shem__run_cross_verification",
+          "mcp__shem__run_score_verification",
+          "mcp__shem__run_evaluator_gate",
+          "mcp__shem__record_evaluation_result",
+          "mcp__shem__request_approval"
+        ],
+        "reason": "Intake phase: gather context and query memory extensively."
+      },
+      "decomposition": {
+        "denyTools": [
+          "mcp__shem__post_challenge",
+          "mcp__shem__post_response",
+          "mcp__shem__run_self_verification",
+          "mcp__shem__run_cross_verification",
+          "mcp__shem__run_score_verification",
+          "mcp__shem__run_evaluator_gate",
+          "mcp__shem__record_evaluation_result",
+          "mcp__shem__request_approval"
+        ],
+        "reason": "Decomposition: senior partner posts workstream findings, no challenges yet."
+      },
+      "workstream_execution": {
+        "denyTools": [
+          "mcp__shem__run_evaluator_gate",
+          "mcp__shem__record_evaluation_result",
+          "mcp__shem__request_approval"
+        ],
+        "reason": "Workstream execution: all debate tools for cross-workstream coordination."
+      },
+      "senior_review": {
+        "denyTools": [
+          "mcp__shem__request_approval"
+        ],
+        "reason": "Senior review: full debate + evaluator tools for integration review."
+      },
+      "synthesis": {
+        "denyTools": [
+          "mcp__shem__post_challenge",
+          "mcp__shem__post_response",
+          "mcp__shem__run_evaluator_gate",
+          "mcp__shem__record_evaluation_result",
+          "mcp__shem__run_feedback_loop",
+          "mcp__shem__update_baselines",
+          "mcp__shem__record_anti_pattern"
+        ],
+        "reason": "Synthesis phase: assemble artifacts, save precedents, compile report card."
+      },
+      "verification_pass": {
+        "denyTools": [
+          "mcp__shem__post_finding",
+          "mcp__shem__post_challenge",
+          "mcp__shem__post_response",
+          "mcp__shem__resolve_debate",
+          "mcp__shem__request_approval",
+          "mcp__shem__run_evaluator_gate",
+          "mcp__shem__record_evaluation_result"
+        ],
+        "reason": "Verification phase: 10-pass quality pipeline in progress."
+      },
+      "final_gate": {
+        "denyTools": [
+          "mcp__shem__post_finding",
+          "mcp__shem__post_challenge",
+          "mcp__shem__post_response",
+          "mcp__shem__resolve_debate",
+          "mcp__shem__save_precedent",
+          "mcp__shem__run_evaluator_gate",
+          "mcp__shem__record_evaluation_result"
+        ],
+        "reason": "Final gate: only approval decisions and reading allowed."
+      },
+      "delivered": {
+        "denyTools": [
+          "mcp__shem__post_finding",
+          "mcp__shem__post_challenge",
+          "mcp__shem__post_response",
+          "mcp__shem__resolve_debate",
+          "mcp__shem__run_evaluator_gate",
+          "mcp__shem__record_evaluation_result",
+          "mcp__shem__request_approval"
+        ],
+        "reason": "Delivered: run learning cycle."
+      }
+    },
+    "source": {
+      "repo": "https://github.com/AnttiHero/lavern",
+      "url": "https://github.com/AnttiHero/lavern/blob/526a3b833705153a056770e3acb4c7e3c1e1c210/src/workflows/templates/full-bench.ts#L21",
+      "commit": "526a3b833705153a056770e3acb4c7e3c1e1c210",
+      "path": "src/workflows/templates/full-bench.ts",
+      "line": 21,
+      "license": "Apache-2.0",
+      "sha256": "bc86607d24d3a37f7623cdbad6777e5a23c0324c12c439ce6df64df6e7720c66",
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/workflows/templates/full-bench.ts"
+    }
+  },
+  {
+    "id": "legal-design",
+    "name": "Legal Document Redesign",
+    "path": "src/workflows/templates/legal-design.ts",
+    "variable": "legalDesignTemplate",
+    "line": 31,
+    "prompt_role": "orchestrator",
+    "archetype": "orchestrator-conductor",
+    "steps": [
+      "intake",
+      "parallel_analysis",
+      "debate_1",
+      "ethics_gate",
+      "transformation",
+      "parallel_verification",
+      "debate_2",
+      "meaning_gate",
+      "synthesis",
+      "final_gate",
+      "delivered"
+    ],
+    "step_definitions": {
+      "intake": {
+        "name": "intake",
+        "description": "Accept document and gather context (moment, audience, jurisdiction)",
+        "preconditions": []
+      },
+      "parallel_analysis": {
+        "name": "parallel_analysis",
+        "description": "Dispatch design-reviewer AND ethics-auditor simultaneously",
+        "preconditions": [
+          "intake"
+        ]
+      },
+      "debate_1": {
+        "name": "debate_1",
+        "description": "Read debate board, identify conflicts, manage challenge/response exchanges",
+        "preconditions": [
+          "parallel_analysis"
+        ]
+      },
+      "ethics_gate": {
+        "name": "ethics_gate",
+        "description": "Human approval gate if RED ethics findings exist",
+        "preconditions": [
+          "debate_1"
+        ],
+        "requiresGateApproval": true,
+        "gateType": "ethics_critical"
+      },
+      "transformation": {
+        "name": "transformation",
+        "description": "Dispatch transformation-specialist with findings and approved approach",
+        "preconditions": [
+          "ethics_gate"
+        ]
+      },
+      "parallel_verification": {
+        "name": "parallel_verification",
+        "description": "Dispatch meaning-guardian AND ethics-auditor (re-check) on transformed document",
+        "preconditions": [
+          "transformation"
+        ]
+      },
+      "debate_2": {
+        "name": "debate_2",
+        "description": "Resolve transformation challenges between meaning-guardian and transformation-specialist",
+        "preconditions": [
+          "parallel_verification"
+        ]
+      },
+      "meaning_gate": {
+        "name": "meaning_gate",
+        "description": "Human approval gate if CRITICAL meaning changes flagged",
+        "preconditions": [
+          "debate_2"
+        ],
+        "requiresGateApproval": true,
+        "gateType": "meaning_critical"
+      },
+      "synthesis": {
+        "name": "synthesis",
+        "description": "Dispatch synthesis-editor to assemble final dual-artifact output",
+        "preconditions": [
+          "meaning_gate"
+        ]
+      },
+      "final_gate": {
+        "name": "final_gate",
+        "description": "Human approval before delivering final output",
+        "preconditions": [
+          "synthesis"
+        ],
+        "requiresGateApproval": true,
+        "gateType": "final_delivery"
+      },
+      "delivered": {
+        "name": "delivered",
+        "description": "Final output delivered to user",
+        "preconditions": [
+          "final_gate"
+        ]
+      }
+    },
+    "required_agents": [
+      "design-reviewer",
+      "ethics-auditor",
+      "service-designer",
+      "plain-language-specialist",
+      "client-proxy",
+      "transformation-specialist",
+      "meaning-guardian",
+      "synthesis-editor",
+      "ethics-reviewer"
+    ],
+    "declared_tools": [
+      "Read",
+      "Grep",
+      "Glob",
+      "Task",
+      "TodoWrite",
+      "mcp__shem__get_current_step",
+      "mcp__shem__advance_step",
+      "mcp__shem__get_workflow_history",
+      "mcp__shem__submit_handoff",
+      "mcp__shem__get_handoffs",
+      "mcp__shem__post_finding",
+      "mcp__shem__post_challenge",
+      "mcp__shem__post_response",
+      "mcp__shem__resolve_debate",
+      "mcp__shem__get_findings",
+      "mcp__shem__get_challenges",
+      "mcp__shem__get_unresolved_debates",
+      "mcp__shem__get_debate_summary",
+      "mcp__shem__calculate_complexity_tax",
+      "mcp__shem__calculate_readability_score",
+      "mcp__shem__calculate_findability_score",
+      "mcp__shem__compare_before_after",
+      "mcp__shem__run_self_verification",
+      "mcp__shem__run_cross_verification",
+      "mcp__shem__run_score_verification",
+      "mcp__shem__get_verification_summary",
+      "mcp__shem__add_institutional_memory",
+      "mcp__shem__query_institutional_memory",
+      "mcp__shem__save_matter_memory",
+      "mcp__shem__load_matter_memory",
+      "mcp__shem__save_precedent",
+      "mcp__shem__query_precedents",
+      "mcp__shem__search_knowledge_base",
+      "mcp__shem__list_knowledge_base_collections",
+      "mcp__shem__get_knowledge_base_entry",
+      "mcp__shem__request_approval",
+      "mcp__shem__compile_report_card",
+      "mcp__shem__get_report_card",
+      "mcp__shem__run_feedback_loop",
+      "mcp__shem__update_precedent_effectiveness",
+      "mcp__shem__record_anti_pattern",
+      "mcp__shem__query_anti_patterns",
+      "mcp__shem__list_documents",
+      "mcp__shem__read_document_section",
+      "mcp__shem__search_document",
+      "mcp__shem__update_baselines",
+      "mcp__shem__check_against_baseline",
+      "mcp__shem__get_baseline",
+      "mcp__shem__get_quality_trend",
+      "mcp__shem__compile_legal_md",
+      "mcp__shem__get_legal_md",
+      "mcp__shem__run_regression_test",
+      "mcp__shem__run_batch_regression",
+      "mcp__shem__compare_sessions"
+    ],
+    "phase_permissions": {
+      "intake": {
+        "denyTools": [
+          "mcp__shem__post_challenge",
+          "mcp__shem__post_response",
+          "mcp__shem__resolve_debate",
+          "mcp__shem__run_self_verification",
+          "mcp__shem__run_cross_verification",
+          "mcp__shem__run_score_verification"
+        ],
+        "reason": "Intake phase: only reading, memory queries, and context gathering allowed."
+      },
+      "parallel_analysis": {
+        "denyTools": [
+          "mcp__shem__post_challenge",
+          "mcp__shem__post_response",
+          "mcp__shem__resolve_debate",
+          "mcp__shem__advance_step",
+          "mcp__shem__run_self_verification",
+          "mcp__shem__run_cross_verification",
+          "mcp__shem__run_score_verification"
+        ],
+        "reason": "Analysis phase: agents post findings but do not challenge or resolve."
+      },
+      "debate_1": {
+        "denyTools": [
+          "mcp__shem__run_self_verification",
+          "mcp__shem__run_cross_verification",
+          "mcp__shem__run_score_verification",
+          "mcp__shem__save_precedent"
+        ],
+        "reason": "Debate phase 1: challenges, responses, and resolutions allowed."
+      },
+      "ethics_gate": {
+        "denyTools": [
+          "mcp__shem__post_finding",
+          "mcp__shem__post_challenge",
+          "mcp__shem__run_self_verification",
+          "mcp__shem__run_cross_verification",
+          "mcp__shem__run_score_verification"
+        ],
+        "reason": "Ethics gate: only approval decisions and reading allowed."
+      },
+      "transformation": {
+        "denyTools": [
+          "mcp__shem__calculate_complexity_tax",
+          "mcp__shem__calculate_readability_score",
+          "mcp__shem__calculate_findability_score",
+          "mcp__shem__resolve_debate",
+          "mcp__shem__run_self_verification",
+          "mcp__shem__run_cross_verification",
+          "mcp__shem__run_score_verification"
+        ],
+        "reason": "Transformation phase: focus on rewriting, not scoring or verifying."
+      },
+      "parallel_verification": {
+        "denyTools": [
+          "mcp__shem__save_precedent",
+          "mcp__shem__resolve_debate"
+        ],
+        "reason": "Verification phase: run all verification types + re-check agents."
+      },
+      "debate_2": {
+        "denyTools": [
+          "mcp__shem__run_self_verification",
+          "mcp__shem__run_cross_verification",
+          "mcp__shem__run_score_verification",
+          "mcp__shem__save_precedent"
+        ],
+        "reason": "Debate phase 2: resolve transformation challenges."
+      },
+      "meaning_gate": {
+        "denyTools": [
+          "mcp__shem__post_finding",
+          "mcp__shem__post_challenge",
+          "mcp__shem__run_self_verification",
+          "mcp__shem__run_cross_verification",
+          "mcp__shem__run_score_verification"
+        ],
+        "reason": "Meaning gate: only approval decisions and reading allowed."
+      },
+      "synthesis": {
+        "denyTools": [
+          "mcp__shem__post_finding",
+          "mcp__shem__post_challenge",
+          "mcp__shem__post_response",
+          "mcp__shem__resolve_debate",
+          "mcp__shem__run_self_verification",
+          "mcp__shem__run_cross_verification",
+          "mcp__shem__run_score_verification",
+          "mcp__shem__run_feedback_loop",
+          "mcp__shem__update_baselines",
+          "mcp__shem__record_anti_pattern"
+        ],
+        "reason": "Synthesis phase: assemble artifacts, save precedents, compile report card. No debate or feedback loop."
+      },
+      "final_gate": {
+        "denyTools": [
+          "mcp__shem__post_finding",
+          "mcp__shem__post_challenge",
+          "mcp__shem__post_response",
+          "mcp__shem__resolve_debate",
+          "mcp__shem__save_precedent"
+        ],
+        "reason": "Final gate: only approval decisions and reading allowed."
+      },
+      "delivered": {
+        "denyTools": [
+          "mcp__shem__post_finding",
+          "mcp__shem__post_challenge",
+          "mcp__shem__post_response",
+          "mcp__shem__resolve_debate"
+        ],
+        "reason": "Delivered: run learning cycle (report card, feedback loop, baselines, LEGAL.md)."
+      }
+    },
+    "source": {
+      "repo": "https://github.com/AnttiHero/lavern",
+      "url": "https://github.com/AnttiHero/lavern/blob/526a3b833705153a056770e3acb4c7e3c1e1c210/src/workflows/templates/legal-design.ts#L31",
+      "commit": "526a3b833705153a056770e3acb4c7e3c1e1c210",
+      "path": "src/workflows/templates/legal-design.ts",
+      "line": 31,
+      "license": "Apache-2.0",
+      "sha256": "10812c4a8a2e1dbe130bc55ae09166666e5f0f8359eb40339dc1a19594f52fc8",
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/workflows/templates/legal-design.ts"
+    }
+  },
+  {
+    "id": "pre-engagement",
+    "name": "Pre-Engagement",
+    "path": "src/workflows/templates/pre-engagement.ts",
+    "variable": "preEngagementTemplate",
+    "line": 21,
+    "prompt_role": "pre-engagement",
+    "archetype": "orchestrator-closer",
+    "steps": [
+      "conflict_check",
+      "kyc_screening",
+      "engagement_letter",
+      "client_review_gate",
+      "team_staffing",
+      "matter_opening",
+      "engaged"
+    ],
+    "step_definitions": {
+      "conflict_check": {
+        "name": "conflict_check",
+        "description": "Run conflict of interest check against existing matters and client database. Query institutional memory for any matching entities.",
+        "preconditions": []
+      },
+      "kyc_screening": {
+        "name": "kyc_screening",
+        "description": "Know-Your-Client screening. Verify client identity, assess risk level, flag concerns. Requires conflict check to be clear.",
+        "preconditions": [
+          "conflict_check"
+        ]
+      },
+      "engagement_letter": {
+        "name": "engagement_letter",
+        "description": "Generate engagement letter with scope, fee structure, liability terms, data handling provisions, and proposed team composition.",
+        "preconditions": [
+          "kyc_screening"
+        ]
+      },
+      "client_review_gate": {
+        "name": "client_review_gate",
+        "description": "Human gate: Client reviews and accepts the engagement letter terms. Must be explicitly accepted before proceeding.",
+        "preconditions": [
+          "engagement_letter"
+        ],
+        "requiresGateApproval": true,
+        "gateType": "engagement_acceptance"
+      },
+      "team_staffing": {
+        "name": "team_staffing",
+        "description": "Human gate: Client selects their team from available agent profiles. Can choose a preset or build a custom team.",
+        "preconditions": [
+          "client_review_gate"
+        ],
+        "requiresGateApproval": true,
+        "gateType": "team_selection"
+      },
+      "matter_opening": {
+        "name": "matter_opening",
+        "description": "Open the matter formally. Assign matter number (SHEM-YYYY-NNN), create MatterRecord, configure session with selected team.",
+        "preconditions": [
+          "team_staffing"
+        ]
+      },
+      "engaged": {
+        "name": "engaged",
+        "description": "Pre-engagement complete. Matter is open and team is assigned. Ready for substantive workflow.",
+        "preconditions": [
+          "matter_opening"
+        ]
+      }
+    },
+    "required_agents": [],
+    "declared_tools": [
+      "Read",
+      "Grep",
+      "Glob",
+      "mcp__shem__get_current_step",
+      "mcp__shem__advance_step",
+      "mcp__shem__get_workflow_history",
+      "mcp__shem__submit_handoff",
+      "mcp__shem__get_handoffs",
+      "mcp__shem__run_conflict_check",
+      "mcp__shem__run_kyc_screening",
+      "mcp__shem__generate_engagement_letter",
+      "mcp__shem__get_agent_profiles",
+      "mcp__shem__select_team",
+      "mcp__shem__open_matter",
+      "mcp__shem__request_approval",
+      "mcp__shem__query_institutional_memory",
+      "mcp__shem__load_matter_memory",
+      "mcp__shem__query_precedents",
+      "mcp__shem__search_knowledge_base",
+      "mcp__shem__list_knowledge_base_collections",
+      "mcp__shem__get_knowledge_base_entry"
+    ],
+    "phase_permissions": {
+      "conflict_check": {
+        "denyTools": [
+          "mcp__shem__run_kyc_screening",
+          "mcp__shem__generate_engagement_letter",
+          "mcp__shem__select_team",
+          "mcp__shem__open_matter",
+          "mcp__shem__request_approval"
+        ],
+        "reason": "Conflict check must be completed before any other pre-engagement steps."
+      },
+      "kyc_screening": {
+        "denyTools": [
+          "mcp__shem__generate_engagement_letter",
+          "mcp__shem__select_team",
+          "mcp__shem__open_matter",
+          "mcp__shem__request_approval"
+        ],
+        "reason": "KYC must complete before engagement letter or team selection."
+      },
+      "engagement_letter": {
+        "denyTools": [
+          "mcp__shem__run_conflict_check",
+          "mcp__shem__run_kyc_screening",
+          "mcp__shem__select_team",
+          "mcp__shem__open_matter"
+        ],
+        "reason": "Engagement letter generation phase. Team selection comes after client acceptance."
+      },
+      "client_review_gate": {
+        "denyTools": [
+          "mcp__shem__run_conflict_check",
+          "mcp__shem__run_kyc_screening",
+          "mcp__shem__generate_engagement_letter",
+          "mcp__shem__select_team",
+          "mcp__shem__open_matter"
+        ],
+        "reason": "Client is reviewing the engagement letter. Only approval tools allowed."
+      },
+      "team_staffing": {
+        "denyTools": [
+          "mcp__shem__run_conflict_check",
+          "mcp__shem__run_kyc_screening",
+          "mcp__shem__generate_engagement_letter",
+          "mcp__shem__open_matter"
+        ],
+        "reason": "Team staffing phase. Client is selecting their team."
+      },
+      "matter_opening": {
+        "denyTools": [
+          "mcp__shem__run_conflict_check",
+          "mcp__shem__run_kyc_screening",
+          "mcp__shem__generate_engagement_letter",
+          "mcp__shem__select_team",
+          "mcp__shem__request_approval"
+        ],
+        "reason": "Matter opening phase. Only matter opening tool allowed."
+      },
+      "engaged": {
+        "denyTools": [
+          "mcp__shem__run_conflict_check",
+          "mcp__shem__run_kyc_screening",
+          "mcp__shem__generate_engagement_letter",
+          "mcp__shem__select_team",
+          "mcp__shem__open_matter",
+          "mcp__shem__request_approval"
+        ],
+        "reason": "Pre-engagement complete. No more pre-engagement actions needed."
+      }
+    },
+    "source": {
+      "repo": "https://github.com/AnttiHero/lavern",
+      "url": "https://github.com/AnttiHero/lavern/blob/526a3b833705153a056770e3acb4c7e3c1e1c210/src/workflows/templates/pre-engagement.ts#L21",
+      "commit": "526a3b833705153a056770e3acb4c7e3c1e1c210",
+      "path": "src/workflows/templates/pre-engagement.ts",
+      "line": 21,
+      "license": "Apache-2.0",
+      "sha256": "34b4c565add6733dddd7da18890c1671d23a098794576d102353ed2722c03863",
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/workflows/templates/pre-engagement.ts"
+    }
+  },
+  {
+    "id": "review",
+    "name": "Review",
+    "path": "src/workflows/templates/review.ts",
+    "variable": "reviewTemplate",
+    "line": 17,
+    "prompt_role": "orchestrator-review",
+    "archetype": "orchestrator-closer",
+    "steps": [
+      "intake",
+      "specialist_analysis",
+      "evaluator_gate",
+      "plain_language_review",
+      "verification_pass",
+      "final_gate",
+      "delivered"
+    ],
+    "step_definitions": {
+      "intake": {
+        "name": "intake",
+        "description": "Accept document/request, identify type, jurisdiction, and parties. Query memory for relevant precedents and standard positions.",
+        "preconditions": []
+      },
+      "specialist_analysis": {
+        "name": "specialist_analysis",
+        "description": "Dispatch primary specialist for structured analysis. Risk scoring, deviation flagging, recommended changes.",
+        "preconditions": [
+          "intake"
+        ],
+        "maxIterations": 2,
+        "qualityCheckType": "self"
+      },
+      "evaluator_gate": {
+        "name": "evaluator_gate",
+        "description": "Automated quality check on the analysis. Different model tier for error decorrelation. Max 2 revision loops.",
+        "preconditions": [
+          "specialist_analysis"
+        ],
+        "requiresEvaluatorGate": true,
+        "maxRevisionLoops": 2
+      },
+      "plain_language_review": {
+        "name": "plain_language_review",
+        "description": "Translate findings into actionable business language. Executive summary, top concerns, negotiation priorities.",
+        "preconditions": [
+          "evaluator_gate"
+        ]
+      },
+      "verification_pass": {
+        "name": "verification_pass",
+        "description": "10-pass verification pipeline on the deliverable. Context, UX, clarity, structure, accuracy, completeness, risk, formatting, legal design, delivery readiness. Produces Verification Report with severity-categorized findings and verdict.",
+        "preconditions": [
+          "plain_language_review"
+        ]
+      },
+      "final_gate": {
+        "name": "final_gate",
+        "description": "Human approval before delivery.",
+        "preconditions": [
+          "verification_pass"
+        ],
+        "requiresGateApproval": true,
+        "gateType": "final_delivery"
+      },
+      "delivered": {
+        "name": "delivered",
+        "description": "Quality-checked analysis delivered with risk scores and plain language summary.",
+        "preconditions": [
+          "final_gate"
+        ]
+      }
+    },
+    "required_agents": [
+      "contract-reviewer",
+      "plain-language-specialist",
+      "evaluator",
+      "risk-pricer",
+      "ethics-reviewer"
+    ],
+    "declared_tools": [
+      "Read",
+      "Grep",
+      "Glob",
+      "Task",
+      "TodoWrite",
+      "mcp__shem__get_current_step",
+      "mcp__shem__advance_step",
+      "mcp__shem__get_workflow_history",
+      "mcp__shem__submit_handoff",
+      "mcp__shem__get_handoffs",
+      "mcp__shem__post_finding",
+      "mcp__shem__get_findings",
+      "mcp__shem__get_debate_summary",
+      "mcp__shem__resolve_debate",
+      "mcp__shem__get_unresolved_debates",
+      "mcp__shem__run_dissent_panel",
+      "mcp__shem__query_institutional_memory",
+      "mcp__shem__add_institutional_memory",
+      "mcp__shem__load_matter_memory",
+      "mcp__shem__save_matter_memory",
+      "mcp__shem__query_precedents",
+      "mcp__shem__save_precedent",
+      "mcp__shem__search_knowledge_base",
+      "mcp__shem__list_knowledge_base_collections",
+      "mcp__shem__get_knowledge_base_entry",
+      "mcp__shem__query_anti_patterns",
+      "mcp__shem__list_documents",
+      "mcp__shem__read_document_section",
+      "mcp__shem__search_document",
+      "mcp__shem__request_approval",
+      "mcp__shem__run_evaluator_gate",
+      "mcp__shem__record_evaluation_result",
+      "mcp__shem__calculate_readability_score",
+      "mcp__shem__calculate_complexity_tax",
+      "mcp__shem__request_risk_assessment",
+      "mcp__shem__record_risk_assessment",
+      "mcp__shem__run_quality_check",
+      "mcp__shem__record_quality_result"
+    ],
+    "phase_permissions": {
+      "intake": {
+        "denyTools": [
+          "mcp__shem__post_finding",
+          "mcp__shem__resolve_debate",
+          "mcp__shem__run_evaluator_gate",
+          "mcp__shem__record_evaluation_result",
+          "mcp__shem__request_approval",
+          "mcp__shem__request_risk_assessment",
+          "mcp__shem__record_risk_assessment"
+        ],
+        "reason": "Intake phase: gather context and query memory before analysis."
+      },
+      "specialist_analysis": {
+        "denyTools": [
+          "mcp__shem__resolve_debate",
+          "mcp__shem__run_evaluator_gate",
+          "mcp__shem__record_evaluation_result",
+          "mcp__shem__request_approval",
+          "mcp__shem__request_risk_assessment",
+          "mcp__shem__record_risk_assessment"
+        ],
+        "reason": "Analysis phase: specialist produces findings. Resolution happens later."
+      },
+      "evaluator_gate": {
+        "denyTools": [
+          "mcp__shem__request_approval"
+        ],
+        "reason": "Evaluator gate: automated quality check in progress."
+      },
+      "plain_language_review": {
+        "denyTools": [
+          "mcp__shem__run_evaluator_gate",
+          "mcp__shem__record_evaluation_result"
+        ],
+        "reason": "Plain language phase: translate findings, no re-evaluation."
+      },
+      "verification_pass": {
+        "denyTools": [
+          "mcp__shem__resolve_debate",
+          "mcp__shem__request_approval",
+          "mcp__shem__run_evaluator_gate",
+          "mcp__shem__record_evaluation_result"
+        ],
+        "reason": "Verification phase: 10-pass quality pipeline in progress."
+      },
+      "final_gate": {
+        "denyTools": [
+          "mcp__shem__post_finding",
+          "mcp__shem__run_evaluator_gate",
+          "mcp__shem__record_evaluation_result"
+        ],
+        "reason": "Final gate: only approval decisions and reading allowed."
+      },
+      "delivered": {
+        "denyTools": [
+          "mcp__shem__post_finding",
+          "mcp__shem__run_evaluator_gate",
+          "mcp__shem__record_evaluation_result",
+          "mcp__shem__request_approval"
+        ],
+        "reason": "Delivered: save precedents and memory only."
+      }
+    },
+    "source": {
+      "repo": "https://github.com/AnttiHero/lavern",
+      "url": "https://github.com/AnttiHero/lavern/blob/526a3b833705153a056770e3acb4c7e3c1e1c210/src/workflows/templates/review.ts#L17",
+      "commit": "526a3b833705153a056770e3acb4c7e3c1e1c210",
+      "path": "src/workflows/templates/review.ts",
+      "line": 17,
+      "license": "Apache-2.0",
+      "sha256": "e035f87453434ef3851ec0dab7ce26a752e634654abcc118c3f1954aec9bc983",
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/workflows/templates/review.ts"
+    }
+  },
+  {
+    "id": "roundtable",
+    "name": "Roundtable",
+    "path": "src/workflows/templates/roundtable.ts",
+    "variable": "roundtableTemplate",
+    "line": 20,
+    "prompt_role": "orchestrator-roundtable",
+    "archetype": "orchestrator-conductor",
+    "steps": [
+      "intake",
+      "parallel_analysis",
+      "debate",
+      "gate",
+      "synthesis",
+      "final_gate",
+      "delivered"
+    ],
+    "step_definitions": {
+      "intake": {
+        "name": "intake",
+        "description": "Accept document/request and gather context (moment, audience, jurisdiction). Query institutional memory, matter memory, anti-patterns, and baselines.",
+        "preconditions": []
+      },
+      "parallel_analysis": {
+        "name": "parallel_analysis",
+        "description": "Dispatch ALL available analysis agents simultaneously. Each posts findings to the debate board independently. Multidisciplinary analysis produces richer insights.",
+        "preconditions": [
+          "intake"
+        ]
+      },
+      "debate": {
+        "name": "debate",
+        "description": "Identify conflicts between agents' findings. Run challenge/response exchanges (max 3 per topic). Formally resolve all debates. Run verification if transformation occurred.",
+        "preconditions": [
+          "parallel_analysis"
+        ]
+      },
+      "gate": {
+        "name": "gate",
+        "description": "Human approval gate if RED-severity findings exist or confidence < 0.70. Confidence-based routing: >0.90 auto-proceed, 0.70-0.90 quick review, <0.70 full review.",
+        "preconditions": [
+          "debate"
+        ],
+        "requiresGateApproval": true,
+        "gateType": "ethics_critical"
+      },
+      "synthesis": {
+        "name": "synthesis",
+        "description": "Assemble final dual-artifact output: user-facing deliverable + legal review package. Save precedents and institutional memory.",
+        "preconditions": [
+          "gate"
+        ],
+        "maxIterations": 2,
+        "qualityCheckType": "peer",
+        "qualityCheckerRole": "client-proxy"
+      },
+      "final_gate": {
+        "name": "final_gate",
+        "description": "Human approval before delivering final output.",
+        "preconditions": [
+          "synthesis"
+        ],
+        "requiresGateApproval": true,
+        "gateType": "final_delivery"
+      },
+      "delivered": {
+        "name": "delivered",
+        "description": "Final output delivered. Run learning cycle (report card, feedback loop, baselines).",
+        "preconditions": [
+          "final_gate"
+        ]
+      }
+    },
+    "required_agents": [
+      "design-reviewer",
+      "ethics-auditor",
+      "service-designer",
+      "plain-language-specialist",
+      "client-proxy",
+      "synthesis-editor",
+      "ethics-reviewer"
+    ],
+    "declared_tools": [
+      "Read",
+      "Grep",
+      "Glob",
+      "Task",
+      "TodoWrite",
+      "mcp__shem__run_dissent_panel",
+      "mcp__shem__get_current_step",
+      "mcp__shem__advance_step",
+      "mcp__shem__get_workflow_history",
+      "mcp__shem__submit_handoff",
+      "mcp__shem__get_handoffs",
+      "mcp__shem__post_finding",
+      "mcp__shem__post_challenge",
+      "mcp__shem__post_response",
+      "mcp__shem__resolve_debate",
+      "mcp__shem__get_findings",
+      "mcp__shem__get_challenges",
+      "mcp__shem__get_unresolved_debates",
+      "mcp__shem__get_debate_summary",
+      "mcp__shem__calculate_complexity_tax",
+      "mcp__shem__calculate_readability_score",
+      "mcp__shem__calculate_findability_score",
+      "mcp__shem__compare_before_after",
+      "mcp__shem__run_self_verification",
+      "mcp__shem__run_cross_verification",
+      "mcp__shem__run_score_verification",
+      "mcp__shem__get_verification_summary",
+      "mcp__shem__add_institutional_memory",
+      "mcp__shem__query_institutional_memory",
+      "mcp__shem__save_matter_memory",
+      "mcp__shem__load_matter_memory",
+      "mcp__shem__save_precedent",
+      "mcp__shem__query_precedents",
+      "mcp__shem__search_knowledge_base",
+      "mcp__shem__list_knowledge_base_collections",
+      "mcp__shem__get_knowledge_base_entry",
+      "mcp__shem__query_anti_patterns",
+      "mcp__shem__list_documents",
+      "mcp__shem__read_document_section",
+      "mcp__shem__search_document",
+      "mcp__shem__request_approval",
+      "mcp__shem__compile_report_card",
+      "mcp__shem__get_report_card",
+      "mcp__shem__run_feedback_loop",
+      "mcp__shem__update_precedent_effectiveness",
+      "mcp__shem__record_anti_pattern",
+      "mcp__shem__update_baselines",
+      "mcp__shem__check_against_baseline",
+      "mcp__shem__get_baseline",
+      "mcp__shem__get_quality_trend",
+      "mcp__shem__compile_legal_md",
+      "mcp__shem__get_legal_md",
+      "mcp__shem__run_regression_test",
+      "mcp__shem__run_batch_regression",
+      "mcp__shem__compare_sessions",
+      "mcp__shem__run_quality_check",
+      "mcp__shem__record_quality_result"
+    ],
+    "phase_permissions": {
+      "intake": {
+        "denyTools": [
+          "mcp__shem__post_challenge",
+          "mcp__shem__post_response",
+          "mcp__shem__resolve_debate",
+          "mcp__shem__run_self_verification",
+          "mcp__shem__run_cross_verification",
+          "mcp__shem__run_score_verification"
+        ],
+        "reason": "Intake phase: only reading, memory queries, and context gathering allowed."
+      },
+      "parallel_analysis": {
+        "denyTools": [
+          "mcp__shem__post_challenge",
+          "mcp__shem__post_response",
+          "mcp__shem__resolve_debate",
+          "mcp__shem__run_self_verification",
+          "mcp__shem__run_cross_verification",
+          "mcp__shem__run_score_verification"
+        ],
+        "reason": "Analysis phase: agents post findings but do not challenge or resolve."
+      },
+      "debate": {
+        "denyTools": [
+          "mcp__shem__save_precedent"
+        ],
+        "reason": "Debate phase: challenges, responses, resolutions, and verification allowed."
+      },
+      "gate": {
+        "denyTools": [
+          "mcp__shem__post_finding",
+          "mcp__shem__post_challenge",
+          "mcp__shem__run_self_verification",
+          "mcp__shem__run_cross_verification",
+          "mcp__shem__run_score_verification"
+        ],
+        "reason": "Gate: only approval decisions and reading allowed."
+      },
+      "synthesis": {
+        "denyTools": [
+          "mcp__shem__post_finding",
+          "mcp__shem__post_challenge",
+          "mcp__shem__post_response",
+          "mcp__shem__resolve_debate",
+          "mcp__shem__run_self_verification",
+          "mcp__shem__run_cross_verification",
+          "mcp__shem__run_score_verification",
+          "mcp__shem__run_feedback_loop",
+          "mcp__shem__update_baselines",
+          "mcp__shem__record_anti_pattern"
+        ],
+        "reason": "Synthesis phase: assemble artifacts, save precedents, compile report card."
+      },
+      "final_gate": {
+        "denyTools": [
+          "mcp__shem__post_finding",
+          "mcp__shem__post_challenge",
+          "mcp__shem__post_response",
+          "mcp__shem__resolve_debate",
+          "mcp__shem__save_precedent"
+        ],
+        "reason": "Final gate: only approval decisions and reading allowed."
+      },
+      "delivered": {
+        "denyTools": [
+          "mcp__shem__post_finding",
+          "mcp__shem__post_challenge",
+          "mcp__shem__post_response",
+          "mcp__shem__resolve_debate"
+        ],
+        "reason": "Delivered: run learning cycle (report card, feedback loop, baselines, LEGAL.md)."
+      }
+    },
+    "source": {
+      "repo": "https://github.com/AnttiHero/lavern",
+      "url": "https://github.com/AnttiHero/lavern/blob/526a3b833705153a056770e3acb4c7e3c1e1c210/src/workflows/templates/roundtable.ts#L20",
+      "commit": "526a3b833705153a056770e3acb4c7e3c1e1c210",
+      "path": "src/workflows/templates/roundtable.ts",
+      "line": 20,
+      "license": "Apache-2.0",
+      "sha256": "f857b10501fd201dfcbe1e4d54b582fc21ee343eb3afb84edebbf4febcd9f9c1",
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/workflows/templates/roundtable.ts"
+    }
+  },
+  {
+    "id": "tabulate",
+    "name": "Tabulate",
+    "path": "src/workflows/templates/tabulate.ts",
+    "variable": "tabulateTemplate",
+    "line": 27,
+    "prompt_role": "orchestrator-tabulate",
+    "archetype": "orchestrator-fixer",
+    "steps": [
+      "intake",
+      "specialist_execution",
+      "delivered"
+    ],
+    "step_definitions": {
+      "intake": {
+        "name": "intake",
+        "description": "Survey documents for tabular structures (schedules, enumerations, clause-driven mechanics worth tabulating).",
+        "preconditions": []
+      },
+      "specialist_execution": {
+        "name": "specialist_execution",
+        "description": "Produce JSON-table output with per-cell provenance and confidence.",
+        "preconditions": [
+          "intake"
+        ]
+      },
+      "delivered": {
+        "name": "delivered",
+        "description": "Tables delivered. Frontend renders as preview; downloads as CSV / DOCX / HTML / JSON.",
+        "preconditions": [
+          "specialist_execution"
+        ]
+      }
+    },
+    "required_agents": [
+      "evaluator"
+    ],
+    "declared_tools": [
+      "Read",
+      "Grep",
+      "Glob",
+      "TodoWrite",
+      "mcp__shem__get_current_step",
+      "mcp__shem__advance_step",
+      "mcp__shem__get_workflow_history",
+      "mcp__shem__submit_handoff",
+      "mcp__shem__get_handoffs",
+      "mcp__shem__query_institutional_memory",
+      "mcp__shem__load_matter_memory",
+      "mcp__shem__query_precedents",
+      "mcp__shem__search_knowledge_base",
+      "mcp__shem__list_knowledge_base_collections",
+      "mcp__shem__get_knowledge_base_entry",
+      "mcp__shem__list_documents",
+      "mcp__shem__read_document_section",
+      "mcp__shem__search_document"
+    ],
+    "phase_permissions": {
+      "intake": {
+        "denyTools": [],
+        "reason": "Intake: read tools available for surveying tabular structures."
+      },
+      "specialist_execution": {
+        "denyTools": [],
+        "reason": "Execution: orchestrator produces the JSON-table output."
+      },
+      "delivered": {
+        "denyTools": [],
+        "reason": "Delivered: output complete."
+      }
+    },
+    "source": {
+      "repo": "https://github.com/AnttiHero/lavern",
+      "url": "https://github.com/AnttiHero/lavern/blob/526a3b833705153a056770e3acb4c7e3c1e1c210/src/workflows/templates/tabulate.ts#L27",
+      "commit": "526a3b833705153a056770e3acb4c7e3c1e1c210",
+      "path": "src/workflows/templates/tabulate.ts",
+      "line": 27,
+      "license": "Apache-2.0",
+      "sha256": "52c39100f7ecea78b942370e3614f3bba7e39b882c8e90eeadded87fd946efe3",
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/workflows/templates/tabulate.ts"
+    }
+  },
+  {
+    "id": "verification",
+    "name": "Document Verification",
+    "path": "src/workflows/templates/verification.ts",
+    "variable": "verificationTemplate",
+    "line": 14,
+    "prompt_role": "orchestrator-verification",
+    "archetype": "orchestrator-professor",
+    "steps": [
+      "intake",
+      "verification_pipeline",
+      "report_compilation",
+      "final_gate",
+      "delivered"
+    ],
+    "step_definitions": {
+      "intake": {
+        "name": "intake",
+        "description": "Accept document, identify type, jurisdiction, audience. Parse document structure.",
+        "preconditions": []
+      },
+      "verification_pipeline": {
+        "name": "verification_pipeline",
+        "description": "Run all 10 verification passes sequentially. Each pass produces scored findings.",
+        "preconditions": [
+          "intake"
+        ]
+      },
+      "report_compilation": {
+        "name": "report_compilation",
+        "description": "Compile all pass results into the final Verification Report with verdict.",
+        "preconditions": [
+          "verification_pipeline"
+        ]
+      },
+      "final_gate": {
+        "name": "final_gate",
+        "description": "Human review of the Verification Report before delivery.",
+        "preconditions": [
+          "report_compilation"
+        ],
+        "requiresGateApproval": true,
+        "gateType": "final_delivery"
+      },
+      "delivered": {
+        "name": "delivered",
+        "description": "Verification Report delivered to user.",
+        "preconditions": [
+          "final_gate"
+        ]
+      }
+    },
+    "required_agents": [
+      "design-reviewer",
+      "ethics-auditor",
+      "evaluator",
+      "meaning-guardian",
+      "risk-pricer"
+    ],
+    "declared_tools": [
+      "Read",
+      "Grep",
+      "Glob",
+      "Task",
+      "TodoWrite",
+      "mcp__shem__get_current_step",
+      "mcp__shem__advance_step",
+      "mcp__shem__get_workflow_history",
+      "mcp__shem__submit_handoff",
+      "mcp__shem__get_handoffs",
+      "mcp__shem__calculate_readability_score",
+      "mcp__shem__calculate_findability_score",
+      "mcp__shem__calculate_complexity_tax",
+      "mcp__shem__compare_before_after",
+      "mcp__shem__run_self_verification",
+      "mcp__shem__run_cross_verification",
+      "mcp__shem__run_score_verification",
+      "mcp__shem__get_verification_summary",
+      "mcp__shem__run_evaluator_gate",
+      "mcp__shem__record_evaluation_result",
+      "mcp__shem__request_risk_assessment",
+      "mcp__shem__record_risk_assessment",
+      "mcp__shem__post_finding",
+      "mcp__shem__get_findings",
+      "mcp__shem__get_debate_summary",
+      "mcp__shem__run_dissent_panel",
+      "mcp__shem__query_institutional_memory",
+      "mcp__shem__add_institutional_memory",
+      "mcp__shem__query_precedents",
+      "mcp__shem__save_precedent",
+      "mcp__shem__search_knowledge_base",
+      "mcp__shem__list_knowledge_base_collections",
+      "mcp__shem__get_knowledge_base_entry",
+      "mcp__shem__request_approval",
+      "mcp__shem__list_documents",
+      "mcp__shem__read_document_section",
+      "mcp__shem__search_document",
+      "mcp__shem__get_defined_terms",
+      "mcp__shem__get_document_tables"
+    ],
+    "phase_permissions": {
+      "intake": {
+        "denyTools": [
+          "mcp__shem__post_finding",
+          "mcp__shem__run_evaluator_gate",
+          "mcp__shem__request_risk_assessment",
+          "mcp__shem__request_approval"
+        ],
+        "reason": "Intake phase: gather context and parse document before verification."
+      },
+      "verification_pipeline": {
+        "denyTools": [
+          "mcp__shem__request_approval",
+          "mcp__shem__save_precedent"
+        ],
+        "reason": "Verification phase: all verification tools available. No approvals or precedent saves."
+      },
+      "report_compilation": {
+        "denyTools": [
+          "mcp__shem__run_evaluator_gate",
+          "mcp__shem__request_risk_assessment",
+          "mcp__shem__request_approval"
+        ],
+        "reason": "Report compilation: only reading and summary tools allowed."
+      },
+      "final_gate": {
+        "denyTools": [
+          "mcp__shem__post_finding",
+          "mcp__shem__run_evaluator_gate"
+        ],
+        "reason": "Final gate: only approval decisions and reading allowed."
+      },
+      "delivered": {
+        "denyTools": [
+          "mcp__shem__post_finding",
+          "mcp__shem__run_evaluator_gate",
+          "mcp__shem__request_approval"
+        ],
+        "reason": "Delivered: save precedents and memory only."
+      }
+    },
+    "source": {
+      "repo": "https://github.com/AnttiHero/lavern",
+      "url": "https://github.com/AnttiHero/lavern/blob/526a3b833705153a056770e3acb4c7e3c1e1c210/src/workflows/templates/verification.ts#L14",
+      "commit": "526a3b833705153a056770e3acb4c7e3c1e1c210",
+      "path": "src/workflows/templates/verification.ts",
+      "line": 14,
+      "license": "Apache-2.0",
+      "sha256": "bdad0e256155c4c8d39158f98e12d2c33436fd95d10cbb3767bb2f1776d8ca73",
+      "included_path": "10-Agent-Skills-Library/Lavern/source/src/workflows/templates/verification.ts"
+    }
+  }
+]

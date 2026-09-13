@@ -1,0 +1,46 @@
+{
+  "id": "authority-and-version-review",
+  "title": "Authority and version review",
+  "roles": [
+    "Research attorney",
+    "Brief writer",
+    "Supervising partner"
+  ],
+  "purpose": "Audit a draft proposition and citation against the actual authority text, relevant date and jurisdiction.",
+  "inputs": [
+    "draft propositions with citations",
+    "question presented",
+    "jurisdiction and relevant date",
+    "source documents or authorized legal-research connectors"
+  ],
+  "steps": [
+    "List each legal proposition separately from the citation strings; retain uncited propositions as unresolved candidates.",
+    "Resolve citations to exact records. For ambiguous citations such as duplicate source section numbers, present all candidates with headings and source versions.",
+    "Retrieve the complete provision/opinion context and exceptions needed for the proposition. A search-result snippet is a lead, not the authority.",
+    "Verify quoted text, then assess proposition support separately. Identify parenthetical omissions, negative predicates and quoted language from a dissent or cited party.",
+    "Record effective dates, amendments, historical stubs and jurisdictional limits. Describe any treatment result as bounded by the sources and checks actually performed.",
+    "Deliver an issue list with exact evidence and a proposed correction for attorney review; no automatic good-law or controlling-authority certification."
+  ],
+  "outputs": [
+    "proposition/quotation audit table",
+    "authority packet with versions",
+    "unverified or unsupported propositions",
+    "research coverage receipt"
+  ],
+  "references": [
+    "LAW.html",
+    "EXTENDED-LAW.html",
+    "06-Primary-Law/resolve_citation.py"
+  ],
+  "tests": [
+    "uncited factual assertion",
+    "zero assertions cannot pass an accuracy gate",
+    "FRCP versus Supplemental Rules numbering",
+    "negative-treatment source outside retrieved subset",
+    "NJ duplicate 34:15C-10",
+    "unsupported subsection locator"
+  ],
+  "status": "Implementation recipe; requires a host runtime, source adapters and legal evaluation.",
+  "authorship": "Original specification prepared for this library; not an upstream LegalQuants file.",
+  "evidence_contract": "evidence-contract.json"
+}

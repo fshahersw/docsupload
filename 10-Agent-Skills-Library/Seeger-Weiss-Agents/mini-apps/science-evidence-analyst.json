@@ -1,0 +1,118 @@
+{
+  "id": "science-evidence-analyst-review",
+  "title": "Scientific evidence and expert research map",
+  "readiness": "Mini-app interface specification",
+  "implemented": false,
+  "route": null,
+  "launch_mode": "Explicit user run; no scheduler or upload listener installed",
+  "input_form_schema_ref": "10-Agent-Skills-Library/Seeger-Weiss-Agents/contracts/science-evidence-analyst.input.schema.json",
+  "result_schema_ref": "10-Agent-Skills-Library/Seeger-Weiss-Agents/contracts/science-evidence-analyst.output.schema.json",
+  "views": [
+    {
+      "id": "evidence-matrix",
+      "label": "Evidence matrix"
+    },
+    {
+      "id": "study-families",
+      "label": "Study families"
+    },
+    {
+      "id": "search-coverage",
+      "label": "Search coverage"
+    },
+    {
+      "id": "report-claim-check",
+      "label": "Report claim check"
+    }
+  ],
+  "table_columns": [
+    {
+      "key": "study_id",
+      "label": "Study id",
+      "description": "Canonical article/registry identity.",
+      "type": "string"
+    },
+    {
+      "key": "study_family_id",
+      "label": "Study family id",
+      "description": "Related publications or registrations of one study.",
+      "type": "nullable_string"
+    },
+    {
+      "key": "access_level",
+      "label": "Access level",
+      "description": "Full text, abstract, registry-only, directory pointer or unavailable.",
+      "type": "string"
+    },
+    {
+      "key": "design_and_population",
+      "label": "Design and population",
+      "description": "Design and enrolled/analyzed population as reported.",
+      "type": "string"
+    },
+    {
+      "key": "exposure_and_outcome",
+      "label": "Exposure and outcome",
+      "description": "Operational definitions with units.",
+      "type": "string"
+    },
+    {
+      "key": "sample_analyzed",
+      "label": "Sample analyzed",
+      "description": "Sample size and denominator as actually reported.",
+      "type": "nullable_string"
+    },
+    {
+      "key": "effect_and_interval",
+      "label": "Effect and interval",
+      "description": "Reported effect estimate with measure, interval and units.",
+      "type": "nullable_string"
+    },
+    {
+      "key": "adjustments_and_limits",
+      "label": "Adjustments and limits",
+      "description": "Source-reported and separately identified reviewer concerns.",
+      "type": "string"
+    },
+    {
+      "key": "version_check",
+      "label": "Version check",
+      "description": "Correction/retraction check and its as-of/access boundary.",
+      "type": "string"
+    }
+  ],
+  "shared_views": [
+    "Coverage and failures",
+    "Source requests",
+    "Draft export"
+  ],
+  "actions": [
+    {
+      "id": "run",
+      "label": "Run scoped analysis",
+      "handler": null,
+      "enabled": false,
+      "requires": "Verified host agent and source adapters"
+    },
+    {
+      "id": "open_source",
+      "label": "Open source",
+      "handler": null,
+      "enabled": false,
+      "requires": "Authorized source resolver and safe viewer"
+    },
+    {
+      "id": "export",
+      "label": "Export draft table",
+      "handler": null,
+      "enabled": false,
+      "requires": "Bound artifact writer with source rights and spreadsheet-cell sanitization"
+    }
+  ],
+  "accessibility": [
+    "Semantic table with keyboard-accessible source links",
+    "Status labels in text, not color alone",
+    "Announce progress and errors; preserve focus when results refresh"
+  ],
+  "host_integration_note": "UI contract only. Reuse the platform shell and tested components; paths, handlers, server DTOs and persistence require verified host integration."
+}

@@ -1,0 +1,285 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:seegerweiss:settlement-catalog:v1",
+  "title": "Seeger Weiss attributed settlement catalog",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "metadata",
+    "records"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "metadata": {
+      "type": "object",
+      "required": [
+        "schema_version",
+        "record_count",
+        "source_row_count",
+        "source_sha256",
+        "provider",
+        "attribution",
+        "license",
+        "records_are_independently_verified",
+        "reviewed_reference_count"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "record_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "source_row_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "source_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "provider": {
+          "type": "string"
+        },
+        "attribution": {
+          "type": "string"
+        },
+        "license": {
+          "type": "string"
+        },
+        "records_are_independently_verified": {
+          "const": false
+        },
+        "reviewed_reference_count": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "publisher",
+          "publisher_record_sha256",
+          "source_positions",
+          "source_snapshot_sha256",
+          "review",
+          "quality_notes"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^settlement-[a-f0-9]{20}(-[a-f0-9]{10})?$"
+          },
+          "publisher": {
+            "type": "object",
+            "required": [
+              "@id",
+              "title",
+              "url",
+              "settlement_type",
+              "status",
+              "proof_required",
+              "verification_status",
+              "category",
+              "estimated_payout",
+              "official_claim_url",
+              "official_settlement_url",
+              "claim_deadline",
+              "last_verified",
+              "applicable_states",
+              "accepted_official_evidence"
+            ],
+            "properties": {
+              "@id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string"
+              },
+              "settlement_type": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              },
+              "proof_required": {
+                "type": "string"
+              },
+              "verification_status": {
+                "type": "string"
+              },
+              "category": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "estimated_payout": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "official_claim_url": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "official_settlement_url": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "claim_deadline": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "format": "date"
+              },
+              "last_verified": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "format": "date"
+              },
+              "applicable_states": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[A-Z]{2}$"
+                }
+              },
+              "accepted_official_evidence": {
+                "type": "boolean"
+              }
+            },
+            "additionalProperties": true
+          },
+          "publisher_record_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "source_positions": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "source_snapshot_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "quality_notes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "review": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "object",
+                "required": [
+                  "id",
+                  "title",
+                  "publisher_url",
+                  "assessment_date",
+                  "independent_review",
+                  "documents",
+                  "discrepancies"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "publisher_url": {
+                    "type": "string"
+                  },
+                  "assessment_date": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "claim_deadline": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "format": "date"
+                  },
+                  "claim_required": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "independent_review": {
+                    "type": "object",
+                    "required": [
+                      "scope",
+                      "limitations",
+                      "sources"
+                    ],
+                    "properties": {
+                      "scope": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "limitations": {
+                        "type": "string"
+                      },
+                      "sources": {
+                        "type": "array",
+                        "items": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  },
+                  "documents": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "discrepancies": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

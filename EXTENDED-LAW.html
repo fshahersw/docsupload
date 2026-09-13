@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><title>Additional Primary Sources · Court Document Library</title><link rel="stylesheet" href="00-Catalog/reference-tools.css"></head>
+<body><header><div class="eyebrow">Court Document Library · Source collections</div><h1>Additional primary sources</h1><p>Read selected statutes and regulations with their original files, source dates, and context.</p><nav><a href="index.html">Documents</a><a href="COVERAGE.html">Court coverage</a><a href="RULES.html">Rules &amp; sources</a><a href="LAW.html">Federal statutes &amp; rules</a><a href="SETTLEMENTS.html">Settlements</a><a href="TOOLKIT.html">Workflow toolkit</a><a href="SKILLS.html">Agent skills</a><a href="CORPUS.html">Platform resources</a><a href="05-Court-and-Judge-Assets/ASSET-INDEX.html">Court &amp; judge assets</a></nav></header>
+<main><div class="tabs" role="group" aria-label="Source collection"><button type="button" data-collection="fda" aria-pressed="true">FDA regulations</button><button type="button" data-collection="nj" aria-pressed="false">New Jersey statutes</button></div>
+<div id="summary" class="summary"></div><div id="notice" class="notice" role="status"></div>
+<div class="searchbar"><label>Search text or an exact citation<input id="query" type="search" placeholder="21 CFR 803.50 · safety reporting" autocomplete="off"></label><label id="groupLabel">Part<select id="group"><option value="">All selected parts</option></select></label><label>Search within<select id="scope"><option value="text">Headings &amp; text</option><option value="headings">Headings &amp; citations</option></select></label></div>
+<div id="quick" class="quick"></div><div id="lookup" class="notice" hidden></div>
+<div class="workspace"><section class="panel" aria-label="Results"><div class="panelbar"><span id="count" aria-live="polite"></span><button type="button" id="reset">Reset</button></div><div id="results" class="results"></div><div class="pager"><button type="button" id="prev">Previous</button><span id="page"></span><button type="button" id="next">Next</button></div></section><article class="panel detail" id="detail" aria-label="Selected source entry"></article></div>
+<section id="originals" class="originals"></section></main><footer>Search runs locally. The preserved originals are unchanged; searchable text is derived. Download dates do not establish current law or case-specific applicability. <a href="SOURCING-GUIDE.md">Sourcing guide</a></footer>
+<script src="08-Extended-Primary-Law/Federal-Regulations/regulations-data.js"></script>
+<script>
+'use strict';
+const $=id=>document.getElementById(id),pageSize=40;let collection='fda',rows=[],groups=[],filtered=[],page=0,selected='',loading=false;
+function el(tag,text,cls){const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e}
+function local(path){return path.split('/').map(encodeURIComponent).join('/')}
+function link(label,url,isLocal=false){const a=el('a',label);a.href=isLocal?local(url):url;a.target='_blank';a.rel='noopener noreferrer';return a}
+function save(name,value,type='text/plain;charset=utf-8'){const url=URL.createObjectURL(new Blob([value],{type}));const a=el('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),3000)}
+function setup(){
+ $('summary').replaceChildren();$('originals').replaceChildren();$('quick').replaceChildren();$('groupLabel').firstChild.textContent=collection==='fda'?'Part':'Title';
+ if(collection==='fda'){
+  const data=window.REGULATORY_REFERENCE,m=data.manifest;groups=m.parts.map(p=>({id:p.part,label:'Part '+p.part+' · '+p.label}));
+  rows=data.records.map(r=>({...r,group:r.part,heading:r.title,text:r.body_text,context:r.hierarchy.join(' › '),dateLabel:'GPO file: Sep 11, 2026 · Volume amendment marker: '+r.publisher_volume_amendment_marker,status:r.source_status==='reserved'?'Reserved source entry':'Published regulatory text',sourceOriginal:r.original_path}));
+  $('summary').textContent=rows.length+' indexed entries · 8 complete selected parts · Full Title 21 XML preserved';
+  $('notice').textContent='GPO eCFR snapshot · The eCFR is an editorial compilation, not the official legal edition of the CFR. Source volume amendment dates are preserved. Incorporated standards are referenced, not included. Confirm the version applicable to the matter.';
+  $('query').placeholder='21 CFR 803.50 · safety reporting';
+  addOriginal('GPO Title 21 · Full source XML','275 part nodes · 21.7 MB · selected-part index contains 233 entries',m.original_path,'Open original XML');
+  $('originals').append(link('Regulatory source & integration guide','08-Extended-Primary-Law/Federal-Regulations/README.md',true),document.createTextNode(' · '),link('Manifest & hashes','08-Extended-Primary-Law/Federal-Regulations/MANIFEST.json',true));
+  quick([['803.50','Device reporting'],['314.80','Drug safety reports'],['312.32','Investigational safety'],['820.10','Quality systems'],['50.20','Informed consent']]);
+ }else{
+  const data=window.NJ_REFERENCE;groups=data.groups;rows=data.records;
+  $('summary').textContent=rows.length.toLocaleString()+' source headnote entries · 7 complete selected titles · Whole-compilation RTF & TXT preserved';
+  $('notice').textContent=data.notice;$('query').placeholder='N.J.S.A. 2A:58C-2 · consumer fraud';
+  for(const r of data.originals)addOriginal(r.title,r.description,r.path,'Open '+r.format);
+  $('originals').append(link('New Jersey source & integration guide',data.guide,true),document.createTextNode(' · '),link('Manifest & source cutoff',data.manifest,true));
+  quick([['2A:58C-2','Products liability'],['56:8-2','Consumer fraud'],['10:5-12','Civil rights'],['2A:14-2','Limitations reference'],['34:15C-10','Duplicate source citation']]);
+ }
+ $('group').replaceChildren(el('option',collection==='fda'?'All selected parts':'All selected titles'));$('group').firstChild.value='';
+ for(const g of groups){const o=el('option',g.label);o.value=g.id;$('group').append(o)}
+ for(const r of rows){r._short=(r.citation+' '+r.heading+' '+r.context).toLowerCase();r._text=(r._short+' '+r.text).toLowerCase()}
+ $('query').value='';$('lookup').hidden=true;selected='';filter();
+}
+function addOriginal(title,description,path,label){const box=el('div',undefined,'original');box.append(el('strong',title),el('p',description),link(label,path,true));$('originals').append(box)}
+function quick(items){for(const [q,label] of items){const b=el('button',label);b.type='button';b.onclick=()=>{$('query').value=q;$('group').value='';filter()};$('quick').append(b)}}
+async function setCollection(name){
+ if(loading||name===collection)return;loading=true;
+ try{
+  if(name==='nj'&&!window.NJ_REFERENCE){$('notice').textContent='Loading the New Jersey source index…';await new Promise((resolve,reject)=>{const s=document.createElement('script');s.src='08-Extended-Primary-Law/New-Jersey/nj-data.js';s.onload=resolve;s.onerror=()=>reject(new Error('The New Jersey index could not be loaded. Keep this page with its source folders.'));document.head.append(s)})}
+  collection=name;setup();for(const b of document.querySelectorAll('[data-collection]'))b.setAttribute('aria-pressed',String(b.dataset.collection===name));
+ }catch(e){$('notice').textContent=e.message}finally{loading=false}
+}
+function exactNumber(q){let s=q.trim();if(collection==='fda'){s=s.replace(/^21\s*C\.?\s*F\.?\s*R\.?\s*/i,'').replace(/^§+\s*/,'');return /^\d+\.\d+[a-z]?(?:[–—-]\d+\.\d+)?$/.test(s)?s:null}
+ s=s.replace(/^(?:N\.?\s*J\.?\s*S\.?\s*A\.?|NJ)\s*/i,'').replace(/^§+\s*/,'');return /^\d+[A-Z]?:[\w.-]+$/i.test(s)?s.toUpperCase():null}
+function filter(){
+ const q=$('query').value.trim(),g=$('group').value,num=exactNumber(q);$('lookup').hidden=true;
+ if(num){filtered=rows.filter(r=>(collection==='fda'?r.number:r.citation).toUpperCase()===num.toUpperCase());if(g)filtered=filtered.filter(r=>r.group===g);
+  if(filtered.length!==1){$('lookup').textContent=filtered.length>1?'This citation appears more than once in the publisher compilation. Both source entries are shown; use their headings, histories and source locations to distinguish them.':'No exact source entry in this selected index. A reserved range, a subsection, or a citation outside these titles/parts is not automatically resolved.';$('lookup').hidden=false}
+ }else{const words=q.toLowerCase().split(/\s+/).filter(Boolean),key=$('scope').value==='headings'?'_short':'_text';filtered=rows.filter(r=>(!g||r.group===g)&&words.every(w=>r[key].includes(w)))}
+ page=0;selected=filtered.some(r=>r.id===selected)?selected:(filtered[0]?.id||'');render();show(filtered.find(r=>r.id===selected));
+}
+function render(){
+ $('results').replaceChildren();for(const r of filtered.slice(page*pageSize,(page+1)*pageSize)){const b=el('button',undefined,'result');b.type='button';b.setAttribute('aria-pressed',String(r.id===selected));b.append(el('span',r.citation,'cite'),el('strong',r.heading),el('span',r.status,'meta'));b.onclick=()=>{selected=r.id;render();show(r)};$('results').append(b)}
+ if(!filtered.length)$('results').append(el('div','No matching source entry. Try fewer words or another selected part/title.','empty'));
+ $('count').textContent=filtered.length.toLocaleString()+(filtered.length===1?' entry':' entries');$('page').textContent=(filtered.length?page+1:0)+' / '+Math.ceil(filtered.length/pageSize);$('prev').disabled=page===0;$('next').disabled=(page+1)*pageSize>=filtered.length;
+}
+function show(r){
+ const d=$('detail');d.replaceChildren();if(!r){d.append(el('div','Select a source entry to read the text.','empty'));return}
+ d.append(el('div',r.citation,'cite'),el('h2',r.heading),el('div',r.context,'meta'),el('div',r.dateLabel,'meta'),el('span',r.status,'badge'));
+ if(r.duplicate)d.append(el('p','The same citation labels multiple entries in this compilation. This record has its own source location and is not merged with the other entry.','notice'));
+ const actions=el('div',undefined,'actions');actions.append(link('Official source',r.official_url));if(r.sourceOriginal)actions.append(link('Preserved original',r.sourceOriginal,true));
+ const receipt=el('button','Save source receipt');receipt.type='button';receipt.onclick=()=>{const {_short,_text,...record}=r;save(r.id+'-source-receipt.json',JSON.stringify({collection,record,notice:$('notice').textContent},null,2),'application/json')};
+ const excerpt=el('button','Save reference text');excerpt.type='button';excerpt.onclick=()=>save(r.id+'.txt',r.citation+'\n'+r.heading+'\n'+r.dateLabel+'\nSource: '+r.official_url+'\n\n'+r.text+'\n\n'+$('notice').textContent);actions.append(receipt,excerpt);d.append(actions,el('div',r.text||'Reserved or historical source entry. Consult the original compilation.','bodytext'));
+ const context=el('details');context.append(el('summary','Source provenance & context'));const info=collection==='fda'?{source_node:r.source_node,original_sha256:r.source_sha256,authority:r.part_authority,part_source_note:r.part_source_note,part_editorial_note:r.part_editorial_note,source_status:r.source_status,ancestor_source_notes:r.ancestor_source_notes}:{source_byte_start:r.source_byte_start,source_byte_end_exclusive:r.source_byte_end_exclusive,source_slice_sha256:r.source_slice_sha256,source_line_start:r.source_line_start_1based,source_line_end:r.source_line_end_1based,source_cues:r.source_cues};context.append(el('pre',JSON.stringify(info,null,2)));d.append(context);
+}
+let timer; $('query').addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(filter,120)});$('group').onchange=filter;$('scope').onchange=filter;$('reset').onclick=()=>{$('query').value='';$('group').value='';filter()};$('prev').onclick=()=>{page--;render();$('results').scrollTop=0};$('next').onclick=()=>{page++;render();$('results').scrollTop=0};for(const b of document.querySelectorAll('[data-collection]'))b.onclick=()=>setCollection(b.dataset.collection);setup();
+</script></body></html>

@@ -1,0 +1,112 @@
+{
+  "id": "matter-orchestrator-review",
+  "title": "Matter research workstream coordinator",
+  "readiness": "Mini-app interface specification",
+  "implemented": false,
+  "route": null,
+  "launch_mode": "Explicit user run; no scheduler or upload listener installed",
+  "input_form_schema_ref": "10-Agent-Skills-Library/Seeger-Weiss-Agents/contracts/matter-orchestrator.input.schema.json",
+  "result_schema_ref": "10-Agent-Skills-Library/Seeger-Weiss-Agents/contracts/matter-orchestrator.output.schema.json",
+  "views": [
+    {
+      "id": "workstream-board",
+      "label": "Workstream board"
+    },
+    {
+      "id": "dependencies",
+      "label": "Dependencies"
+    },
+    {
+      "id": "evidence-coverage",
+      "label": "Evidence coverage"
+    },
+    {
+      "id": "artifacts-and-review",
+      "label": "Artifacts and review"
+    }
+  ],
+  "table_columns": [
+    {
+      "key": "workstream_id",
+      "label": "Workstream id",
+      "description": "Stable job/task identity.",
+      "type": "string"
+    },
+    {
+      "key": "question",
+      "label": "Question",
+      "description": "Bounded question this workstream answers.",
+      "type": "string"
+    },
+    {
+      "key": "assigned_capability_id",
+      "label": "Assigned capability id",
+      "description": "Catalog capability selected; not proof it is executable.",
+      "type": "string"
+    },
+    {
+      "key": "depends_on",
+      "label": "Depends on",
+      "description": "Required upstream workstream IDs.",
+      "type": "array"
+    },
+    {
+      "key": "run_state",
+      "label": "Run state",
+      "description": "Recorded host state, including unbound/partial/failed/cancelled.",
+      "type": "string"
+    },
+    {
+      "key": "coverage_and_gaps",
+      "label": "Coverage and gaps",
+      "description": "Read scope and unresolved material.",
+      "type": "string"
+    },
+    {
+      "key": "artifact_ids",
+      "label": "Artifact ids",
+      "description": "Actual produced artifact identities only.",
+      "type": "array"
+    },
+    {
+      "key": "critical_blockers",
+      "label": "Critical blockers",
+      "description": "Dependencies or findings that constrain synthesis.",
+      "type": "array"
+    }
+  ],
+  "shared_views": [
+    "Coverage and failures",
+    "Source requests",
+    "Draft export"
+  ],
+  "actions": [
+    {
+      "id": "run",
+      "label": "Run scoped analysis",
+      "handler": null,
+      "enabled": false,
+      "requires": "Verified host agent and source adapters"
+    },
+    {
+      "id": "open_source",
+      "label": "Open source",
+      "handler": null,
+      "enabled": false,
+      "requires": "Authorized source resolver and safe viewer"
+    },
+    {
+      "id": "export",
+      "label": "Export draft table",
+      "handler": null,
+      "enabled": false,
+      "requires": "Bound artifact writer with source rights and spreadsheet-cell sanitization"
+    }
+  ],
+  "accessibility": [
+    "Semantic table with keyboard-accessible source links",
+    "Status labels in text, not color alone",
+    "Announce progress and errors; preserve focus when results refresh"
+  ],
+  "host_integration_note": "UI contract only. Reuse the platform shell and tested components; paths, handlers, server DTOs and persistence require verified host integration."
+}

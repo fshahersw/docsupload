@@ -1,0 +1,1286 @@
+[
+  {
+    "id": "nyc-senior-care",
+    "title": "Bianculli v City of New York - Senior Care Co-Pay Settlement",
+    "category": "Health-plan reimbursement",
+    "jurisdiction": "New York",
+    "court": "Supreme Court of the State of New York, County of New York",
+    "case_number": "160234/2022",
+    "official_url": "https://www.seniorcarecopaysettlement.com/",
+    "publisher_url": "https://settlesignal.com/settlements/nyc-senior-care-15-co-pay-settlement-bianculli-v-city-of-new-york/",
+    "status": "Claims open; final approval pending",
+    "claim_required": true,
+    "claim_deadline": "2026-10-30",
+    "eligibility_scope": "Medicare-eligible retired NYC employees and eligible dependents enrolled in the specified GHI Senior Care medical plan during January 1, 2022 through January 31, 2023. Reimbursement additionally depends on the customized claim and eligible paid co-pays; NYC employment affiliation is not a universal current-residence restriction.",
+    "proof_requirement": "Tiered and conditional. Proof of payment supports up-to-full reimbursement; affirmation without payment documents may support limited reimbursement. Name-change or representative-authority proof is required when applicable.",
+    "summary": "The notice distinguishes class membership from reimbursement eligibility and requires an approved, timely claim. The $53 million fund is not a per-person benefit.",
+    "assessment_date": "2026-09-12",
+    "reviewed_at": "2026-09-13T02:56:45.147027+00:00",
+    "publisher_snapshot": {
+      "status": "Open for claims",
+      "claim_deadline": "2026-10-30",
+      "proof_required": "no",
+      "applicable_states": [],
+      "verification_status": "official_source_found",
+      "accepted_official_evidence": true,
+      "last_verified": "2026-09-12"
+    },
+    "publisher_assertions_are_independent_verification": false,
+    "independent_review": {
+      "label": "Selected fields checked against official public sources",
+      "scope": [
+        "case identity as published",
+        "claim or payment process",
+        "stated deadlines",
+        "material scope/proof qualifications"
+      ],
+      "limitations": "Bounded public-source review. No authenticated court docket, claim submission, individual eligibility, administrator acceptance, payout guarantee, or exhaustive later-order search.",
+      "sources": [
+        {
+          "url": "https://www.seniorcarecopaysettlement.com/",
+          "http_status": 200,
+          "retrieved_at": "2026-09-13T02:48:46.338Z",
+          "local_evidence": ".firecrawl/official-nyc.json",
+          "locator": "Homepage rights and options; official notice linked"
+        },
+        {
+          "url": "https://www.seniorcarecopaysettlement.com/wp-content/uploads/2026/08/Bianculli_Notice-of-Class-Action-Lawsuit-and-Proposed-Settlement.pdf",
+          "local_evidence": "evidence/text/nyc-notice.txt",
+          "locator": "Notice pp.4-7 and 11",
+          "http_status": 200
+        }
+      ]
+    },
+    "deadlines": [
+      {
+        "type": "claim",
+        "date": "2026-10-30",
+        "as_published": "October 30, 2026",
+        "source_url": "https://www.seniorcarecopaysettlement.com/wp-content/uploads/2026/08/Bianculli_Notice-of-Class-Action-Lawsuit-and-Proposed-Settlement.pdf",
+        "source_locator": "Notice pp.5-7, Question 5",
+        "submission_method_or_cutoff": "Online submission or mail postmark; supporting documents due by the same date",
+        "time_as_published": null,
+        "timezone_as_published": null,
+        "timezone_converted": false,
+        "status_as_of_review": "future_as_of_review",
+        "uncertainty": null
+      },
+      {
+        "type": "exclusion",
+        "date": "2026-10-15",
+        "as_published": "October 15, 2026",
+        "source_url": "https://www.seniorcarecopaysettlement.com/wp-content/uploads/2026/08/Bianculli_Notice-of-Class-Action-Lawsuit-and-Proposed-Settlement.pdf",
+        "source_locator": "Notice pp.8-9, Question 8",
+        "submission_method_or_cutoff": "Postmarked",
+        "time_as_published": null,
+        "timezone_as_published": null,
+        "timezone_converted": false,
+        "status_as_of_review": "future_as_of_review",
+        "uncertainty": null
+      },
+      {
+        "type": "objection",
+        "date": "2026-11-30",
+        "as_published": "November 30, 2026",
+        "source_url": "https://www.seniorcarecopaysettlement.com/wp-content/uploads/2026/08/Bianculli_Notice-of-Class-Action-Lawsuit-and-Proposed-Settlement.pdf",
+        "source_locator": "Notice pp.9-10, Question 9",
+        "submission_method_or_cutoff": "File with court and send to counsel as specified",
+        "time_as_published": null,
+        "timezone_as_published": null,
+        "timezone_converted": false,
+        "status_as_of_review": "future_as_of_review",
+        "uncertainty": null
+      },
+      {
+        "type": "final_approval_hearing",
+        "date": "2027-03-24",
+        "as_published": "March 24, 2027",
+        "source_url": "https://www.seniorcarecopaysettlement.com/wp-content/uploads/2026/08/Bianculli_Notice-of-Class-Action-Lawsuit-and-Proposed-Settlement.pdf",
+        "source_locator": "Notice p.11, Question 11",
+        "submission_method_or_cutoff": null,
+        "time_as_published": "2:15 p.m.",
+        "timezone_as_published": null,
+        "timezone_converted": false,
+        "status_as_of_review": "future_as_of_review",
+        "uncertainty": "No timezone specified in the quoted hearing section; verify scheduling before calendaring."
+      }
+    ],
+    "review_required": true,
+    "discrepancies": [
+      {
+        "field": "proof_required",
+        "publisher_value": "no",
+        "official_observation": "Conditional proof requirements and benefit tiers",
+        "note": "Notice pp.4-7 limits undocumented reimbursement to up to 40% of the co-pay amount, capped at $100; full reimbursement requires payment proof. Authority/name-change documents can be mandatory.",
+        "source_url": "https://www.seniorcarecopaysettlement.com/wp-content/uploads/2026/08/Bianculli_Notice-of-Class-Action-Lawsuit-and-Proposed-Settlement.pdf",
+        "source_locator": "pp.4-7, Question 5",
+        "severity": "material"
+      }
+    ],
+    "notes": [
+      "No account or customized claimant dashboard was accessed. Receipt of a notice or claim form is not confirmation of eligibility or payment."
+    ],
+    "documents": [
+      {
+        "id": "nyc-notice",
+        "record_id": "nyc-senior-care",
+        "title": "Bianculli v City of New York - Senior Care Co-Pay Settlement - Class Notice",
+        "url": "https://www.seniorcarecopaysettlement.com/wp-content/uploads/2026/08/Bianculli_Notice-of-Class-Action-Lawsuit-and-Proposed-Settlement.pdf",
+        "final_url": "https://www.seniorcarecopaysettlement.com/wp-content/uploads/2026/08/Bianculli_Notice-of-Class-Action-Lawsuit-and-Proposed-Settlement.pdf",
+        "source_page": "https://www.seniorcarecopaysettlement.com/",
+        "kind": "class_notice",
+        "scope": "New York Supreme Court, New York County, Index 160234/2022; GHI Senior Care co-pay settlement",
+        "status": "downloaded",
+        "http_status": 200,
+        "content_type": [
+          "application/pdf"
+        ],
+        "retrieved_at": "2026-09-13T02:51:24.8109421Z",
+        "bytes": 334567,
+        "sha256": "2b4b911b3ac71a30c6807bbe65a2366a88d4d5f3b315f2e903dcf857b3531584",
+        "path": "documents/Bianculli v City of New York - Senior Care Co-Pay Settlement - Class Notice.pdf",
+        "original_bytes_preserved": true,
+        "retrieval_method": "Ordinary unauthenticated PowerShell Invoke-WebRequest",
+        "page_count": 12,
+        "pdf_form_field_count": 0,
+        "extracted_text_characters": 36550,
+        "text_evidence_path": "evidence/text/nyc-notice.txt",
+        "language": "en",
+        "language_verification": "English caption and substantive text inspected in extracted original PDF pages; blank claim form checked for uncompleted fields.",
+        "format": "PDF",
+        "document_use": "case_specific_reference",
+        "open_license_established": false,
+        "rights_note": "Public official case document linked for viewing/download. No separate open-content license is asserted. Not a universal reusable filing template.",
+        "source_date": null,
+        "source_date_kind": "not_stated_in_reviewed_material",
+        "source_date_evidence": "Do not treat an upload-path date, PDF creation metadata, or claim deadline as the notice publication date."
+      }
+    ]
+  },
+  {
+    "id": "pork-antitrust",
+    "title": "Pork Antitrust Litigation - Consumer Indirect Purchaser Settlements",
+    "category": "Antitrust - consumer purchasers",
+    "jurisdiction": "Federal - Minnesota",
+    "court": "United States District Court for the District of Minnesota",
+    "case_number": "0:18-cv-1776-JRT-JFD",
+    "official_url": "https://www.overchargedforpork.com/Home/Home",
+    "publisher_url": "https://settlesignal.com/settlements/pork-antitrust-consumer-settlements-indirect-purchasers/",
+    "status": "Claims open for the 2026 settlement round; final approval pending",
+    "claim_required": true,
+    "claim_deadline": "2026-10-29",
+    "eligibility_scope": "Personal-consumption purchasers of covered pork products in the United States during June 28, 2014 through June 30, 2018. Exact products and settlement-class exclusions must be checked in the notice and eligibility list.",
+    "proof_requirement": "Not independently resolved in this bounded review. The publisher says optional; public PDF transfer was declined and the claim intake was not entered.",
+    "summary": "The current six-defendant round totals $117.065 million in cash settlements; Agri Stats supplies non-monetary relief. Earlier JBS and Smithfield settlement claim periods are separately closed.",
+    "assessment_date": "2026-09-12",
+    "reviewed_at": "2026-09-13T02:56:45.147027+00:00",
+    "publisher_snapshot": {
+      "status": "Open for claims",
+      "claim_deadline": "2026-10-29",
+      "proof_required": "optional",
+      "applicable_states": [],
+      "verification_status": "official_source_found",
+      "accepted_official_evidence": true,
+      "last_verified": "2026-09-12"
+    },
+    "publisher_assertions_are_independent_verification": false,
+    "independent_review": {
+      "label": "Selected fields checked against official public sources",
+      "scope": [
+        "case identity as published",
+        "claim or payment process",
+        "stated deadlines",
+        "material scope/proof qualifications"
+      ],
+      "limitations": "Bounded public-source review. No authenticated court docket, claim submission, individual eligibility, administrator acceptance, payout guarantee, or exhaustive later-order search.",
+      "sources": [
+        {
+          "url": "https://www.overchargedforpork.com/Home/Home",
+          "http_status": 200,
+          "retrieved_at": "2026-09-13T02:48:48.338Z",
+          "local_evidence": ".firecrawl/official-pork.json",
+          "locator": "Homepage class scope, settlement rounds, rights table"
+        },
+        {
+          "url": "https://www.overchargedforpork.com/Home/Documents",
+          "http_status": 200,
+          "retrieved_at": "2026-09-13T02:49:52.451Z",
+          "local_evidence": ".firecrawl/docs-pork.json",
+          "locator": "Published document links"
+        }
+      ]
+    },
+    "deadlines": [
+      {
+        "type": "claim",
+        "date": "2026-10-29",
+        "as_published": "October 29, 2026",
+        "source_url": "https://www.overchargedforpork.com/Home/Home",
+        "source_locator": "Homepage rights table",
+        "submission_method_or_cutoff": "Submitted or postmarked",
+        "time_as_published": null,
+        "timezone_as_published": null,
+        "timezone_converted": false,
+        "status_as_of_review": "future_as_of_review",
+        "uncertainty": null
+      },
+      {
+        "type": "exclusion",
+        "date": "2026-10-29",
+        "as_published": "October 29, 2026",
+        "source_url": "https://www.overchargedforpork.com/Home/Home",
+        "source_locator": "Homepage rights table",
+        "submission_method_or_cutoff": "Postmarked; Agri Stats opt-out exception stated",
+        "time_as_published": null,
+        "timezone_as_published": null,
+        "timezone_converted": false,
+        "status_as_of_review": "future_as_of_review",
+        "uncertainty": null
+      },
+      {
+        "type": "objection",
+        "date": "2026-10-29",
+        "as_published": "October 29, 2026",
+        "source_url": "https://www.overchargedforpork.com/Home/Home",
+        "source_locator": "Homepage rights table",
+        "submission_method_or_cutoff": "Postmarked",
+        "time_as_published": null,
+        "timezone_as_published": null,
+        "timezone_converted": false,
+        "status_as_of_review": "future_as_of_review",
+        "uncertainty": null
+      },
+      {
+        "type": "final_approval_hearing",
+        "date": "2026-12-11",
+        "as_published": "December 11, 2026",
+        "source_url": "https://www.overchargedforpork.com/Home/Home",
+        "source_locator": "Current Status",
+        "submission_method_or_cutoff": null,
+        "time_as_published": "11:00 a.m.",
+        "timezone_as_published": "CST",
+        "timezone_converted": false,
+        "status_as_of_review": "future_as_of_review",
+        "uncertainty": null
+      }
+    ],
+    "review_required": true,
+    "discrepancies": [
+      {
+        "field": "settlement_round_scope",
+        "publisher_value": "Single open record",
+        "official_observation": "Current six-defendant round open; earlier JBS/Smithfield claim windows closed",
+        "note": "Do not reactivate earlier settlement claims or apply one deadline to all defendants. Proof and product eligibility still require document review.",
+        "source_url": "https://www.overchargedforpork.com/Home/Home",
+        "source_locator": "Settlements and Previous Settlements",
+        "severity": "qualification"
+      }
+    ],
+    "notes": [
+      "The official notice URL returned HTTP 403 to the ordinary local downloader and was not bypassed."
+    ],
+    "documents": [
+      {
+        "id": "pork-notice",
+        "record_id": "pork-antitrust",
+        "title": "Pork Antitrust Consumer Settlements - Class Notice - 2026 Settlement Round",
+        "url": "https://www.overchargedforpork.com/Content/Documents/AN062_v02.pdf",
+        "source_page": "https://www.overchargedforpork.com/Home/Documents",
+        "kind": "class_notice",
+        "scope": "US District Court, District of Minnesota, 0:18-cv-01776-JRT-JFD; six remaining-defendant settlements; earlier JBS and Smithfield claim windows closed",
+        "status": "not_downloaded",
+        "http_status": 403,
+        "retrieved_at": "2026-09-13T02:51:26.0575361Z",
+        "error": "Response status code does not indicate success: 403 (Forbidden).",
+        "format": "PDF",
+        "path": null,
+        "document_use": "case_specific_reference",
+        "open_license_established": false
+      }
+    ]
+  },
+  {
+    "id": "farmers-tcpa",
+    "title": "Heckathorn v Farmers - TCPA Settlement",
+    "category": "Telecommunications - TCPA",
+    "jurisdiction": "Missouri",
+    "court": "Circuit Court of St. Louis County, Missouri, Division 17",
+    "case_number": null,
+    "official_url": "https://www.heckathorntcpasettlement.com/",
+    "publisher_url": "https://settlesignal.com/settlements/farmers-tcpa-settlement/",
+    "status": "Claims open; exclusion and objection dates passed; final approval pending",
+    "claim_required": true,
+    "claim_deadline": "2026-09-14",
+    "eligibility_scope": "Identified recipients of the specified agents' marketing calls or texts from April 19, 2020 through June 15, 2026 whose cellular numbers appear on the litigation-produced list. The settlement does not cover every Farmers customer.",
+    "proof_requirement": "Unresolved in this review; publisher also reports unknown. No claim login or claimant list was accessed.",
+    "summary": "The official page describes a $1.25 million fund and pro-rata claim payments capped at $160 after expenses, subject to approval and valid claims.",
+    "assessment_date": "2026-09-12",
+    "reviewed_at": "2026-09-13T02:56:45.147027+00:00",
+    "publisher_snapshot": {
+      "status": "Open for claims",
+      "claim_deadline": "2026-09-14",
+      "proof_required": "unknown",
+      "applicable_states": [],
+      "verification_status": "needs_recheck",
+      "accepted_official_evidence": true,
+      "last_verified": "2026-07-01"
+    },
+    "publisher_assertions_are_independent_verification": false,
+    "independent_review": {
+      "label": "Selected fields checked against official public sources",
+      "scope": [
+        "case identity as published",
+        "claim or payment process",
+        "stated deadlines",
+        "material scope/proof qualifications"
+      ],
+      "limitations": "Bounded public-source review. No authenticated court docket, claim submission, individual eligibility, administrator acceptance, payout guarantee, or exhaustive later-order search.",
+      "sources": [
+        {
+          "url": "https://www.heckathorntcpasettlement.com/",
+          "http_status": 200,
+          "retrieved_at": "2026-09-13T02:48:51.317Z",
+          "local_evidence": ".firecrawl/official-farmers.json",
+          "locator": "Homepage scope, benefits and rights table"
+        },
+        {
+          "url": "https://www.heckathorntcpasettlement.com/settlement-documents/",
+          "http_status": 200,
+          "retrieved_at": "2026-09-13T02:49:48.367Z",
+          "local_evidence": ".firecrawl/docs-farmers.json",
+          "locator": "Official notice and court-document links"
+        }
+      ]
+    },
+    "deadlines": [
+      {
+        "type": "claim",
+        "date": "2026-09-14",
+        "as_published": "September 14, 2026",
+        "source_url": "https://www.heckathorntcpasettlement.com/",
+        "source_locator": "Rights and Options table",
+        "submission_method_or_cutoff": "Claim form postmarked by date; verify online cutoff in full instructions",
+        "time_as_published": null,
+        "timezone_as_published": null,
+        "timezone_converted": false,
+        "status_as_of_review": "future_as_of_review",
+        "uncertainty": null
+      },
+      {
+        "type": "exclusion",
+        "date": "2026-08-27",
+        "as_published": "August 27, 2026",
+        "source_url": "https://www.heckathorntcpasettlement.com/",
+        "source_locator": "Rights and Options table",
+        "submission_method_or_cutoff": "Written exclusion request",
+        "time_as_published": null,
+        "timezone_as_published": null,
+        "timezone_converted": false,
+        "status_as_of_review": "past_as_of_review",
+        "uncertainty": null
+      },
+      {
+        "type": "objection",
+        "date": "2026-08-27",
+        "as_published": "August 27, 2026",
+        "source_url": "https://www.heckathorntcpasettlement.com/",
+        "source_locator": "Rights and Options table",
+        "submission_method_or_cutoff": "Written objection filed with court",
+        "time_as_published": null,
+        "timezone_as_published": null,
+        "timezone_converted": false,
+        "status_as_of_review": "past_as_of_review",
+        "uncertainty": null
+      },
+      {
+        "type": "final_approval_hearing",
+        "date": "2026-09-23",
+        "as_published": "September 23, 2026",
+        "source_url": "https://www.heckathorntcpasettlement.com/",
+        "source_locator": "Final paragraph",
+        "submission_method_or_cutoff": null,
+        "time_as_published": "10:30 a.m.",
+        "timezone_as_published": null,
+        "timezone_converted": false,
+        "status_as_of_review": "future_as_of_review",
+        "uncertainty": null
+      }
+    ],
+    "review_required": false,
+    "discrepancies": [],
+    "notes": [
+      "The notice PDF could not be acquired because ordinary clients encountered TLS/connection-reset failures. Case number is left unfilled because the readable homepage caption was an image; it was not guessed."
+    ],
+    "documents": [
+      {
+        "id": "farmers-notice",
+        "record_id": "farmers-tcpa",
+        "title": "Heckathorn v Farmers - TCPA Settlement - Class Notice",
+        "url": "https://www.heckathorntcpasettlement.com/wp-content/uploads/2026/06/Heckathorn-v.-Farmers-Notice.pdf",
+        "source_page": "https://www.heckathorntcpasettlement.com/settlement-documents/",
+        "kind": "class_notice",
+        "scope": "Circuit Court of St Louis County, Missouri, Division 17; identified insurance-agent telemarketing calls and texts",
+        "status": "not_downloaded",
+        "http_status": null,
+        "retrieved_at": "2026-09-13T02:51:27.1386365Z",
+        "error": "The SSL connection could not be established, see inner exception.",
+        "format": "PDF",
+        "path": null,
+        "document_use": "case_specific_reference",
+        "open_license_established": false
+      }
+    ]
+  },
+  {
+    "id": "generic-drugs",
+    "title": "Generic Pharmaceuticals Antitrust Litigation - End-Payer Settlements",
+    "category": "Antitrust - pharmaceutical end payers",
+    "jurisdiction": "Federal - Pennsylvania",
+    "court": "United States District Court for the Eastern District of Pennsylvania",
+    "case_number": "2:16-md-02724-CMR / MDL 2724",
+    "official_url": "https://www.genericdrugsendpayersettlement.com/",
+    "publisher_url": "https://settlesignal.com/settlements/generic-drugs-end-payer-antitrust-settlement/",
+    "status": "Claims open for specified court-approved settlements",
+    "claim_required": true,
+    "claim_deadline": "2026-11-09",
+    "eligibility_scope": "Separate consumer and third-party-payer settlement classes, named generic drugs, and settlement-specific allocation rules. Apotex/Heritage and certified litigation classes must not be conflated with consumer settlement classes.",
+    "proof_requirement": "Depends on consumer versus third-party-payer claim form and settlement. The June 10 order approves forms that require documentation; a single optional-proof label is insufficient.",
+    "summary": "The June 10, 2026 order approves claims notices and forms for Sandoz, Apotex, Heritage, and Sun/Taro settlements and appoints A.B. Data. Sandoz's page reports a $275 million settlement with final approval; ongoing litigation against other defendants remains distinct.",
+    "assessment_date": "2026-09-12",
+    "reviewed_at": "2026-09-13T02:56:45.147027+00:00",
+    "publisher_snapshot": {
+      "status": "Open for claims",
+      "claim_deadline": "2026-11-09",
+      "proof_required": "optional",
+      "applicable_states": [],
+      "verification_status": "official_source_found",
+      "accepted_official_evidence": true,
+      "last_verified": "2026-07-17"
+    },
+    "publisher_assertions_are_independent_verification": false,
+    "independent_review": {
+      "label": "Selected fields checked against official public sources",
+      "scope": [
+        "case identity as published",
+        "claim or payment process",
+        "stated deadlines",
+        "material scope/proof qualifications"
+      ],
+      "limitations": "Bounded public-source review. No authenticated court docket, claim submission, individual eligibility, administrator acceptance, payout guarantee, or exhaustive later-order search.",
+      "sources": [
+        {
+          "url": "https://www.genericdrugsendpayersettlement.com/",
+          "http_status": 200,
+          "retrieved_at": "2026-09-13T02:48:59.680Z",
+          "local_evidence": ".firecrawl/official-generics.json",
+          "locator": "Class-specific entry points and claim date"
+        },
+        {
+          "url": "https://www.genericdrugsendpayersettlement.com/sandoz-classes-homepage",
+          "http_status": 200,
+          "retrieved_at": "2026-09-13T02:49:50.546Z",
+          "local_evidence": ".firecrawl/docs-generics.json",
+          "locator": "Sandoz settlement description and final-approval status"
+        },
+        {
+          "url": "https://www.genericdrugsendpayersettlement.com/sandoz-classes-courtdocuments",
+          "http_status": 200,
+          "retrieved_at": "2026-09-13T02:50:02.472Z",
+          "local_evidence": ".firecrawl/docs-generics-index.json",
+          "locator": "June 10 order link"
+        },
+        {
+          "url": "https://www.genericdrugsendpayersettlement.com/assets/2026-06-10%20Order.pdf",
+          "local_evidence": "evidence/text/generics-order.txt",
+          "http_status": 200,
+          "locator": "Order pp.1,3-4; ECF 4564"
+        }
+      ]
+    },
+    "deadlines": [
+      {
+        "type": "claim",
+        "date": "2026-11-09",
+        "as_published": "November 9, 2026",
+        "source_url": "https://www.genericdrugsendpayersettlement.com/",
+        "source_locator": "Homepage claims instruction",
+        "submission_method_or_cutoff": "Online submission or mail postmark",
+        "time_as_published": null,
+        "timezone_as_published": null,
+        "timezone_converted": false,
+        "status_as_of_review": "future_as_of_review",
+        "uncertainty": null
+      }
+    ],
+    "review_required": true,
+    "discrepancies": [
+      {
+        "field": "category",
+        "publisher_value": "Securities & Investors",
+        "official_observation": "Pharmaceutical antitrust / end-payer claims",
+        "note": "The official case description is antitrust and concerns generic-drug overpayments, not a securities claim.",
+        "source_url": "https://www.genericdrugsendpayersettlement.com/",
+        "source_locator": null,
+        "severity": "material"
+      },
+      {
+        "field": "proof_required",
+        "publisher_value": "optional",
+        "official_observation": "Claimant-specific documentation",
+        "note": "Read the applicable consumer or TPP claim form; the court order does not establish a universal no-document option.",
+        "source_url": "https://www.genericdrugsendpayersettlement.com/assets/2026-06-10%20Order.pdf",
+        "source_locator": "p.3, paragraph 9",
+        "severity": "qualification"
+      },
+      {
+        "field": "official_source_copy_error",
+        "publisher_value": null,
+        "official_observation": "Sandoz page Do Nothing row names Sun or Taro",
+        "note": "The official page itself appears to contain copied language. Preserve the inconsistency and consult the specific settlement/order rather than silently repairing legal scope.",
+        "source_url": "https://www.genericdrugsendpayersettlement.com/sandoz-classes-homepage",
+        "source_locator": "Rights and Options table",
+        "severity": "material"
+      }
+    ],
+    "notes": [
+      "Prior exclusion/objection dates are described as passed on the Sandoz page, but exact dates were not reconstructed. The order is a case-specific authority reference, not a courtwide procedural rule."
+    ],
+    "documents": [
+      {
+        "id": "generics-order",
+        "record_id": "generic-drugs",
+        "title": "Generic Pharmaceuticals Antitrust Litigation - Notice and Claim Administration Order - 2026-06-10",
+        "url": "https://www.genericdrugsendpayersettlement.com/assets/2026-06-10%20Order.pdf",
+        "final_url": "https://www.genericdrugsendpayersettlement.com/assets/2026-06-10%20Order.pdf",
+        "source_page": "https://www.genericdrugsendpayersettlement.com/sandoz-classes-courtdocuments",
+        "kind": "court_order",
+        "scope": "US District Court, Eastern District of Pennsylvania, MDL 2724; end-payer notice, claim forms and administration",
+        "status": "downloaded",
+        "http_status": 200,
+        "content_type": [
+          "application/pdf"
+        ],
+        "retrieved_at": "2026-09-13T02:51:28.5953648Z",
+        "bytes": 176423,
+        "sha256": "dfe8920e8af53acb152c120e2f225424fe089f88c8a0ffdedbeee7674d103a91",
+        "path": "documents/Generic Pharmaceuticals Antitrust Litigation - Notice and Claim Administration Order - 2026-06-10.pdf",
+        "original_bytes_preserved": true,
+        "retrieval_method": "Ordinary unauthenticated PowerShell Invoke-WebRequest",
+        "page_count": 4,
+        "pdf_form_field_count": 0,
+        "extracted_text_characters": 6038,
+        "text_evidence_path": "evidence/text/generics-order.txt",
+        "language": "en",
+        "language_verification": "English caption and substantive text inspected in extracted original PDF pages; blank claim form checked for uncompleted fields.",
+        "format": "PDF",
+        "document_use": "case_specific_reference",
+        "open_license_established": false,
+        "rights_note": "Public official case document linked for viewing/download. No separate open-content license is asserted. Not a universal reusable filing template.",
+        "source_date": "2026-06-10",
+        "source_date_kind": "filing_and_order_date",
+        "source_date_evidence": "Order page 1 and ECF footer identify June 10, 2026."
+      }
+    ]
+  },
+  {
+    "id": "crst-employment",
+    "title": "Huckaby v CRST Expedited - California Truck Driver Settlement",
+    "category": "Employment - wages and PAGA",
+    "jurisdiction": "Federal - California",
+    "court": "United States District Court for the Central District of California",
+    "case_number": "2:21-cv-07766-ODW-PD",
+    "official_url": "https://truckingdriversettlement.com/",
+    "publisher_url": "https://settlesignal.com/settlements/crst-expedited-california-truck-driver-wage-settlement/",
+    "status": "Automatic-payment process described; final approval pending",
+    "claim_required": false,
+    "claim_deadline": null,
+    "eligibility_scope": "California-resident CRST truck drivers paid by piece rate during August 9, 2017 through April 10, 2023 who did not participate in the Montoya settlement; applicable class/PAGA distinctions remain relevant.",
+    "proof_requirement": "No affirmative payment claim is described on the official homepage. It uses identified class-member payments subject to final approval; dispute, exclusion, and objection procedures are separate.",
+    "summary": "The official homepage says class members who do nothing receive an individual class payment and, where applicable, a PAGA amount if the court grants approval. This is not a guarantee that a particular person qualifies or will be paid.",
+    "assessment_date": "2026-09-12",
+    "reviewed_at": "2026-09-13T02:56:45.147027+00:00",
+    "publisher_snapshot": {
+      "status": "Open for claims",
+      "claim_deadline": null,
+      "proof_required": "no",
+      "applicable_states": [],
+      "verification_status": "official_source_found",
+      "accepted_official_evidence": true,
+      "last_verified": "2026-08-19"
+    },
+    "publisher_assertions_are_independent_verification": false,
+    "independent_review": {
+      "label": "Selected fields checked against official public sources",
+      "scope": [
+        "case identity as published",
+        "claim or payment process",
+        "stated deadlines",
+        "material scope/proof qualifications"
+      ],
+      "limitations": "Bounded public-source review. No authenticated court docket, claim submission, individual eligibility, administrator acceptance, payout guarantee, or exhaustive later-order search.",
+      "sources": [
+        {
+          "url": "https://truckingdriversettlement.com/",
+          "http_status": 200,
+          "retrieved_at": "2026-09-13T02:49:05.860Z",
+          "local_evidence": ".firecrawl/official-crst.json",
+          "locator": "Opening class definition and Do Nothing row"
+        },
+        {
+          "url": "https://truckingdriversettlement.com/documents",
+          "http_status": 200,
+          "retrieved_at": "2026-09-13T02:50:03.931Z",
+          "local_evidence": ".firecrawl/docs-crst.json",
+          "locator": "Official documents index"
+        }
+      ]
+    },
+    "deadlines": [
+      {
+        "type": "exclusion",
+        "date": "2026-10-05",
+        "as_published": "October 5, 2026",
+        "source_url": "https://truckingdriversettlement.com/",
+        "source_locator": "Rights and Options table",
+        "submission_method_or_cutoff": "Signed opt-out request postmarked",
+        "time_as_published": null,
+        "timezone_as_published": null,
+        "timezone_converted": false,
+        "status_as_of_review": "future_as_of_review",
+        "uncertainty": null
+      },
+      {
+        "type": "objection",
+        "date": "2026-10-05",
+        "as_published": "October 5, 2026",
+        "source_url": "https://truckingdriversettlement.com/",
+        "source_locator": "Rights table and Important Dates",
+        "submission_method_or_cutoff": "Court submission and service on administrator as specified",
+        "time_as_published": null,
+        "timezone_as_published": null,
+        "timezone_converted": false,
+        "status_as_of_review": "future_as_of_review",
+        "uncertainty": null
+      },
+      {
+        "type": "final_approval_hearing",
+        "date": "2026-11-16",
+        "as_published": "November 16, 2026",
+        "source_url": "https://truckingdriversettlement.com/",
+        "source_locator": "Important Dates",
+        "submission_method_or_cutoff": null,
+        "time_as_published": "1:30 p.m.",
+        "timezone_as_published": "PT",
+        "timezone_converted": false,
+        "status_as_of_review": "future_as_of_review",
+        "uncertainty": null
+      }
+    ],
+    "review_required": true,
+    "discrepancies": [
+      {
+        "field": "status",
+        "publisher_value": "Open for claims",
+        "official_observation": "No payment claim required under homepage process",
+        "note": "Use a separate automatic-payment / no-claim-required state. Do not create a fictitious claim deadline from the opt-out deadline.",
+        "source_url": "https://truckingdriversettlement.com/",
+        "source_locator": "Do Nothing row",
+        "severity": "material"
+      },
+      {
+        "field": "applicable_states",
+        "publisher_value": [],
+        "official_observation": "California-resident class scope",
+        "note": "The feed dictionary says an empty state array means nationwide. That simplification conflicts with the official California-resident class definition.",
+        "source_url": "https://truckingdriversettlement.com/",
+        "source_locator": "Opening class definition",
+        "severity": "material"
+      }
+    ],
+    "notes": [
+      "The public notice PDF transfer returned HTTP 403. No alternate access method was used to evade that response."
+    ],
+    "documents": [
+      {
+        "id": "crst-notice",
+        "record_id": "crst-employment",
+        "title": "Huckaby v CRST Expedited - California Truck Driver Settlement - Class Notice",
+        "url": "https://truckingdriversettlement.com/files/Huckaby%20v%20CRST%20-%20Long%20Form%20Class%20Notice.pdf",
+        "source_page": "https://truckingdriversettlement.com/documents",
+        "kind": "class_notice",
+        "scope": "US District Court, Central District of California, 2:21-cv-07766-ODW-PD; California-resident truck drivers, class and PAGA settlement",
+        "status": "not_downloaded",
+        "http_status": 403,
+        "retrieved_at": "2026-09-13T02:51:29.7369334Z",
+        "error": "Response status code does not indicate success: 403 (Forbidden).",
+        "format": "PDF",
+        "path": null,
+        "document_use": "case_specific_reference",
+        "open_license_established": false
+      }
+    ]
+  },
+  {
+    "id": "amazon-prime",
+    "title": "FTC v Amazon - Prime Membership Consumer Refunds",
+    "category": "Government enforcement - subscription refunds",
+    "jurisdiction": "Federal - Washington",
+    "court": "United States District Court for the Western District of Washington",
+    "case_number": "2:23-cv-00932-JHC",
+    "official_url": "https://www.subscriptionmembershipsettlement.com/",
+    "publisher_url": "https://settlesignal.com/settlements/amazon-prime-membership-ftc-settlement/",
+    "status": "Claim window closed; approved-claim payments being processed",
+    "claim_required": true,
+    "claim_deadline": "2026-07-27",
+    "eligibility_scope": "Distinct automatic-payment and claim-process groups of eligible US Prime consumers, with specific enrollment/cancellation and benefit-use criteria for June 23, 2019 through June 23, 2025. Not every Prime subscriber is eligible.",
+    "proof_requirement": "No new claims accepted. For historical review, group-specific eligibility and administrator determination govern; the feed's optional-proof label was not independently confirmed.",
+    "summary": "The official administrator states claims closed July 27, 2026. It distinguishes earlier automatic refunds from payments on approved claims, with a maximum eligible refund of $51; the $1.5 billion consumer refund pool is separate from the civil penalty.",
+    "assessment_date": "2026-09-12",
+    "reviewed_at": "2026-09-13T02:56:45.147027+00:00",
+    "publisher_snapshot": {
+      "status": "Claim window closed",
+      "claim_deadline": "2026-07-27",
+      "proof_required": "optional",
+      "applicable_states": [],
+      "verification_status": "official_source_found",
+      "accepted_official_evidence": false,
+      "last_verified": "2026-06-09"
+    },
+    "publisher_assertions_are_independent_verification": false,
+    "independent_review": {
+      "label": "Selected fields checked against official public sources",
+      "scope": [
+        "case identity as published",
+        "claim or payment process",
+        "stated deadlines",
+        "material scope/proof qualifications"
+      ],
+      "limitations": "Bounded public-source review. No authenticated court docket, claim submission, individual eligibility, administrator acceptance, payout guarantee, or exhaustive later-order search.",
+      "sources": [
+        {
+          "url": "https://www.subscriptionmembershipsettlement.com/",
+          "http_status": 200,
+          "retrieved_at": "2026-09-13T02:49:03.694Z",
+          "local_evidence": ".firecrawl/official-amazon.json",
+          "locator": "Automatic and claim-process payment sections"
+        },
+        {
+          "url": "https://www.subscriptionmembershipsettlement.com/case-documents.aspx",
+          "http_status": 200,
+          "retrieved_at": "2026-09-13T02:50:09.260Z",
+          "local_evidence": ".firecrawl/docs-amazon.json",
+          "locator": "Order links"
+        },
+        {
+          "url": "https://www.ftc.gov/enforcement/refunds/amazon-refunds",
+          "local_evidence": ".firecrawl/search-ftc-amazon.json",
+          "locator": "Official FTC search result content; limited extract, not full-page review"
+        }
+      ]
+    },
+    "deadlines": [
+      {
+        "type": "claim",
+        "date": "2026-07-27",
+        "as_published": "July 27, 2026",
+        "source_url": "https://www.subscriptionmembershipsettlement.com/",
+        "source_locator": "Claims Process Payment Group",
+        "submission_method_or_cutoff": "Closed; administrator says no longer accepting claims",
+        "time_as_published": null,
+        "timezone_as_published": null,
+        "timezone_converted": false,
+        "status_as_of_review": "past_as_of_review",
+        "uncertainty": null
+      }
+    ],
+    "review_required": false,
+    "discrepancies": [],
+    "notes": [
+      "The page still displays File Claim navigation while its substantive text says claims are closed; the closure text controls this snapshot. The court order could not be downloaded from the administrator (TLS) or directly observed FTC copy (HTTP 403)."
+    ],
+    "documents": [
+      {
+        "id": "amazon-order",
+        "record_id": "amazon-prime",
+        "title": "FTC v Amazon - Prime Membership Settlement - Stipulated Injunction and Monetary Relief Order",
+        "url": "https://www.subscriptionmembershipsettlement.com/media/6286739/stipulated_order_for_permanent_injunction__monetary_relief__civil_penalty_judgment__and_other.pdf",
+        "source_page": "https://www.subscriptionmembershipsettlement.com/case-documents.aspx",
+        "kind": "court_order",
+        "scope": "US District Court, Western District of Washington, 2:23-cv-00932-JHC; federal government enforcement settlement and consumer refunds",
+        "status": "not_downloaded",
+        "http_status": null,
+        "retrieved_at": "2026-09-13T02:51:30.8491461Z",
+        "error": "The SSL connection could not be established, see inner exception.",
+        "format": "PDF",
+        "path": null,
+        "document_use": "case_specific_reference",
+        "open_license_established": false
+      }
+    ]
+  },
+  {
+    "id": "amtrust-securities",
+    "title": "AmTrust Financial Services Securities Litigation - Partial Settlement",
+    "category": "Securities - specified public offerings",
+    "jurisdiction": "Federal - New York",
+    "court": "United States District Court for the Southern District of New York",
+    "case_number": "1:17-cv-01545-LAK",
+    "official_url": "https://www.amtrustsecuritieslitigation.com",
+    "publisher_url": "https://settlesignal.com/settlements/amtrust-financial-securities-settlement/",
+    "status": "Claims open for proposed partial settlement",
+    "claim_required": true,
+    "claim_deadline": "2026-10-07",
+    "eligibility_scope": "Defined subclasses for common stock traceable to the November 2015 offering and Series F preferred stock traceable to the September 2016 offering, with damages and exclusions. It does not cover every AmTrust investor or trade.",
+    "proof_requirement": "Publisher says proof required. The homepage calls for a Proof of Claim form, but detailed transaction-document requirements were not independently checked because the notice remains reference-only.",
+    "summary": "The official site describes a proposed $19 million partial settlement and specified offering subclasses; payment depends on valid claims, allocation, and approval.",
+    "assessment_date": "2026-09-12",
+    "reviewed_at": "2026-09-13T02:56:45.147027+00:00",
+    "publisher_snapshot": {
+      "status": "Open for claims",
+      "claim_deadline": "2026-10-07",
+      "proof_required": "yes",
+      "applicable_states": [],
+      "verification_status": "needs_recheck",
+      "accepted_official_evidence": true,
+      "last_verified": "2026-07-06"
+    },
+    "publisher_assertions_are_independent_verification": false,
+    "independent_review": {
+      "label": "Selected fields checked against official public sources",
+      "scope": [
+        "case identity as published",
+        "claim or payment process",
+        "stated deadlines",
+        "material scope/proof qualifications"
+      ],
+      "limitations": "Bounded public-source review. No authenticated court docket, claim submission, individual eligibility, administrator acceptance, payout guarantee, or exhaustive later-order search.",
+      "sources": [
+        {
+          "url": "https://www.amtrustsecuritieslitigation.com",
+          "http_status": 200,
+          "retrieved_at": "2026-09-13T02:49:24.808Z",
+          "local_evidence": ".firecrawl/official-amtrust.json",
+          "locator": "Homepage subclasses, fund and dates"
+        }
+      ]
+    },
+    "deadlines": [
+      {
+        "type": "claim",
+        "date": "2026-10-07",
+        "as_published": "October 7, 2026",
+        "source_url": "https://www.amtrustsecuritieslitigation.com/",
+        "source_locator": "Important Dates",
+        "submission_method_or_cutoff": "Postmarked or submitted",
+        "time_as_published": null,
+        "timezone_as_published": null,
+        "timezone_converted": false,
+        "status_as_of_review": "future_as_of_review",
+        "uncertainty": null
+      },
+      {
+        "type": "exclusion",
+        "date": "2026-10-28",
+        "as_published": "October 28, 2026",
+        "source_url": "https://www.amtrustsecuritieslitigation.com/",
+        "source_locator": "Important Dates",
+        "submission_method_or_cutoff": "Postmarked or received, as stated",
+        "time_as_published": null,
+        "timezone_as_published": null,
+        "timezone_converted": false,
+        "status_as_of_review": "future_as_of_review",
+        "uncertainty": null
+      },
+      {
+        "type": "objection",
+        "date": "2026-10-28",
+        "as_published": "October 28, 2026",
+        "source_url": "https://www.amtrustsecuritieslitigation.com/",
+        "source_locator": "Important Dates",
+        "submission_method_or_cutoff": "Received",
+        "time_as_published": null,
+        "timezone_as_published": null,
+        "timezone_converted": false,
+        "status_as_of_review": "future_as_of_review",
+        "uncertainty": null
+      },
+      {
+        "type": "final_approval_hearing",
+        "date": "2026-11-19",
+        "as_published": "November 19, 2026",
+        "source_url": "https://www.amtrustsecuritieslitigation.com/",
+        "source_locator": "Important Dates",
+        "submission_method_or_cutoff": null,
+        "time_as_published": "10:00 a.m.",
+        "timezone_as_published": null,
+        "timezone_converted": false,
+        "status_as_of_review": "future_as_of_review",
+        "uncertainty": null
+      }
+    ],
+    "review_required": false,
+    "discrepancies": [],
+    "notes": [
+      "The official host publishes search=yes, ai-train=no and use=reference signals, plus named automated-agent exclusions. The notice link is retained for reference; no PDF or AI-training permission is inferred."
+    ],
+    "documents": [
+      {
+        "id": "amtrust-notice",
+        "record_id": "amtrust-securities",
+        "title": "AmTrust Financial Services Securities Litigation - Partial Settlement Notice",
+        "url": "https://www.amtrustsecuritieslitigation.com/media/7121158/notice.pdf",
+        "source_page": "https://www.amtrustsecuritieslitigation.com/",
+        "kind": "class_notice",
+        "scope": "US District Court, Southern District of New York, 1:17-cv-01545-LAK; specified 2015 common-stock and 2016 Series F preferred-stock offerings",
+        "status": "reference_only",
+        "reason": "Official host robots declares use=reference and prohibits AI training, with several named automated-agent exclusions. Preserved public source link; full PDF not acquired for AI ingestion in this pass.",
+        "format": "PDF",
+        "path": null,
+        "document_use": "case_specific_reference",
+        "open_license_established": false
+      }
+    ]
+  },
+  {
+    "id": "google-child-privacy",
+    "title": "AB v Google - Children Privacy Settlement",
+    "category": "Privacy - children and Google Play",
+    "jurisdiction": "Federal - California",
+    "court": "United States District Court for the Northern District of California",
+    "case_number": "5:23-cv-03101",
+    "official_url": "https://www.coppaprivacyclassaction.com",
+    "publisher_url": "https://settlesignal.com/settlements/google-play-825m-childrens-privacy-class-action-settlement-2/",
+    "status": "Claims open; exclusion and objection dates passed; final approval pending",
+    "claim_required": true,
+    "claim_deadline": "2026-09-14",
+    "eligibility_scope": "US residents who used or downloaded a Google Play app while under age 13 during the defined period beginning April 1, 2015 and whose information was allegedly collected, used, or disclosed. The homepage uses “to the present”; a fixed end date was not invented.",
+    "proof_requirement": "Not resolved from the reviewed homepage; no registration, claimant information, or claim intake was submitted.",
+    "summary": "The proposed $8.25 million fund supports pro-rata valid claims after approved costs and fees. The claim date matches the feed, but the separate exclusion, objection and hearing events also matter.",
+    "assessment_date": "2026-09-12",
+    "reviewed_at": "2026-09-13T02:56:45.147027+00:00",
+    "publisher_snapshot": {
+      "status": "Open for claims",
+      "claim_deadline": "2026-09-14",
+      "proof_required": "unknown",
+      "applicable_states": [],
+      "verification_status": "needs_recheck",
+      "accepted_official_evidence": true,
+      "last_verified": "2026-09-06"
+    },
+    "publisher_assertions_are_independent_verification": false,
+    "independent_review": {
+      "label": "Selected fields checked against official public sources",
+      "scope": [
+        "case identity as published",
+        "claim or payment process",
+        "stated deadlines",
+        "material scope/proof qualifications"
+      ],
+      "limitations": "Bounded public-source review. No authenticated court docket, claim submission, individual eligibility, administrator acceptance, payout guarantee, or exhaustive later-order search.",
+      "sources": [
+        {
+          "url": "https://www.coppaprivacyclassaction.com",
+          "http_status": 200,
+          "retrieved_at": "2026-09-13T02:49:29.762Z",
+          "local_evidence": ".firecrawl/official-google.json",
+          "locator": "Homepage class scope and Important Dates"
+        },
+        {
+          "url": "https://www.coppaprivacyclassaction.com/documents",
+          "http_status": 200,
+          "retrieved_at": "2026-09-13T02:50:05.550Z",
+          "local_evidence": ".firecrawl/docs-google.json",
+          "locator": "Document links"
+        }
+      ]
+    },
+    "deadlines": [
+      {
+        "type": "claim",
+        "date": "2026-09-14",
+        "as_published": "September 14, 2026",
+        "source_url": "https://www.coppaprivacyclassaction.com/",
+        "source_locator": "Important Dates",
+        "submission_method_or_cutoff": "Online submission or paper postmark",
+        "time_as_published": null,
+        "timezone_as_published": null,
+        "timezone_converted": false,
+        "status_as_of_review": "future_as_of_review",
+        "uncertainty": null
+      },
+      {
+        "type": "exclusion",
+        "date": "2026-08-04",
+        "as_published": "August 4, 2026",
+        "source_url": "https://www.coppaprivacyclassaction.com/",
+        "source_locator": "Important Dates",
+        "submission_method_or_cutoff": "Postmarked",
+        "time_as_published": null,
+        "timezone_as_published": null,
+        "timezone_converted": false,
+        "status_as_of_review": "past_as_of_review",
+        "uncertainty": null
+      },
+      {
+        "type": "objection",
+        "date": "2026-08-04",
+        "as_published": "August 4, 2026",
+        "source_url": "https://www.coppaprivacyclassaction.com/",
+        "source_locator": "Important Dates",
+        "submission_method_or_cutoff": "Postmarked, as stated",
+        "time_as_published": null,
+        "timezone_as_published": null,
+        "timezone_converted": false,
+        "status_as_of_review": "past_as_of_review",
+        "uncertainty": null
+      },
+      {
+        "type": "final_approval_hearing",
+        "date": "2026-09-24",
+        "as_published": "September 24, 2026",
+        "source_url": "https://www.coppaprivacyclassaction.com/",
+        "source_locator": "Important Dates",
+        "submission_method_or_cutoff": null,
+        "time_as_published": "10:00 A.M.",
+        "timezone_as_published": "PST",
+        "timezone_converted": false,
+        "status_as_of_review": "future_as_of_review",
+        "uncertainty": "The website explicitly prints PST for a September hearing. Do not automatically convert this to UTC or silently substitute PDT; verify the controlling court schedule."
+      }
+    ],
+    "review_required": true,
+    "discrepancies": [
+      {
+        "field": "hearing_timezone",
+        "publisher_value": null,
+        "official_observation": "Website prints PST for September hearing",
+        "note": "Preserve the published label and require confirmation before automatic calendar conversion.",
+        "source_url": "https://www.coppaprivacyclassaction.com/",
+        "source_locator": "Important Dates",
+        "severity": "scheduling_ambiguity"
+      }
+    ],
+    "notes": [
+      "The official notice PDF returned HTTP 403 to the ordinary local downloader and was not bypassed. No minor or claimant personal information was collected."
+    ],
+    "documents": [
+      {
+        "id": "google-notice",
+        "record_id": "google-child-privacy",
+        "title": "AB v Google - Children Privacy Settlement - Long Form Notice",
+        "url": "https://www.coppaprivacyclassaction.com/files/A.B.%20et%20al.%20v.%20Google%20et%20al.%20-%20Long%20Form%20Notice_v2.pdf",
+        "source_page": "https://www.coppaprivacyclassaction.com/documents",
+        "kind": "class_notice",
+        "scope": "US District Court, Northern District of California, 5:23-cv-03101; Google Play app users under age 13 during the defined period",
+        "status": "not_downloaded",
+        "http_status": 403,
+        "retrieved_at": "2026-09-13T02:51:31.9776770Z",
+        "error": "Response status code does not indicate success: 403 (Forbidden).",
+        "format": "PDF",
+        "path": null,
+        "document_use": "case_specific_reference",
+        "open_license_established": false
+      }
+    ]
+  },
+  {
+    "id": "lighthouse-data",
+    "title": "Lighthouse Electric - Data Incident Settlement",
+    "category": "Data breach - personal information",
+    "jurisdiction": "Pennsylvania",
+    "court": "Court of Common Pleas of Washington County, Pennsylvania",
+    "case_number": "CV-2026-01588",
+    "official_url": "https://lighthouseelectricdataincident.com/",
+    "publisher_url": "https://settlesignal.com/settlements/lighthouse-electric-data-breach-settlement/",
+    "status": "Claims open; exclusion and objection dates passed; final approval pending",
+    "claim_required": true,
+    "claim_deadline": "2026-09-14",
+    "eligibility_scope": "US-resident individuals whose personal information was allegedly involved in the October 2024 Lighthouse Electric network incident, including notified individuals, subject to the notice's exclusions.",
+    "proof_requirement": "Documented losses require supporting evidence. A $60 alternative does not require loss documentation but still requires a valid claim and attestation. Benefit combinations are disputed in the published materials and need review.",
+    "summary": "The notice and blank form support a documented-loss option capped at $2,750, a $60 alternative, and a two-year monitoring benefit. Their combination rules are inconsistent across the introductory language and operative form selections.",
+    "assessment_date": "2026-09-12",
+    "reviewed_at": "2026-09-13T02:56:45.147027+00:00",
+    "publisher_snapshot": {
+      "status": "Open for claims",
+      "claim_deadline": "2026-09-14",
+      "proof_required": "optional",
+      "applicable_states": [],
+      "verification_status": "official_source_found",
+      "accepted_official_evidence": true,
+      "last_verified": "2026-08-30"
+    },
+    "publisher_assertions_are_independent_verification": false,
+    "independent_review": {
+      "label": "Selected fields checked against official public sources",
+      "scope": [
+        "case identity as published",
+        "claim or payment process",
+        "stated deadlines",
+        "material scope/proof qualifications"
+      ],
+      "limitations": "Bounded public-source review. No authenticated court docket, claim submission, individual eligibility, administrator acceptance, payout guarantee, or exhaustive later-order search.",
+      "sources": [
+        {
+          "url": "https://lighthouseelectricdataincident.com/",
+          "http_status": 200,
+          "retrieved_at": "2026-09-13T02:49:27.002Z",
+          "local_evidence": ".firecrawl/official-lighthouse.json",
+          "locator": "Homepage case identity and rights table"
+        },
+        {
+          "url": "https://cw.simpluris.com/docs/public/downloads/LGC3/LONG_FORM_NOTICE",
+          "local_evidence": "evidence/text/lighthouse-notice.txt",
+          "http_status": 200,
+          "locator": "Notice pp.4-6 and 8"
+        },
+        {
+          "url": "https://cw.simpluris.com/docs/public/downloads/LGC3/CLAIM_FORM",
+          "local_evidence": "evidence/text/lighthouse-claim.txt",
+          "http_status": 200,
+          "locator": "Claim form pp.1-2,4-5"
+        }
+      ]
+    },
+    "deadlines": [
+      {
+        "type": "claim",
+        "date": "2026-09-14",
+        "as_published": "September 14, 2026",
+        "source_url": "https://cw.simpluris.com/docs/public/downloads/LGC3/LONG_FORM_NOTICE",
+        "source_locator": "Notice p.6, Question 10",
+        "submission_method_or_cutoff": "Online submission or mail postmark, including support",
+        "time_as_published": null,
+        "timezone_as_published": null,
+        "timezone_converted": false,
+        "status_as_of_review": "future_as_of_review",
+        "uncertainty": null
+      },
+      {
+        "type": "exclusion",
+        "date": "2026-08-14",
+        "as_published": "August 14, 2026",
+        "source_url": "https://cw.simpluris.com/docs/public/downloads/LGC3/LONG_FORM_NOTICE",
+        "source_locator": "Notice pp.6-7, Questions 14-15",
+        "submission_method_or_cutoff": "Submitted, postmarked, or emailed as specified",
+        "time_as_published": null,
+        "timezone_as_published": null,
+        "timezone_converted": false,
+        "status_as_of_review": "past_as_of_review",
+        "uncertainty": null
+      },
+      {
+        "type": "objection",
+        "date": "2026-08-14",
+        "as_published": "August 14, 2026",
+        "source_url": "https://cw.simpluris.com/docs/public/downloads/LGC3/LONG_FORM_NOTICE",
+        "source_locator": "Notice pp.7-8, Question 16",
+        "submission_method_or_cutoff": "File with Clerk of Court and send administrator copy",
+        "time_as_published": null,
+        "timezone_as_published": null,
+        "timezone_converted": false,
+        "status_as_of_review": "past_as_of_review",
+        "uncertainty": null
+      },
+      {
+        "type": "final_approval_hearing",
+        "date": "2026-10-29",
+        "as_published": "October 29, 2026",
+        "source_url": "https://cw.simpluris.com/docs/public/downloads/LGC3/LONG_FORM_NOTICE",
+        "source_locator": "Notice p.8, Question 18",
+        "submission_method_or_cutoff": null,
+        "time_as_published": "9:30AM",
+        "timezone_as_published": "Eastern Time",
+        "timezone_converted": false,
+        "status_as_of_review": "future_as_of_review",
+        "uncertainty": null
+      }
+    ],
+    "review_required": true,
+    "discrepancies": [
+      {
+        "field": "benefit_combination",
+        "publisher_value": "Cash options PLUS credit monitoring",
+        "official_observation": "Claim Section IV bars the $60 alternative with Section II monitoring or Section III losses",
+        "note": "The claim's opening overview suggests broader combinations, but its operative Section IV prohibits them, and the notice calls the cash alternative instead of other benefits. Do not auto-select or promise combined benefits.",
+        "source_url": "https://cw.simpluris.com/docs/public/downloads/LGC3/CLAIM_FORM",
+        "source_locator": "pp.1-2 and 4, Sections II-IV",
+        "severity": "material"
+      }
+    ],
+    "notes": [
+      "Temporary signed storage query parameters were removed from transfer metadata. The stable public administrator download endpoints are retained. The blank form contains case-specific attestation and eligibility requirements; it is not a general-purpose template."
+    ],
+    "documents": [
+      {
+        "id": "lighthouse-notice",
+        "record_id": "lighthouse-data",
+        "title": "Lighthouse Electric Data Incident Settlement - Long Form Notice",
+        "url": "https://cw.simpluris.com/docs/public/downloads/LGC3/LONG_FORM_NOTICE",
+        "final_url": "https://production-casedocumentsv-casedocumentsv2bucketce2-3enl0tbvxq9q.s3.us-west-2.amazonaws.com/LGC3/119309C6-2F1F-4CC5-9BCF-69BF9950BA3D",
+        "source_page": "https://lighthouseelectricdataincident.com/",
+        "kind": "class_notice",
+        "scope": "Court of Common Pleas, Washington County, Pennsylvania, CV-2026-01588; October 2024 data incident",
+        "status": "downloaded",
+        "http_status": 200,
+        "content_type": [
+          "application/pdf"
+        ],
+        "retrieved_at": "2026-09-13T02:51:34.9751756Z",
+        "bytes": 241065,
+        "sha256": "87fea2a09fd57336b9de06b3f317211a1de397588fdd6ffac836b8ff5bb3a704",
+        "path": "documents/Lighthouse Electric Data Incident Settlement - Long Form Notice.pdf",
+        "original_bytes_preserved": true,
+        "retrieval_method": "Ordinary unauthenticated PowerShell Invoke-WebRequest",
+        "final_url_query_removed": true,
+        "page_count": 9,
+        "pdf_form_field_count": 0,
+        "extracted_text_characters": 20540,
+        "text_evidence_path": "evidence/text/lighthouse-notice.txt",
+        "language": "en",
+        "language_verification": "English caption and substantive text inspected in extracted original PDF pages; blank claim form checked for uncompleted fields.",
+        "format": "PDF",
+        "document_use": "case_specific_reference",
+        "open_license_established": false,
+        "rights_note": "Public official case document linked for viewing/download. No separate open-content license is asserted. Not a universal reusable filing template.",
+        "source_date": null,
+        "source_date_kind": "not_stated_in_reviewed_material",
+        "source_date_evidence": "Do not treat an upload-path date, PDF creation metadata, or claim deadline as the notice publication date."
+      },
+      {
+        "id": "lighthouse-claim",
+        "record_id": "lighthouse-data",
+        "title": "Lighthouse Electric Data Incident Settlement - Blank Claim Form",
+        "url": "https://cw.simpluris.com/docs/public/downloads/LGC3/CLAIM_FORM",
+        "final_url": "https://production-casedocumentsv-casedocumentsv2bucketce2-3enl0tbvxq9q.s3.us-west-2.amazonaws.com/LGC3/8DD3502F-EFDE-485B-A446-30080AF684BD",
+        "source_page": "https://lighthouseelectricdataincident.com/",
+        "kind": "blank_claim_form",
+        "scope": "Case-specific claim form for Lighthouse Electric data-incident settlement; reference document, not a universal filing template",
+        "status": "downloaded",
+        "http_status": 200,
+        "content_type": [
+          "application/pdf"
+        ],
+        "retrieved_at": "2026-09-13T02:51:37.7059581Z",
+        "bytes": 237682,
+        "sha256": "7f52872dddde34edf3f1aaff031e5ab39300f6d6ad8cef0b2c625bf6dbc76a66",
+        "path": "documents/Lighthouse Electric Data Incident Settlement - Blank Claim Form.pdf",
+        "original_bytes_preserved": true,
+        "retrieval_method": "Ordinary unauthenticated PowerShell Invoke-WebRequest",
+        "final_url_query_removed": true,
+        "page_count": 5,
+        "pdf_form_field_count": 0,
+        "extracted_text_characters": 8715,
+        "text_evidence_path": "evidence/text/lighthouse-claim.txt",
+        "language": "en",
+        "language_verification": "English caption and substantive text inspected in extracted original PDF pages; blank claim form checked for uncompleted fields.",
+        "format": "PDF",
+        "document_use": "case_specific_reference",
+        "open_license_established": false,
+        "rights_note": "Public official case document linked for viewing/download. No separate open-content license is asserted. Not a universal reusable filing template.",
+        "source_date": null,
+        "source_date_kind": "not_stated_in_reviewed_material",
+        "source_date_evidence": "Do not treat an upload-path date, PDF creation metadata, or claim deadline as the notice publication date."
+      }
+    ]
+  }
+]

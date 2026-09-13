@@ -1,0 +1,45 @@
+{
+  "id": "court-filing-readiness",
+  "title": "Court filing readiness packet",
+  "roles": [
+    "Managing clerk",
+    "Litigation paralegal",
+    "Filing attorney"
+  ],
+  "purpose": "Build a source-linked checklist of the specific form, court and judge requirements for a proposed filing.",
+  "inputs": [
+    "court and judge identifiers",
+    "case type and posture",
+    "proposed filing and attachments",
+    "intended filing date",
+    "applicable standing/case-management orders"
+  ],
+  "steps": [
+    "Resolve the court and judge against the library roster; report an unresolved identity instead of substituting a similarly named court.",
+    "Collect applicable court-wide rules, judge practices, case orders and form instructions; record document date and source version separately.",
+    "Extract requirements into categories: document/form, format, exhibits, service, sealing, proposed order and filing procedure. Each requirement needs a quote and exact source locator.",
+    "Compare the draft against measurable requirements only when the source and document structure support a check. Label unavailable formatting/word-count checks explicitly.",
+    "Expose potentially conflicting instructions with their issuing authority and dates for counsel to resolve. Require live official-source confirmation for a dated library copy.",
+    "Create a review checklist and selected source packet; never compute deadlines or file automatically."
+  ],
+  "outputs": [
+    "requirement × source × draft-location matrix",
+    "missing-source/material list",
+    "selected original court documents",
+    "review and disposition log"
+  ],
+  "references": [
+    "00-Catalog/DOCUMENTS.csv",
+    "00-Catalog/MATTERS-INTEGRATION.md",
+    "RULES.html"
+  ],
+  "tests": [
+    "wrong district with similar court name",
+    "judge practices older than a case order",
+    "scanned exhibit formatting unavailable",
+    "settlement notice rejected as generic form"
+  ],
+  "status": "Implementation recipe; requires a host runtime, source adapters and legal evaluation.",
+  "authorship": "Original specification prepared for this library; not an upstream LegalQuants file.",
+  "evidence_contract": "evidence-contract.json"
+}

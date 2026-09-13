@@ -1,0 +1,868 @@
+TITLE 59       	CLAIMS AGAINST PUBLIC ENTITIES
+
+59:1-1.  Short title
+    This subtitle shall be known and may be cited as the  "New Jersey Tort Claims Act."
+
+     L.1972, c. 45, s. 59:1-1.
+
+59:1-2.  Legislative declaration
+    The Legislature recognizes the inherently unfair and inequitable results which occur in the strict application of the traditional doctrine of sovereign immunity.  On the other hand the Legislature recognizes that while a private entrepreneur may readily be held liable for negligence within the chosen ambit of his activity, the area within which government has the power to act for the public good is almost without limit and therefore government should not have the duty to do everything that might be done.  Consequently, it is hereby declared to be the public policy of this State that public entities shall only be liable for their negligence within the limitations of this act and in accordance with the fair and uniform principles established herein.  All of the  provisions of this act should be construed with a view to carry out the above  legislative declaration.
+
+     L.1972, c. 45, s. 59:1-2.
+
+
+59:1-3  Definitions.
+
+	59:1-3. Definitions. As used in this subtitle:
+
+	"Employee" includes an officer, employee, or servant, whether or not compensated or part-time, who is authorized to perform any act or service; provided, however, that the term does not include an independent contractor.
+
+	"Employment" includes office; position; employment; or service, under the supervision of the Palisades Interstate Park Commission, in a volunteer program in that part of the Palisades Interstate Park located in New Jersey, as an emergency management volunteer or as a volunteer doing work for the Division of Parks and Forestry, the Division of Fish and Wildlife, or the New Jersey Natural Lands Trust, as authorized by the Commissioner of Environmental Protection, or for the New Jersey Historic Trust.
+
+	"Enactment" includes a constitutional provision, statute, executive order, ordinance, resolution or regulation.
+
+	"Injury" means death, injury to a person, damage to or loss of property or any other injury that a person may suffer that would be actionable if inflicted by a private person.
+
+	"Law" includes enactments and also the decisional law applicable within this State as determined and declared from time to time by the courts of this State and of the United States.
+
+	"Public employee" means an employee of a public entity, and includes:  a person participating, under the supervision of the Palisades Interstate Park Commission, in a volunteer program in that part of the Palisades Interstate Park located in New Jersey.
+
+	"Public entity" includes the State, and any county, municipality, district, public authority, public agency, and any other political subdivision or public body in the State. 
+
+	"State" shall mean the State and any office, department, division, bureau, board, commission or agency of the State, but shall not include any such entity which is statutorily authorized to sue and be sued.  "State" also means the Palisades Interstate Park Commission, but only with respect to employees, property and activities within the State of New Jersey.
+
+	"Statute" means an act adopted by the Legislature of this State or by the Congress of the United States.
+
+	L.1972, c.45, s.59:1-3; amended 1980, c.104, s.11; 1987, c.259, s.5; 1994, c.58, s.64; 1995, c.383, s.4; 1997, c.199, s.4; 1999, c.152, s.58; 2005, c.155, s.104.
+
+
+59:1-4.  Effect upon liability based on contract or right to relief other than damages
+    Nothing in this act shall affect liability based on contract or the right to  obtain relief other than damages against the public entity or one of its employees.
+
+     L.1972, c. 45, s. 59:1-4.
+
+59:1-5.  Workmen's compensation laws not repealed
+    Nothing in this act shall be construed to affect, alter or repeal any provision of the workmen's compensation laws of this State.
+
+     L.1972, c. 45, s. 59:1-5.
+
+59:1-6.  Military and veterans laws not repealed
+    Nothing in this act shall be construed to affect, alter or repeal any provision of the military and veterans law of this State, except as specifically provided in repealer section 59:12-2 of this subtitle.
+
+     L.1972, c. 45, s. 59:1-6.
+
+59:1-7.  Effect of assumption of liability by United States
+    Any waiver of immunity and assumption of liability contained in this act shall not apply in circumstances where liability has been or is hereafter assumed by the United States, to the extent of such assumption of liability.
+
+     L.1972, c. 45, s. 59:1-7.
+
+59:2-1.  Immunity of public entity generally
+    a.  Except as otherwise provided by this act, a public entity is not liable  for an injury, whether such injury arises out of an act or omission of the  public entity or a public employee or any other person.
+
+    b.  Any liability of a public entity established by this act is subject to any immunity of the public entity and is subject to any defenses that would be available to the public entity if it were a private person.
+
+     L.1972, c. 45, s. 59:2-1.
+
+59:2-1.1.  Immunity from liability for certain civil actions arising from roadway solicitations
+
+	2.  Notwithstanding any provisions of law to the contrary, a municipality, a county or the State shall not be liable in any civil action for damages for property damage or personal injury resulting from a motor vehicle accident arising out of or in the course of roadway solicitations for the purpose of soliciting contributions, conducted by charitable organizations, as defined pursuant to section 3 of P.L.1994, c.16 (C.45:17A-20), pursuant to R.S.39:4-60.
+
+	L.1997,c.82,s.2.
+
+59:2-1.2  Immunity from liability for public entities, employees for damages resulting from computer failure in certain circumstances.
+
+	1.	Notwithstanding any provision of law to the contrary, a public entity, public employee, bi-state governmental entity of which the State of New Jersey is a member, or an employee of such an entity, shall not be liable in any civil action for damages resulting from or caused directly or indirectly by the failure of computer hardware or software or any device containing a computer processor to accurately or properly recognize, calculate, display, sort or otherwise process dates or times.
+
+	L.1999,c.287,s.1.
+
+59:2-1.3  Liability for public entity, employee.
+	7. a. Notwithstanding any provision of the "New Jersey Tort Claims Act," N.J.S.59:1-1 et seq., to the contrary:
+ 
+	(1)	immunity from civil liability granted by that act to a public entity or public employee shall not apply to an action at law for damages as a result of a sexual assault, any other crime of a sexual nature, a prohibited sexual act as defined in section 2 of P.L.1992, c.7 (C.2A:30B-2), or sexual abuse as defined in section 1 of P.L.1992, c.109 (C.2A:61B-1) being committed against a person, which was caused by a willful, wanton, or grossly negligent act of the public entity or public employee; and
+ 
+	(2)	immunity from civil liability granted by that act to a public entity shall not apply to an action at law for damages as a result of a sexual assault, any other crime of a sexual nature, a prohibited sexual act as defined in section 2 of P.L.1992, c.7 (C.2A:30B-2), or sexual abuse as defined in section 1 of P.L.1992, c.109 (C.2A:61B-1) being committed against a minor under the age of 18, which was caused by the negligent hiring, supervision, or retention of any public employee.
+ 
+	b.	Every action at law involving a public entity or public employee as described in subsection a. of this section shall be subject to the statute of limitations set forth in section 2 of P.L.2019, c.120 (C.2A:14-2a), and may be brought during the two-year period set forth in subsection a. of section 9 of P.L.2019, c.120 (C.2A:14-2b), notwithstanding that the action would otherwise be barred through application of the statute of limitations.
+ 
+	c.	The recovery limits set forth under subparagraph (a) of paragraph (2) of subsection d. of N.J.S.59:9-2 shall not apply to an action at law filed pursuant to this section.
+
+	L.2019, c.120, s.7; amended 2019, c.239; 2025, c.29, s.1.
+
+59:2-2.  Liability of public entity
+    a.  A public entity is liable for injury proximately caused by an act or omission of a public employee within the scope of his employment in the same manner and to the same extent as a private individual under like circumstances.
+
+    b.  A public entity is not liable for an injury resulting from an act or omission of a public employee where the public employee is not liable.
+
+     L.1972, c. 45, s. 59:2-2.
+
+59:2-3.  Discretionary activities
+    a.  A public entity is not liable for an injury resulting from the exercise  of judgment or discretion vested in the entity;
+
+    b.  A public entity is not liable for legislative or judicial action or inaction, or administrative action or inaction of a legislative or judicial nature;
+
+    c.  A public entity is not liable for the exercise of discretion in determining whether to seek or whether to provide the resources necessary for the purchase of equipment, the construction or maintenance of facilities, the hiring of personnel and, in general, the provision of adequate governmental services;
+
+    d.  A public entity is not liable for the exercise of discretion when, in the face of competing demands, it determines whether and how to utilize or apply existing resources, including those allocated for equipment, facilities and personnel unless a court concludes that the determination of the public entity was palpably unreasonable.  Nothing in this section shall exonerate a public entity for negligence arising out of acts or omissions of its employees in carrying out their ministerial functions.
+
+     L.1972, c. 45, s. 59:2-3.
+
+59:2-4.  Adoption or failure to adopt or enforce a law
+    A public entity is not liable for any injury caused by adopting or failing to adopt a law or by failing to enforce any law.
+
+     L.1972, c. 45, s. 59:2-4.
+
+59:2-5.  Issuance, denial, suspension or revocation of permit, license, etc.
+    A public entity is not liable for an injury caused by the issuance, denial,  suspension or revocation of, or by the failure or refusal to issue, deny,  suspend or revoke, any permit, license, certificate, approval, order, or  similar authorization where the public entity or public employee is authorized  by law to determine whether or not such authorization should be issued, denied,  suspended or revoked.
+
+     L.1972, c. 45, s. 59:2-5.
+
+59:2-6.  Failure to inspect, or negligent inspection of, property
+    A public entity is not liable for injury caused by its failure to make an inspection, or by reason of making an inadequate or negligent inspection of any  property;  provided, however, that nothing in this section shall exonerate a  public entity from liability for negligence during the course of, but outside  the scope of, any inspection conducted by it, nor shall this section exonerate  a public entity from liability for failure to protect against a dangerous  condition as provided in chapter 4.
+
+     L.1972, c. 45, s. 59;2-6.
+
+59:2-7.  Recreational facilities
+    A public entity is not liable for failure to provide supervision of public recreational facilities;  provided, however, that nothing in this section shall  exonerate a public entity from liability for failure to protect against a  dangerous condition as provided in chapter 4.
+
+     L.1972, c. 45, s. 59:2-7.
+
+59:2-8.  Public assistance programs--termination of benefits
+    A public entity is not liable for injuries caused by the termination or reduction of benefits under a public assistance program.
+
+     L.1972, c. 45, s. 59:2-8.
+
+59:2-9.  Slander of title
+    A public entity is not liable for its acts or omissions resulting in a slander on the title of any property.
+
+     L.1972, c. 45, s. 59:2-9.
+
+59:2-10.  Public employee conduct--limitation on entity liability
+    A public entity is not liable for the acts or omissions of a public employee  constituting a crime, actual fraud, actual malice, or willful misconduct.
+
+     L.1972, c. 45, s. 59:2-10.
+
+59:2-11  Actions of public entity; immunity.
+	8.	The action or inaction by a public entity or public employee when promulgating, amending or supplementing the roster of personalized handguns that may be sold in this State pursuant to P.L.2019, c.164 (C.2C:58-2.7 et al.) shall not constitute a representation, warranty or guarantee by any public entity or employee with regard to the safety, use or any other aspect or attribute of a personalized handgun.
+ 
+	An action to recover damages shall not arise or be brought against any public entity or public employee for any action or inaction related to or in connection with the roster of personalized handguns established pursuant to section 2 of P.L.2019, c.164 (C.2C:58-2.8).
+ 
+	L.2002, c.130, s.8; amended 2019, c.164, s.8.
+
+59:3-1.      Liability generally  
+    59:3-1.  Generally.  a.  Except as otherwise provided by this act, a public employee is liable for injury caused by his act or omission to the same extent as a private person.  
+
+   b.   The liability of a public employee established by this act is subject to any immunity of a public employee provided by law and is subject to any defenses that would be available to the public employee if he were a private person.  
+
+   c.   A public employee is not liable for an injury where a public entity is immune from liability for that injury.  
+
+	L.1972, c.45, s.59:3-1; amended 1994,c.49,s.1.  
+
+59:3-2.  Discretionary activities
+    a.  A public employee is not liable for an injury resulting from the exercise of judgment or discretion vested in him;
+
+    b.  A public employee is not liable for legislative or judicial action or inaction, or administrative action or inaction of a legislative or judicial nature;
+
+    c.  A public employee is not liable for the exercise of discretion in determining whether to seek or whether to provide the resources necessary for the purchase of equipment, the construction or maintenance of facilities, the hiring of personnel and, in general, the provision of adequate governmental services;
+
+    d.  A public employee is not liable for the exercise of discretion when, in  the face of competing demands, he determines whether and how to utilize or apply existing resources, including those allocated for equipment, facilities and personnel unless a court concludes that the determination of the public employee was palpably unreasonable.
+
+    Nothing in this section shall exonerate a public employee for negligence arising out of his acts or omissions in carrying out his ministerial functions.
+
+     L.1972, c. 45, s. 59:3-2.
+
+59:3-3.  Execution or enforcement of laws
+    A public employee is not liable if he acts in good faith in the execution or  enforcement of any law.  Nothing in this section exonerates a public employee  from liability for false arrest or false imprisonment.
+
+     L.1972, c. 45, s. 59:3-3.
+
+59:3-4.  Acting under unconstitutional, invalid or inapplicable laws
+    If a public employee acts under the apparent authority of a law that is unconstitutional, invalid or inapplicable, he is not liable for an injury caused thereby except to the extent that he would have been liable had the law been constitutional, valid and applicable.
+
+     L.1972, c. 45, s. 59:3-4.
+
+59:3-5.  Adoption or failure to adopt or enforce any law
+    A public employee is not liable for an injury caused by his adoption of or failure to adopt any law or by his failure to enforce any law.
+
+     L.1972, c. 45, s. 59:3-5.
+
+59:3-6.  Issuance, denial, suspension or revocation of permit, license, etc.
+    A public employee is not liable for an injury caused by his issuance, denial, suspension or revocation of, or by his failure or refusal to issue, deny, suspend or revoke, any permit, license, certificate, approval, order, or similar authorization where he is authorized by law to determine whether or not  such authorization should be issued, denied, suspended or revoked.
+
+     L.1972, c. 45, s. 59:3-6.
+
+59:3-7.  Failure to inspect, or negligent inspection of, property
+    A public employee is not liable for injury caused by his failure to make an  inspection, or by reason of making an inadequate or negligent inspection of any  property;  provided, however, that nothing in this section shall exonerate a  public employee from liability for negligence during the course of, but outside  the scope of, any inspection conducted by him, nor shall this section exonerate  a public employee from liability for failure to protect against a dangerous  condition as provided in chapter 4.
+
+     L.1972, c. 45, s. 59:3-7.
+
+59:3-8.  Institution or prosecution of judicial or administrative proceeding
+    A public employee is not liable for injury caused by his instituting or prosecuting any judicial or administrative proceeding within the scope of his employment.
+
+     L.1972, c. 45, s. 59:3-8.
+
+59:3-9.  Entry upon property
+    A public employee is not liable for his entry upon any property where such entry is expressly or impliedly authorized by law.  Nothing in this section exonerates a public employee from liability for an injury proximately caused subsequent to such entry by his own negligent or wrongful act or omission.
+
+     L.1972, c. 45, s. 59:3-9.
+
+59:3-10.  Misrepresentation
+    A public employee acting in the scope of his employment is not liable for an  injury caused by his misrepresentation.
+
+     L.1972, c. 45, s. 59:3-10.
+
+59:3-11.  Recreational facilities
+    A public employee is not liable for the failure to provide supervision of public recreational facilities.  Nothing in this section exonerates a public employee for negligence in the supervision of a public recreational facility.
+
+     L.1972, c. 45, s. 59:3-11.
+
+59:3-12.  Public assistance programs--termination of benefits
+    A public employee is not liable for damages resulting from the termination or reduction of benefits under a public assistance program.
+
+     L.1972, c. 45, s. 59:3-12.
+
+59:3-13.  Slander of title
+    A public employee is not liable for his acts or omissions resulting in a slander on the title of any property.
+
+     L.1972, c. 45, s. 59:3-13.
+
+59:3-14.  Public employee immunity--exception
+    a.  Nothing in this act shall exonerate a public employee from liability if  it is established that his conduct was outside the scope of his employment or  constituted a crime, actual fraud, actual malice or willful misconduct.
+
+    b.  Nothing in this act shall exonerate a public employee from the full measure of recovery applicable to a person in the private sector if it is established that his conduct was outside the scope of his employment or constituted a crime, actual fraud, actual malice or willful misconduct.
+
+     L.1972, c. 45, s. 59:3-14.
+
+59:3-15  Immunity from liability for certain professional services under certain circumstances.
+  
+	1.	Notwithstanding any other provision of law to the contrary and except as provided in P.L.2014, c.53 (C.59:3-15 et seq.), an architect licensed pursuant to R.S.45:3-1 et seq. or a professional engineer licensed pursuant to P.L.1938, c.342 (C.45:8-27 et seq.) shall not be personally liable for any personal injury, wrongful death, property damage, or other loss caused by an act, error, or omission while practicing architecture or engineering, respectively, if the practice of architecture or engineering was performed:
+ 
+	a.	voluntarily and without compensation;
+ 
+	b.	at the request of a public safety official, acting in an official capacity; and
+ 
+	c.	at the scene of a declared national, State, or local emergency caused by a major earthquake, hurricane, tornado, fire, explosion, collapse, or similar disaster or catastrophic event, during or within 90 days following the emergency, or for any extended period as determined by executive order issued by the Governor under the Governor's emergency executive powers.
+ 
+	For purposes of the New Jersey Tort Claims Act, N.J.S.59:1-1 et seq., an architect or engineer entitled to immunity under this section shall be considered an employee of the public entity on whose behalf the public safety official requested that the architect or engineer perform the practice of architecture or engineering.  Nothing in P.L.2014, c.53 (C.59:3-15 et seq.) shall be construed to provide such architect or engineer with any right or entitlement to workers' compensation from such public entity.
+ 
+	As used in this section:
+ 
+	"Public safety official" means any appointed or elected federal, State, or local official with executive responsibility to coordinate public safety or law enforcement in the jurisdiction in which the emergency has occurred. 
+ 
+	"Employee" shall have the meaning ascribed to it in N.J.S.59:1-3.
+ 
+	L.2014, c.53, s.1.
+
+59:3-16  Immunity protection not provided under certain circumstances.
+ 
+ 	2.	An architect or professional engineer shall not be considered an employee of a public entity pursuant to N.J.S.59:1-1 et seq. and shall not have the immunity protection provided by section 1 of this act if:
+ 
+	a.	the architect or professional engineer, or a private entity for which the architect or engineer is employed, has any existing contract for services with the public entity, other than the State of New Jersey, whose public safety officer made the request for architectural or engineering services provided under section 1 of this act; 
+ 
+	b.	the architect or professional engineer, or a private entity for which the architect or engineer is employed, enters into any contract for services that involve the performance of any additional architectural or engineering services related to the voluntary, uncompensated services performed for the public entity whose public safety officer made the request for architectural or engineering services provided under section 1 of this act; or
+ 
+	c.	the act or omission by the architect or engineer involves actual fraud, actual malice, willful misconduct or an intentional wrong.
+ 
+	L.2014, c.53, s.2.
+
+59:4-1.  Definitions
+    As used in this chapter:
+
+    a.   "Dangerous condition"  means a condition of property that creates a substantial risk of injury when such property is used with due care in a manner  in which it is reasonably foreseeable that it will be used.
+
+    b.   "Protect against"  includes repairing, remedying or correcting a dangerous condition, providing safeguards against a dangerous condition, or warning of a dangerous condition.
+
+    c.   "Public property"  means real or personal property owned or controlled  by the public entity, but does not include easements, encroachments and other  property that are located on the property of the public entity but are not  owned or controlled by the public entity.
+
+     L.1972, c. 45, s. 59:4-1.
+
+59:4-2.  Liability generally
+    A public entity is liable for injury caused by a condition of its property if the plaintiff establishes that the property was in dangerous condition at the time of the injury, that the injury was proximately caused by the dangerous  condition, that the dangerous condition created a reasonably foreseeable risk  of the kind of injury which was incurred, and that either:
+
+    a.  a negligent or wrongful act or omission of an employee of the public entity within the scope of his employment created the dangerous condition; or
+
+    b.  a public entity had actual or constructive notice of the dangerous condition under section 59:4-3 a sufficient time prior to the injury to have taken measures to protect against the dangerous condition.
+
+    Nothing in this section shall be construed to impose liability upon a public  entity for a dangerous condition of its public property if the action the  entity took to protect against the condition or the failure to take such action  was not palpably unreasonable.
+
+     L.1972, c. 45, s. 59:4-2.
+
+59:4-3.  Actual notice;  constructive notice
+    a.  A public entity shall be deemed to have actual notice of a dangerous condition within the meaning of subsection b. of section 59:4-2 if it had actual knowledge of the existence of the condition and knew or should have known of its dangerous character.
+
+    b.  A public entity shall be deemed to have constructive notice of a dangerous condition within the meaning of subsection b. of section 59:4-2 only if the plaintiff establishes that the condition had existed for such a period of time and was of such an obvious nature that the public entity, in the exercise of due care, should have discovered the condition and its dangerous character.
+
+     L.1972, c. 45, s. 59:4-3.
+
+59:4-4.  Failure to provide emergency warning signals
+    Subject to section 59:4-2 of this act, a public entity shall be liable for injury proximately caused by its failure to provide emergency signals, signs, markings or other devices if such devices were necessary to warn of a dangerous  condition which endangered the safe movement of traffic and which would not be  reasonably apparent to, and would not have been anticipated by, a person  exercising due care.
+
+     L.1972, c. 45, s. 59:4-4.
+
+59:4-5.  Failure to provide ordinary traffic signals--Immunity
+    Neither a public entity nor a public employee is liable under this chapter for an injury caused by the failure to provide ordinary traffic signals, signs,  markings or other similar devices.
+
+     L.1972, c. 45, s. 59:4-5.
+
+59:4-6.  Plan or design immunity
+    a.  Neither the public entity nor a public employee is liable under this chapter for an injury caused by the plan or design of public property, either in its original construction or any improvement thereto, where such plan or design has been approved in advance of the construction or improvement by the Legislature or the governing body of a public entity or some other body or a public employee exercising discretionary authority to give such approval or where such plan or design is prepared in conformity with standards previously so approved.
+
+     L.1972, c. 45, s. 59:4-6.
+
+59:4-7.  Weather conditions;  effect on use of streets and highways--immunity
+    Neither a public entity nor a public employee is liable for an injury caused  solely by the effect on the use of streets and highways of weather conditions.
+
+     L.1972, c. 45, s. 59:4-7.
+
+59:4-8.  Condition of unimproved public property--immunity
+    Neither a public entity nor a public employee is liable for an injury caused  by a condition of any unimproved public property, including but not limited to  any natural condition of any lake, stream, bay, river or beach.
+
+     L.1972, c. 45, s. 59:4-8.
+
+59:4-9.  Unimproved and unoccupied portions of certain lands--immunity
+    Neither a public entity nor a public employee is liable for any injury caused by a condition of the unimproved and unoccupied portions of the tidelands and submerged lands, and the beds of navigable rivers, streams, lakes, bays, estuaries, inlets and straits owned by the State.
+
+     L.1972, c. 45, s. 59:4-9.
+
+59:4-10.  Immunity from liability relative to community forestry
+	16.  a.  Except as provided pursuant to N.J.S.59:3-14, a shade tree commission, or a member of a shade tree commission, or a volunteer participating in a community forestry program as provided for by P.L.1996, c.135 (C.13:1L-17.1 et al.), is not liable for an injury or death caused directly or indirectly by a tree or shrub, or any part thereof, if:
+
+	(1)  the tree or shrub, or pertinent part thereof, is on public property or on a public easement or right-of-way, or the tree or shrub, regardless of its location, is regulated, planted, cared for, controlled, or maintained by the shade tree commission; and
+
+	(2)  the local government or the shade tree commission has participated in and successfully completed a training skills and accreditation program established pursuant to section 6 of P.L.1996, c.135 (C.13:1L-17.6) and has a comprehensive community forestry plan approved pursuant to section 7 of that act.
+
+	b.  The existence of a municipal shade tree commission established pursuant to R.S.40:64-1 et seq. or a county shade tree commission established pursuant to R.S.40:37-1 et seq., or the fact that a municipality or county has otherwise provided for the regulation, planting, care, control, or maintenance of trees or shrubs within its jurisdiction, shall not be cause to immunize a private person from liability for an injury caused directly or indirectly by a tree or shrub, or any part thereof, who otherwise would be liable for that injury.
+
+	L.1996,c.135,s.16.
+
+59:5-1.  Failure to provide prison, jail or correctional facilities
+    Neither a public entity nor a public employee is liable for failure to provide a prison, jail or penal or correctional facility, or if such facility is provided, for failure to provide sufficient equipment, personnel or facilities in a prison or other correction facility.
+
+     L.1972, c. 45, s. 59:5-1.
+
+59:5-2  Parole or escape of prisoner; injuries between prisoners; pursuit for law enforcement purposes.
+
+	59:5-2.  Parole or escape of prisoner;  injuries between prisoners ; pursuit for law enforcement purposes.
+
+	Neither a public entity nor a public employee is liable for:
+
+	a.	An injury resulting from the parole or release of a prisoner or from the terms and conditions of his parole or release or from the revocation of his  parole or release;
+
+	b.	any injury caused by:
+
+	(1)	an escaping or escaped prisoner;
+
+	(2)	an escaping or escaped person;
+
+	(3)	a person resisting arrest or evading arrest;
+
+	(4)	a prisoner to any other prisoner; or
+
+	c.	any injury resulting from or caused by a law enforcement officer's    pursuit of a  person.
+
+	L.1972, c.45, s.59:5-2; amended 1997, c.423, s.2.
+
+59:5-4.  Failure to provide police protection
+    Neither a public entity nor a public employee is liable for failure to provide police protection service or, if police protection service is provided,  for failure to provide sufficient police protection service.
+
+     L.1972, c. 45, s. 59:5-4.
+
+59:5-5.  Failure to make arrest or retain person arrested in custody
+    Neither a public entity nor a public employee is liable for injury caused by  the failure to make an arrest or by the failure to retain an arrested person in  custody.
+
+     L.1972, c. 45, s. 59:5-5.
+
+59:5-6.      No liability after voluntary release from police custody  
+     a.   Neither a public entity nor a public employee is liable for any injury suffered by a motor vehicle driver upon his voluntary release from police custody after reasonable precautions have been taken so that the driver is released in a position of relative safety and refuge following his arrest on a charge of operating a motor vehicle while under the influence of intoxicating liquor or drugs, pursuant to R.S.39:4-50.  
+
+    b.   Neither a public entity nor a public employee is liable for any injury suffered by a motor vehicle occupant upon his voluntary release from police detention after reasonable precautions have been taken so that the occupant is released in a position of relative safety and refuge following the arrest of a motor vehicle driver on a charge of operating a motor vehicle while under the influence of intoxicating liquor or drugs, pursuant to R.S.39:4-50.  
+
+    L.1989, c.325, s.1.  
+
+59:6-1.  Definitions
+    As used in this chapter:
+
+     "Medical facility"  means a hospital, infirmary, clinic, dispensary, mental  institution, or similar facility.
+
+     "Mental institution"  means any facility for the care or treatment of persons committed for mental illness.
+
+     "Mental illness"  means mental illness, mental disorder bordering on mental  illness, mental deficiency, epilepsy, dipsomania or inebriety, sexual psychopathy, or such mental abnormality as to evidence utter lack of power to control sexual impulses.
+
+     "Drug dependent persons"  means a person who is using a controlled dangerous substance and who is in a state of psychic or physical dependence, or  both, arising from the use of that controlled dangerous substance on a continuous basis.  Drug dependence is characterized by behavior or other responses, including but not limited to, a strong compulsion to take the substance on a recurring basis in order to experience its psychic effects or to  avoid the discomfort of its absence.
+
+     L.1972, c. 45, s. 59:6-1.
+
+59:6-2.  Failure to provide medical facilities or mental institutions
+    Neither a public entity nor a public employee is liable for failure to provide a medical facility or mental institution, or if such facility or institution is provided, for the failure to provide sufficient equipment, personnel or facilities in a mental institution or medical facility.
+
+     L.1972, c. 45, s. 59:6-2.
+
+59:6-3.  Prevention of disease or controlling communication of disease
+    Neither a public entity nor a public employee is liable for an injury resulting from the decision to perform or not to perform any act to promote the  public health of the community by preventing disease or controlling the communication of disease within the community.
+
+     L.1972, c. 45, s. 59:6-3.
+
+59:6-4.  Failure to make physical or mental examination or to make adequate  physical or mental examination
+    Failure to make physical or mental examination or to make adequate physical  or mental examination.  Except for an examination or diagnosis for the purpose  of treatment, neither a public entity nor a public employee is liable for  injury caused by the failure to make a physical or mental examination, or to  make an adequate physical or mental examination, of any person for the purpose  of determining whether such person has a disease or physical or mental  condition that would constitute a hazard to the health or safety of himself or  others.  For the purposes of this section,  "public employee"  includes a  private physician while actually performing professional services for a public  entity as a volunteer without compensation.
+
+     L.1972, c. 45, s. 59:6-4.  Amended by L.1983, c. 184, s. 1, eff. May 11, 1983.
+
+59:6-5  Immunity from liability for failure to diagnose certain conditions; exceptions.
+ 	59:6-5.  a.  Neither a public entity nor a public employee is liable for injury resulting from diagnosing or failing to diagnose that a person has a mental illness or is a person with a substance use disorder involving drugs or from failing to prescribe for mental illness or a substance use disorder involving drugs; provided, however, that nothing in this subsection exonerates a public entity or a public employee who has undertaken to prescribe for a mental illness or a substance use disorder involving drugs from liability for injury proximately caused by negligence or by a wrongful act in so prescribing.
+ 
+	b.	Nothing in subsection a. exonerates a public entity or a public employee from liability for injury proximately caused by a negligent or wrongful act or omission in administering any treatment prescribed for a mental illness or a substance use disorder involving drugs.
+ 
+	Amended 2017, c.131, s.218.
+ 
+     L.1972, c. 45, s. 59:6-5; amended 2017, c.131, s.218.
+
+59:6-6.  Determinations in accordance with applicable enactments
+    a.  Neither a public entity nor a public employee is liable for any injury resulting from determining in accordance with any applicable enactment:
+
+    (1) whether to confine a person for mental illness or drug dependence;
+
+     (2) the terms and conditions of confinement for mental illness or drug dependence;
+
+     (3) whether to parole, grant a leave of absence to, or release a person from  confinement for mental illness or drug dependence.
+
+     L.1972, c. 45, s. 59:6-6.
+
+59:6-7.  Escape of person confined;  injuries between inmates
+    Neither a public entity nor a public employee is liable for:
+
+    a.  an injury caused by an escaping or escaped person who has been confined  for mental illness or drug dependence;
+
+    b.  an injury caused by any person who has been confined for mental illness  or drug dependence upon any other person so confined.
+
+     L.1972, c. 45, s. 59:6-7.
+
+59:6-8  Immunity for public entities, employees relative to certain actions for response to CBR agents.
+
+	1.	Notwithstanding any other provision of law to the contrary, a public entity or public employee shall not be liable in any civil action for damages as a result of the public entity's or public employee's acts of commission or omission arising out of and in the course of the acquisition, stockpiling, distribution or dispensing by the public entity or public employee of drugs and vaccines which mitigate the effects of exposure to nuclear, chemical or biological agents caused by an act of terrorism or arising out of a state of emergency as declared by the Governor, including but not limited to, potassium iodide pills. 
+
+	Nothing in this act shall be deemed to grant immunity to any person or entity causing damage by a willful, wanton or grossly negligent act of commission or omission.
+
+	L.2003,c.51,s.1.
+
+59:6-9  Procedures, rules, regulations.
+
+	2.	Within six months of the effective date of this act and in accordance with the "Administrative Procedure Act," P.L.1968, c.410 (C.52:14B-1 et seq.), the Commissioner of Health and Senior Services shall adopt and implement adequate procedures and promulgate rules and regulations necessary to implement the acquisition, stockpiling, distribution and dispensing of drugs and vaccines which mitigate the effects of exposure to nuclear, chemical or biological agents, including but not limited to, potassium iodide pills.
+
+	The rules and regulations shall include, but need not be limited to, provisions concerning:  (1) the monitoring and inspection procedures for stockpiled drugs and vaccines; (2) the maintenance and retention of records of information from monitoring activities; (3) the submission to the Department of Health and Senior Services of monitoring reports; and (4) any other related information as the Commissioner of Health and Senior Services may require.
+
+	L.2003,c.51,s.2.
+
+59:7-1.   "Tax"  defined
+    As used in this chapter,  "tax"  includes a tax, assessment, fee or charge.
+
+     L.1972, c. 45, s. 59:7-1.
+
+59:7-2.  Liability of a public entity or public employee generally
+    Neither a public entity nor a public employee is liable for an injury caused  by:
+
+    a.  Instituting any judicial or administrative proceeding or action for or incidental to the assessment or collection of a tax.
+
+    b.  An act or omission in the interpretation or application of any law relating to a tax.
+
+     L.1972, c. 45, s. 59:7-2.
+
+59:7-3.  Applicability of chapter
+    Nothing in this chapter affects any law relating to refund, rebate, exemption, cancellation, amendment or adjustment of taxes.
+
+     L.1972, c. 45, s. 59:7-3.
+
+59:7A-1.     Definitions  
+     a.   As used in this act "community service" means services, work or similar acts ordered by a court of competent jurisdiction to be performed by an offender as part of a sentence, penalty or other disposition imposed for the violation of a statute or ordinance.  
+
+    b.   Notwithstanding any provisions of law to the contrary:
+
+  
+
+    (1)  A county or municipality shall not be liable in any civil action for damages to an offender or any other person arising out of and in the course of the performance of community service; and  
+
+    (2)  A county or municipality shall not be subject to any law governing the provision of labor, workers' compensation, conditions of employment or insurance with respect to an offender performing community service.  
+
+    c.   Nothing in this section shall be deemed to grant immunity if the damages suffered by an offender or any other person were caused by a willful, wanton, or grossly negligent act of commission or omission by a county or municipality.  
+
+    d.   Nothing in this section shall be deemed to grant immunity to a county or municipality for damages resulting from the negligent operation of a motor vehicle.  
+
+    L.1991,c.56,s.1.  
+
+59:8-1.  Date of accrual of cause of action
+    Accrual shall mean the date on which the claim accrued and shall not be affected by the notice provisions contained herein.
+
+     L.1972, c. 45, s. 59:8-1.
+
+59:8-2.  Local public entity defined
+    For purposes of this chapter  "local public entity"  means a public entity other than the State.
+
+     L.1972, c. 45, s. 59:8-2.
+
+59:8-3  Claims for damages against public entities; inapplicability.
+ 	59:8-3.  Claims for damages against public entities. a. Except as otherwise provided in this section, no action shall be brought against a public entity or public employee under this act unless the claim upon which it is based shall have been presented in accordance with the procedure set forth in this chapter.
+ 
+	b.	The procedural requirements of this chapter shall not apply to an action at law for an injury resulting from the commission of sexual assault, any other crime of a sexual nature, a prohibited sexual act as defined in section 2 of P.L.1992, c.7 (C.2A:30B-2), or sexual abuse as defined in section 1 of P.L.1992, c.109 (C.2A:61B-1). 
+ 
+	amended 1994, c.49, s.2; 2019, c.120, s.8.
+
+59:8-4.  Contents of claim
+    A claim shall be presented by the claimant or by a person acting on his behalf and shall include:
+
+    a.  The name and post office address of the claimant;
+
+     b.  The post-office address to which the person presenting the claim desires  notices to be sent;
+
+     c.  The date, place and other circumstances of the occurrence or transaction  which gave rise to the claim asserted;
+
+     d.  A general description of the injury, damage or loss incurred so far as it may be known at the time of presentation of the claim;
+
+     e.  The name or names of the public entity, employee or employees causing the injury, damage or loss, if known;  and
+
+     f.  The amount claimed as of the date of presentation of the claim, including the estimated amount of any prospective injury, damage, or loss, insofar as it may be known at the time of the presentation of the claim, together with the basis of computation of the amount claimed.
+
+     L.1972, c. 45, s. 59:8-4.
+
+59:8-5.  Signature
+    The claim shall be signed by the claimant or by some person on his behalf.
+
+     L.1972, c. 45, s. 59:8-5.
+
+59:8-6.      Claim forms; additional evidence and information; examinations  
+    59:8-6.  Claim forms; additional evidence and information; examinations. A public entity may by rule or regulation adopt forms specifying information to be contained in claims filed against it or its employee under this act. Such forms shall include the requirements of 59:8-4 of this act and may include such additional information or evidence as (1) written reports of a claimant's attending physicians or dentists setting forth the nature and extent of injury and treatment, any degree of temporary or permanent disability, the prognosis, period of hospitalization, and any diminished earning capacity; (2) a list of claimant's expert witnesses and any of their reports or statements relating to the claim; (3) itemized bills for medical, dental, and hospital expenses incurred, or itemized receipts of payment for such expenses; (4) documentary evidence showing amounts of income lost; (5) if future treatment is necessary, a statement of anticipated expenses for each treatment.  
+
+   In addition, the claimant may be required to submit to a physical or mental examination by a physician employed by the public entity and a claimant may be required to permit a public entity to inspect all appropriate records relating to his claim for liability and damages including, but not limited to, income tax returns, hospital records, medical records and employment records. 
+
+   The Attorney General is hereby authorized to issue rules and regulations on behalf of the State for the purpose of eliciting the types of information referred to in this section and for specifying any additional information which may be reasonably necessary for the administrative disposition of claims under this act.  
+
+   	L.1972, c.45, s.59:8-6; amended 1994,c.49,s.3.  
+
+59:8-7.  Place for presentation of claim
+    A claim for damage or injury arising under this act against the State shall  be filed either with (1) the Attorney General or (2) the department or agency  involved in the alleged wrongful act or omission.  A claim for injury or  damages arising under this act against a local public entity shall be filed  with that entity.
+
+     L.1972, c. 45, s. 59:8-7.
+
+59:8-8  Time for presentation of claims.
+  
+	59:8-8.  Time for presentation of claims. A claim relating to a cause of action for death or for injury or damage to person or to property shall be presented as provided in this chapter not later than the 90th day after accrual of the cause of action.  After the expiration of six months from the date notice of claim is received, the claimant may file suit in an appropriate court of law.  The claimant shall be forever barred from recovering against a public entity or public employee if:  
+ 
+	a.	The claimant failed to file the claim with the public entity within 90 days of accrual of the claim except as otherwise provided in N.J.S.59:8-9; or  
+ 
+	 b.	Two years have elapsed since the accrual of the claim; or
+ 
+	 c.	The claimant or the claimant's authorized representative entered into a settlement agreement with respect to the claim.  
+ 
+	Nothing in this section shall prohibit a minor or a person who is mentally incapacitated from commencing an action under this act within the time limitations contained herein, after reaching majority or returning to mental capacity.  
+ 
+	amended 1994, c.49, s.4; 2013, c.103, s.133.
+
+59:8-9.      Notice of late claim  
+    59:8-9.  Notice of late claim.  A claimant who fails to file notice of his claim within 90 days as provided in section 59:8-8 of this act, may, in the discretion of a judge of the Superior Court, be permitted to file such notice at any time within one year after the accrual of his claim provided that the public entity or the public employee has not been substantially prejudiced thereby. Application to the court for permission to file a late notice of claim shall be made upon motion supported by affidavits based upon personal knowledge of the affiant showing sufficient reasons constituting extraordinary circumstances for his failure to file notice of claim within the period of time prescribed by section 59:8-8 of this act or to file a motion seeking leave to file a late notice of claim within a reasonable time thereafter; provided that in no event may any suit against a public entity or a public employee arising under this act be filed later than two years from the time of the accrual of the claim.  
+
+	L.1972, c.45, s.59:8-9; amended 1994,c.49,s.5.  
+
+59:8-10.     Presentation of claim  
+    59:8-10.  Presentation of claim.  a.  A claim shall be presented to the public entity by delivering it to or mailing it certified mail to the office of the Attorney General or the office of the State agency allegedly involved in the action.  A claim may be presented to a local public entity by delivering it or mailing it certified mail to the entity.  
+
+   b.   A claim or application shall be deemed to have been presented in compliance with this section even though it is not delivered or mailed as provided in this section if it is actually received at an office of the State or local public entity within the time prescribed for presentation thereof.  
+
+   c.   Service of the notice required by this chapter upon the public entity shall constitute constructive service upon any employee of that entity.  
+
+	L.1972, c.45, s.59:8-10; amended 1994,c.49,s.6.  
+
+59:8-11.  Time of presentation and receipt;  proof of mailing
+    The claim shall be deemed to have been presented and received at the time of  the deposit.  Proof of mailing may be made in the manner prescribed by the Rules of Court.
+
+     L.1972, c. 45, s. 59:8-11.
+
+59:9-1.  Manner of trial
+    Tort claims under this act shall be heard by a judge sitting without a jury  or a judge and jury where appropriate demand therefor is made in accordance  with the rules governing the courts of the State of New Jersey.
+
+     L.1972, c. 45, s. 59:9-1.  Amended by L.1975, c. 3, s. 1.
+
+59:9-2  Judgments, interest, limitations.
+	59:9-2. a. No interest shall accrue prior to the entry of judgment against a public entity or public employee.
+ 
+	b.	No judgment shall be granted against a public entity or public employee on the basis of strict liability, implied warranty, or products liability.
+ 
+	c.	No punitive or exemplary damages shall be awarded against a public entity.
+ 
+	d. (1) Except as provided in this subsection, no damages shall be awarded against a public entity or public employee for pain and suffering resulting from any injury.
+ 
+	(2) The limitation on the recovery of damages for pain and suffering pursuant to paragraph (1) of this subsection shall not apply:
+ 
+	(a) in cases of permanent loss of a bodily function, permanent disfigurement, or dismemberment where the medical treatment expenses are in excess of $3,600.00; or 
+ 
+	(b) to an action at law filed pursuant to section 7 of P.L.2019, c.120 (C.59:2-1.3).
+ 
+	For purposes of this section, "medical treatment expenses" are defined as the reasonable value of services rendered for necessary surgical, medical, and dental treatment of the claimant for such injury, sickness, or disease, including prosthetic devices and ambulance, hospital, or professional nursing service. 
+ 
+	e.	If a claimant receives or is entitled to receive benefits for the injuries allegedly incurred from a policy or policies of insurance or any other source other than a joint tortfeasor, such benefits shall be disclosed to the court and the amount thereof which duplicates any benefit contained in the award shall be deducted from any award against a public entity or public employee recovered by such claimant, provided, however, that nothing in this provision shall be construed to limit the rights of a beneficiary under a life insurance policy.  No insurer or other person shall be entitled to bring an action under a subrogation provision in an insurance contract against a public entity or public employee.
+
+	L.1972, c.45, s.59:9-2; amended 2000, c.126, s.32; 2025, c.29, s.2.
+
+59:9-3.      Contribution by a public entity or public employee with a joint tortfeasor 
+     59:9-3.  Contribution by a public entity or public employee with a joint tortfeasor.  Notwithstanding any other law, in any case where a public entity or public employee acting within the scope of his employment is determined to be a joint tortfeasor the public entity or public employee shall be required to contribute to a joint tortfeasor only to the extent of the recovery provided for under this act 
+
+	L.1972, c.45, s.59:9-3; amended by L. 1987,c.324,s.2. 
+
+59:9-3.1.    Percentage of liability 
+     Notwithstanding the provisions of P.L.1952, c. 335 (C. 2A:53A-1 et seq.), P.L.1973, c. 146 (C. 2A:15-5.1 et seq.) or any other law to the contrary, in any case where a public entity or public employee acting within the scope of his employment is determined to be a tortfeasor in any cause of action along with one or more other tortfeasors, the public entity or public employee shall be liable for no more than that percentage share of the damages which is equal to the percentage of the negligence attributable to that public entity or public employee and only to the extent authorized by N.J.S. 59:9-2 and N.J.S. 59:9-4. 
+
+    L. 1987,c.324,s.1. 
+
+59:9-4.  Comparative negligence
+    Contributory negligence shall not bar recovery in an action by any party or  his legal representative to recover damages to the extent permitted under this  act, if such negligence was not greater than the negligence of the party against whom recovery is sought or was not greater than the combined negligence  of the persons against whom recovery is sought.  Any damages sustained shall be  diminished by the percentage of negligence attributable to the person  recovering.
+
+    In all negligence actions in which the question of liability is in dispute,  the trier of fact shall make the following as findings of fact:
+
+    a.  The amount of damages which would be recoverable by the injured party regardless of any consideration of negligence, that is, the full value of the injured party's damages to the extent permitted under this act.
+
+    b.  The extent, in the form of a percentage, of each party's negligence. The percentage of negligence of each party shall be based on 100% of the total of all percentages of negligence of all the parties to a suit shall be 100%.
+
+    c.  The judge shall mold the judgment from the findings of fact made by the  trier of fact in accordance with the provisions of this act.
+
+     L.1972, c. 45, s. 59:9-4.  Amended by L.1975, c. 3, s. 2;  L.1982, c. 191, s. 2, eff. Dec. 6, 1982.
+
+59:9-5.  Discretion to award attorney's fees;  limitation
+    In any action brought against a public entity or a public employee under this act, the court may, in its discretion, award a successful claimant (a) costs ordinarily allowable in the private sector (b) expert witness fees not exceeding a total of $100.00 and (c) reasonable attorney's fees;  provided however that there shall be no such recovery in any case where damages are awarded for pain and suffering.
+
+     L.1972, c. 45, s. 59:9-5.
+
+59:9-6.  Suits against public employees--judgment or settlement as bar
+    a.  Where a claimant has pursued his remedy against a public entity for a claim arising out of the act or omission of a public employee of a public entity, a judgment or settlement shall be a complete bar to suit against the employee in a claim arising from the same subject matter.
+
+    b.  Where a claimant has pursued his remedy against a public employee for a  claim arising out of the act or omission of a public employee of a public entity, a judgment or settlement shall be a complete bar to suit against the entity in a claim arising from the same subject matter.
+
+     L.1972, c. 45, s. 59:9-6.
+
+59:9-7.  Review of amount of verdict or judgment
+    Nothing in the act to which this act is a supplement shall affect the right  of the court, in accordance with the rules governing the courts, to review the  amount of a verdict or judgment on its own initiative or in acting on a motion  of a party for a new trial.
+
+     L.1975, c. 3, s. 3.
+
+59:10-1.     Indemnification 
+     59:10-1.  Indemnification.  If pursuant to the provisions of P.L.1972, c. 48 (C. 59:10A-1 et seq.) the Attorney General provides for the defense of an employee or former employee, the State shall provide indemnification for the State employee. 
+
+    Nothing in this section requires the State to pay for punitive or exemplary damages or damages resulting from the commission of a crime. The State may, however, indemnify a State employee for exemplary or punitive damages resulting from the employee's civil violation of State or federal law if, in the opinion of the Attorney General, the acts committed by the State employee upon which the damages are based did not constitute actual fraud, actual malice, willful misconduct, or an intentional wrong. 
+
+	L.1972, c.45, s.59:10-1; amended by L. 1987,c.340,s.1. 
+
+59:10-2.     Refusal to defend -- indemnification 
+     59:10-2.  Refusal to defend--indemnification.  If the Attorney General refuses to provide for the defense of a State employee as required by the provisions of P.L.1972, c. 48 (C. 59:10A-1 et seq.), the employee or former employee of the State shall be entitled to indemnification from the State if he establishes that the act or omission upon which the claim or judgment was based occurred within the scope of his employment as an employee of the State and the State fails to establish that he acted or failed to act because of actual fraud, actual malice or willful misconduct. 
+
+    If the State employee establishes that he was entitled to a defense under the provisions of this chapter, the State shall pay or reimburse him for any bona fide settlement agreements entered into by the employee, and shall pay or reimburse him for any judgments entered against the employee, and shall pay or reimburse him for all costs of defending the action, including reasonable counsel fees and expenses, together with costs of appeal, if any. 
+
+    Nothing in this section requires the State to pay for punitive or exemplary damages or damages resulting from the commission of a crime. The State may indemnify a State employee for exemplary or punitive damages resulting from the employee's civil violation of State or federal law if, in the opinion of the Attorney General, the acts committed by the State employee upon which the damages are based did not constitute actual fraud, actual malice, willful misconduct, or an intentional wrong. 
+
+    	L.1972, c.45, s.59:10-2; amended 1987,c.340,s.2. 
+
+59:10-2.1.   Reimbursement 
+     If any criminal action is instituted against any State officer based upon an act or omission of that officer arising out of and directly related to the lawful exercise of his official duties or under color of his authority, and that action is dismissed or results in a final disposition in favor of that officer, the State shall reimburse the officer for the cost of defending the action, including reasonable attorney's fees and costs of trial and appeals. 
+
+    L.1989, c.77, s.1. 
+
+59:10-2.2.   Claim 
+     A claim for reimbursement shall be filed within the time and in the manner provided for claims for damage or injury under chapter 8 of Title 59 of the New Jersey Statutes, except where the procedure prescribed in that chapter is inconsistent with the nature of a claim resulting from a criminal action. 
+
+    L.1989, c.77, s.2. 
+
+59:10-2.3.   Applicability 
+     Notwithstanding the provisions of section 2 of this act, this act shall apply to claims arising prior to the effective date of this act provided they are filed within two years after the dismissal or final disposition of the criminal action referred to in section 1. 
+
+    L.1989, c.77, s.3. 
+
+59:10-3.  Public employee's duty to notify and cooperate with Attorney General
+    A State employee shall not be entitled to indemnification under this act unless within 10 calendar days of the time he is served with any summons, complaint, process, notice, demand or pleading, he delivers the original or a copy thereof to the Attorney General or his designee.  Upon such delivery the Attorney General may, pursuant to the provisions of P.L.1972, c. 48 Senate Bill  No. 993 now pending before the Legislature, assume exclusive control of the  employee's representation and such employee shall cooperate fully with the  Attorney General's defense.
+
+     L.1972, c. 45, s. 59:10-3.
+
+59:10-4.     Local public entities -- authority to indemnify 
+     59:10-4.  Local public entities--authority to indemnify.  Local public entities are hereby empowered to indemnify local public employees consistent with the provisions of this act.  A local public entity may indemnify an employee of the local public entity for exemplary or punitive damages resulting from the employee's civil violation of State or federal law if, in the opinion of the governing body of the local public entity, the acts committed by the employee upon which the damages are based did not constitute actual fraud, actual malice, willful misconduct or an intentional wrong. 
+
+	L.1972, c.45, s.59:10-4; amended 1987,c.340,s.3. 
+
+59:10-5.     Tort claims coverage 
+    State authorities, State commissions and State agencies which are authorized by statute to sue and be sued may obtain coverage for liability and representation by the Attorney General's Office for defense of liability cases under the "New Jersey Tort Claims Act," N.J.S. 59:1-1 et seq., for themselves and their public employees from the fund established under N.J.S. 58:12-1 when: 
+
+   a.   The governing body of the authority, commission or agency petitions the State Treasurer and the Attorney General for such coverage; and 
+
+   b.   The State Treasurer and the Attorney General determine that such coverage would be in the public interest and that adequate coverage is unavailable at reasonable rates. 
+
+   L. 1987, c. 278, s. 1. 
+
+59:10-6.     Limitations 
+    Coverage afforded pursuant to this supplementary act shall provide indemnification for awards within the limitations of the "New Jersey Tort Claims Act." 
+
+   L. 1987, c. 278, s. 2. 
+
+59:10-7.     Expiration; renewal 
+    Coverage afforded pursuant to this supplementary act shall expire on the 30th day of June following the approval of coverage.  Coverage may be extended for additional one year terms on conditions fixed by the State Treasurer and the Attorney General, provided that for each renewal they determine that coverage would be in the public interest and that adequate coverage is unavailable at reasonable rates. 
+
+   L. 1987, c. 278, s. 3. 
+
+59:10-8.     Fees; control of litigation 
+    The State Treasurer and the Attorney General shall have the power to set annual fees and charges payable by the authority, commission or agency for coverage and fix monetary limits on the extent of coverage to be afforded an authority, commission or agency and its employees shall cooperate with the Attorney General in the defense of all covered claims.  The Attorney General shall have the exclusive right to control all such litigation. 
+
+   L. 1987, c. 278, s. 4. 
+
+59:10-9.     Insurance, indemnity unaffected 
+    Nothing contained in this supplementary act shall inure to the benefit of any insurance company which has issued a policy of liability insurance or to any person who is obligated to indemnify a public entity or public employee. 
+
+   L. 1987, c. 278, s. 5. 
+
+59:10-10.    Indemnification 
+     Citizen members of the New Jersey Building Authority to whom have been delegated the supervision of the construction, reconstruction, rehabilitation or improvement of any project pursuant to a resolution of the authority shall be indemnified and their defense of any action provided for in the same manner and to the same extent as employees of the State under the "New Jersey Tort Claims Act," N.J.S. 59:1-1 et seq. on account of acts or omissions in the scope of their authority. 
+
+    L. 1987,c.360. 
+
+59:10A-1.  Attorney General's duty to defend State employees
+    Except as provided in section 2 hereof, the Attorney General shall, upon a request of an employee or former employee of the State, provide for the defense  of any action brought against such State employee or former State employee on  account of an act or omission in the scope of his employment.
+
+    For the purposes of this section, the Attorney General's duty to defend shall extend to a cross-action, counterclaim or cross-complaint against an employee or former employee.
+
+     L.1972, c. 48, s. 1, eff. June 1, 1972.
+
+59:10A-2.  Grounds for refusal to provide defense
+    The Attorney General may refuse to provide for the defense of an action referred to in section 1 if he determines that:
+
+    a.  the act or omission was not within the scope of employment;  or
+
+     b.  the act or the failure to act was because of actual fraud, willful misconduct or actual malice;  or
+
+     c.  the defense of the action or proceeding by the Attorney General would create a conflict of interest between the State and the employee or former employee.
+
+     L.1972, c. 48, s. 2, eff. June 1, 1972.
+
+59:10A-3.  The Attorney General's authority to represent
+    In any other action or proceeding, including criminal proceedings, the Attorney General may provide for the defense of a State employee or former State employee, if he concludes that such representation is in the best interest of the State.
+
+     L.1972, c. 48, s. 3, eff. June 1, 1972.
+
+59:10A-4.  Attorney General's exclusive control over litigation
+    Whenever the Attorney General provides for the defense of a State employee or former State employee pursuant to this act, the Attorney General may assume exclusive control over the representation of such employee or former State employee and such employee or former State employee shall cooperate fully with the Attorney General's defense.
+
+     L.1972, c. 48, s. 4, eff. June 1, 1972.
+
+59:10A-5.  Methods of providing defense
+    The Attorney General may provide for a defense pursuant to this act by an attorney from his own staff or by employing other counsel for this purpose or by asserting the State's right under any appropriate insurance policy which requires the insurer to provide the defense.
+
+     L.1972, c. 48, s. 5, eff. June 1, 1972.
+
+59:10A-6.  Powers not in derogation of existing authority
+    The authority granted to the Attorney General by this act shall be in addition to and not in derogation of his existing authority to represent and defend State employees and former State employees.
+
+     L.1972, c. 48, s. 6, eff. June 1, 1972.
+
+59:11-1.  Authority to settle claims
+    a.  The State Treasurer shall pay any tort claim or claim for indemnification against the State under this act not exceeding $7,500.00 which is recommended for payment by the Attorney General or his designee. The State Treasurer shall pay any such claim exceeding $7,500.00 upon the recommendation of the Attorney General or his designee and the approval of the Director of the  Division of Budget and Accounting.
+
+    b.  The State Treasurer shall pay all contract claims against the State upon  the recommendation of the Attorney General or his designee with the approval of  the appropriate Department or agency head and the Director of the Division of  Budget and Accounting.  All such claims shall be paid in accordance with the  provisions of the New Jersey Contractual Liability Act.
+
+     L.1972, c. 45, s. 59:11-1.
+
+59:12-1.  Fund establishment
+    There is hereby established in the custody of the State Treasurer a fund to  be used for the payment of claims against the State arising out of tort. No  money shall be withdrawn from such fund unless the claim has been settled according to law or reduced to final judgment in a court of competent jurisdiction.  Whenever any tort claim or claim for indemnification shall have been settled according to law or reduced to final judgment in a court of competent jurisdiction, the same shall be certified by the Attorney General or his designee, to the State Treasurer who shall pay the claim upon the warrant of the Director of the Division of Budget and Accounting out of moneys contained in the fund.  Whenever the State Treasurer shall determine that funds  are unavailable to pay any such claim, he shall certify the amount of such  deficiency and the amount so certified shall be appropriated and paid to the  claimant in the manner aforesaid.
+
+     L.1972, c. 45, s. 59:12-1.
+
+59:12-2.  Repealers
+    All acts and parts of acts inconsistent with this act are, to the extent of  such inconsistency, repealed, including without limitation:
+
+    P.L.1971, c. 199, s. 26 (C. 40A:12-26).
+
+     N.J.S. 18A:20-35;
+
+     N.J.S. 38A:4-9;
+
+     N.J.S. 38A:4-10;
+
+     R.S. 53:1-22.
+
+     L.1972, c. 45, s. 59:12-2.
+
+59:12-3.  Prospective application of act
+    This act applies only to claims that accrue on or after its effective date.   Claims that accrued prior to the effective date of this act are not affected  by this act but shall continue to be governed by the law applicable thereto  prior to the effective date of this act;  provided however that this act shall  apply to the suit presently pending between Willis and Department of  Conservation and Economic Development, Superior Court, Docket No. L-9817-66.
+
+     L.1972, c. 45, s. 59:12-3.
+
+59:13-1.  Short title
+    This subtitle shall be known as the  "New Jersey Contractual Liability Act."
+
+     L.1972, c. 45, s. 59:13-1.
+
+59:13-2.  Definitions
+    As used in this chapter:   "State"  shall mean the State and any office, department, division, bureau, board, commission or agency of the State, but shall not include any such entity which is statutorily authorized to sue and be  sued.
+
+     "Contracting agency"  shall mean the appropriate agency of the State which  is charged by law with the responsibility of awarding contracts.
+
+     "Accrual of claim"  shall mean the date on which the claim arose and shall  not be affected by the notice provisions contained herein.
+
+     L.1972, c. 45, s. 59:13-2.
+
+59:13-3.  Waiver of immunity from liability in contract
+    The State of New Jersey hereby waives its sovereign immunity from liability  arising out of an express contract or a contract implied in fact and consents  to have the same determined in accordance with the rules of law applicable to  individuals and corporations;  provided, however, that there shall be no  recovery against the State for punitive or consequential damages arising out of  contract nor shall there be any recovery against the State for claims based  upon implied warranties or upon contracts implied in law.
+
+     L.1972, c. 45, s. 59:13-3.
+
+59:13-4.  Jurisdiction in the New Jersey courts
+    The courts of competent jurisdiction of the State of New Jersey shall have jurisdiction over all claims against the State for breach of a contract, either  express or implied in fact.  Contract claims against the State shall be heard  by a judge sitting without a jury.  Except as otherwise expressly provided  herein, all suits filed against the State under this chapter shall be in  accordance with the rules governing the courts of the State of New Jersey.
+
+     L.1972, c. 45, s. 59:13-4.
+
+59:13-5.  Presentation and consideration of claims
+    It shall be the responsibility of parties contracting with the State to promptly notify the State in writing of any situation or occurrence which may potentially result in the submission of a claim against the State. Except as otherwise provided in section 6, no notice of claim for breach of contract, either express or implied in fact, shall be filed with the contracting agency later than 90 days after the accrual of such claim.  A notice of claim shall include the following information:  the name of the claimant, the nature of the  claim, specific reasons for making the claim, and the total dollar amount of  the claim if known.  After the expiration of 90 days from the date the notice  of claim is received by the contracting agency, the claimant may file suit in a  court of competent jurisdiction of the State of New Jersey.
+
+    In all contract claims against the State, the claimant shall be forever barred from recovering against the State if:
+
+    a.  he fails to notify the appropriate contracting agency within 90 days of  accrual of his claim except as otherwise provided in section 6 hereof; or
+
+    b.  he fails to file suit within 2 years of accrual of his claims or within  1 year after completion of the contract giving rise to paid claim, whichever  may be later;  or
+
+    c.  the claimant accepts personally or through his agent or legal representative any award, compromise or settlement made by the State of New Jersey.
+
+     L.1972, c. 45, s. 59:13-5.
+
+59:13-6.  Notice of late claim
+    A claimant who fails to file notice of his claim within 90 days as provided  in section 6 of this chapter, may, in the discretion of a judge of the Superior  Court of the State of New Jersey, be permitted to file such notice at any time  within 1 year after the accrual of his claim provided that the State has not  been substantially prejudiced thereby.  Application to a judge of the superior  court for permission to file a late notice of claim shall be made upon motion  based upon affidavits setting forth sufficient reason for the failure to file  his notice of claim within the period of time prescribed by section 6 of this  chapter.
+
+	L.1972, c. 45, s. 59:13-6.
+
+59:13-7.  Arbitration statute unaffected
+    Nothing in this chapter shall be construed to prohibit the parties from agreeing to settle contract disputes by arbitration in accordance with the provisions of N.J.S. 2A:24-1 et seq.
+
+     L.1972, c. 45, s. 59:13-7.
+
+59:13-8.  Interest on judgments
+	59:13-8.  Interest on judgments.  No interest shall accrue prior to the entry of judgment in a court of competent jurisdiction, except that the court, in its discretion, may award prejudgment interest on the whole or part of a judgment arising out of or relating to claims for the construction or installation of improvements to real property in accordance with principles of equity.
+
+	L.1972, c.45, s.59:13-8; amended 2001, c.202.
+
+59:13-9.  Payment of claims
+    Whenever any such claim shall have been settled according to law or reduced  to final judgment in a court of competent jurisdiction, the same shall be  certified by the Attorney General or his designee, to the State Treasurer who  shall pay the claim upon the warrant of the Director of the Division of Budget  and Accounting out of any funds available to the department or other agency  against which the claim was made.  Whenever the State Treasurer shall determine  that funds are unavailable to pay any such claim, he shall certify the amount  of such deficiency and the amount so certified shall be appropriated and paid  to the claimant in the manner aforesaid.
+
+     L.1972, c. 45, s. 59:13-9.
+
+59:13-10.  Claims affected by this chapter
+    The time limitations contained in section 5 of this chapter shall not apply  to those claims accruing prior to the effective date of this chapter; provided, however, that any law suits on such claims must be filed in a court of competent jurisdiction within 6 months of the effective date of this chapter  or they shall be forever barred.
+
+     L.1972, c. 45, s. 59:13-10.
+
+59:14-2.  Severability
+    If any clause, sentence, subdivision, paragraph, section or part of this act  be adjudged to be unconstitutional or invalid, such judgment shall not affect,  impair or invalidate the remainder thereof, but shall be confined in its  operation to the clause, sentence, subdivision, paragraph, section or part  thereof directly involved in the case in which said judgment shall have been  rendered.
+
+     L.1972, c. 45, s. 59:14-2.
+
+59:14-3.  Appropriation
+    a.  There is hereby appropriated to the fund established pursuant to section  59:12-1 of this act, the sum of $750,000.00 for use during the fiscal year  ending June 30, 1973.
+
+    b.  There is hereby appropriated to the Division of Law in the Department of  Law and Public Safety the sum of $300,000.00 for use during the fiscal year  ending June 30, 1973.
+
+     L.1972, c. 45, s. 59:14-3.
+
+59:14-4.  Effective date provision
+    a.  Subtitle 1 of this act takes effect on July 1, 1972;  provided however the Attorney General is authorized to take such anticipatory action prior to the said effective date as he deems appropriate.
+
+    b.  Subtitle 2 and all other parts of this act shall take effect immediately.
+
+     L.1972, c. 45, s. 59:14-4, approved June 1, 1972.
+
+

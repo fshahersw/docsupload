@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:seeger-weiss:agent-input:science-evidence-analyst:1",
+  "title": "Scientific evidence and expert research map intake contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "research_question",
+    "source_manifest",
+    "eligibility_protocol"
+  ],
+  "properties": {
+    "research_question": {
+      "type": "object",
+      "description": "Exposure/product, population, comparator, outcome and relevant period; identify scientific rather than advocacy framing.",
+      "additionalProperties": true
+    },
+    "source_manifest": {
+      "type": "array",
+      "description": "Study/full-text, abstract and trial-registry records with identifiers, versions and access limits.",
+      "items": {
+        "type": "object",
+        "description": "Source/record descriptor; resolve its identity, access and content via a host-validated adapter."
+      }
+    },
+    "eligibility_protocol": {
+      "type": "object",
+      "description": "Inclusion/exclusion criteria, search scope and handling of overlapping cohorts or multiple reports.",
+      "additionalProperties": true
+    },
+    "expert_report": {
+      "type": "object",
+      "description": "Supplied report or claims to check; distinguish verification from new literature research.",
+      "additionalProperties": true
+    }
+  },
+  "$comment": "The host must validate nested source descriptors against its actual DTOs. This specification deliberately does not fabricate production API shapes."
+}

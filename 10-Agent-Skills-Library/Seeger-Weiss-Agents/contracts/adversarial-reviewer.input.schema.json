@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:seeger-weiss:agent-input:adversarial-reviewer:1",
+  "title": "Adversarial evidence and draft review intake contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "deliverable",
+    "source_ledger",
+    "review_scope"
+  ],
+  "properties": {
+    "deliverable": {
+      "type": "object",
+      "description": "Immutable draft/artifact version with stable claim and section locators.",
+      "additionalProperties": true
+    },
+    "source_ledger": {
+      "type": "array",
+      "description": "Underlying readable sources and each claim-to-source link; empty input limits review to structure and source gaps.",
+      "items": {
+        "type": "object",
+        "description": "Source/record descriptor; resolve its identity, access and content via a host-validated adapter."
+      }
+    },
+    "review_scope": {
+      "type": "object",
+      "description": "Audience, intended use, material issues and whether the review is targeted or comprehensive.",
+      "additionalProperties": true
+    },
+    "prior_findings": {
+      "type": "array",
+      "description": "Previously identified issues with dispositions and changed-source/draft versions.",
+      "items": {
+        "type": "object",
+        "description": "Source/record descriptor; resolve its identity, access and content via a host-validated adapter."
+      }
+    }
+  },
+  "$comment": "The host must validate nested source descriptors against its actual DTOs. This specification deliberately does not fabricate production API shapes."
+}

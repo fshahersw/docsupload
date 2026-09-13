@@ -1,0 +1,464 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:seeger-weiss:agent-result:settlement-valuation-analyst:1",
+  "title": "Settlement and verdict comparable review result contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "agent_id",
+    "run_id",
+    "matter_id",
+    "result_mode",
+    "as_of",
+    "scope",
+    "source_manifest",
+    "coverage",
+    "rows",
+    "source_requests",
+    "review",
+    "artifact_ids"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "agent_id": {
+      "const": "sw-settlement-valuation-analyst"
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Host-issued run identity."
+    },
+    "matter_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Authorized matter identity; not an access grant."
+    },
+    "result_mode": {
+      "enum": [
+        "analysis",
+        "partial_analysis",
+        "plan_only",
+        "blocked",
+        "cancelled"
+      ]
+    },
+    "as_of": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Actual source cutoff, not merely requested currentness."
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Question, included/excluded source set and period."
+    },
+    "source_manifest": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source_id",
+          "title",
+          "source_version",
+          "sha256",
+          "acquired_at",
+          "resolver",
+          "rights_note"
+        ],
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Unique source identity used by evidence references."
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Readable source title, not an invented legal characterization."
+          },
+          "source_version": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Actual revision or capture identity."
+          },
+          "sha256": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "acquired_at": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Actual retrieval/capture time, or explicit unknown marker."
+          },
+          "resolver": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Authorized document ID or official URL; no secrets or unrestricted local paths."
+          },
+          "rights_note": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Retention/display boundary or unresolved rights; not a permission grant."
+          }
+        }
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "known_total_units",
+        "units",
+        "search_boundary"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "complete_within_declared_scope",
+            "partial",
+            "no_sources"
+          ]
+        },
+        "known_total_units": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "units": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "unit_id",
+              "source_id",
+              "state",
+              "reason"
+            ],
+            "properties": {
+              "unit_id": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Document/page/entry or declared unit ID."
+              },
+              "source_id": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Source manifest identity."
+              },
+              "state": {
+                "enum": [
+                  "read",
+                  "unread",
+                  "failed",
+                  "restricted",
+                  "excluded"
+                ]
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Why the state applies; do not omit failures."
+              }
+            }
+          }
+        },
+        "search_boundary": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Queries, snapshots, limits and unknown candidate totals; no implicit exhaustive coverage."
+        }
+      }
+    },
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "row_id",
+          "evidence_state",
+          "evidence_refs",
+          "limitations",
+          "case_id",
+          "amount_type",
+          "amount_raw",
+          "currency",
+          "amount_components",
+          "case_stage",
+          "comparability_basis",
+          "selection_limit"
+        ],
+        "properties": {
+          "row_id": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Stable output row identity."
+          },
+          "evidence_state": {
+            "enum": [
+              "directly_supported",
+              "attributed_report",
+              "qualified",
+              "explicit_inference",
+              "conflicting",
+              "unverified"
+            ]
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/evidence_ref"
+            }
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "case_id": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Resolved matter/case identity."
+          },
+          "amount_type": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Verdict, judgment, settlement, demand, fund or reported figure."
+          },
+          "amount_raw": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Exact source amount or confidential/unknown statement."
+          },
+          "currency": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "description": "Explicit currency, null if not established."
+          },
+          "amount_components": {
+            "type": "array",
+            "description": "Sourced component values and descriptions.",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "case_stage": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Verified post-trial/appeal/approval stage."
+          },
+          "comparability_basis": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Reason for inclusion and important differences."
+          },
+          "selection_limit": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Known selection/censoring or unavailable history."
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "evidence_state": {
+                  "enum": [
+                    "directly_supported",
+                    "attributed_report",
+                    "qualified",
+                    "conflicting"
+                  ]
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "evidence_refs": {
+                  "minItems": 1
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "source_requests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "request",
+          "reason",
+          "affected_rows"
+        ],
+        "properties": {
+          "request": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Specific missing source or input."
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Why it is needed."
+          },
+          "affected_rows": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state",
+        "reviewed_scope",
+        "unresolved_items"
+      ],
+      "properties": {
+        "state": {
+          "enum": [
+            "not_reviewed",
+            "review_requested",
+            "reviewed_with_limits"
+          ]
+        },
+        "reviewed_scope": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Actual reviewed scope; never a global quality certificate."
+        },
+        "unresolved_items": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "artifact_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "description": "Actual persisted artifacts only; empty before save."
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "result_mode": {
+            "const": "plan_only"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "rows": {
+            "maxItems": 0
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "coverage": {
+            "properties": {
+              "status": {
+                "const": "no_sources"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "rows": {
+            "maxItems": 0
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "evidence_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id",
+        "source_version",
+        "sha256",
+        "locator",
+        "support_text",
+        "support_text_status"
+      ],
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Resolvable authorized source identity."
+        },
+        "source_version": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Source revision or capture time."
+        },
+        "sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9a-f]{64}$",
+          "description": "Null only where a source hash is unavailable; version/locator still required."
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Exact meaningful page/paragraph/transcript/table locator."
+        },
+        "support_text": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Permitted supporting span; null when retention is not allowed."
+        },
+        "support_text_status": {
+          "enum": [
+            "retained_permitted_span",
+            "resolver_only",
+            "unavailable"
+          ]
+        }
+      }
+    }
+  }
+}

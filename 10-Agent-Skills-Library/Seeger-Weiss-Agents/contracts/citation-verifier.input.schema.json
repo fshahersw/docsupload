@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:seeger-weiss:agent-input:citation-verifier:1",
+  "title": "Proposition and quotation verifier intake contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "draft",
+    "authority_sources",
+    "jurisdiction_and_date"
+  ],
+  "properties": {
+    "draft": {
+      "type": "object",
+      "description": "Immutable draft document with paragraph/text offsets and source hash.",
+      "additionalProperties": true
+    },
+    "authority_sources": {
+      "type": "array",
+      "description": "Lawfully available cited texts with canonical identities, version dates and page/paragraph mapping; an empty set triggers the source-request mode.",
+      "items": {
+        "type": "object",
+        "description": "Source/record descriptor; resolve its identity, access and content via a host-validated adapter."
+      }
+    },
+    "jurisdiction_and_date": {
+      "type": "object",
+      "description": "Relevant court/jurisdiction and intended as-of date.",
+      "additionalProperties": true
+    },
+    "review_scope": {
+      "type": "object",
+      "description": "Whole draft or explicit sections; distinguish authority support from record support and subsequent-treatment research.",
+      "additionalProperties": true
+    }
+  },
+  "$comment": "The host must validate nested source descriptors against its actual DTOs. This specification deliberately does not fabricate production API shapes."
+}

@@ -1,0 +1,25 @@
+{
+  "retrieved_at": "2026-09-13T00:43:19.641912+00:00",
+  "court_entities_in_registry": 269,
+  "court_entities_with_any_image": 238,
+  "court_entities_with_logo_or_seal": 228,
+  "court_entities_with_favicon_only": 10,
+  "court_entities_using_text_fallback": 31,
+  "accepted_asset_associations": 493,
+  "unique_accepted_image_files": 295,
+  "judge_photos": 14,
+  "official_judge_profiles_sampled": 36,
+  "rejected_candidate_associations": 44,
+  "bytes_of_unique_accepted_images": 21514352,
+  "kind_associations": {
+    "court_seal": 118,
+    "court_logo": 29,
+    "favicon": 226,
+    "judiciary_logo": 106,
+    "judge_photo": 14
+  },
+  "scope_note": "Court identity inventory across registered federal courts, statewide judiciaries, and six selected local trial courts. This is not every county or municipal court; 36 named official judge profiles sampled across two bounded passes; no claim of universal logo or portrait coverage.",
+  "additional_national_resource_entries": 1,
+  "policy_excluded_asset_associations": 3,
+  "asset_count_scope": "Image and association totals include the separately mapped national U.S. Courts resource; court coverage totals count only registered courts/judiciaries."
+}

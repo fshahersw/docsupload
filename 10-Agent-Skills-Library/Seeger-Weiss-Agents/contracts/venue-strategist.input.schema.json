@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:seeger-weiss:agent-input:venue-strategist:1",
+  "title": "Federal and state proceeding comparison intake contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "product_and_claim_scope",
+    "proceeding_sources",
+    "requested_forums"
+  ],
+  "properties": {
+    "product_and_claim_scope": {
+      "type": "object",
+      "description": "Specific product/formulation and claim context, with counsel-selected factual constraints.",
+      "additionalProperties": true
+    },
+    "proceeding_sources": {
+      "type": "array",
+      "description": "Official registries, designation/transfer orders and docket captures with exact proceeding IDs and dates.",
+      "items": {
+        "type": "object",
+        "description": "Source/record descriptor; resolve its identity, access and content via a host-validated adapter."
+      }
+    },
+    "requested_forums": {
+      "type": "array",
+      "description": "Federal/state/local courts to compare; missing source coverage must be shown.",
+      "items": {
+        "type": "object",
+        "description": "Source/record descriptor; resolve its identity, access and content via a host-validated adapter."
+      }
+    },
+    "plaintiff_constraints": {
+      "type": "object",
+      "description": "Authorized plaintiff facts relevant to counsel’s analysis; keep unnecessary personal information out of the report.",
+      "additionalProperties": true
+    }
+  },
+  "$comment": "The host must validate nested source descriptors against its actual DTOs. This specification deliberately does not fabricate production API shapes."
+}

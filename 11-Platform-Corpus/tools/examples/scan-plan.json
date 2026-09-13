@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.1.0",
+  "purpose": "exhaustive_scan_plan",
+  "character_unit": "unicode_code_points",
+  "document_manifest": [
+    {
+      "document_id": "synthetic-doc-1",
+      "matter_id": "synthetic-evaluation-only",
+      "access_scope": "synthetic-team",
+      "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "source_version": "fixture-v1",
+      "expected_page_count": 2
+    }
+  ],
+  "document_count": 1,
+  "expected_pages": 2,
+  "complete_extraction_pages": 1,
+  "extraction_gaps": [
+    {
+      "document_id": "synthetic-doc-1",
+      "page": 2,
+      "extraction_status": "unreadable",
+      "text_characters": 0,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "page_manifest": [
+    {
+      "document_id": "synthetic-doc-1",
+      "page": 1,
+      "extraction_status": "complete",
+      "text_characters": 85,
+      "text_sha256": "63bcd8ed90f3857a65bd8a68a6d44406063108078e82dd32e4301b7086a4e2b6"
+    },
+    {
+      "document_id": "synthetic-doc-1",
+      "page": 2,
+      "extraction_status": "unreadable",
+      "text_characters": 0,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "chunk_count": 1,
+  "chunks": [
+    {
+      "chunk_id": "chunk-ec867c6100f2725e68c317e9",
+      "document_id": "synthetic-doc-1",
+      "matter_id": "synthetic-evaluation-only",
+      "access_scope": "synthetic-team",
+      "source_version": "fixture-v1",
+      "source_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "page": 1,
+      "start_character": 0,
+      "end_character": 85,
+      "text_sha256": "63bcd8ed90f3857a65bd8a68a6d44406063108078e82dd32e4301b7086a4e2b6",
+      "text": "SYNTHETIC ENGINEERING FIXTURE. Witness A said: I do not recall receiving that notice."
+    }
+  ],
+  "duplicate_candidates": [],
+  "dedup_policy": "Candidates only; preserve every matter, access scope, original and source version.",
+  "plan_sha256": "63a1d55c4e021ab9b3d54d2af58435d47f753a9a5a9d46c1ae54edc9622ccc6e"
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:seeger-weiss:agent-input:matter-orchestrator:1",
+  "title": "Matter research workstream coordinator intake contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "matter_brief",
+    "authorized_source_manifest",
+    "capability_registry",
+    "run_policy"
+  ],
+  "properties": {
+    "matter_brief": {
+      "type": "object",
+      "description": "Question, intended audience/use, jurisdiction, product/entity scope and date boundary.",
+      "additionalProperties": true
+    },
+    "authorized_source_manifest": {
+      "type": "array",
+      "description": "Matter-scoped document and source identities, permissions and available versions.",
+      "items": {
+        "type": "object",
+        "description": "Source/record descriptor; resolve its identity, access and content via a host-validated adapter."
+      }
+    },
+    "capability_registry": {
+      "type": "object",
+      "description": "Host-verified agent/tool bindings, enabled models and access limits; no inferred dispatch capability.",
+      "additionalProperties": true
+    },
+    "run_policy": {
+      "type": "object",
+      "description": "Concurrency limits, retrieval/cost budget, cancellation, review requirements and allowed output actions.",
+      "additionalProperties": true
+    }
+  },
+  "$comment": "The host must validate nested source descriptors against its actual DTOs. This specification deliberately does not fabricate production API shapes."
+}

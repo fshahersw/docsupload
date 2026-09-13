@@ -1,0 +1,24 @@
+{
+  "complete": false,
+  "expected_chunks": 1,
+  "completed_chunks": 1,
+  "coverage_fraction": 1.0,
+  "extraction_gaps": [
+    {
+      "document_id": "synthetic-doc-1",
+      "page": 2,
+      "extraction_status": "unreadable",
+      "text_characters": 0,
+      "text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "unfinished_chunk_ids": [],
+  "retry_chunk_ids": [],
+  "exhausted_chunk_ids": [],
+  "pending_chunk_ids": [],
+  "attempts_logged": 1,
+  "plan_sha256": "63a1d55c4e021ab9b3d54d2af58435d47f753a9a5a9d46c1ae54edc9622ccc6e",
+  "matches_expected_plan": true,
+  "source_bytes_verified": false,
+  "interpretation": "Processing coverage within caller-declared scope only. Source file bytes and extraction status were not independently checked; a completed model call is not an accuracy assessment."
+}

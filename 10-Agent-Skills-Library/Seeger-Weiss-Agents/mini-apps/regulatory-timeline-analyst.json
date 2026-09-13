@@ -1,0 +1,118 @@
+{
+  "id": "regulatory-timeline-analyst-review",
+  "title": "Historical regulatory and labeling record",
+  "readiness": "Mini-app interface specification",
+  "implemented": false,
+  "route": null,
+  "launch_mode": "Explicit user run; no scheduler or upload listener installed",
+  "input_form_schema_ref": "10-Agent-Skills-Library/Seeger-Weiss-Agents/contracts/regulatory-timeline-analyst.input.schema.json",
+  "result_schema_ref": "10-Agent-Skills-Library/Seeger-Weiss-Agents/contracts/regulatory-timeline-analyst.output.schema.json",
+  "views": [
+    {
+      "id": "date-aware-matrix",
+      "label": "Date-aware matrix"
+    },
+    {
+      "id": "version-comparison",
+      "label": "Version comparison"
+    },
+    {
+      "id": "agency-actions",
+      "label": "Agency actions"
+    },
+    {
+      "id": "source-context",
+      "label": "Source context"
+    }
+  ],
+  "table_columns": [
+    {
+      "key": "product_id",
+      "label": "Product id",
+      "description": "Resolved or explicitly provisional product identity.",
+      "type": "string"
+    },
+    {
+      "key": "source_kind",
+      "label": "Source kind",
+      "description": "Code, rulemaking, label, decision, petition, guidance or other source.",
+      "type": "string"
+    },
+    {
+      "key": "provision_or_action",
+      "label": "Provision or action",
+      "description": "Exact provision or action identifier.",
+      "type": "string"
+    },
+    {
+      "key": "snapshot_date",
+      "label": "Snapshot date",
+      "description": "Currency of the actual source text.",
+      "type": "nullable_string"
+    },
+    {
+      "key": "publication_date",
+      "label": "Publication date",
+      "description": "Source publication date.",
+      "type": "nullable_string"
+    },
+    {
+      "key": "effective_date",
+      "label": "Effective date",
+      "description": "Expressly sourced legal effective date.",
+      "type": "nullable_string"
+    },
+    {
+      "key": "compliance_date",
+      "label": "Compliance date",
+      "description": "Separate delayed compliance date if present.",
+      "type": "nullable_string"
+    },
+    {
+      "key": "version_change",
+      "label": "Version change",
+      "description": "What changed and what remains unresolved.",
+      "type": "string"
+    },
+    {
+      "key": "scope_and_exceptions",
+      "label": "Scope and exceptions",
+      "description": "Applicability constraints and parent context.",
+      "type": "string"
+    }
+  ],
+  "shared_views": [
+    "Coverage and failures",
+    "Source requests",
+    "Draft export"
+  ],
+  "actions": [
+    {
+      "id": "run",
+      "label": "Run scoped analysis",
+      "handler": null,
+      "enabled": false,
+      "requires": "Verified host agent and source adapters"
+    },
+    {
+      "id": "open_source",
+      "label": "Open source",
+      "handler": null,
+      "enabled": false,
+      "requires": "Authorized source resolver and safe viewer"
+    },
+    {
+      "id": "export",
+      "label": "Export draft table",
+      "handler": null,
+      "enabled": false,
+      "requires": "Bound artifact writer with source rights and spreadsheet-cell sanitization"
+    }
+  ],
+  "accessibility": [
+    "Semantic table with keyboard-accessible source links",
+    "Status labels in text, not color alone",
+    "Announce progress and errors; preserve focus when results refresh"
+  ],
+  "host_integration_note": "UI contract only. Reuse the platform shell and tested components; paths, handlers, server DTOs and persistence require verified host integration."
+}

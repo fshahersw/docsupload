@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:seeger-weiss:agent-input:source-registrar:1",
+  "title": "Source intake and provenance review intake contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "candidate_sources",
+    "intended_use",
+    "policy_and_rights_evidence"
+  ],
+  "properties": {
+    "candidate_sources": {
+      "type": "array",
+      "description": "Official URLs, supplied files or repository/commit identifiers and stated acquisition purpose.",
+      "items": {
+        "type": "object",
+        "description": "Source/record descriptor; resolve its identity, access and content via a host-validated adapter."
+      }
+    },
+    "intended_use": {
+      "type": "object",
+      "description": "Internal lookup, copy, transformation, redistribution or commercial use, with the intended audience.",
+      "additionalProperties": true
+    },
+    "policy_and_rights_evidence": {
+      "type": "array",
+      "description": "Readable terms/license/notice/access-policy evidence; empty input means rights unresolved.",
+      "items": {
+        "type": "object",
+        "description": "Source/record descriptor; resolve its identity, access and content via a host-validated adapter."
+      }
+    },
+    "existing_manifest": {
+      "type": "array",
+      "description": "Current source hashes, canonical identities and provenance for overlap comparison.",
+      "items": {
+        "type": "object",
+        "description": "Source/record descriptor; resolve its identity, access and content via a host-validated adapter."
+      }
+    }
+  },
+  "$comment": "The host must validate nested source descriptors against its actual DTOs. This specification deliberately does not fabricate production API shapes."
+}

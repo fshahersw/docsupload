@@ -1,0 +1,14 @@
+{
+  "finding_count": 1,
+  "literal_quotes_verified": 0,
+  "literal_grounding_passed": false,
+  "findings_without_verified_quotes": [
+    "synthetic-finding-1"
+  ],
+  "empty_ledger": false,
+  "issues": [],
+  "legal_support_evaluated": false,
+  "citation_treatment_evaluated": false,
+  "source_bytes_verified": false,
+  "interpretation": "Literal matching against supplied page text only. Source bytes and caller-declared extraction status are not independently checked. A matching quote may not support the claimed proposition."
+}

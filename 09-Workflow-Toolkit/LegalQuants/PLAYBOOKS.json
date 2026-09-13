@@ -1,0 +1,122 @@
+[
+  {
+    "source_path": "skills/playbooks/dpa-gdpr/playbook.yaml",
+    "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/skills/playbooks/dpa-gdpr/playbook.yaml",
+    "sha256": "e4c12bf99082dbec5c27733bf3dd6b2702cace98b2a5f0cb18069dd5102da7b2",
+    "name": "DPA — GDPR (controller-to-processor)",
+    "contract_type": "DPA-GDPR",
+    "version": "1.0.0",
+    "position_count": 8,
+    "positions": [
+      "Processor Obligations (GDPR Article 28(3))",
+      "Security of Processing (GDPR Article 32)",
+      "Personal Data Breach Notification (GDPR Article 33)",
+      "International Transfers (GDPR Chapter V)",
+      "Sub-processor Engagement (GDPR Article 28(2))",
+      "Audit Rights (GDPR Article 28(3)(h))",
+      "Deletion or Return of Personal Data (GDPR Article 28(3)(g))",
+      "DSAR Cooperation (GDPR Article 28(3)(e))"
+    ],
+    "description": "Data Processing Addendum playbook for controller-to-processor\nrelationships under the EU GDPR and UK GDPR, written from the\ncontroller's perspective. Covers the eight positions that most\ncommonly determine whether a DPA satisfies Article 28(3) and\nrelated GDPR obligations: processor obligations, security of\nprocessing (Art. 32), personal data breach notification (Art. 33),\ninternational transfers (Chapter V), sub-processor engagement,\naudit rights, deletion or return of personal data, and assistance\nwith data subject rights requests.\n\n**This playbook is a starting point, not a vetted template, and\nit is not legal advice.** The LQ.AI maintainer team has not\nreviewed or validated the positions, fallback tiers, or redline\nstrategies below — they were drafted from public references\n(European Commission SCCs Module 2; EDPB guidelines) as a\nhead-start for in-house counsel installing LQ.AI. GDPR\ncompliance is fact-intensive and jurisdiction-specific; you must\nreview every position against your organization's processing\nactivities and the current state of regulatory guidance before\nrelying on this playbook. Fork it, customize it, or replace it\nentirely. Use of this playbook does not establish an attorney-\nclient relationship with LegalQuants or any contributor.\n",
+    "copied": false,
+    "status": "catalog_only_pending_upstream_reference_provenance",
+    "reason": "SaaS/commercial cite CC BY third-party templates without exact version mapping; DPA cites EU public materials. Preserve original notices and verify any incorporated source terms before redistribution."
+  },
+  {
+    "source_path": "skills/playbooks/msa-commercial-purchase/playbook.yaml",
+    "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/skills/playbooks/msa-commercial-purchase/playbook.yaml",
+    "sha256": "f72a67fef134d72b1d07513a782bb4d096be0b7fc0f1837cdf703a05106d88b4",
+    "name": "MSA — Commercial Services (purchase-side)",
+    "contract_type": "MSA-Commercial-Purchase",
+    "version": "1.0.0",
+    "position_count": 10,
+    "positions": [
+      "Acceptance (criteria, period, deemed acceptance)",
+      "Warranties (services, deliverables, non-infringement)",
+      "Indemnification (IP, third-party claims, mutual conduct)",
+      "Limitation of Liability",
+      "Intellectual Property Allocation (work product, background IP, license-back)",
+      "Change Orders (process, pricing, dispute resolution)",
+      "Payment Terms (currency, net days, late fees, withholding)",
+      "Termination for Cause",
+      "Termination for Convenience",
+      "Governing Law and Venue"
+    ],
+    "description": "Master Services Agreement playbook for commercial services and\ndeliverables purchases, written from the customer / purchaser's\nperspective. Covers the ten positions that most commonly\ndetermine whether a commercial-services MSA is fit for purpose:\nacceptance, warranties, indemnification, limitation of liability,\nintellectual property allocation, change orders, payment terms,\ntermination for cause, termination for convenience, and governing\nlaw and venue.\n\n**This playbook is a starting point, not a vetted template, and\nit is not legal advice.** The LQ.AI maintainer team has not\nreviewed or validated the positions, fallback tiers, or redline\nstrategies below — they were drafted from public templates\n(Common Paper, adapted to the purchase side) and standard\nmid-market commercial-purchase positions as a head-start for in-\nhouse counsel installing LQ.AI. You must review every position\nagainst your organization's standards and the applicable\njurisdiction before relying on this playbook for client work.\nFork it, customize it, or replace it entirely. Use of this\nplaybook does not establish an attorney-client relationship\nwith LegalQuants or any contributor.\n",
+    "copied": false,
+    "status": "catalog_only_pending_upstream_reference_provenance",
+    "reason": "SaaS/commercial cite CC BY third-party templates without exact version mapping; DPA cites EU public materials. Preserve original notices and verify any incorporated source terms before redistribution."
+  },
+  {
+    "source_path": "skills/playbooks/msa-saas/playbook.yaml",
+    "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/skills/playbooks/msa-saas/playbook.yaml",
+    "sha256": "b9033468d128b5022d6ab7cb09e11c5719ab6e02488f8b9ff3dac486dc7b2975",
+    "name": "MSA — SaaS (customer-perspective)",
+    "contract_type": "MSA-SaaS",
+    "version": "1.0.0",
+    "position_count": 11,
+    "positions": [
+      "Service Level Agreement (uptime and remedies)",
+      "Security Commitments (controls and certifications)",
+      "Data Handling and Privacy",
+      "Intellectual Property Allocation",
+      "Limitation of Liability",
+      "Indemnification",
+      "Termination",
+      "Audit Rights",
+      "Payment Terms",
+      "Governing Law and Venue",
+      "Change Management (price increases and material changes)"
+    ],
+    "description": "Master Services Agreement playbook for general SaaS subscriptions,\nwritten from the customer's perspective. Covers the eleven\npositions most likely to determine whether a SaaS MSA is fit for\npurpose: service levels, security commitments, data handling,\nintellectual property allocation, limitation of liability,\nindemnification, termination, audit rights, payment terms,\ngoverning law, and change management.\n\n**This playbook is a starting point, not a vetted template, and it\nis not legal advice.** The LQ.AI maintainer team has not reviewed\nor validated the positions, fallback tiers, or redline strategies\nbelow — they were drafted from public templates (Common Paper\nCC-BY-4.0; Bonterms CC-BY-4.0) as a head-start for in-house counsel\ninstalling LQ.AI. You must review every position against your\norganization's standards and the applicable jurisdiction before\nrelying on this playbook for client work. Fork it, customize it,\nor replace it entirely. Use of this playbook does not establish\nan attorney-client relationship with LegalQuants or any\ncontributor.\n",
+    "copied": false,
+    "status": "catalog_only_pending_upstream_reference_provenance",
+    "reason": "SaaS/commercial cite CC BY third-party templates without exact version mapping; DPA cites EU public materials. Preserve original notices and verify any incorporated source terms before redistribution."
+  },
+  {
+    "source_path": "skills/playbooks/nda-unilateral/playbook.yaml",
+    "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/skills/playbooks/nda-unilateral/playbook.yaml",
+    "sha256": "c2af09cd8ca826a7b5c547bdaf2cb51e2d57aec6604d78297696b92669527aa8",
+    "name": "NDA — Unilateral (Discloser-favorable)",
+    "contract_type": "NDA-unilateral",
+    "version": "1.0.0",
+    "position_count": 8,
+    "positions": [
+      "Definition of Confidential Information",
+      "Permitted Disclosures",
+      "Term",
+      "Survival of Confidentiality Obligations",
+      "Carveouts",
+      "Remedies and Injunctive Relief",
+      "Governing Law and Venue",
+      "Return or Destruction of Confidential Information"
+    ],
+    "description": "Unilateral non-disclosure agreement playbook for contexts where the\noperator is the Disclosing Party. Calibrated to obtain stronger\nReceiving-Party obligations than a mutual NDA would: broader CI\ndefinition, narrower permitted disclosures, longer survival, stricter\nreturn / destruction. Positions and severities reflect the asymmetry —\nwhat's \"medium\" in a mutual NDA may be \"high\" here because the\nDisclosing Party bears all the downside.\n\n**This playbook is a starting point, not a vetted template, and it\nis not legal advice.** The LQ.AI maintainer team has not reviewed\nor validated the positions, fallback tiers, or redline strategies\nbelow — they were drafted as one reasonable market position to\ngive in-house counsel a head-start. You must apply your own\nprofessional judgment, review every position against your\norganization's standards and the applicable jurisdiction before\nrelying on this playbook for client work, and seek licensed\ncounsel for jurisdiction-specific or transaction-specific\nvariance. Fork it, customize it, or replace it entirely. Use of\nthis playbook does not establish an attorney-client relationship\nwith LegalQuants or any contributor.\n",
+    "copied": true,
+    "status": "authored_unvetted_starter",
+    "reason": null
+  },
+  {
+    "source_path": "skills/playbooks/nda/playbook.yaml",
+    "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/skills/playbooks/nda/playbook.yaml",
+    "sha256": "dcd932154136d31b69099c62c7c38c2400b3a622d6422cad79f40b885e945da0",
+    "name": "NDA — Mutual",
+    "contract_type": "NDA",
+    "version": "1.0.0",
+    "position_count": 8,
+    "positions": [
+      "Definition of Confidential Information",
+      "Permitted Disclosures",
+      "Term",
+      "Survival of Confidentiality Obligations",
+      "Carveouts",
+      "Remedies and Injunctive Relief",
+      "Governing Law and Venue",
+      "Return or Destruction of Confidential Information"
+    ],
+    "description": "Mutual non-disclosure agreement playbook covering the eight positions\nmost likely to determine whether an NDA is fit for purpose: definition\nof confidential information, permitted disclosures, term, survival,\ncarveouts, remedies, governing law, and return / destruction.\n\n**This playbook is a starting point, not a vetted template, and it\nis not legal advice.** The LQ.AI maintainer team has not reviewed\nor validated the positions, fallback tiers, or redline strategies\nbelow — they were drafted as one reasonable market position to\ngive in-house counsel a head-start. You must apply your own\nprofessional judgment, review every position against your\norganization's standards and the applicable jurisdiction before\nrelying on this playbook for client work, and seek licensed\ncounsel for jurisdiction-specific or transaction-specific\nvariance. Fork it, customize it, or replace it entirely. Use of\nthis playbook does not establish an attorney-client relationship\nwith LegalQuants or any contributor.\n",
+    "copied": true,
+    "status": "authored_unvetted_starter",
+    "reason": null
+  }
+]

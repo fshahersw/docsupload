@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0.0",
+  "target": "testing.seegerweiss.com",
+  "deployment_performed": false,
+  "rules": [
+    {
+      "path": "10-Agent-Skills-Library/catalog.json",
+      "purpose": "Explicit skill/role selection",
+      "legal_kb_ingestion_allowed": false
+    },
+    {
+      "path": "10-Agent-Skills-Library/instructions/",
+      "purpose": "Versioned host configuration only after deliberate selection",
+      "legal_kb_ingestion_allowed": false
+    },
+    {
+      "path": "11-Platform-Corpus/SOURCE-REGISTRY.json",
+      "purpose": "Source discovery; acquire/verify individual licensed source artifacts separately",
+      "legal_kb_ingestion_allowed": false
+    },
+    {
+      "path": "11-Platform-Corpus/provenance/",
+      "purpose": "Developer provenance and rights review",
+      "legal_kb_ingestion_allowed": false
+    },
+    {
+      "path": "11-Platform-Corpus/integration/",
+      "purpose": "Private developer implementation mapping",
+      "legal_kb_ingestion_allowed": false
+    },
+    {
+      "path": "11-Platform-Corpus/tools/",
+      "purpose": "Engineering utilities and synthetic fixtures",
+      "legal_kb_ingestion_allowed": false
+    },
+    {
+      "path": "10-Agent-Skills-Library/Seeger-Weiss-Agents/evals/",
+      "purpose": "Synthetic model acceptance cases, not matter facts",
+      "legal_kb_ingestion_allowed": false
+    },
+    {
+      "path": "07-Settlement-References/catalog/catalog.json",
+      "purpose": "Attributed settlement/refund source discovery and comparison; preserve publisher assertions and dated reviewed overlays",
+      "legal_kb_ingestion_allowed": false,
+      "separate_discovery_index_allowed": true,
+      "primary_authority": false,
+      "registration": "07-Settlement-References/catalog/CORPUS-REGISTRATION.json"
+    },
+    {
+      "path": "07-Settlement-References/catalog/publisher-feed.json",
+      "purpose": "Byte-preserved source snapshot for audit and refresh comparison; not agent instructions",
+      "legal_kb_ingestion_allowed": false
+    },
+    {
+      "path": "07-Settlement-References/catalog/provenance/",
+      "purpose": "Snapshot audit and developer provenance; no legal authority or executable instructions",
+      "legal_kb_ingestion_allowed": false
+    }
+  ],
+  "legal_document_admission_requires": [
+    "Stable document ID and original-byte hash",
+    "Authorized principal, matter and source scope",
+    "Artifact-specific rights decision",
+    "Jurisdiction and source authority identity",
+    "Publication/revision/effective and captured dates kept distinct",
+    "Expected page/section inventory and extraction status",
+    "Stable pinpoint locators",
+    "Source text treated as data rather than tool/system instructions"
+  ],
+  "prohibited_inferences": [
+    "File presence implies server availability",
+    "HTTP success implies authentic legal content",
+    "Citation existence implies proposition support",
+    "Graph edge implies negative treatment",
+    "Passing schema implies model accuracy",
+    "Provider verified flag implies independent verification"
+  ]
+}

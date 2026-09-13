@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:seeger-weiss:agent-input:treatment-analyst:1",
+  "title": "Authority treatment and lineage intake contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "target_authorities",
+    "jurisdiction_and_as_of",
+    "citing_candidates"
+  ],
+  "properties": {
+    "target_authorities": {
+      "type": "array",
+      "description": "Canonical cited cases and the particular propositions or holdings at issue.",
+      "items": {
+        "type": "object",
+        "description": "Source/record descriptor; resolve its identity, access and content via a host-validated adapter."
+      }
+    },
+    "jurisdiction_and_as_of": {
+      "type": "object",
+      "description": "Controlling court and requested research cutoff.",
+      "additionalProperties": true
+    },
+    "citing_candidates": {
+      "type": "array",
+      "description": "Available citation edges or search results with search/snapshot provenance; empty input means no treatment findings.",
+      "items": {
+        "type": "object",
+        "description": "Source/record descriptor; resolve its identity, access and content via a host-validated adapter."
+      }
+    },
+    "coverage_budget": {
+      "type": "object",
+      "description": "Permitted corpus, live retrieval authorization, candidate cap and prioritization policy.",
+      "additionalProperties": true
+    }
+  },
+  "$comment": "The host must validate nested source descriptors against its actual DTOs. This specification deliberately does not fabricate production API shapes."
+}

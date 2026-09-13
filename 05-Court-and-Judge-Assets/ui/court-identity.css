@@ -1,0 +1,8 @@
+.court-identity { display: inline-flex; align-items: center; gap: 10px; min-width: 0; color: inherit; }
+.court-identity__image { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; background: #f5f7f9; border: 1px solid #d8e0e7; border-radius: 6px; padding: 4px; overflow: hidden; }
+.court-identity__image--compact { width: 40px; height: 40px; }
+.court-identity__image--wordmark { width: 184px; height: 64px; padding: 8px; }
+.court-identity__image--dark { background: #12344a; border-color: #12344a; }
+.court-identity__image img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.court-identity__fallback { color: #334e63; font: 600 10px/1.2 system-ui, sans-serif; letter-spacing: .02em; overflow-wrap: anywhere; text-align: center; }
+.court-identity__name { font: inherit; font-weight: 500; line-height: 1.35; }

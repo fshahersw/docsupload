@@ -1,0 +1,112 @@
+{
+  "id": "treatment-analyst-review",
+  "title": "Authority treatment and lineage",
+  "readiness": "Mini-app interface specification",
+  "implemented": false,
+  "route": null,
+  "launch_mode": "Explicit user run; no scheduler or upload listener installed",
+  "input_form_schema_ref": "10-Agent-Skills-Library/Seeger-Weiss-Agents/contracts/treatment-analyst.input.schema.json",
+  "result_schema_ref": "10-Agent-Skills-Library/Seeger-Weiss-Agents/contracts/treatment-analyst.output.schema.json",
+  "views": [
+    {
+      "id": "treatment-by-issue",
+      "label": "Treatment by issue"
+    },
+    {
+      "id": "authority-lineage",
+      "label": "Authority lineage"
+    },
+    {
+      "id": "citing-set-coverage",
+      "label": "Citing-set coverage"
+    },
+    {
+      "id": "citing-passage",
+      "label": "Citing passage"
+    }
+  ],
+  "table_columns": [
+    {
+      "key": "target_authority_id",
+      "label": "Target authority id",
+      "description": "Authority being examined.",
+      "type": "string"
+    },
+    {
+      "key": "proposition",
+      "label": "Proposition",
+      "description": "Specific issue affected.",
+      "type": "string"
+    },
+    {
+      "key": "citing_authority_id",
+      "label": "Citing authority id",
+      "description": "Later authority identity.",
+      "type": "string"
+    },
+    {
+      "key": "citing_court",
+      "label": "Citing court",
+      "description": "Court and hierarchy relationship to target.",
+      "type": "string"
+    },
+    {
+      "key": "decision_date",
+      "label": "Decision date",
+      "description": "Sourced later decision date.",
+      "type": "nullable_string"
+    },
+    {
+      "key": "treatment_observation",
+      "label": "Treatment observation",
+      "description": "Contextual classification or unresolved.",
+      "type": "string"
+    },
+    {
+      "key": "scope_limit",
+      "label": "Scope limit",
+      "description": "Issue, jurisdiction and quotation/adoption limitations.",
+      "type": "string"
+    },
+    {
+      "key": "research_as_of",
+      "label": "Research as of",
+      "description": "Actual source cutoff.",
+      "type": "string"
+    }
+  ],
+  "shared_views": [
+    "Coverage and failures",
+    "Source requests",
+    "Draft export"
+  ],
+  "actions": [
+    {
+      "id": "run",
+      "label": "Run scoped analysis",
+      "handler": null,
+      "enabled": false,
+      "requires": "Verified host agent and source adapters"
+    },
+    {
+      "id": "open_source",
+      "label": "Open source",
+      "handler": null,
+      "enabled": false,
+      "requires": "Authorized source resolver and safe viewer"
+    },
+    {
+      "id": "export",
+      "label": "Export draft table",
+      "handler": null,
+      "enabled": false,
+      "requires": "Bound artifact writer with source rights and spreadsheet-cell sanitization"
+    }
+  ],
+  "accessibility": [
+    "Semantic table with keyboard-accessible source links",
+    "Status labels in text, not color alone",
+    "Announce progress and errors; preserve focus when results refresh"
+  ],
+  "host_integration_note": "UI contract only. Reuse the platform shell and tested components; paths, handlers, server DTOs and persistence require verified host integration."
+}

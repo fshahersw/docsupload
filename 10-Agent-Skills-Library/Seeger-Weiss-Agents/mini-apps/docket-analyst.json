@@ -1,0 +1,118 @@
+{
+  "id": "docket-analyst-review",
+  "title": "Docket coverage and case posture",
+  "readiness": "Mini-app interface specification",
+  "implemented": false,
+  "route": null,
+  "launch_mode": "Explicit user run; no scheduler or upload listener installed",
+  "input_form_schema_ref": "10-Agent-Skills-Library/Seeger-Weiss-Agents/contracts/docket-analyst.input.schema.json",
+  "result_schema_ref": "10-Agent-Skills-Library/Seeger-Weiss-Agents/contracts/docket-analyst.output.schema.json",
+  "views": [
+    {
+      "id": "coverage-table",
+      "label": "Coverage table"
+    },
+    {
+      "id": "changes-since-snapshot",
+      "label": "Changes since snapshot"
+    },
+    {
+      "id": "operative-orders",
+      "label": "Operative orders"
+    },
+    {
+      "id": "source-preview",
+      "label": "Source preview"
+    }
+  ],
+  "table_columns": [
+    {
+      "key": "court_id",
+      "label": "Court id",
+      "description": "Official court identity.",
+      "type": "string"
+    },
+    {
+      "key": "docket_number",
+      "label": "Docket number",
+      "description": "Exact docket number, separate for every proceeding.",
+      "type": "string"
+    },
+    {
+      "key": "entry_id",
+      "label": "Entry id",
+      "description": "Provider or source entry identity; not a cross-docket key by itself.",
+      "type": "string"
+    },
+    {
+      "key": "filed_date",
+      "label": "Filed date",
+      "description": "Filing date as recorded, without guessing missing timezone.",
+      "type": "nullable_string"
+    },
+    {
+      "key": "record_kind",
+      "label": "Record kind",
+      "description": "Motion, order, notice, exhibit or other documented type.",
+      "type": "string"
+    },
+    {
+      "key": "document_status",
+      "label": "Document status",
+      "description": "Retrieved and read, metadata only, unread, failed, restricted or unavailable.",
+      "type": "string"
+    },
+    {
+      "key": "effect_and_scope",
+      "label": "Effect and scope",
+      "description": "Source-supported procedural effect and affected issue/proceedings.",
+      "type": "string"
+    },
+    {
+      "key": "supersedes_row_ids",
+      "label": "Supersedes row ids",
+      "description": "Prior rows affected by an expressly supported amendment or vacatur.",
+      "type": "array"
+    },
+    {
+      "key": "capture_as_of",
+      "label": "Capture as of",
+      "description": "Actual retrieval/snapshot time, distinct from filing date.",
+      "type": "string"
+    }
+  ],
+  "shared_views": [
+    "Coverage and failures",
+    "Source requests",
+    "Draft export"
+  ],
+  "actions": [
+    {
+      "id": "run",
+      "label": "Run scoped analysis",
+      "handler": null,
+      "enabled": false,
+      "requires": "Verified host agent and source adapters"
+    },
+    {
+      "id": "open_source",
+      "label": "Open source",
+      "handler": null,
+      "enabled": false,
+      "requires": "Authorized source resolver and safe viewer"
+    },
+    {
+      "id": "export",
+      "label": "Export draft table",
+      "handler": null,
+      "enabled": false,
+      "requires": "Bound artifact writer with source rights and spreadsheet-cell sanitization"
+    }
+  ],
+  "accessibility": [
+    "Semantic table with keyboard-accessible source links",
+    "Status labels in text, not color alone",
+    "Announce progress and errors; preserve focus when results refresh"
+  ],
+  "host_integration_note": "UI contract only. Reuse the platform shell and tested components; paths, handlers, server DTOs and persistence require verified host integration."
+}

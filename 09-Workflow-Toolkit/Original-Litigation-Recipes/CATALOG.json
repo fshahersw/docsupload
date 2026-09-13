@@ -1,0 +1,362 @@
+[
+  {
+    "id": "court-filing-readiness",
+    "title": "Court filing readiness packet",
+    "roles": [
+      "Managing clerk",
+      "Litigation paralegal",
+      "Filing attorney"
+    ],
+    "purpose": "Build a source-linked checklist of the specific form, court and judge requirements for a proposed filing.",
+    "inputs": [
+      "court and judge identifiers",
+      "case type and posture",
+      "proposed filing and attachments",
+      "intended filing date",
+      "applicable standing/case-management orders"
+    ],
+    "steps": [
+      "Resolve the court and judge against the library roster; report an unresolved identity instead of substituting a similarly named court.",
+      "Collect applicable court-wide rules, judge practices, case orders and form instructions; record document date and source version separately.",
+      "Extract requirements into categories: document/form, format, exhibits, service, sealing, proposed order and filing procedure. Each requirement needs a quote and exact source locator.",
+      "Compare the draft against measurable requirements only when the source and document structure support a check. Label unavailable formatting/word-count checks explicitly.",
+      "Expose potentially conflicting instructions with their issuing authority and dates for counsel to resolve. Require live official-source confirmation for a dated library copy.",
+      "Create a review checklist and selected source packet; never compute deadlines or file automatically."
+    ],
+    "outputs": [
+      "requirement × source × draft-location matrix",
+      "missing-source/material list",
+      "selected original court documents",
+      "review and disposition log"
+    ],
+    "references": [
+      "00-Catalog/DOCUMENTS.csv",
+      "00-Catalog/MATTERS-INTEGRATION.md",
+      "RULES.html"
+    ],
+    "tests": [
+      "wrong district with similar court name",
+      "judge practices older than a case order",
+      "scanned exhibit formatting unavailable",
+      "settlement notice rejected as generic form"
+    ],
+    "status": "Implementation recipe; requires a host runtime, source adapters and legal evaluation.",
+    "authorship": "Original specification prepared for this library; not an upstream LegalQuants file.",
+    "evidence_contract": "evidence-contract.json"
+  },
+  {
+    "id": "authority-and-version-review",
+    "title": "Authority and version review",
+    "roles": [
+      "Research attorney",
+      "Brief writer",
+      "Supervising partner"
+    ],
+    "purpose": "Audit a draft proposition and citation against the actual authority text, relevant date and jurisdiction.",
+    "inputs": [
+      "draft propositions with citations",
+      "question presented",
+      "jurisdiction and relevant date",
+      "source documents or authorized legal-research connectors"
+    ],
+    "steps": [
+      "List each legal proposition separately from the citation strings; retain uncited propositions as unresolved candidates.",
+      "Resolve citations to exact records. For ambiguous citations such as duplicate source section numbers, present all candidates with headings and source versions.",
+      "Retrieve the complete provision/opinion context and exceptions needed for the proposition. A search-result snippet is a lead, not the authority.",
+      "Verify quoted text, then assess proposition support separately. Identify parenthetical omissions, negative predicates and quoted language from a dissent or cited party.",
+      "Record effective dates, amendments, historical stubs and jurisdictional limits. Describe any treatment result as bounded by the sources and checks actually performed.",
+      "Deliver an issue list with exact evidence and a proposed correction for attorney review; no automatic good-law or controlling-authority certification."
+    ],
+    "outputs": [
+      "proposition/quotation audit table",
+      "authority packet with versions",
+      "unverified or unsupported propositions",
+      "research coverage receipt"
+    ],
+    "references": [
+      "LAW.html",
+      "EXTENDED-LAW.html",
+      "06-Primary-Law/resolve_citation.py"
+    ],
+    "tests": [
+      "uncited factual assertion",
+      "zero assertions cannot pass an accuracy gate",
+      "FRCP versus Supplemental Rules numbering",
+      "negative-treatment source outside retrieved subset",
+      "NJ duplicate 34:15C-10",
+      "unsupported subsection locator"
+    ],
+    "status": "Implementation recipe; requires a host runtime, source adapters and legal evaluation.",
+    "authorship": "Original specification prepared for this library; not an upstream LegalQuants file.",
+    "evidence_contract": "evidence-contract.json"
+  },
+  {
+    "id": "deposition-evidence-map",
+    "title": "Deposition evidence map and chronology",
+    "roles": [
+      "Trial attorney",
+      "Litigation paralegal",
+      "Case team"
+    ],
+    "purpose": "Turn transcripts into a reviewable chronology, witness/entity map and potential admission list without losing testimony context.",
+    "inputs": [
+      "transcript originals with page/line mapping",
+      "witness and proceeding metadata",
+      "exhibits if available",
+      "case issue list"
+    ],
+    "steps": [
+      "Validate witness, date, volume and page-line coverage. Keep printed transcript page numbers distinct from PDF page indices.",
+      "Extract Q/A exchanges with the adjoining question, answer, objections, corrections and qualifications needed to understand each passage.",
+      "Identify actors with aliases but preserve separate identities until supporting evidence permits a merge. Do not infer plaintiff status merely because a name appears.",
+      "Separate event dates from testimony dates; preserve approximate dates, intervals, uncertainty and conflicting accounts.",
+      "Map assertions, exhibits and people using evidence-backed edges. A contradiction candidate must show the two passages and why they concern the same fact.",
+      "Label potential admissions and impeachment leads as review candidates; export by selected analysis type with precise page-line citations and a coverage receipt."
+    ],
+    "outputs": [
+      "chronology",
+      "witness/entity register",
+      "issue-to-testimony matrix",
+      "potential admissions with qualifications",
+      "graph edge evidence records"
+    ],
+    "references": [
+      "Original-Litigation-Recipes/evidence-contract.json"
+    ],
+    "tests": [
+      "same surname different people",
+      "question restates an unaccepted premise",
+      "objection followed by changed answer",
+      "errata modifying original testimony",
+      "ambiguous year",
+      "missing exhibits",
+      "two volumes both starting at page 1"
+    ],
+    "status": "Implementation recipe; requires a host runtime, source adapters and legal evaluation.",
+    "authorship": "Original specification prepared for this library; not an upstream LegalQuants file.",
+    "evidence_contract": "evidence-contract.json"
+  },
+  {
+    "id": "expert-methodology-review",
+    "title": "Expert methodology and record review",
+    "roles": [
+      "Expert team attorney",
+      "Trial attorney",
+      "Scientific analyst"
+    ],
+    "purpose": "Organize qualifications, methods, assumptions and record support for an expert review or examination outline.",
+    "inputs": [
+      "expert report/CV",
+      "cited literature and underlying data if authorized",
+      "relevant testimony",
+      "issue list and jurisdiction/date"
+    ],
+    "steps": [
+      "Inventory report claims and cited support. Distinguish materials actually supplied from references only mentioned in the report.",
+      "Map each material opinion to qualifications, method, input data, assumptions, limitations and application to the case.",
+      "Locate record support and contrary evidence with exact passages. Distinguish scientific association, causation claims and legal conclusions.",
+      "Retrieve the applicable expert-admissibility framework from a dated source, including FRE 702 when applicable; do not assume every jurisdiction uses the same standard.",
+      "Generate focused questions tied to an identified gap or disputed assumption, and identify materials needed to test it.",
+      "Produce a review draft separating demonstrable record discrepancies from counsel/technical judgments; do not issue an admissibility verdict."
+    ],
+    "outputs": [
+      "opinion/method/evidence matrix",
+      "missing-data register",
+      "exam outline with source anchors",
+      "jurisdiction-specific framework packet"
+    ],
+    "references": [
+      "LAW.html?query=FRE%20702",
+      "EXTENDED-LAW.html"
+    ],
+    "tests": [
+      "unavailable study underlying a claim",
+      "outdated CV",
+      "method described without underlying measurements",
+      "state standard differs from federal",
+      "contrary study not inspected"
+    ],
+    "status": "Implementation recipe; requires a host runtime, source adapters and legal evaluation.",
+    "authorship": "Original specification prepared for this library; not an upstream LegalQuants file.",
+    "evidence_contract": "evidence-contract.json"
+  },
+  {
+    "id": "plaintiff-record-completeness",
+    "title": "Plaintiff record and fact-sheet reconciliation",
+    "roles": [
+      "Plaintiff intake team",
+      "Case management team",
+      "Litigation paralegal"
+    ],
+    "purpose": "Reconcile a matter-approved fact-sheet schema with supporting records and identify missing or inconsistent information.",
+    "inputs": [
+      "court-approved or matter-approved fact-sheet schema/version",
+      "authorized plaintiff records",
+      "identity aliases with verified mappings",
+      "known required source list"
+    ],
+    "steps": [
+      "Freeze the specific fact-sheet version and field definitions. Do not substitute a generic MDL form or infer a required field from another litigation.",
+      "Match source documents to the correct plaintiff using verified identifiers; route uncertain or conflicting matches to review.",
+      "For each field, record the exact supporting passage, source date and normalized value separately from original wording.",
+      "Compare exposures, treatment dates, products, prescribers and injuries across sources while preserving uncertainty and contradictory records.",
+      "Mark blank/unknown/declined/not-applicable distinctly; absence in reviewed records is not proof the event did not occur.",
+      "Draft a completeness report and targeted follow-up questions. Require counsel review before sharing or populating a court filing."
+    ],
+    "outputs": [
+      "field-level support matrix",
+      "identity exceptions",
+      "missing-record checklist",
+      "conflict report",
+      "draft follow-up questions"
+    ],
+    "references": [
+      "00-Catalog/DOCUMENTS.csv"
+    ],
+    "tests": [
+      "two plaintiffs with similar names",
+      "date inferred only from filename",
+      "conflicting treatment dates",
+      "revised fact-sheet schema",
+      "record outside authorized matter",
+      "missing signature cannot be invented"
+    ],
+    "status": "Implementation recipe; requires a host runtime, source adapters and legal evaluation.",
+    "authorship": "Original specification prepared for this library; not an upstream LegalQuants file.",
+    "evidence_contract": "evidence-contract.json"
+  },
+  {
+    "id": "regulatory-record-matrix",
+    "title": "Drug and device regulatory evidence matrix",
+    "roles": [
+      "Mass-tort attorney",
+      "Expert support team",
+      "Document review team"
+    ],
+    "purpose": "Connect product, safety and quality records to a specifically selected regulatory reference without making automatic violation findings.",
+    "inputs": [
+      "product/device and relevant time period",
+      "document corpus",
+      "selected regulatory provisions",
+      "issues selected by counsel"
+    ],
+    "steps": [
+      "Identify the product category and relevant factual dates; show uncertainty rather than assume a regulatory pathway.",
+      "Select applicable candidate provisions by counsel-approved issue. Preserve the exact regulatory snapshot and parent scope/exceptions.",
+      "Extract statements about reports, events, investigations, controls and responsibilities with actor/date/source distinctions.",
+      "Construct requirement × evidence × gap rows. Treat missing records, contrary statements and potential noncompliance as separate findings.",
+      "Flag incorporated external standards as unavailable unless a lawfully provided copy is supplied; do not fill them in from memory.",
+      "Create source-linked expert/document-request questions and a review packet. Do not infer a private right of action, causation, or a violation from a text match."
+    ],
+    "outputs": [
+      "regulatory issue matrix",
+      "chronology of source events",
+      "incorporated-material gaps",
+      "expert questions and document-request leads"
+    ],
+    "references": [
+      "08-Extended-Primary-Law/Federal-Regulations/MANIFEST.json",
+      "EXTENDED-LAW.html"
+    ],
+    "tests": [
+      "current part 820 applied to earlier events",
+      "ISO text not supplied",
+      "reporting date versus event date",
+      "two formulations with similar product names",
+      "reserved regulation range",
+      "manufacturer knowledge not established"
+    ],
+    "status": "Implementation recipe; requires a host runtime, source adapters and legal evaluation.",
+    "authorship": "Original specification prepared for this library; not an upstream LegalQuants file.",
+    "evidence_contract": "evidence-contract.json"
+  },
+  {
+    "id": "privilege-review-candidates",
+    "title": "Privilege and confidentiality review candidates",
+    "roles": [
+      "Review attorney",
+      "Discovery counsel",
+      "Litigation support"
+    ],
+    "purpose": "Prioritize documents for privilege/confidentiality review and prepare a source-linked candidate log.",
+    "inputs": [
+      "matter-approved review protocol",
+      "authorized documents and families",
+      "participant roles if verified",
+      "governing jurisdiction and date"
+    ],
+    "steps": [
+      "Preserve document family relationships and identify missing attachments, incomplete email threads and inaccessible content.",
+      "Extract verified participants, roles, dates and source metadata; leave unknown values unresolved.",
+      "Identify passages that may warrant review under the provided protocol. Separate legal-advice content from business discussion and from mere attorney presence.",
+      "Record countervailing facts and sharing/waiver questions without deciding legal privilege automatically.",
+      "Produce a candidate log with non-substantive descriptions for counsel review; do not expose potentially privileged content in a public export.",
+      "Require an authorized reviewer to finalize dispositions and descriptions before production or withholding."
+    ],
+    "outputs": [
+      "review priority queue",
+      "candidate log",
+      "family-level exceptions",
+      "reviewer disposition history"
+    ],
+    "references": [
+      "Original-Litigation-Recipes/evidence-contract.json"
+    ],
+    "tests": [
+      "attorney copied only for business purpose",
+      "privilege banner without legal advice",
+      "missing attachment",
+      "mixed personal/business/legal discussion",
+      "unverified participant role"
+    ],
+    "status": "Implementation recipe; requires a host runtime, source adapters and legal evaluation.",
+    "authorship": "Original specification prepared for this library; not an upstream LegalQuants file.",
+    "evidence_contract": "evidence-contract.json"
+  },
+  {
+    "id": "evidence-grounded-brief-outline",
+    "title": "Evidence-grounded brief outline",
+    "roles": [
+      "Brief writer",
+      "Research attorney",
+      "Supervising partner"
+    ],
+    "purpose": "Build an argument outline with a separate evidence and authority checklist before drafting prose.",
+    "inputs": [
+      "issue/question presented",
+      "procedural posture and requested relief",
+      "authorized record excerpts",
+      "verified authority packet",
+      "court/judge requirements"
+    ],
+    "steps": [
+      "Map each required issue and requested conclusion into an outline before producing prose.",
+      "Attach exact record evidence to factual premises and actual authority text to legal propositions; retain adverse facts and contrary authority candidates.",
+      "Distinguish allegations, undisputed record facts and disputed testimony; never silently upgrade an allegation into an established fact.",
+      "Identify support gaps, authority version issues and preservation/standard-of-review questions for counsel.",
+      "Draft only from the approved outline and source set, with explicit placeholders where support remains absent.",
+      "Run a separate proposition and quotation review, then a court-format checklist; deliver an edit manifest and source receipt."
+    ],
+    "outputs": [
+      "argument outline",
+      "fact/authority support table",
+      "unsupported-premise list",
+      "draft with review annotations"
+    ],
+    "references": [
+      "LAW.html",
+      "RULES.html",
+      "TOOLKIT.html"
+    ],
+    "tests": [
+      "unsupported confident conclusion",
+      "adverse authority not addressed",
+      "quoted dissent attributed to majority",
+      "request to fabricate missing citation",
+      "draft source set changes mid-run"
+    ],
+    "status": "Implementation recipe; requires a host runtime, source adapters and legal evaluation.",
+    "authorship": "Original specification prepared for this library; not an upstream LegalQuants file.",
+    "evidence_contract": "evidence-contract.json"
+  }
+]

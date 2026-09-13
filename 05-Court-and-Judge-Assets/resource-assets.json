@@ -1,0 +1,26 @@
+{
+  "NAT:uscourts_national": {
+    "court_id": "NAT:uscourts_national",
+    "name": "United States Courts",
+    "homepage": "https://www.uscourts.gov/",
+    "directory_source": "https://www.uscourts.gov/forms-rules/current-rules-practice-procedure/federal-rules-evidence",
+    "visual_status": "court_mark",
+    "primary_asset_id": "asset_dae83ae4b5b10fcf",
+    "primary_asset_path": "images/da/dae83ae4b5b10fcf72dc30177383da2ce58017f5836c6db9c349d419039a54b0.png",
+    "primary_background": "light",
+    "primary_kind": "judiciary_logo",
+    "compact_asset_path": "images/da/dae83ae4b5b10fcf72dc30177383da2ce58017f5836c6db9c349d419039a54b0.png",
+    "compact_background": "light",
+    "primary_identity_scope": "shared_federal_judiciary_mark",
+    "primary_observed_on_single_registry_entry": true,
+    "asset_ids": [
+      "asset_dae83ae4b5b10fcf",
+      "asset_c8a4e14b31ec833c"
+    ],
+    "fallback_text": "USCOURTS_NATIONAL",
+    "permission_status": "not_established",
+    "last_retrieved_at": "2026-09-12T23:43:40.891284+00:00",
+    "collection_status": "downloaded",
+    "collection_errors": []
+  }
+}

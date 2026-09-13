@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:seeger-weiss:agent-input:adverse-event-analyst:1",
+  "title": "Post-market safety report review intake contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "product_event_scope",
+    "report_datasets",
+    "deduplication_protocol"
+  ],
+  "properties": {
+    "product_event_scope": {
+      "type": "object",
+      "description": "Product/formulation/device model, reviewed aliases, event terms and date definition.",
+      "additionalProperties": true
+    },
+    "report_datasets": {
+      "type": "array",
+      "description": "Authorized reports or slices with dataset version, source IDs and raw/normalized fields.",
+      "items": {
+        "type": "object",
+        "description": "Source/record descriptor; resolve its identity, access and content via a host-validated adapter."
+      }
+    },
+    "deduplication_protocol": {
+      "type": "object",
+      "description": "Dataset-specific report family and follow-up/version rules; do not presume that a generic key works for all sources.",
+      "additionalProperties": true
+    },
+    "related_records": {
+      "type": "array",
+      "description": "Readable recall, enforcement, label or trial records; their evidentiary meanings remain distinct.",
+      "items": {
+        "type": "object",
+        "description": "Source/record descriptor; resolve its identity, access and content via a host-validated adapter."
+      }
+    }
+  },
+  "$comment": "The host must validate nested source descriptors against its actual DTOs. This specification deliberately does not fabricate production API shapes."
+}

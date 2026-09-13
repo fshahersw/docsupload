@@ -1,0 +1,210 @@
+{
+  "commit": "2cc3149238defbbb171ec845cd0d3a43a34054f2",
+  "method": "Bounded, offline probes of audited functions; does not import/start LQ.AI.\n\nOriginal function ASTs are compiled unchanged. The extraction probe stubs only\nthe missing rapidfuzz alignment dependency to return no fuzzy match. Gate DB\nand SQL objects are in-memory fakes. Export uses preinstalled openpyxl and\ninspects ZIP XML; it never evaluates a spreadsheet formula. No repository test\nsuite, service, provider, installer, network call, or database is run.\n",
+  "suite_run": false,
+  "network_calls": 0,
+  "database_calls": 0,
+  "installers_run": 0,
+  "probes": [
+    {
+      "probe": "gate_status",
+      "input_status": null,
+      "observed": "fiduciary_grade",
+      "total_assertions": 0,
+      "finding": "Current gate passes empty/excluded-only ledgers."
+    },
+    {
+      "probe": "gate_status",
+      "input_status": "provenance",
+      "observed": "fiduciary_grade",
+      "total_assertions": 0,
+      "finding": "Current gate passes empty/excluded-only ledgers."
+    },
+    {
+      "probe": "gate_status",
+      "input_status": "new_unrecognized_status",
+      "observed": "fiduciary_grade",
+      "total_assertions": 0,
+      "finding": "Current gate passes empty/excluded-only ledgers."
+    },
+    {
+      "probe": "gate_status",
+      "input_status": "failed",
+      "observed": "flagged",
+      "total_assertions": 1,
+      "finding": "Current gate passes empty/excluded-only ledgers."
+    },
+    {
+      "probe": "full_document_fallback_page",
+      "observed_offset": 1221,
+      "observed_page": 1,
+      "cited_chunk_page": 1,
+      "finding": "Relocated quote keeps cited chunk page; extraction has no page-span argument.",
+      "stub": "Only fuzzy alignment returns None; exact matching and downstream original code run."
+    },
+    {
+      "probe": "invalid_source_index",
+      "observed_candidate_count": 0,
+      "finding": "Out-of-range candidate disappears before verification."
+    },
+    {
+      "probe": "spreadsheet_literal_preservation",
+      "csv_literal": "=1+1",
+      "xlsx_xml_formula_present": true,
+      "finding": "Document/model text beginning = is emitted as a formula; force literal strings and neutralize CSV formula prefixes.",
+      "safety": "In-memory workbook ZIP inspected; formula not evaluated."
+    },
+    {
+      "probe": "mcp_annotations",
+      "server_flags": {
+        "readOnlyHint": true,
+        "destructiveHint": false
+      },
+      "observed_read_only_destructive_confirmation": [
+        true,
+        false,
+        false
+      ],
+      "finding": "Server-provided hints can remove confirmation unless host policy adds a stricter override."
+    }
+  ],
+  "functions": [
+    {
+      "path": "api/app/citation/gate.py",
+      "name": [
+        "PASS_STATUSES"
+      ],
+      "start_line": 25,
+      "end_line": 25,
+      "sha256": "0920bb268ec8d50f1f3ecaf2cf3eff1056a06fac12efdd4b0d052f3bcdbd6ee3"
+    },
+    {
+      "path": "api/app/citation/gate.py",
+      "name": [
+        "SUPPORTED_STATUSES"
+      ],
+      "start_line": 26,
+      "end_line": 28,
+      "sha256": "0920bb268ec8d50f1f3ecaf2cf3eff1056a06fac12efdd4b0d052f3bcdbd6ee3"
+    },
+    {
+      "path": "api/app/citation/gate.py",
+      "name": [
+        "FAIL_STATUSES"
+      ],
+      "start_line": 29,
+      "end_line": 29,
+      "sha256": "0920bb268ec8d50f1f3ecaf2cf3eff1056a06fac12efdd4b0d052f3bcdbd6ee3"
+    },
+    {
+      "path": "api/app/citation/gate.py",
+      "name": [
+        "_PROVENANCE"
+      ],
+      "start_line": 30,
+      "end_line": 30,
+      "sha256": "0920bb268ec8d50f1f3ecaf2cf3eff1056a06fac12efdd4b0d052f3bcdbd6ee3"
+    },
+    {
+      "path": "api/app/citation/gate.py",
+      "name": [
+        "compute_and_record_gate"
+      ],
+      "start_line": 33,
+      "end_line": 108,
+      "sha256": "0920bb268ec8d50f1f3ecaf2cf3eff1056a06fac12efdd4b0d052f3bcdbd6ee3"
+    },
+    {
+      "path": "api/app/citation/extraction.py",
+      "name": [
+        "CitationCandidate"
+      ],
+      "start_line": 88,
+      "end_line": 101,
+      "sha256": "c38437084ce179beb39312b749111b3a76df0e4e9b6ee475d6d86c7ef3d3326c"
+    },
+    {
+      "path": "api/app/citation/extraction.py",
+      "name": [
+        "_CITATION_RE"
+      ],
+      "start_line": 111,
+      "end_line": 116,
+      "sha256": "c38437084ce179beb39312b749111b3a76df0e4e9b6ee475d6d86c7ef3d3326c"
+    },
+    {
+      "path": "api/app/citation/extraction.py",
+      "name": [
+        "_ALIGNMENT_THRESHOLD"
+      ],
+      "start_line": 125,
+      "end_line": 125,
+      "sha256": "c38437084ce179beb39312b749111b3a76df0e4e9b6ee475d6d86c7ef3d3326c"
+    },
+    {
+      "path": "api/app/citation/extraction.py",
+      "name": [
+        "locate_in_chunk"
+      ],
+      "start_line": 128,
+      "end_line": 147,
+      "sha256": "c38437084ce179beb39312b749111b3a76df0e4e9b6ee475d6d86c7ef3d3326c"
+    },
+    {
+      "path": "api/app/citation/extraction.py",
+      "name": [
+        "extract_citations"
+      ],
+      "start_line": 150,
+      "end_line": 249,
+      "sha256": "c38437084ce179beb39312b749111b3a76df0e4e9b6ee475d6d86c7ef3d3326c"
+    },
+    {
+      "path": "api/app/api/tabular.py",
+      "name": [
+        "_build_xlsx"
+      ],
+      "start_line": 585,
+      "end_line": 627,
+      "sha256": "714b972a348bbb53522a495b9de4fab0b81f10a94d5016041ead24bad68c6261"
+    },
+    {
+      "path": "api/app/api/tabular.py",
+      "name": [
+        "_build_csv"
+      ],
+      "start_line": 630,
+      "end_line": 655,
+      "sha256": "714b972a348bbb53522a495b9de4fab0b81f10a94d5016041ead24bad68c6261"
+    },
+    {
+      "path": "api/app/api/tabular.py",
+      "name": [
+        "_cell_display_value"
+      ],
+      "start_line": 658,
+      "end_line": 672,
+      "sha256": "714b972a348bbb53522a495b9de4fab0b81f10a94d5016041ead24bad68c6261"
+    },
+    {
+      "path": "api/app/api/tabular.py",
+      "name": [
+        "_build_xlsx_comment"
+      ],
+      "start_line": 675,
+      "end_line": 694,
+      "sha256": "714b972a348bbb53522a495b9de4fab0b81f10a94d5016041ead24bad68c6261"
+    },
+    {
+      "path": "gateway/app/providers/tool/mcp.py",
+      "name": [
+        "_map_flags"
+      ],
+      "start_line": 53,
+      "end_line": 64,
+      "sha256": "57e7f03fc5f94045fa6574ff56b55ae34f62f0974f47d67c0b67569a2f49aa35"
+    }
+  ],
+  "all_probe_assertions_passed": true,
+  "note": "Passing these observation assertions reproduces the current behavior; it does not certify the product as safe."
+}

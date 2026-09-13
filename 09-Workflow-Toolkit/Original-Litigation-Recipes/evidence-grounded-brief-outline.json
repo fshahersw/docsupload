@@ -1,0 +1,46 @@
+{
+  "id": "evidence-grounded-brief-outline",
+  "title": "Evidence-grounded brief outline",
+  "roles": [
+    "Brief writer",
+    "Research attorney",
+    "Supervising partner"
+  ],
+  "purpose": "Build an argument outline with a separate evidence and authority checklist before drafting prose.",
+  "inputs": [
+    "issue/question presented",
+    "procedural posture and requested relief",
+    "authorized record excerpts",
+    "verified authority packet",
+    "court/judge requirements"
+  ],
+  "steps": [
+    "Map each required issue and requested conclusion into an outline before producing prose.",
+    "Attach exact record evidence to factual premises and actual authority text to legal propositions; retain adverse facts and contrary authority candidates.",
+    "Distinguish allegations, undisputed record facts and disputed testimony; never silently upgrade an allegation into an established fact.",
+    "Identify support gaps, authority version issues and preservation/standard-of-review questions for counsel.",
+    "Draft only from the approved outline and source set, with explicit placeholders where support remains absent.",
+    "Run a separate proposition and quotation review, then a court-format checklist; deliver an edit manifest and source receipt."
+  ],
+  "outputs": [
+    "argument outline",
+    "fact/authority support table",
+    "unsupported-premise list",
+    "draft with review annotations"
+  ],
+  "references": [
+    "LAW.html",
+    "RULES.html",
+    "TOOLKIT.html"
+  ],
+  "tests": [
+    "unsupported confident conclusion",
+    "adverse authority not addressed",
+    "quoted dissent attributed to majority",
+    "request to fabricate missing citation",
+    "draft source set changes mid-run"
+  ],
+  "status": "Implementation recipe; requires a host runtime, source adapters and legal evaluation.",
+  "authorship": "Original specification prepared for this library; not an upstream LegalQuants file.",
+  "evidence_contract": "evidence-contract.json"
+}

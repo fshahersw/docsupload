@@ -1,0 +1,476 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:seeger-weiss:agent-result:adverse-event-analyst:1",
+  "title": "Post-market safety report review result contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "agent_id",
+    "run_id",
+    "matter_id",
+    "result_mode",
+    "as_of",
+    "scope",
+    "source_manifest",
+    "coverage",
+    "rows",
+    "source_requests",
+    "review",
+    "artifact_ids"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "agent_id": {
+      "const": "sw-adverse-event-analyst"
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Host-issued run identity."
+    },
+    "matter_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Authorized matter identity; not an access grant."
+    },
+    "result_mode": {
+      "enum": [
+        "analysis",
+        "partial_analysis",
+        "plan_only",
+        "blocked",
+        "cancelled"
+      ]
+    },
+    "as_of": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Actual source cutoff, not merely requested currentness."
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Question, included/excluded source set and period."
+    },
+    "source_manifest": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source_id",
+          "title",
+          "source_version",
+          "sha256",
+          "acquired_at",
+          "resolver",
+          "rights_note"
+        ],
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Unique source identity used by evidence references."
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Readable source title, not an invented legal characterization."
+          },
+          "source_version": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Actual revision or capture identity."
+          },
+          "sha256": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "acquired_at": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Actual retrieval/capture time, or explicit unknown marker."
+          },
+          "resolver": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Authorized document ID or official URL; no secrets or unrestricted local paths."
+          },
+          "rights_note": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Retention/display boundary or unresolved rights; not a permission grant."
+          }
+        }
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "known_total_units",
+        "units",
+        "search_boundary"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "complete_within_declared_scope",
+            "partial",
+            "no_sources"
+          ]
+        },
+        "known_total_units": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "units": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "unit_id",
+              "source_id",
+              "state",
+              "reason"
+            ],
+            "properties": {
+              "unit_id": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Document/page/entry or declared unit ID."
+              },
+              "source_id": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Source manifest identity."
+              },
+              "state": {
+                "enum": [
+                  "read",
+                  "unread",
+                  "failed",
+                  "restricted",
+                  "excluded"
+                ]
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Why the state applies; do not omit failures."
+              }
+            }
+          }
+        },
+        "search_boundary": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Queries, snapshots, limits and unknown candidate totals; no implicit exhaustive coverage."
+        }
+      }
+    },
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "row_id",
+          "evidence_state",
+          "evidence_refs",
+          "limitations",
+          "dataset_snapshot",
+          "report_id",
+          "report_family_id",
+          "product_match_basis",
+          "event_terms",
+          "event_date",
+          "received_date",
+          "retention_decision",
+          "count_unit"
+        ],
+        "properties": {
+          "row_id": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Stable output row identity."
+          },
+          "evidence_state": {
+            "enum": [
+              "directly_supported",
+              "attributed_report",
+              "qualified",
+              "explicit_inference",
+              "conflicting",
+              "unverified"
+            ]
+          },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/evidence_ref"
+            }
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "dataset_snapshot": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Dataset identity and version."
+          },
+          "report_id": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Raw report identity."
+          },
+          "report_family_id": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "description": "Documented duplicate/follow-up family identifier."
+          },
+          "product_match_basis": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Identifiers/aliases used and uncertainty."
+          },
+          "event_terms": {
+            "type": "array",
+            "description": "Original and normalized event terms.",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "event_date": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "description": "Onset/event date if reported."
+          },
+          "received_date": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "description": "Receipt/report date."
+          },
+          "retention_decision": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Included, duplicate, follow-up superseded, out of scope or unresolved."
+          },
+          "count_unit": {
+            "type": "string",
+            "minLength": 1,
+            "description": "The actual aggregation unit; never an inferred population denominator."
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "evidence_state": {
+                  "enum": [
+                    "directly_supported",
+                    "attributed_report",
+                    "qualified",
+                    "conflicting"
+                  ]
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "evidence_refs": {
+                  "minItems": 1
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "source_requests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "request",
+          "reason",
+          "affected_rows"
+        ],
+        "properties": {
+          "request": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Specific missing source or input."
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Why it is needed."
+          },
+          "affected_rows": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state",
+        "reviewed_scope",
+        "unresolved_items"
+      ],
+      "properties": {
+        "state": {
+          "enum": [
+            "not_reviewed",
+            "review_requested",
+            "reviewed_with_limits"
+          ]
+        },
+        "reviewed_scope": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Actual reviewed scope; never a global quality certificate."
+        },
+        "unresolved_items": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "artifact_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "description": "Actual persisted artifacts only; empty before save."
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "result_mode": {
+            "const": "plan_only"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "rows": {
+            "maxItems": 0
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "coverage": {
+            "properties": {
+              "status": {
+                "const": "no_sources"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "rows": {
+            "maxItems": 0
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "evidence_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id",
+        "source_version",
+        "sha256",
+        "locator",
+        "support_text",
+        "support_text_status"
+      ],
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Resolvable authorized source identity."
+        },
+        "source_version": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Source revision or capture time."
+        },
+        "sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9a-f]{64}$",
+          "description": "Null only where a source hash is unavailable; version/locator still required."
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Exact meaningful page/paragraph/transcript/table locator."
+        },
+        "support_text": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Permitted supporting span; null when retention is not allowed."
+        },
+        "support_text_status": {
+          "enum": [
+            "retained_permitted_span",
+            "resolver_only",
+            "unavailable"
+          ]
+        }
+      }
+    }
+  }
+}

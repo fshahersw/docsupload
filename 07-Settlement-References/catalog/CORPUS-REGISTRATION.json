@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "collection_id": "sw-settlement-intelligence",
+  "display_name": "Settlement intelligence",
+  "catalog_path": "07-Settlement-References/catalog/catalog.json",
+  "page_path": "SETTLEMENTS.html",
+  "records": 848,
+  "source_kind": "publisher_settlement_catalog",
+  "provider": "SettleSignal",
+  "source_snapshot_sha256": "76ffad1e50a3154c1149327ac080f3191129d6d82693b16e088c2e52f59505ba",
+  "source_license": "Free to use with attribution. Credit \"SettleSignal (settlesignal.com)\" with a link to https://settlesignal.com/.",
+  "attribution": "Data: SettleSignal (settlesignal.com) — https://settlesignal.com/",
+  "retrieval_purpose": [
+    "Settlement and refund program discovery",
+    "Reported benefit and process comparison",
+    "Primary-source research assignments"
+  ],
+  "review_overlay": {
+    "source_path": "07-Settlement-References/verified-records.json",
+    "count": 9,
+    "join": "Exact publisher URL",
+    "scope": "Dated selected-field reviews; preserve source-specific limits"
+  },
+  "source_document_collection": {
+    "metadata_path": "07-Settlement-References/documents.json",
+    "downloaded_originals": 4,
+    "counts_as_court_forms": false
+  },
+  "host_binding": {
+    "status": "Local portable package; no production deployment",
+    "data_fields": [
+      "id",
+      "publisher",
+      "publisher_record_sha256",
+      "source_snapshot_sha256",
+      "source_positions",
+      "review",
+      "quality_notes"
+    ],
+    "scope": "Keep publisher facts distinguishable from primary legal evidence and matter facts. Bind research execution to the existing authorized host tools."
+  },
+  "legal_kb_as_primary_authority": false,
+  "new_independent_reviews": 0,
+  "automatic_monitoring": false,
+  "claim_submission": false,
+  "live_calendar_actions": false,
+  "model_execution": false
+}

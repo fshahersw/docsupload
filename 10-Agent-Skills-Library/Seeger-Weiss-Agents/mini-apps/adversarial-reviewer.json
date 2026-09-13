@@ -1,0 +1,106 @@
+{
+  "id": "adversarial-reviewer-review",
+  "title": "Adversarial evidence and draft review",
+  "readiness": "Mini-app interface specification",
+  "implemented": false,
+  "route": null,
+  "launch_mode": "Explicit user run; no scheduler or upload listener installed",
+  "input_form_schema_ref": "10-Agent-Skills-Library/Seeger-Weiss-Agents/contracts/adversarial-reviewer.input.schema.json",
+  "result_schema_ref": "10-Agent-Skills-Library/Seeger-Weiss-Agents/contracts/adversarial-reviewer.output.schema.json",
+  "views": [
+    {
+      "id": "review-findings",
+      "label": "Review findings"
+    },
+    {
+      "id": "proposed-corrections",
+      "label": "Proposed corrections"
+    },
+    {
+      "id": "claim-coverage",
+      "label": "Claim coverage"
+    },
+    {
+      "id": "source-comparison",
+      "label": "Source comparison"
+    }
+  ],
+  "table_columns": [
+    {
+      "key": "claim_or_section_id",
+      "label": "Claim or section id",
+      "description": "Location under review.",
+      "type": "string"
+    },
+    {
+      "key": "issue_type",
+      "label": "Issue type",
+      "description": "Support, quotation, calculation, scope, contrary evidence, ambiguity or source gap.",
+      "type": "string"
+    },
+    {
+      "key": "materiality",
+      "label": "Materiality",
+      "description": "Narrative significance with rationale, not a measured probability.",
+      "type": "string"
+    },
+    {
+      "key": "observed_problem",
+      "label": "Observed problem",
+      "description": "Specific defect or bounded no-issue observation.",
+      "type": "string"
+    },
+    {
+      "key": "counterargument",
+      "label": "Counterargument",
+      "description": "Supported contrary reading, separately labeled from a hypothetical.",
+      "type": "nullable_string"
+    },
+    {
+      "key": "proposed_correction",
+      "label": "Proposed correction",
+      "description": "Exact edit, deletion or source request.",
+      "type": "nullable_string"
+    },
+    {
+      "key": "review_disposition",
+      "label": "Review disposition",
+      "description": "Unresolved, proposed, verified corrected or no material issue observed.",
+      "type": "string"
+    }
+  ],
+  "shared_views": [
+    "Coverage and failures",
+    "Source requests",
+    "Draft export"
+  ],
+  "actions": [
+    {
+      "id": "run",
+      "label": "Run scoped analysis",
+      "handler": null,
+      "enabled": false,
+      "requires": "Verified host agent and source adapters"
+    },
+    {
+      "id": "open_source",
+      "label": "Open source",
+      "handler": null,
+      "enabled": false,
+      "requires": "Authorized source resolver and safe viewer"
+    },
+    {
+      "id": "export",
+      "label": "Export draft table",
+      "handler": null,
+      "enabled": false,
+      "requires": "Bound artifact writer with source rights and spreadsheet-cell sanitization"
+    }
+  ],
+  "accessibility": [
+    "Semantic table with keyboard-accessible source links",
+    "Status labels in text, not color alone",
+    "Announce progress and errors; preserve focus when results refresh"
+  ],
+  "host_integration_note": "UI contract only. Reuse the platform shell and tested components; paths, handlers, server DTOs and persistence require verified host integration."
+}

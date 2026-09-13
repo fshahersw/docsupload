@@ -1,0 +1,128 @@
+{
+  "id": "chronology-builder-review",
+  "title": "Cross-document factual chronology",
+  "readiness": "Mini-app interface specification",
+  "implemented": false,
+  "route": null,
+  "launch_mode": "Explicit user run; no scheduler or upload listener installed",
+  "input_form_schema_ref": "10-Agent-Skills-Library/Seeger-Weiss-Agents/contracts/chronology-builder.input.schema.json",
+  "result_schema_ref": "10-Agent-Skills-Library/Seeger-Weiss-Agents/contracts/chronology-builder.output.schema.json",
+  "views": [
+    {
+      "id": "timeline",
+      "label": "Timeline"
+    },
+    {
+      "id": "event-table",
+      "label": "Event table"
+    },
+    {
+      "id": "conflicting-accounts",
+      "label": "Conflicting accounts"
+    },
+    {
+      "id": "coverage",
+      "label": "Coverage"
+    },
+    {
+      "id": "transcript-source",
+      "label": "Transcript source"
+    }
+  ],
+  "table_columns": [
+    {
+      "key": "event_id",
+      "label": "Event id",
+      "description": "Stable event identity independent of display order.",
+      "type": "string"
+    },
+    {
+      "key": "event_text",
+      "label": "Event text",
+      "description": "Narrow sourced event statement.",
+      "type": "string"
+    },
+    {
+      "key": "date_raw",
+      "label": "Date raw",
+      "description": "Date phrase verbatim.",
+      "type": "nullable_string"
+    },
+    {
+      "key": "date_start",
+      "label": "Date start",
+      "description": "Earliest supported boundary, not a guessed date.",
+      "type": "nullable_string"
+    },
+    {
+      "key": "date_end",
+      "label": "Date end",
+      "description": "Latest supported boundary.",
+      "type": "nullable_string"
+    },
+    {
+      "key": "date_precision",
+      "label": "Date precision",
+      "description": "Day, month, year, range, relative or unknown.",
+      "type": "string"
+    },
+    {
+      "key": "document_date",
+      "label": "Document date",
+      "description": "Document or filing date separately recorded.",
+      "type": "nullable_string"
+    },
+    {
+      "key": "actors",
+      "label": "Actors",
+      "description": "Resolved IDs or unresolved names.",
+      "type": "array"
+    },
+    {
+      "key": "account_type",
+      "label": "Account type",
+      "description": "Testimony, allegation, correspondence, finding or other supported type.",
+      "type": "string"
+    },
+    {
+      "key": "conflict_group_id",
+      "label": "Conflict group id",
+      "description": "Related inconsistent accounts.",
+      "type": "nullable_string"
+    }
+  ],
+  "shared_views": [
+    "Coverage and failures",
+    "Source requests",
+    "Draft export"
+  ],
+  "actions": [
+    {
+      "id": "run",
+      "label": "Run scoped analysis",
+      "handler": null,
+      "enabled": false,
+      "requires": "Verified host agent and source adapters"
+    },
+    {
+      "id": "open_source",
+      "label": "Open source",
+      "handler": null,
+      "enabled": false,
+      "requires": "Authorized source resolver and safe viewer"
+    },
+    {
+      "id": "export",
+      "label": "Export draft table",
+      "handler": null,
+      "enabled": false,
+      "requires": "Bound artifact writer with source rights and spreadsheet-cell sanitization"
+    }
+  ],
+  "accessibility": [
+    "Semantic table with keyboard-accessible source links",
+    "Status labels in text, not color alone",
+    "Announce progress and errors; preserve focus when results refresh"
+  ],
+  "host_integration_note": "UI contract only. Reuse the platform shell and tested components; paths, handlers, server DTOs and persistence require verified host integration."
+}

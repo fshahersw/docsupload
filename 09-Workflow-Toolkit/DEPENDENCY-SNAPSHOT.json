@@ -1,0 +1,486 @@
+{
+  "commit": "2cc3149238defbbb171ec845cd0d3a43a34054f2",
+  "source_files": {
+    "api\\uv.lock": "720d2f613fef1af38390017b6601032c6d7f9a5e1a10646fbcdbb9a71a852a39",
+    "gateway\\uv.lock": "7d1b51b9c94b78163fc46dc80bb686d1337d40f12f2cbb55d220f23d4a72b361",
+    "web\\uv.lock": "2fac671fce6bb99187941aa27b94987b239e4a28362391b2a4aa8265196c7464",
+    "web/package-lock.json": "7445f7b7245b88de4f2db91f6adee42aee71d7000d46599722f122b62f2f2202"
+  },
+  "python": {
+    "api": {
+      "packages": 197,
+      "selected": [
+        {
+          "name": "aioboto3",
+          "version": "15.5.0",
+          "source": {
+            "registry": "https://pypi.org/simple"
+          }
+        },
+        {
+          "name": "authlib",
+          "version": "1.7.2",
+          "source": {
+            "registry": "https://pypi.org/simple"
+          }
+        },
+        {
+          "name": "docling",
+          "version": "1.20.0",
+          "source": {
+            "registry": "https://pypi.org/simple"
+          }
+        },
+        {
+          "name": "langgraph",
+          "version": "0.2.76",
+          "source": {
+            "registry": "https://pypi.org/simple"
+          }
+        },
+        {
+          "name": "openpyxl",
+          "version": "3.1.5",
+          "source": {
+            "registry": "https://pypi.org/simple"
+          }
+        },
+        {
+          "name": "pymupdf",
+          "version": "1.28.2",
+          "source": {
+            "registry": "https://pypi.org/simple"
+          }
+        },
+        {
+          "name": "rapidfuzz",
+          "version": "3.14.5",
+          "source": {
+            "registry": "https://pypi.org/simple"
+          }
+        },
+        {
+          "name": "redis",
+          "version": "5.3.1",
+          "source": {
+            "registry": "https://pypi.org/simple"
+          }
+        }
+      ]
+    },
+    "gateway": {
+      "packages": 107,
+      "selected": [
+        {
+          "name": "mcp",
+          "version": "1.28.1",
+          "source": {
+            "registry": "https://pypi.org/simple"
+          }
+        },
+        {
+          "name": "presidio-analyzer",
+          "version": "2.2.364",
+          "source": {
+            "registry": "https://pypi.org/simple"
+          }
+        },
+        {
+          "name": "spacy",
+          "version": "3.8.15",
+          "source": {
+            "registry": "https://pypi.org/simple"
+          }
+        }
+      ]
+    },
+    "web": {
+      "packages": 356,
+      "selected": [
+        {
+          "name": "authlib",
+          "version": "1.7.2",
+          "source": {
+            "registry": "https://pypi.org/simple"
+          }
+        },
+        {
+          "name": "langgraph",
+          "version": "1.0.10",
+          "source": {
+            "registry": "https://pypi.org/simple"
+          }
+        },
+        {
+          "name": "mcp",
+          "version": "1.27.2",
+          "source": {
+            "registry": "https://pypi.org/simple"
+          }
+        },
+        {
+          "name": "openpyxl",
+          "version": "3.1.5",
+          "source": {
+            "registry": "https://pypi.org/simple"
+          }
+        },
+        {
+          "name": "rapidfuzz",
+          "version": "3.14.5",
+          "source": {
+            "registry": "https://pypi.org/simple"
+          }
+        },
+        {
+          "name": "redis",
+          "version": "8.0.1",
+          "source": {
+            "registry": "https://pypi.org/simple"
+          }
+        },
+        {
+          "name": "spacy",
+          "version": "3.8.14",
+          "source": {
+            "registry": "https://pypi.org/simple"
+          }
+        }
+      ]
+    }
+  },
+  "web": {
+    "package_count": 1280,
+    "license_counts": {
+      "MIT": 986,
+      "(Apache-2.0 AND BSD-3-Clause)": 1,
+      "Apache-2.0": 55,
+      "ISC": 98,
+      "OFL-1.1": 1,
+      "BSD-3-Clause": 60,
+      "LGPL-3.0-or-later": 10,
+      "Apache-2.0 AND LGPL-3.0-or-later AND MIT": 1,
+      "Apache-2.0 AND LGPL-3.0-or-later": 3,
+      "BSD-2-Clause": 23,
+      "APACHE-2.0": 2,
+      "LIL": 1,
+      "0BSD": 2,
+      "(MIT OR CC0-1.0)": 3,
+      "Python-2.0": 1,
+      "BlueOak-1.0.0": 8,
+      "(MPL-2.0 OR Apache-2.0)": 1,
+      "BSD": 1,
+      "(AFL-2.1 OR BSD-3-Clause)": 1,
+      "(MIT OR GPL-3.0-or-later)": 1,
+      "(MIT AND Zlib)": 2,
+      "UNDECLARED": 3,
+      "MPL-2.0": 13,
+      "MIT OR SEE LICENSE IN FEEL-FREE.md": 1,
+      "Unlicense": 2
+    },
+    "flagged_declared_licenses": [
+      {
+        "package_path": "node_modules/@img/sharp-libvips-darwin-arm64",
+        "version": "1.2.4",
+        "license_declared": "LGPL-3.0-or-later",
+        "dev": false
+      },
+      {
+        "package_path": "node_modules/@img/sharp-libvips-darwin-x64",
+        "version": "1.2.4",
+        "license_declared": "LGPL-3.0-or-later",
+        "dev": false
+      },
+      {
+        "package_path": "node_modules/@img/sharp-libvips-linux-arm",
+        "version": "1.2.4",
+        "license_declared": "LGPL-3.0-or-later",
+        "dev": false
+      },
+      {
+        "package_path": "node_modules/@img/sharp-libvips-linux-arm64",
+        "version": "1.2.4",
+        "license_declared": "LGPL-3.0-or-later",
+        "dev": false
+      },
+      {
+        "package_path": "node_modules/@img/sharp-libvips-linux-ppc64",
+        "version": "1.2.4",
+        "license_declared": "LGPL-3.0-or-later",
+        "dev": false
+      },
+      {
+        "package_path": "node_modules/@img/sharp-libvips-linux-riscv64",
+        "version": "1.2.4",
+        "license_declared": "LGPL-3.0-or-later",
+        "dev": false
+      },
+      {
+        "package_path": "node_modules/@img/sharp-libvips-linux-s390x",
+        "version": "1.2.4",
+        "license_declared": "LGPL-3.0-or-later",
+        "dev": false
+      },
+      {
+        "package_path": "node_modules/@img/sharp-libvips-linux-x64",
+        "version": "1.2.4",
+        "license_declared": "LGPL-3.0-or-later",
+        "dev": false
+      },
+      {
+        "package_path": "node_modules/@img/sharp-libvips-linuxmusl-arm64",
+        "version": "1.2.4",
+        "license_declared": "LGPL-3.0-or-later",
+        "dev": false
+      },
+      {
+        "package_path": "node_modules/@img/sharp-libvips-linuxmusl-x64",
+        "version": "1.2.4",
+        "license_declared": "LGPL-3.0-or-later",
+        "dev": false
+      },
+      {
+        "package_path": "node_modules/@img/sharp-wasm32",
+        "version": "0.34.5",
+        "license_declared": "Apache-2.0 AND LGPL-3.0-or-later AND MIT",
+        "dev": false
+      },
+      {
+        "package_path": "node_modules/@img/sharp-win32-arm64",
+        "version": "0.34.5",
+        "license_declared": "Apache-2.0 AND LGPL-3.0-or-later",
+        "dev": false
+      },
+      {
+        "package_path": "node_modules/@img/sharp-win32-ia32",
+        "version": "0.34.5",
+        "license_declared": "Apache-2.0 AND LGPL-3.0-or-later",
+        "dev": false
+      },
+      {
+        "package_path": "node_modules/@img/sharp-win32-x64",
+        "version": "0.34.5",
+        "license_declared": "Apache-2.0 AND LGPL-3.0-or-later",
+        "dev": false
+      },
+      {
+        "package_path": "node_modules/dompurify",
+        "version": "3.4.11",
+        "license_declared": "(MPL-2.0 OR Apache-2.0)",
+        "dev": false
+      },
+      {
+        "package_path": "node_modules/jszip",
+        "version": "3.10.1",
+        "license_declared": "(MIT OR GPL-3.0-or-later)",
+        "dev": false
+      },
+      {
+        "package_path": "node_modules/lightningcss",
+        "version": "1.31.1",
+        "license_declared": "MPL-2.0",
+        "dev": false
+      },
+      {
+        "package_path": "node_modules/lightningcss-android-arm64",
+        "version": "1.31.1",
+        "license_declared": "MPL-2.0",
+        "dev": false
+      },
+      {
+        "package_path": "node_modules/lightningcss-darwin-arm64",
+        "version": "1.31.1",
+        "license_declared": "MPL-2.0",
+        "dev": false
+      },
+      {
+        "package_path": "node_modules/lightningcss-darwin-x64",
+        "version": "1.31.1",
+        "license_declared": "MPL-2.0",
+        "dev": false
+      },
+      {
+        "package_path": "node_modules/lightningcss-freebsd-x64",
+        "version": "1.31.1",
+        "license_declared": "MPL-2.0",
+        "dev": false
+      },
+      {
+        "package_path": "node_modules/lightningcss-linux-arm-gnueabihf",
+        "version": "1.31.1",
+        "license_declared": "MPL-2.0",
+        "dev": false
+      },
+      {
+        "package_path": "node_modules/lightningcss-linux-arm64-gnu",
+        "version": "1.31.1",
+        "license_declared": "MPL-2.0",
+        "dev": false
+      },
+      {
+        "package_path": "node_modules/lightningcss-linux-arm64-musl",
+        "version": "1.31.1",
+        "license_declared": "MPL-2.0",
+        "dev": false
+      },
+      {
+        "package_path": "node_modules/lightningcss-linux-x64-gnu",
+        "version": "1.31.1",
+        "license_declared": "MPL-2.0",
+        "dev": false
+      },
+      {
+        "package_path": "node_modules/lightningcss-linux-x64-musl",
+        "version": "1.31.1",
+        "license_declared": "MPL-2.0",
+        "dev": false
+      },
+      {
+        "package_path": "node_modules/lightningcss-win32-arm64-msvc",
+        "version": "1.31.1",
+        "license_declared": "MPL-2.0",
+        "dev": false
+      },
+      {
+        "package_path": "node_modules/lightningcss-win32-x64-msvc",
+        "version": "1.31.1",
+        "license_declared": "MPL-2.0",
+        "dev": false
+      },
+      {
+        "package_path": "node_modules/pyodide",
+        "version": "314.0.3",
+        "license_declared": "MPL-2.0",
+        "dev": false
+      },
+      {
+        "package_path": "node_modules/rgbcolor",
+        "version": "1.0.1",
+        "license_declared": "MIT OR SEE LICENSE IN FEEL-FREE.md",
+        "dev": false
+      }
+    ],
+    "selected_versions": {
+      "xlsx": "0.18.5",
+      "mermaid": "11.15.0",
+      "vega": "6.2.0",
+      "vega-lite": "6.4.2",
+      "@xyflow/svelte": "0.1.39",
+      "pdfjs-dist": "5.5.207",
+      "pyodide": "314.0.3",
+      "openai": null,
+      "kokoro-js": "1.2.1"
+    },
+    "direct_dependencies": {
+      "@azure/msal-browser": "^4.5.0",
+      "@codemirror/lang-javascript": "^6.2.2",
+      "@codemirror/lang-python": "^6.1.6",
+      "@codemirror/language-data": "^6.5.1",
+      "@codemirror/theme-one-dark": "^6.1.2",
+      "@floating-ui/dom": "^1.7.2",
+      "@fontsource-variable/inter": "^5.2.8",
+      "@huggingface/transformers": "^3.0.0",
+      "@joplin/turndown-plugin-gfm": "^1.0.62",
+      "@mediapipe/tasks-vision": "^0.10.35",
+      "@pyscript/core": "^0.4.32",
+      "@sveltejs/adapter-node": "^2.0.0",
+      "@sveltejs/svelte-virtual-list": "^3.0.1",
+      "@tiptap/core": "^3.0.7",
+      "@tiptap/extension-bubble-menu": "^3.0.7",
+      "@tiptap/extension-code": "^3.0.7",
+      "@tiptap/extension-code-block-lowlight": "^3.0.7",
+      "@tiptap/extension-drag-handle": "^3.4.5",
+      "@tiptap/extension-file-handler": "^3.0.7",
+      "@tiptap/extension-floating-menu": "^3.0.7",
+      "@tiptap/extension-highlight": "^3.23.6",
+      "@tiptap/extension-image": "^3.0.7",
+      "@tiptap/extension-link": "^3.0.7",
+      "@tiptap/extension-list": "^3.0.7",
+      "@tiptap/extension-mention": "^3.0.9",
+      "@tiptap/extension-table": "^3.0.7",
+      "@tiptap/extension-typography": "^3.0.7",
+      "@tiptap/extension-youtube": "^3.0.7",
+      "@tiptap/extensions": "^3.0.7",
+      "@tiptap/pm": "^3.0.7",
+      "@tiptap/starter-kit": "^3.0.7",
+      "@tiptap/suggestion": "^3.4.2",
+      "@xterm/addon-fit": "^0.11.0",
+      "@xterm/addon-web-links": "^0.12.0",
+      "@xterm/xterm": "^6.0.0",
+      "@xyflow/svelte": "^0.1.19",
+      "alpinejs": "^3.15.0",
+      "async": "^3.2.5",
+      "bits-ui": "^2.0.0",
+      "chart.js": "^4.5.0",
+      "codemirror": "^6.0.1",
+      "codemirror-lang-elixir": "^4.0.0",
+      "codemirror-lang-hcl": "^0.1.0",
+      "crc-32": "^1.2.2",
+      "dayjs": "^1.11.10",
+      "dompurify": "^3.2.6",
+      "eventsource-parser": "^1.1.2",
+      "fast-deep-equal": "^3.1.3",
+      "file-saver": "^2.0.5",
+      "focus-trap": "^7.6.4",
+      "fuse.js": "^7.3.0",
+      "heic2any": "^0.0.4",
+      "highlight.js": "^11.9.0",
+      "html-entities": "^2.5.3",
+      "html2canvas-pro": "^1.5.11",
+      "i18next": "^23.10.0",
+      "i18next-browser-languagedetector": "^7.2.0",
+      "i18next-resources-to-backend": "^1.2.0",
+      "idb": "^7.1.1",
+      "js-sha256": "^0.10.1",
+      "jspdf": "^4.0.0",
+      "jszip": "^3.10.1",
+      "katex": "^0.16.22",
+      "kokoro-js": "^1.1.1",
+      "leaflet": "^1.9.4",
+      "lowlight": "^3.3.0",
+      "mammoth": "^1.11.0",
+      "marked": "^9.1.0",
+      "mermaid": "^11.10.1",
+      "paneforge": "^0.0.6",
+      "panzoom": "^9.4.3",
+      "pdfjs-dist": "^5.4.149",
+      "prosemirror-collab": "^1.3.1",
+      "prosemirror-commands": "^1.6.0",
+      "prosemirror-example-setup": "^1.2.3",
+      "prosemirror-history": "^1.4.1",
+      "prosemirror-keymap": "^1.2.2",
+      "prosemirror-markdown": "^1.13.1",
+      "prosemirror-model": "^1.23.0",
+      "prosemirror-schema-basic": "^1.2.3",
+      "prosemirror-schema-list": "^1.5.1",
+      "prosemirror-state": "^1.4.3",
+      "prosemirror-tables": "^1.7.1",
+      "prosemirror-view": "^1.34.3",
+      "pyodide": "^314.0.3",
+      "shiki": "^4.0.1",
+      "socket.io-client": "^4.8.3",
+      "sortablejs": "^1.15.6",
+      "sql.js": "^1.14.1",
+      "svelte-sonner": "^0.3.19",
+      "tippy.js": "^6.3.7",
+      "turndown": "^7.2.0",
+      "turndown-plugin-gfm": "^1.0.2",
+      "undici": "^7.28.0",
+      "uuid": "^11.1.1",
+      "vega": "^6.2.0",
+      "vega-lite": "^6.4.1",
+      "vite-plugin-static-copy": "^2.2.0",
+      "xlsx": "^0.18.5",
+      "y-prosemirror": "^1.3.7",
+      "y-protocols": "^1.0.7",
+      "yaml": "^2.7.1",
+      "yjs": "^13.6.27"
+    }
+  },
+  "limitations": [
+    "Declared metadata only; not a transitive source-file license or vulnerability audit.",
+    "Container image digests, OS packages, bundled Python/WASM assets, model weights and separate components require their own resolved SBOM.",
+    "Python client redis license and Redis server image license are separate.",
+    "No binary images were pulled and no package resolution/install was run."
+  ]
+}

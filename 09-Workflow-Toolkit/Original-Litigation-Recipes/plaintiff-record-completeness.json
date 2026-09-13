@@ -1,0 +1,45 @@
+{
+  "id": "plaintiff-record-completeness",
+  "title": "Plaintiff record and fact-sheet reconciliation",
+  "roles": [
+    "Plaintiff intake team",
+    "Case management team",
+    "Litigation paralegal"
+  ],
+  "purpose": "Reconcile a matter-approved fact-sheet schema with supporting records and identify missing or inconsistent information.",
+  "inputs": [
+    "court-approved or matter-approved fact-sheet schema/version",
+    "authorized plaintiff records",
+    "identity aliases with verified mappings",
+    "known required source list"
+  ],
+  "steps": [
+    "Freeze the specific fact-sheet version and field definitions. Do not substitute a generic MDL form or infer a required field from another litigation.",
+    "Match source documents to the correct plaintiff using verified identifiers; route uncertain or conflicting matches to review.",
+    "For each field, record the exact supporting passage, source date and normalized value separately from original wording.",
+    "Compare exposures, treatment dates, products, prescribers and injuries across sources while preserving uncertainty and contradictory records.",
+    "Mark blank/unknown/declined/not-applicable distinctly; absence in reviewed records is not proof the event did not occur.",
+    "Draft a completeness report and targeted follow-up questions. Require counsel review before sharing or populating a court filing."
+  ],
+  "outputs": [
+    "field-level support matrix",
+    "identity exceptions",
+    "missing-record checklist",
+    "conflict report",
+    "draft follow-up questions"
+  ],
+  "references": [
+    "00-Catalog/DOCUMENTS.csv"
+  ],
+  "tests": [
+    "two plaintiffs with similar names",
+    "date inferred only from filename",
+    "conflicting treatment dates",
+    "revised fact-sheet schema",
+    "record outside authorized matter",
+    "missing signature cannot be invented"
+  ],
+  "status": "Implementation recipe; requires a host runtime, source adapters and legal evaluation.",
+  "authorship": "Original specification prepared for this library; not an upstream LegalQuants file.",
+  "evidence_contract": "evidence-contract.json"
+}

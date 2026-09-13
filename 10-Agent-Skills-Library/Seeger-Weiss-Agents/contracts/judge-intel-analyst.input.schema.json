@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:seeger-weiss:agent-input:judge-intel-analyst:1",
+  "title": "Judge practice and decision record intake contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "judge_and_court",
+    "practice_and_decision_sources"
+  ],
+  "properties": {
+    "judge_and_court": {
+      "type": "object",
+      "description": "Official identity, court and sourced assignment; do not infer a matter assignment from a profile image.",
+      "additionalProperties": true
+    },
+    "practice_and_decision_sources": {
+      "type": "array",
+      "description": "Official rules/profile pages and readable orders/opinions with dates and jurisdiction.",
+      "items": {
+        "type": "object",
+        "description": "Source/record descriptor; resolve its identity, access and content via a host-validated adapter."
+      }
+    },
+    "cohort_protocol": {
+      "type": "object",
+      "description": "Motion type, time window, unit of analysis, exclusions and treatment of partial/withdrawn/appealed rulings.",
+      "additionalProperties": true
+    },
+    "authorized_disclosure_scope": {
+      "type": "object",
+      "description": "Specific public official disclosure records and entity identifiers for an expressly requested review; omit unrelated personal details.",
+      "additionalProperties": true
+    }
+  },
+  "$comment": "The host must validate nested source descriptors against its actual DTOs. This specification deliberately does not fabricate production API shapes."
+}

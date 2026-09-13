@@ -1,0 +1,806 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/LegalQuants/lq-ai.git",
+  "commit": "2cc3149238defbbb171ec845cd0d3a43a34054f2",
+  "review_date": "2026-09-12",
+  "scope": "Read-only bounded source review; no production integration, dependency installation, live API or full test suite execution.",
+  "modules": [
+    {
+      "id": "canonical-source",
+      "name": "Canonical text, page spans and provenance chunks",
+      "implementation_status": "implemented_with_limits",
+      "reuse_decision": "adapt interfaces; keep approved host parser",
+      "evidence": [
+        {
+          "path": "api/app/pipeline/parsers.py",
+          "start_line": 95,
+          "end_line": 125,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/pipeline/parsers.py#L95-L125",
+          "sha256": "6172e2aa9129f42c8519e08e0226614efc1f11c52ce0538c143cc9e2a9221dbf"
+        },
+        {
+          "path": "api/app/pipeline/chunker.py",
+          "start_line": 106,
+          "end_line": 214,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/pipeline/chunker.py#L106-L214",
+          "sha256": "4ac8f6e77ea6388d46192e1f9c3d750fb8db315fc885d6763cb21f4a7b9dcf8e"
+        },
+        {
+          "path": "api/app/pipeline/ingest.py",
+          "start_line": 364,
+          "end_line": 427,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/pipeline/ingest.py#L364-L427",
+          "sha256": "cb8627d8c4230b5d861e55666de3524f88f31faff21ae2e7fb8a57fda74d2270"
+        }
+      ],
+      "value_for_seeger_weiss": "Court forms, rules and deposition evidence with reliable click-to-passage navigation.",
+      "observed_limits": [
+        "Offsets are extracted-text characters, not original PDF bytes.",
+        "Re-ingestion replaces text/chunks in place.",
+        "Current source pipeline has no OCR or DOCX; optional Docling sidecar is not used by chunker."
+      ],
+      "required_integration_work": [
+        "Bind original SHA and immutable derived-text/parser version to every citation.",
+        "Preserve physical page, printed label, Bates label and deposition page/line as separate anchors.",
+        "Connect approved PDF/DOCX/OCR processing and reject empty/failed extraction as incomplete."
+      ],
+      "license_boundary": "API code Apache default; parser imports PyMuPDF (AGPL/commercial) and Docling. Reusing shapes/chunker need not require these parser dependencies.",
+      "related_test_files": [
+        "api/tests/test_chunker.py",
+        "api/tests/test_pipeline_parsers.py"
+      ],
+      "test_execution": "Upstream suite not run. Some test contents inspected; see report and inspected-files.json.",
+      "production_ready_claim": false
+    },
+    {
+      "id": "citation-capture",
+      "name": "Quote capture and normalization",
+      "implementation_status": "implemented_with_limits",
+      "reuse_decision": "adapt after preserving failed references",
+      "evidence": [
+        {
+          "path": "api/app/citation/extraction.py",
+          "start_line": 111,
+          "end_line": 249,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/citation/extraction.py#L111-L249",
+          "sha256": "c38437084ce179beb39312b749111b3a76df0e4e9b6ee475d6d86c7ef3d3326c"
+        },
+        {
+          "path": "api/app/citation/normalization.py",
+          "start_line": 63,
+          "end_line": 141,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/citation/normalization.py#L63-L141",
+          "sha256": "cf652f27ff104e97572099fd7849cc8af4d7b400c8c504066152422da342b106"
+        }
+      ],
+      "value_for_seeger_weiss": "Capture every drafted quotation and show literal/OCR differences against the cited source.",
+      "observed_limits": [
+        "Unlocatable or invalid source references are dropped.",
+        "Full-document relocation retains cited chunk page.",
+        "OCR substitutions can change valid words; fuzzy thresholds are not semantic proof."
+      ],
+      "required_integration_work": [
+        "Persist failed candidates with reasons.",
+        "Resolve relocated page/line anchors from document spans.",
+        "Protect critical legal tokens and expose normalized differences."
+      ],
+      "license_boundary": "Apache-2.0 declared at root/API; verify file origin and preserve required notices.",
+      "related_test_files": [
+        "api/tests/citation/test_edge_cases.py"
+      ],
+      "test_execution": "Upstream suite not run. Some test contents inspected; see report and inspected-files.json.",
+      "production_ready_claim": false
+    },
+    {
+      "id": "verification",
+      "name": "Exact, tolerant and parallel semantic citation checks",
+      "implementation_status": "implemented_with_limits",
+      "reuse_decision": "adapt cascade contract and provenance; calibrate labels",
+      "evidence": [
+        {
+          "path": "api/app/citation/verification.py",
+          "start_line": 146,
+          "end_line": 227,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/citation/verification.py#L146-L227",
+          "sha256": "bc88b8fca4246ac8a74639a1c82d65e32c48c59e0591f858acb2bc9328c7b9cd"
+        },
+        {
+          "path": "api/app/citation/verification.py",
+          "start_line": 345,
+          "end_line": 399,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/citation/verification.py#L345-L399",
+          "sha256": "bc88b8fca4246ac8a74639a1c82d65e32c48c59e0591f858acb2bc9328c7b9cd"
+        },
+        {
+          "path": "api/app/citation/verification.py",
+          "start_line": 430,
+          "end_line": 518,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/citation/verification.py#L430-L518",
+          "sha256": "bc88b8fca4246ac8a74639a1c82d65e32c48c59e0591f858acb2bc9328c7b9cd"
+        },
+        {
+          "path": "api/app/citation/verification.py",
+          "start_line": 545,
+          "end_line": 658,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/citation/verification.py#L545-L658",
+          "sha256": "bc88b8fca4246ac8a74639a1c82d65e32c48c59e0591f858acb2bc9328c7b9cd"
+        }
+      ],
+      "value_for_seeger_weiss": "Separate quotation fidelity, model support assessment and disagreement for briefs and discovery outputs.",
+      "observed_limits": [
+        "Exact/tolerant stages short-circuit semantic judges.",
+        "High/medium/low map to heuristic numeric confidence.",
+        "Partial support can be verified; ensemble may accept partial votes."
+      ],
+      "required_integration_work": [
+        "Use host Bedrock interface with schema-constrained responses and explicit data-egress policy.",
+        "Keep fidelity/support/currentness/coverage as independent fields.",
+        "Retain dissent, errors, retries, model version and token/cost usage."
+      ],
+      "license_boundary": "Apache-2.0 declared at root/API; verify file origin and preserve required notices.",
+      "related_test_files": [
+        "api/tests/citation/test_edge_cases.py"
+      ],
+      "test_execution": "Upstream suite not run. Some test contents inspected; see report and inspected-files.json.",
+      "production_ready_claim": false
+    },
+    {
+      "id": "ledger-gate",
+      "name": "Unified evidence ledger and gate",
+      "implementation_status": "implemented_with_semantic_defect",
+      "reuse_decision": "reuse ledger concept; replace strongest-grade aggregation",
+      "evidence": [
+        {
+          "path": "api/app/citation/ledger.py",
+          "start_line": 33,
+          "end_line": 153,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/citation/ledger.py#L33-L153",
+          "sha256": "8918fa31930dc86a7db9a5985112ea1c398a7985de01e287901326e636cc191b"
+        },
+        {
+          "path": "api/app/citation/gate.py",
+          "start_line": 60,
+          "end_line": 108,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/citation/gate.py#L60-L108",
+          "sha256": "0920bb268ec8d50f1f3ecaf2cf3eff1056a06fac12efdd4b0d052f3bcdbd6ee3"
+        },
+        {
+          "path": "api/tests/integration/test_fiduciary_gate.py",
+          "start_line": 176,
+          "end_line": 222,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/tests/integration/test_fiduciary_gate.py#L176-L222",
+          "sha256": "6dea26e7c66578b55489ec318ce26016a42182ab541a747a0c6885bf8df3cacb"
+        }
+      ],
+      "value_for_seeger_weiss": "One evidence drawer per finding/run with exact supporting sources and honest incomplete coverage.",
+      "observed_limits": [
+        "Ledger includes only persisted source rows, not all factual assertions.",
+        "Provenance/unknown statuses are excluded.",
+        "Zero assertions become fiduciary_grade."
+      ],
+      "required_integration_work": [
+        "Add claim/candidate coverage denominator and unassessed/error states.",
+        "Bind evidence to immutable source revisions and current matter access.",
+        "Make repeated finalization idempotent and retain audit history without duplicate claims."
+      ],
+      "license_boundary": "Apache-2.0 declared at root/API; verify file origin and preserve required notices.",
+      "related_test_files": [
+        "api/tests/integration/test_citation_ledger.py",
+        "api/tests/integration/test_fiduciary_gate.py"
+      ],
+      "test_execution": "Upstream suite not run. Some test contents inspected; see report and inspected-files.json.",
+      "production_ready_claim": false
+    },
+    {
+      "id": "case-attribution",
+      "name": "Case-attributed proposition and authority verification",
+      "implementation_status": "implemented_with_limits",
+      "reuse_decision": "adapt failure/status separation and source scoping",
+      "evidence": [
+        {
+          "path": "api/app/citation/caselaw.py",
+          "start_line": 239,
+          "end_line": 304,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/citation/caselaw.py#L239-L304",
+          "sha256": "fd2161c4486945206d43919b89b7cd98cb45b8b18c9ec931df5c9977648b8912"
+        },
+        {
+          "path": "api/app/citation/authority.py",
+          "start_line": 326,
+          "end_line": 385,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/citation/authority.py#L326-L385",
+          "sha256": "9cc9c0af2a7f8440f0c87e6dbb98cee2201f0fe8b157adb66092ab347cf0d9a6"
+        }
+      ],
+      "value_for_seeger_weiss": "Check whether the particular cited authority supports a drafted proposition rather than matching any retrieved case.",
+      "observed_limits": [
+        "Case-law explicit rejection and budget exhaustion produce FAIL rows; all-transient-error results still drop.",
+        "Authority verbatim misses are dropped before persisted rows.",
+        "Attribution and passage extraction do not cover arbitrary uncited factual claims."
+      ],
+      "required_integration_work": [
+        "Keep all-transient and unparseable outcomes as retryable/not-assessed records.",
+        "Record exact opinion/authority versions, passages and proposition scope.",
+        "Apply a separate authority hierarchy/currentness review."
+      ],
+      "license_boundary": "Apache-2.0 declared at root/API; verify file origin and preserve required notices.",
+      "related_test_files": [
+        "api/tests/citation/test_authority_verify.py",
+        "api/tests/integration/test_authority_citations.py"
+      ],
+      "test_execution": "Upstream suite not run. Some test contents inspected; see report and inspected-files.json.",
+      "production_ready_claim": false
+    },
+    {
+      "id": "authority-registry",
+      "name": "Source registry and normalized authority adapters",
+      "implementation_status": "implemented_with_limits",
+      "reuse_decision": "adapt schema and availability/coverage metadata",
+      "evidence": [
+        {
+          "path": "api/app/research/registry.py",
+          "start_line": 30,
+          "end_line": 98,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/research/registry.py#L30-L98",
+          "sha256": "007aed54811b64a925f27bff7408a99ec25c6931ef46f9d4463651185ac79c9a"
+        },
+        {
+          "path": "api/app/research/adapters.py",
+          "start_line": 18,
+          "end_line": 138,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/research/adapters.py#L18-L138",
+          "sha256": "633d15c003432145fdf90df7373b3aa36f0eaa6de030fd34f948f822d997428e"
+        }
+      ],
+      "value_for_seeger_weiss": "A common contract for the curated court library, official primary law and external research providers.",
+      "observed_limits": [
+        "GovInfo search adapter uses first result only and its title as citable_text.",
+        "Source registry jurisdiction labels are coarse; CourtListener record says us-federal although its coverage text includes state cases.",
+        "Availability is not completeness or legal authority validation."
+      ],
+      "required_integration_work": [
+        "Add canonical court IDs, actual jurisdiction, document type, source edition, effective date and retrieval date.",
+        "Keep search hits distinct from fetched full text.",
+        "Iterate/paginate all relevant results when query coverage requires it."
+      ],
+      "license_boundary": "Apache-2.0 declared at root/API; verify file origin and preserve required notices.",
+      "related_test_files": [
+        "api/tests/test_authority_substrate.py",
+        "api/tests/test_authority_ledger.py"
+      ],
+      "test_execution": "Upstream suite not run. Some test contents inspected; see report and inspected-files.json.",
+      "production_ready_claim": false
+    },
+    {
+      "id": "case-research",
+      "name": "CourtListener fetch/cache and source consultation records",
+      "implementation_status": "implemented_with_limits",
+      "reuse_decision": "adapt approved provider calls and versioned cache",
+      "evidence": [
+        {
+          "path": "gateway/app/providers/tool/courtlistener.py",
+          "start_line": 283,
+          "end_line": 333,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/gateway/app/providers/tool/courtlistener.py#L283-L333",
+          "sha256": "6aa3b03985910b7bf7d71d5655e0fba394199b0669770d95f1e01a63d98a4702"
+        },
+        {
+          "path": "api/app/research/service.py",
+          "start_line": 128,
+          "end_line": 207,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/research/service.py#L128-L207",
+          "sha256": "b8fdf7d03ab20e69c53a5bb2ed2d4608f22eee0d5e2754545c70e06a37b43996"
+        }
+      ],
+      "value_for_seeger_weiss": "Fetch citable opinions and preserve a traceable list of sources consulted by the brief/judge research workflow.",
+      "observed_limits": [
+        "Citing-opinion search reads one page and caps list.",
+        "Existing cluster cache returns without a freshness check in this function.",
+        "Cached body keys are stable, not content-version addressed."
+      ],
+      "required_integration_work": [
+        "Use existing server-side credentials and rate limits, never browser keys.",
+        "Add immutable body hash/version plus refresh policy.",
+        "Expose full-text availability and pagination/coverage gaps to the user."
+      ],
+      "license_boundary": "Apache-2.0 declared at root/API; verify file origin and preserve required notices.",
+      "related_test_files": [],
+      "test_execution": "Upstream suite not run. Some test contents inspected; see report and inspected-files.json.",
+      "production_ready_claim": false
+    },
+    {
+      "id": "treatment",
+      "name": "Derived citation-treatment leads",
+      "implementation_status": "implemented_with_limits",
+      "reuse_decision": "adapt as review leads only",
+      "evidence": [
+        {
+          "path": "api/app/citation/treatment.py",
+          "start_line": 40,
+          "end_line": 51,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/citation/treatment.py#L40-L51",
+          "sha256": "1ee332792cd0021345bf80ecdc00d010269e2bbd7e34d897616a79789ad60541"
+        },
+        {
+          "path": "api/app/citation/treatment.py",
+          "start_line": 243,
+          "end_line": 293,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/citation/treatment.py#L243-L293",
+          "sha256": "1ee332792cd0021345bf80ecdc00d010269e2bbd7e34d897616a79789ad60541"
+        },
+        {
+          "path": "api/app/citation/treatment_rollup.py",
+          "start_line": 1,
+          "end_line": 48,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/citation/treatment_rollup.py#L1-L48",
+          "sha256": "97f9bacffb1c6e9e80c2e3f9091bf2023a530f7350137503921828f00bc66e99"
+        }
+      ],
+      "value_for_seeger_weiss": "Prioritize adverse-history reading with linked snippets, dates, counts and review status.",
+      "observed_limits": [
+        "30-day default cache, top 10 recent snippets judged, estimated-cost cap.",
+        "Strongest-negative rollup is heuristic and proposition-insensitive.",
+        "No negative finding is not good-law certification."
+      ],
+      "required_integration_work": [
+        "Fetch full opinions and consider controlling older history.",
+        "Record sample denominator, not-found vs unassessed states and as-of date.",
+        "Require reviewer confirmation before legal reliance."
+      ],
+      "license_boundary": "Apache-2.0 declared at root/API; verify file origin and preserve required notices.",
+      "related_test_files": [
+        "api/tests/integration/test_ledger_treatment_exposure.py"
+      ],
+      "test_execution": "Upstream suite not run. Some test contents inspected; see report and inspected-files.json.",
+      "production_ready_claim": false
+    },
+    {
+      "id": "hybrid-retrieval",
+      "name": "KB-scoped vector/FTS retrieval with source anchors",
+      "implementation_status": "implemented",
+      "reuse_decision": "adapt to host search index; do not equate with exhaustive scan",
+      "evidence": [
+        {
+          "path": "api/app/knowledge/retrieval.py",
+          "start_line": 71,
+          "end_line": 177,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/knowledge/retrieval.py#L71-L177",
+          "sha256": "9c6ed9e226716d9684fc80c896950c5833e0926241d9774f8f2a3439efd5d2fc"
+        },
+        {
+          "path": "api/app/knowledge/retrieval.py",
+          "start_line": 188,
+          "end_line": 243,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/knowledge/retrieval.py#L188-L243",
+          "sha256": "9c6ed9e226716d9684fc80c896950c5833e0926241d9774f8f2a3439efd5d2fc"
+        }
+      ],
+      "value_for_seeger_weiss": "Search curated public court materials and separately authorized matter documents with navigable provenance.",
+      "observed_limits": [
+        "Weighted min-max score blend, no semantic reranker in this function.",
+        "Vector and FTS calls are sequential.",
+        "Caller is expected to authorize KB access.",
+        "top_k returns a sample of candidates, not complete document coverage."
+      ],
+      "required_integration_work": [
+        "Use platform embedding/index dimensions and tenancy/ACL filters.",
+        "Evaluate retrieval recall against court-rule and deposition questions.",
+        "Provide explicit complete-scan path when extraction/absence claims require it."
+      ],
+      "license_boundary": "Apache-2.0 declared at root/API; verify file origin and preserve required notices.",
+      "related_test_files": [],
+      "test_execution": "Upstream suite not run. Some test contents inspected; see report and inspected-files.json.",
+      "production_ready_claim": false
+    },
+    {
+      "id": "tabular-contract",
+      "name": "Tabular column, cell and navigable-citation contracts",
+      "implementation_status": "implemented_with_limits",
+      "reuse_decision": "adapt schema and rebuild UI in host theme",
+      "evidence": [
+        {
+          "path": "api/app/schemas/tabular.py",
+          "start_line": 29,
+          "end_line": 162,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/schemas/tabular.py#L29-L162",
+          "sha256": "185bc65018de180556fee131535ad6f8af7802e1df5f22a28310fda4a614a553"
+        },
+        {
+          "path": "api/app/api/tabular.py",
+          "start_line": 301,
+          "end_line": 347,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/api/tabular.py#L301-L347",
+          "sha256": "714b972a348bbb53522a495b9de4fab0b81f10a94d5016041ead24bad68c6261"
+        }
+      ],
+      "value_for_seeger_weiss": "Reusable document-by-question grid, saved column sets and reviewable evidence for legal teams.",
+      "observed_limits": [
+        "Citation IDs can be synthetic chunk-derived display IDs.",
+        "Model confidence and independent verification are conflated in comments/schema descriptions.",
+        "Current submission ownership is file owner/admin, not a firm matter-team access model."
+      ],
+      "required_integration_work": [
+        "Use firm role/team/matter ACL and real durable evidence IDs.",
+        "Version column definitions and extraction prompts.",
+        "Add independent processing/coverage/verification/user-review statuses."
+      ],
+      "license_boundary": "Apache-2.0 declared at root/API; verify file origin and preserve required notices.",
+      "related_test_files": [
+        "api/tests/tabular/test_schemas.py",
+        "api/tests/test_tabular_endpoints.py"
+      ],
+      "test_execution": "Upstream suite not run. Some test contents inspected; see report and inspected-files.json.",
+      "production_ready_claim": false
+    },
+    {
+      "id": "tabular-engine",
+      "name": "Queued document \u00d7 column executor",
+      "implementation_status": "implemented_with_limits",
+      "reuse_decision": "substantial adaptation required for litigation-scale coverage",
+      "evidence": [
+        {
+          "path": "api/app/tabular/nodes.py",
+          "start_line": 98,
+          "end_line": 101,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/tabular/nodes.py#L98-L101",
+          "sha256": "89fc614e1328ac3d285b29bd2cb786a7c09ba5cace76838ebdd73fd8f75841f8"
+        },
+        {
+          "path": "api/app/tabular/nodes.py",
+          "start_line": 202,
+          "end_line": 280,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/tabular/nodes.py#L202-L280",
+          "sha256": "89fc614e1328ac3d285b29bd2cb786a7c09ba5cace76838ebdd73fd8f75841f8"
+        },
+        {
+          "path": "api/app/tabular/nodes.py",
+          "start_line": 365,
+          "end_line": 443,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/tabular/nodes.py#L365-L443",
+          "sha256": "89fc614e1328ac3d285b29bd2cb786a7c09ba5cace76838ebdd73fd8f75841f8"
+        },
+        {
+          "path": "api/app/tabular/nodes.py",
+          "start_line": 490,
+          "end_line": 605,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/tabular/nodes.py#L490-L605",
+          "sha256": "89fc614e1328ac3d285b29bd2cb786a7c09ba5cace76838ebdd73fd8f75841f8"
+        },
+        {
+          "path": "api/app/workers/tabular_worker.py",
+          "start_line": 99,
+          "end_line": 145,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/workers/tabular_worker.py#L99-L145",
+          "sha256": "0c7a773f32cd7dd5d65ea25b61d440d2d1e108fbcf87b544825ffccd6d4b44d6"
+        }
+      ],
+      "value_for_seeger_weiss": "A basis for bulk extraction with auditable per-cell evidence and retries.",
+      "observed_limits": [
+        "Sequential four-chunk FTS retrieval and first-chunk fallback.",
+        "Verification rejection keeps model value/high confidence.",
+        "Successful cell cost is zero.",
+        "No per-cell durable checkpoint; worker result can say completed after executor stored failed."
+      ],
+      "required_integration_work": [
+        "Build bounded parallel per-cell jobs with transaction isolation and immutable source snapshots.",
+        "Add adaptive/full scan modes, per-cell progress, resume, retry classification and cancellation.",
+        "Enforce server-side budget and actual token/cost accounting.",
+        "Recheck permissions at execution and source resolution."
+      ],
+      "license_boundary": "Apache-2.0 declared at root/API; verify file origin and preserve required notices.",
+      "related_test_files": [
+        "api/tests/tabular/test_nodes.py",
+        "api/tests/tabular/test_worker.py",
+        "api/tests/tabular/test_cost.py"
+      ],
+      "test_execution": "Upstream suite not run. Some test contents inspected; see report and inspected-files.json.",
+      "production_ready_claim": false
+    },
+    {
+      "id": "tabular-export",
+      "name": "XLSX/CSV grid export with citation comments",
+      "implementation_status": "implemented_with_reproduced_export_defect",
+      "reuse_decision": "fix literal-string safety before reuse",
+      "evidence": [
+        {
+          "path": "api/app/api/tabular.py",
+          "start_line": 585,
+          "end_line": 694,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/api/tabular.py#L585-L694",
+          "sha256": "714b972a348bbb53522a495b9de4fab0b81f10a94d5016041ead24bad68c6261"
+        }
+      ],
+      "value_for_seeger_weiss": "Portable review grids with document/source metadata and evidence references.",
+      "observed_limits": [
+        "Formula-like extracted text becomes XLSX formulas; CSV retains dangerous prefixes.",
+        "Citation comments only show abbreviated IDs; no useful destination URL is stamped."
+      ],
+      "required_integration_work": [
+        "Force XLSX string types and neutralize CSV formula prefixes for every untrusted field.",
+        "Preserve original values and attach full citation/source links.",
+        "Export all independent verification/coverage states and a run manifest."
+      ],
+      "license_boundary": "Apache-2.0 declared at root/API; verify file origin and preserve required notices.",
+      "related_test_files": [
+        "api/tests/tabular/test_export.py"
+      ],
+      "test_execution": "Upstream suite not run. Some test contents inspected; see report and inspected-files.json.",
+      "production_ready_claim": false
+    },
+    {
+      "id": "playbook-engine",
+      "name": "Position review and proposed clause changes",
+      "implementation_status": "implemented_with_limits",
+      "reuse_decision": "adapt rules/position schema and exact-span review workflow",
+      "evidence": [
+        {
+          "path": "api/app/playbooks/nodes.py",
+          "start_line": 88,
+          "end_line": 138,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/playbooks/nodes.py#L88-L138",
+          "sha256": "06ec92a3b860f906f689d140c929fd5ae0f8e7934d3d33b1e3f7cbb8e41e599e"
+        },
+        {
+          "path": "api/app/playbooks/nodes.py",
+          "start_line": 269,
+          "end_line": 332,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/playbooks/nodes.py#L269-L332",
+          "sha256": "06ec92a3b860f906f689d140c929fd5ae0f8e7934d3d33b1e3f7cbb8e41e599e"
+        },
+        {
+          "path": "api/app/playbooks/nodes.py",
+          "start_line": 405,
+          "end_line": 488,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/playbooks/nodes.py#L405-L488",
+          "sha256": "06ec92a3b860f906f689d140c929fd5ae0f8e7934d3d33b1e3f7cbb8e41e599e"
+        }
+      ],
+      "value_for_seeger_weiss": "Firm-specific protective order, settlement release, privilege protocol and deposition stipulation review.",
+      "observed_limits": [
+        "FTS top candidates with first-chunk fallback, no complete-document assurance.",
+        "Redline output is proposed old/new text, not Word tracked changes.",
+        "Built-in transactional positions are not validated mass-tort/jurisdiction-specific policy."
+      ],
+      "required_integration_work": [
+        "Author and approve firm litigation positions with jurisdiction/source/version metadata.",
+        "Bind detection and every proposed edit to immutable original spans.",
+        "Apply edits through the host Office engine with conflict checks and tracked changes."
+      ],
+      "license_boundary": "Apache-2.0 declared at root/API; verify file origin and preserve required notices.",
+      "related_test_files": [
+        "api/tests/playbooks/test_executor.py"
+      ],
+      "test_execution": "Upstream suite not run. Some test contents inspected; see report and inspected-files.json.",
+      "production_ready_claim": false
+    },
+    {
+      "id": "tool-governance",
+      "name": "Auditable tool dispatch and chat confirmation",
+      "implementation_status": "implemented_with_limits",
+      "reuse_decision": "adapt one host policy boundary; preserve audit outcomes",
+      "evidence": [
+        {
+          "path": "api/app/tools/governance.py",
+          "start_line": 219,
+          "end_line": 370,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/tools/governance.py#L219-L370",
+          "sha256": "ec798360fb74b42dedab56ac1c7554a9ec9ecb68d92d62016722a0f4e44f73a2"
+        },
+        {
+          "path": "api/app/chat/tool_loop.py",
+          "start_line": 668,
+          "end_line": 704,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/chat/tool_loop.py#L668-L704",
+          "sha256": "6506e11d7fa01e5db81f210dc5c50a8d47972fda6e1a62bd95197886e482a642"
+        },
+        {
+          "path": "api/app/chat/tool_loop.py",
+          "start_line": 783,
+          "end_line": 873,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/chat/tool_loop.py#L783-L873",
+          "sha256": "6506e11d7fa01e5db81f210dc5c50a8d47972fda6e1a62bd95197886e482a642"
+        },
+        {
+          "path": "api/app/chat/tool_loop.py",
+          "start_line": 910,
+          "end_line": 927,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/chat/tool_loop.py#L910-L927",
+          "sha256": "6506e11d7fa01e5db81f210dc5c50a8d47972fda6e1a62bd95197886e482a642"
+        }
+      ],
+      "value_for_seeger_weiss": "Consistent user/matter/tool permissions, dry-run review, confirmation and receipts across Office and research agents.",
+      "observed_limits": [
+        "Chat passes no egress-tier ceiling in reviewed call.",
+        "Counter enforced around a multi-call batch, not each call.",
+        "Audit commit boundary belongs to caller."
+      ],
+      "required_integration_work": [
+        "Resolve host matter sensitivity and connector permissions before dispatch.",
+        "Reserve cost/call budget per tool and persist immutable input/output digests without content leaks.",
+        "Make confirmations/idempotency survive restart without repeated writes."
+      ],
+      "license_boundary": "Apache-2.0 declared at root/API; verify file origin and preserve required notices.",
+      "related_test_files": [],
+      "test_execution": "Upstream suite not run. Some test contents inspected; see report and inspected-files.json.",
+      "production_ready_claim": false
+    },
+    {
+      "id": "mcp-transport",
+      "name": "Remote MCP adapter",
+      "implementation_status": "implemented_with_policy_and_provenance_limits",
+      "reuse_decision": "prefer independently written official-SDK adapter or clear inherited provenance",
+      "evidence": [
+        {
+          "path": "gateway/app/providers/tool/mcp.py",
+          "start_line": 1,
+          "end_line": 64,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/gateway/app/providers/tool/mcp.py#L1-L64",
+          "sha256": "57e7f03fc5f94045fa6574ff56b55ae34f62f0974f47d67c0b67569a2f49aa35"
+        },
+        {
+          "path": "gateway/app/providers/tool/mcp.py",
+          "start_line": 118,
+          "end_line": 184,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/gateway/app/providers/tool/mcp.py#L118-L184",
+          "sha256": "57e7f03fc5f94045fa6574ff56b55ae34f62f0974f47d67c0b67569a2f49aa35"
+        },
+        {
+          "path": "gateway/app/providers/tool/egress.py",
+          "start_line": 24,
+          "end_line": 64,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/gateway/app/providers/tool/egress.py#L24-L64",
+          "sha256": "fdb3fe87264987e726fcc6ceb2f7ca51a06e199d25a7397321a0f925ebf054bf"
+        }
+      ],
+      "value_for_seeger_weiss": "A model for connecting approved Outlook/Box/other tool servers behind a single server-side boundary.",
+      "observed_limits": [
+        "Explicitly ported from web/Open WebUI client, with unresolved per-file source license history.",
+        "Server annotations can remove confirmation.",
+        "DNS validation snapshot is separate from SDK connection.",
+        "Generic MCP client is not an implemented catalog of common-app integrations."
+      ],
+      "required_integration_work": [
+        "Verify source provenance or implement using official SDK without copying restricted source.",
+        "Use operator tool policies and user-specific scopes.",
+        "Constrain actual network connection/redirects, bound responses/time and test token/tenant isolation."
+      ],
+      "license_boundary": "Gateway declares Apache, but mcp.py explicitly ports Open WebUI code; root declaration alone does not resolve inherited rights.",
+      "related_test_files": [
+        "gateway/tests/test_mcp_adapter.py",
+        "gateway/tests/test_guarded_egress.py"
+      ],
+      "test_execution": "Upstream suite not run. Some test contents inspected; see report and inspected-files.json.",
+      "production_ready_claim": false
+    },
+    {
+      "id": "mcp-oauth",
+      "name": "Per-user OAuth/PKCE connector connection service",
+      "implementation_status": "implemented; live interoperability not exercised",
+      "reuse_decision": "adapt to existing firm identity and secrets services",
+      "evidence": [
+        {
+          "path": "api/app/api/mcp_oauth.py",
+          "start_line": 100,
+          "end_line": 127,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/api/mcp_oauth.py#L100-L127",
+          "sha256": "ca48833bd5929ac917d1e5654efe0143ae3e5d767429b28da14c8562f88b7ce0"
+        },
+        {
+          "path": "api/app/mcp/oauth.py",
+          "start_line": 231,
+          "end_line": 305,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/mcp/oauth.py#L231-L305",
+          "sha256": "c44ed787f33a681d469f3f1abc23e83053a7687f99af930dfdf84ba785e802dd"
+        }
+      ],
+      "value_for_seeger_weiss": "Connect each user to approved app data with explicit scopes, revocation and connection status.",
+      "observed_limits": [
+        "No live provider test was run.",
+        "Concurrent state consumption/token refresh behavior needs host integration tests.",
+        "Provider configuration and origin allowlists are deployment responsibilities."
+      ],
+      "required_integration_work": [
+        "Use host SSO identity, secrets/KMS policy and token encryption keys.",
+        "Add atomic callback consumption, refresh coordination and revocation.",
+        "Test cross-user/tenant denial, issuer mismatch, expiry and connection removal."
+      ],
+      "license_boundary": "Apache-2.0 declared at root/API; verify file origin and preserve required notices.",
+      "related_test_files": [
+        "api/tests/test_mcp_oauth_service.py",
+        "api/tests/test_mcp_oauth_endpoints.py"
+      ],
+      "test_execution": "Upstream suite not run. Some test contents inspected; see report and inspected-files.json.",
+      "production_ready_claim": false
+    },
+    {
+      "id": "autonomous-controls",
+      "name": "Background phase grants, halt and cost brakes",
+      "implementation_status": "implemented_with_durability_limits",
+      "reuse_decision": "reuse policy pattern; use durable host orchestrator",
+      "evidence": [
+        {
+          "path": "api/app/autonomous/guard.py",
+          "start_line": 163,
+          "end_line": 308,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/autonomous/guard.py#L163-L308",
+          "sha256": "d5708523193eb56095011af3c52c90d2a4b293af95afd2279001076ff09c00b1"
+        },
+        {
+          "path": "api/app/autonomous/executor.py",
+          "start_line": 1,
+          "end_line": 25,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/autonomous/executor.py#L1-L25",
+          "sha256": "fea027c71458d4cee261cafd8d5383ce69989067bc6ea4336bb7f026bdab9945"
+        },
+        {
+          "path": "api/app/autonomous/executor.py",
+          "start_line": 210,
+          "end_line": 232,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/api/app/autonomous/executor.py#L210-L232",
+          "sha256": "fea027c71458d4cee261cafd8d5383ce69989067bc6ea4336bb7f026bdab9945"
+        }
+      ],
+      "value_for_seeger_weiss": "Controlled rule-change monitoring, evidence gathering, review queues and user-stoppable research runs.",
+      "observed_limits": [
+        "Phase graph compile has no checkpointer.",
+        "Cost is estimated and audit/halt commit depends on caller.",
+        "Not evidence of AgentCore integration or an arbitrary visual workflow runtime."
+      ],
+      "required_integration_work": [
+        "Map grants to host tool policy and approved workflow version.",
+        "Persist checkpoints, cell/artifact commits and side-effect idempotency.",
+        "Add actual usage reconciliation and per-user/matter budget limits."
+      ],
+      "license_boundary": "Apache-2.0 declared at root/API; verify file origin and preserve required notices.",
+      "related_test_files": [
+        "api/tests/autonomous/test_guard_helpers.py",
+        "api/tests/autonomous/test_guard_external_tool_intents.py"
+      ],
+      "test_execution": "Upstream suite not run. Some test contents inspected; see report and inspected-files.json.",
+      "production_ready_claim": false
+    },
+    {
+      "id": "missing-surfaces",
+      "name": "Bedrock adapter and substantive Word editing surfaces",
+      "implementation_status": "deferred_or_scaffold",
+      "reuse_decision": "do not import as working functionality",
+      "evidence": [
+        {
+          "path": "gateway/app/main.py",
+          "start_line": 135,
+          "end_line": 186,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/gateway/app/main.py#L135-L186",
+          "sha256": "86a6145c83ac0590cd2fce075383c743801a2d61d5a937789419e7702f2c5dba"
+        },
+        {
+          "path": "word-addin/src/taskpane/components/App.tsx",
+          "start_line": 28,
+          "end_line": 45,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/word-addin/src/taskpane/components/App.tsx#L28-L45",
+          "sha256": "464fb72b1d3c4b3a38476ab30c519230539dfe7776cd7ba03f1d20353f492968"
+        },
+        {
+          "path": "docs/HONEST-STATE.md",
+          "start_line": 138,
+          "end_line": 148,
+          "source_url": "https://github.com/LegalQuants/lq-ai/blob/2cc3149238defbbb171ec845cd0d3a43a34054f2/docs/HONEST-STATE.md#L138-L148",
+          "sha256": "efa8362b7143aec304b3ff2c3d302a3e82a6ac84996958600336c40d50880a9f"
+        }
+      ],
+      "value_for_seeger_weiss": "Useful boundary documentation for future implementation work, not a supplied Office/Bedrock capability.",
+      "observed_limits": [
+        "Bedrock provider type has no live adapter from the reviewed factory.",
+        "Word task pane points to web app rather than editing open document."
+      ],
+      "required_integration_work": [
+        "Use existing platform Bedrock runtime and implement its streaming/tool-use contract.",
+        "Implement actual Office document context, diff application and tracked-change conflict checks.",
+        "Review AgentCore IAM/runtime integration independently if selected."
+      ],
+      "license_boundary": "Gateway and word-addin package declare Apache; do not import web UI deep-link targets as Apache.",
+      "related_test_files": [],
+      "test_execution": "Upstream suite not run. Some test contents inspected; see report and inspected-files.json.",
+      "production_ready_claim": false
+    }
+  ]
+}

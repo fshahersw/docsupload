@@ -1,0 +1,44 @@
+{
+  "id": "expert-methodology-review",
+  "title": "Expert methodology and record review",
+  "roles": [
+    "Expert team attorney",
+    "Trial attorney",
+    "Scientific analyst"
+  ],
+  "purpose": "Organize qualifications, methods, assumptions and record support for an expert review or examination outline.",
+  "inputs": [
+    "expert report/CV",
+    "cited literature and underlying data if authorized",
+    "relevant testimony",
+    "issue list and jurisdiction/date"
+  ],
+  "steps": [
+    "Inventory report claims and cited support. Distinguish materials actually supplied from references only mentioned in the report.",
+    "Map each material opinion to qualifications, method, input data, assumptions, limitations and application to the case.",
+    "Locate record support and contrary evidence with exact passages. Distinguish scientific association, causation claims and legal conclusions.",
+    "Retrieve the applicable expert-admissibility framework from a dated source, including FRE 702 when applicable; do not assume every jurisdiction uses the same standard.",
+    "Generate focused questions tied to an identified gap or disputed assumption, and identify materials needed to test it.",
+    "Produce a review draft separating demonstrable record discrepancies from counsel/technical judgments; do not issue an admissibility verdict."
+  ],
+  "outputs": [
+    "opinion/method/evidence matrix",
+    "missing-data register",
+    "exam outline with source anchors",
+    "jurisdiction-specific framework packet"
+  ],
+  "references": [
+    "LAW.html?query=FRE%20702",
+    "EXTENDED-LAW.html"
+  ],
+  "tests": [
+    "unavailable study underlying a claim",
+    "outdated CV",
+    "method described without underlying measurements",
+    "state standard differs from federal",
+    "contrary study not inspected"
+  ],
+  "status": "Implementation recipe; requires a host runtime, source adapters and legal evaluation.",
+  "authorship": "Original specification prepared for this library; not an upstream LegalQuants file.",
+  "evidence_contract": "evidence-contract.json"
+}

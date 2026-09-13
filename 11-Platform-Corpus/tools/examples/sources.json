@@ -1,0 +1,10 @@
+[
+  {
+    "url": "https://example.org/rule#section-1",
+    "purpose": "Synthetic normalization fixture"
+  },
+  {
+    "url": "https://example.org/rule?utm_source=test#section-1",
+    "purpose": "Same synthetic source with a tracking parameter"
+  }
+]

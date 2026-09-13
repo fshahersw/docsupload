@@ -1,0 +1,22 @@
+[
+  {
+    "document_id": "synthetic-doc-1",
+    "matter_id": "synthetic-evaluation-only",
+    "access_scope": "synthetic-team",
+    "source_version": "fixture-v1",
+    "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "expected_page_count": 2,
+    "pages": [
+      {
+        "page": 1,
+        "status": "complete",
+        "text": "SYNTHETIC ENGINEERING FIXTURE. Witness A said: I do not recall receiving that notice."
+      },
+      {
+        "page": 2,
+        "status": "unreadable",
+        "text": ""
+      }
+    ]
+  }
+]

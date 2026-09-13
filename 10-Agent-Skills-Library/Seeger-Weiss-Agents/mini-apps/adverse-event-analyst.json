@@ -1,0 +1,118 @@
+{
+  "id": "adverse-event-analyst-review",
+  "title": "Post-market safety report review",
+  "readiness": "Mini-app interface specification",
+  "implemented": false,
+  "route": null,
+  "launch_mode": "Explicit user run; no scheduler or upload listener installed",
+  "input_form_schema_ref": "10-Agent-Skills-Library/Seeger-Weiss-Agents/contracts/adverse-event-analyst.input.schema.json",
+  "result_schema_ref": "10-Agent-Skills-Library/Seeger-Weiss-Agents/contracts/adverse-event-analyst.output.schema.json",
+  "views": [
+    {
+      "id": "report-table",
+      "label": "Report table"
+    },
+    {
+      "id": "duplicate-families",
+      "label": "Duplicate families"
+    },
+    {
+      "id": "product-matching",
+      "label": "Product matching"
+    },
+    {
+      "id": "descriptive-trends",
+      "label": "Descriptive trends"
+    }
+  ],
+  "table_columns": [
+    {
+      "key": "dataset_snapshot",
+      "label": "Dataset snapshot",
+      "description": "Dataset identity and version.",
+      "type": "string"
+    },
+    {
+      "key": "report_id",
+      "label": "Report id",
+      "description": "Raw report identity.",
+      "type": "string"
+    },
+    {
+      "key": "report_family_id",
+      "label": "Report family id",
+      "description": "Documented duplicate/follow-up family identifier.",
+      "type": "nullable_string"
+    },
+    {
+      "key": "product_match_basis",
+      "label": "Product match basis",
+      "description": "Identifiers/aliases used and uncertainty.",
+      "type": "string"
+    },
+    {
+      "key": "event_terms",
+      "label": "Event terms",
+      "description": "Original and normalized event terms.",
+      "type": "array"
+    },
+    {
+      "key": "event_date",
+      "label": "Event date",
+      "description": "Onset/event date if reported.",
+      "type": "nullable_string"
+    },
+    {
+      "key": "received_date",
+      "label": "Received date",
+      "description": "Receipt/report date.",
+      "type": "nullable_string"
+    },
+    {
+      "key": "retention_decision",
+      "label": "Retention decision",
+      "description": "Included, duplicate, follow-up superseded, out of scope or unresolved.",
+      "type": "string"
+    },
+    {
+      "key": "count_unit",
+      "label": "Count unit",
+      "description": "The actual aggregation unit; never an inferred population denominator.",
+      "type": "string"
+    }
+  ],
+  "shared_views": [
+    "Coverage and failures",
+    "Source requests",
+    "Draft export"
+  ],
+  "actions": [
+    {
+      "id": "run",
+      "label": "Run scoped analysis",
+      "handler": null,
+      "enabled": false,
+      "requires": "Verified host agent and source adapters"
+    },
+    {
+      "id": "open_source",
+      "label": "Open source",
+      "handler": null,
+      "enabled": false,
+      "requires": "Authorized source resolver and safe viewer"
+    },
+    {
+      "id": "export",
+      "label": "Export draft table",
+      "handler": null,
+      "enabled": false,
+      "requires": "Bound artifact writer with source rights and spreadsheet-cell sanitization"
+    }
+  ],
+  "accessibility": [
+    "Semantic table with keyboard-accessible source links",
+    "Status labels in text, not color alone",
+    "Announce progress and errors; preserve focus when results refresh"
+  ],
+  "host_integration_note": "UI contract only. Reuse the platform shell and tested components; paths, handlers, server DTOs and persistence require verified host integration."
+}

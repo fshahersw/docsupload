@@ -1,0 +1,25 @@
+{
+  "pinned_sources": {
+    "lq-ai": {
+      "commit": "2cc3149238defbbb171ec845cd0d3a43a34054f2",
+      "url": "https://github.com/LegalQuants/lq-ai"
+    },
+    "lq-skills": {
+      "commit": "a293659770c6d9094e3f9893a0de6e59475e95b6",
+      "url": "https://github.com/LegalQuants/lq-skills"
+    }
+  },
+  "inventoried_skill_files": {
+    "lq-ai": 15,
+    "lq-skills": 44
+  },
+  "community_top_level_skill_directories": 41,
+  "copied_skill_files": 34,
+  "copied_files": 203,
+  "copied_bytes": 1842966,
+  "inventoried_playbooks": 5,
+  "playbook_positions": 45,
+  "copied_playbooks": 2,
+  "code_execution": "No upstream services, LLMs, document rendering or external tools executed. Separate helper smoke report records any pure-function checks.",
+  "canonical_library_mutations": false
+}

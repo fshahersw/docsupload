@@ -1,0 +1,115 @@
+{
+  "verified_at": "2026-09-13T03:31:36.450253+00:00",
+  "independent_live_pages": [
+    {
+      "citation": "2A:14-2",
+      "url": "https://lis.njleg.state.nj.us/nxt/gateway.dll/statutes/1/112/308",
+      "http_status": 200,
+      "content_type": [
+        "text/html; charset=utf-8"
+      ],
+      "retrieved_at": "2026-09-13T03:29:59.7222097Z",
+      "bytes": 3560,
+      "sha256": "663722435ef7651e3f831d28050503dfe12d70eb00171fe22d0e152f84392695",
+      "method": "Ordinary unauthenticated PowerShell Invoke-WebRequest; no special headers",
+      "source_record_id": "nj-2a-394404",
+      "comparison": "Full heading, body and history after whitespace normalization only",
+      "result": "match",
+      "extracted_live_text_sha256": "a41ee9da30a3c54f1bb128caa4d4da617730258b245a0553303c317e5bc699b5",
+      "review_evidence_path": "native-spotchecks/2A-14-2.html",
+      "review_evidence_location_note": "Relative to the acquisition review directory only; not a clean-library local-document link."
+    },
+    {
+      "citation": "2A:56-23",
+      "url": "https://lis.njleg.state.nj.us/nxt/gateway.dll/statutes%2F1%2F112%2F1774",
+      "http_status": 200,
+      "content_type": [
+        "text/html; charset=utf-8"
+      ],
+      "retrieved_at": "2026-09-13T03:29:59.9337740Z",
+      "bytes": 3102,
+      "sha256": "2e497516276f955f9e6430e584aac4cc0bdff8a73bb2c20a89801e087af8c418",
+      "method": "Ordinary unauthenticated PowerShell Invoke-WebRequest; no special headers",
+      "source_record_id": "nj-2a-2031686",
+      "comparison": "Full heading, body and history after whitespace normalization only",
+      "result": "match",
+      "extracted_live_text_sha256": "2754a9c287a88b21ac9d9b2230b896a2437056f8d26cfee8d444bc0f7e4390f9",
+      "review_evidence_path": "native-spotchecks/2A-56-23.html",
+      "review_evidence_location_note": "Relative to the acquisition review directory only; not a clean-library local-document link."
+    },
+    {
+      "citation": "2A:56-44",
+      "url": "https://lis.njleg.state.nj.us/nxt/gateway.dll/statutes%2F1%2F112%2F1795",
+      "http_status": 200,
+      "content_type": [
+        "text/html; charset=utf-8"
+      ],
+      "retrieved_at": "2026-09-13T03:30:00.0923744Z",
+      "bytes": 3965,
+      "sha256": "2cce589d7fb6700a2563944f0e7b105482b1660eb56cc5fd0e7cf9ed7af60dfb",
+      "method": "Ordinary unauthenticated PowerShell Invoke-WebRequest; no special headers",
+      "source_record_id": "nj-2a-2048965",
+      "comparison": "Full heading, body and history after whitespace normalization only",
+      "result": "match",
+      "extracted_live_text_sha256": "db8958656e249e2f9ccc56ac08b1067a225587066ac91ea1957eb854dc6cefe1",
+      "review_evidence_path": "native-spotchecks/2A-56-44.html",
+      "review_evidence_location_note": "Relative to the acquisition review directory only; not a clean-library local-document link."
+    }
+  ],
+  "independent_live_page_match_count": 3,
+  "plain_citation_lookalikes_excluded_from_section_boundaries": [
+    {
+      "title_code": "22A",
+      "byte_start": 31531288,
+      "text": "22A:2-1.  For services hereinafter mentioned, the Clerk of the Supreme Court shall be entitled to demand and receive the following fees:",
+      "classification": "Citation-looking body line; no headnote style in RTF; preserved in enclosing source record."
+    },
+    {
+      "title_code": "22A",
+      "byte_start": 31534275,
+      "text": "22A:2-6.  Upon the filing or entering of the first paper or proceeding in any action or proceeding in the Law Division of the Superior Court, the plaintiff shall pay to the clerk $200.00 for the first paper filed by him, which shall cover all fees payable therein down to, and including entry of final judgment, taxation of costs, copy of costs and the issuance and recording of final process, except such as may be otherwise provided herein, or provided by law, or the rules of court. Any person filing an answer setting forth a counterclaim or a third party claim in such cause shall pay to the clerk $200.00 for the first paper filed by him. Any person other than the plaintiff filing any other paper in any such cause shall pay to the clerk $135.00 for the first paper filed by him.",
+      "classification": "Citation-looking body line; no headnote style in RTF; preserved in enclosing source record."
+    },
+    {
+      "title_code": "22A",
+      "byte_start": 31535408,
+      "text": "22A:2-7.  a.  Upon the filing, entering, docketing or recording of the following papers, documents or proceedings by either party to any action or proceeding in the Law Division of the Superior Court, the party or parties filing, entering, docketing or recording the same shall pay to the clerk of said court the following fees:",
+      "classification": "Citation-looking body line; no headnote style in RTF; preserved in enclosing source record."
+    }
+  ],
+  "indented_headnotes_recognized": [
+    {
+      "id": "nj-10-10448302",
+      "citation": "10:5-33",
+      "heading": "10:5-33  Contents of bid specs, contract provisions.",
+      "reason": "Indented title headnote recognized from RTF and matched to original TXT."
+    },
+    {
+      "id": "nj-34-44439926",
+      "citation": "34:1B-266",
+      "heading": "34:1B-266.  Definitions relative to vineyards and wineries",
+      "reason": "Indented title headnote recognized from RTF and matched to original TXT."
+    },
+    {
+      "id": "nj-34-44895095",
+      "citation": "34:1B-373",
+      "heading": "34:1B-373  \"New Jersey Innovation Fellows Program.\"",
+      "reason": "Indented title headnote recognized from RTF and matched to original TXT."
+    }
+  ],
+  "all_selected_record_hashes_and_text_roundtrip_passed": true,
+  "roundtrip_error_ids": [],
+  "legislative_counsel_toc_evidence": {
+    "title": "Legislative Counsel Table of Contents",
+    "entry": "LCTOC.TXT",
+    "bytes": 2131771,
+    "sha256": "0552df72a975c4ed81d244d732256bf78c6153faddc77f71b1c4ba2603cabdd8",
+    "stated_version": "Legislative Counsel's Table Of Contents UPDATED to P.L.2026, c.30 and JR 1.",
+    "title_heading_count": 75,
+    "chapter30_context_examples": [
+      "\r\n\r\nLegislative Counsel's Table Of Contents UPDATED to P.L.2026, c.30 and JR 1.\r\n\r\nTITLE 1.\r\nChapter 1.\r\nR.S. 1:1-2 amended 1948, c.4;\r\n\t\t1953, c.4, s.1;\r\n\t\t1955, c.226;\r\n\t\t1960, c.187, s.1;\r\n\t\t2015, c.251;\r\n\t\t2020, c.67.\r\nC. 1:1-2a 1942, c.72.\r\nC. 1:1-2b 1967, c.16.\r\nR.S. 1:1-2.3 amended",
+      "2, s.4;\r\n\t\t1987, c.76, s.36;\r\n\t\t1989, c.23, s.4;\r\n\t\t1993, c.123, s.1;\r\n\t\t1993, c.132, s.1;\r\n\t\t1993, c.135;\r\n\t\t1995, c.6, s.2;\r\n\t\t2001, c.443, s.7;\r\n\t\t2003, c.55, s.4;\r\n\t\t2003, c.184, s.4;\r\n\t\t2007, c.83, s.3;\r\n\t\t2007, c.341, s.7;\r\n\t\t2010, c.30, s.1;\r\n\t\t2015, c.98, s.5;\r\n\t\t2017, c.165, s.6;\r\n\t\t2020, c.110;\r\n\t\t2023, c.48, s.2;\r\n\t\t2025, c.328, s.1;\r\n\t\t2026, c.30.\r\nC. 2C:44-1.1 2013, c.51, s.10;\r\n\t\tamended 2021, c.467, s.1.\r\nC. 2C:44-1.2 to 2C:44-1.4 2025, c.328, ss.1-4.\r\nN.J.S. 2C:44-2 amended 1979, c.178, s.94;\r\n\t\t1987, c.106, s.15;\r\n\t\t1991, c.329, s.6.\r\nN.J.S. 2C:44-3 amended"
+    ]
+  },
+  "currentness_limit": "The three statutory page spotchecks concern transcription for that sample only. They do not resolve different stated amendment cutoffs between bulk statutes and Legislative Counsel TOC, or certify all selected statutes as effective/current."
+}

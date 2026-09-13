@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:seeger-weiss:agent-input:chronology-builder:1",
+  "title": "Cross-document factual chronology intake contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "document_manifest",
+    "issue_scope",
+    "source_documents"
+  ],
+  "properties": {
+    "document_manifest": {
+      "type": "array",
+      "description": "Authorized files, hashes, page counts, extraction/OCR states and Bates or transcript metadata.",
+      "items": {
+        "type": "object",
+        "description": "Source/record descriptor; resolve its identity, access and content via a host-validated adapter."
+      }
+    },
+    "issue_scope": {
+      "type": "object",
+      "description": "Matter, relevant date range, actors and event categories; avoid an undefined all-events task.",
+      "additionalProperties": true
+    },
+    "source_documents": {
+      "type": "array",
+      "description": "Readable text/page images and stable source locators; an empty set produces a plan only.",
+      "items": {
+        "type": "object",
+        "description": "Source/record descriptor; resolve its identity, access and content via a host-validated adapter."
+      }
+    },
+    "existing_timeline": {
+      "type": "array",
+      "description": "Prior event rows with their source hashes for incremental reconciliation.",
+      "items": {
+        "type": "object",
+        "description": "Source/record descriptor; resolve its identity, access and content via a host-validated adapter."
+      }
+    }
+  },
+  "$comment": "The host must validate nested source descriptors against its actual DTOs. This specification deliberately does not fabricate production API shapes."
+}
